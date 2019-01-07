@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBInput, MDBBtn, MDBContainer, MDBCol, MDBRow } from "mdbreact";
+
 const LoginView = () => {
   return (
     <MDBContainer className="w-75 mt-5 pt-5">
