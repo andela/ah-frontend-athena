@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/andela/ah-frontend-athena.svg?branch=ch-travis-162163222)](https://travis-ci.org/andela/ah-frontend-athena)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d7a486573553270606f1/test_coverage)](https://codeclimate.com/github/andela/ah-frontend-athena/test_coverage)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
