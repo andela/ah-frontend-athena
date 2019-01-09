@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-import Routes from './Router'
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from "react";
+import Routes from "./Router";
+import "./App.scss";
 
 class App extends Component {
   render() {
-    return (
-      <Routes/>
-    );
+    return <Routes />;
   }
 }
 
