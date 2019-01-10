@@ -3,7 +3,7 @@ import { MDBInput, MDBBtn, MDBContainer, MDBCol, MDBRow } from "mdbreact";
 
 const SigupView = () => {
   return (
-   <MDBContainer className="w-75 mt-5 pt-5">
+    <MDBContainer className="w-75 mt-5 pt-5">
       <MDBRow>
         <MDBCol md="6">
           <form>

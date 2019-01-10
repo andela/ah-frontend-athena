@@ -13,8 +13,10 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - yarn run build
+  - yarn lint
   - yarn run test-cov
   - yarn run start & wait-on http://localhost:3000
+  - cypress install
   - yarn run cypress:headless
 after_script:
   - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
