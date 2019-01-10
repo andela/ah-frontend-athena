@@ -12,7 +12,9 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - npm run build
-  - npm run test-cov
+  - yarn run build
+  - yarn run test-cov
+  - yarn run start & wait-on http://localhost:3000
+  - yarn run cypress:headless
 after_script:
   - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT

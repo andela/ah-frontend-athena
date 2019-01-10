@@ -7,6 +7,10 @@
 
 # testing
 /coverage
+/cypress/integration/examples
+/cypress/screenshots
+/cypress/videos
+cypress/fixtures/example.json
 
 # production
 /build
@@ -24,5 +28,3 @@ yarn-error.log*
 
 #environment
 env/
-
-
