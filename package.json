@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-eslint": "^9.0.0",
     "mdbootstrap": "^4.6.1",
     "mdbreact": "^4.8.7",
     "node-sass": "^4.11.0",
@@ -19,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/index.js --collectCoverageFrom=!src/serviceWorker.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
