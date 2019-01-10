@@ -13,6 +13,6 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - npm run build
-  - npm test -- u --coverage
+  - npm run test-cov
 after_script:
   - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT

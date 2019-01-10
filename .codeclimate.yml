@@ -10,3 +10,6 @@ engines:
 checks:
   argument-count:
     enabled: false
+
+exclude_patterns:
+  - "src/serviceWorker.js"
