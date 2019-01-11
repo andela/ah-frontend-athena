@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/andela/ah-frontend-athena.svg?branch=ch-travis-162163222)](https://travis-ci.org/andela/ah-frontend-athena)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d7a486573553270606f1/test_coverage)](https://codeclimate.com/github/andela/ah-frontend-athena/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d7a486573553270606f1/maintainability)](https://codeclimate.com/github/andela/ah-frontend-athena/maintainability)
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-7af442.svg)](https://houndci.com)
 
 # Description.
 This repository contains code for a product called Author's Haven, which is a platform where users can read and publish articles.
@@ -38,7 +39,7 @@ This repository contains code for a product called Author's Haven, which is a pl
  ## Dependencies
 
  * Install NodeJs(Download node.js from the official website)
- 
+
  ## Getting Started
 
  * Clone the repository locally
