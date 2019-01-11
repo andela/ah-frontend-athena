@@ -20,3 +20,5 @@ script:
   - yarn run cypress:headless
 after_script:
   - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
+notifications:
+  slack: andela:HQYC5WojHgP9142KqoXCWuAs
