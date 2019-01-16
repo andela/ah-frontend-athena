@@ -1,1 +1,3 @@
-// Action types will be put here
+export const LOGIN = 'LOGIN';
+
+export default LOGIN;
