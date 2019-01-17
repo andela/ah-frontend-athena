@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 import './LoginForm.scss';
 
 const LoginView = ({onChange, onSubmit, errors}) => {
-  
+
   return (
-    <MDBContainer className="mt-3 pt-6 w-sm-100 w-md-75">
+    <MDBContainer className="mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5">
       <MDBRow className='flex flex-center'>
         <MDBCol md="6">
           <form onSubmit={onSubmit}>
@@ -19,7 +19,7 @@ const LoginView = ({onChange, onSubmit, errors}) => {
                   </h3>
                 </MDBRow>
               </div>
-              <MDBCardBody className="mx-4 mt-4">
+              <MDBCardBody className="mx-4 mt-4 grey-text">
 
                 <p className=" red-text is-valid">{errors.error}</p>
                 <MDBInput
@@ -49,11 +49,11 @@ const LoginView = ({onChange, onSubmit, errors}) => {
                   onChange={onChange}
                 />
                 <p className=" red-text is-valid">{errors.password}</p>
-                 
+
                 <div className="text-center">
-                  <MDBBtn 
-                    type="submit" 
-                    className="btn-block z-depth-2 bg-primary" 
+                  <MDBBtn
+                    type="submit"
+                    className="btn-block z-depth-2 bg-primary"
                     color="bg-primary"
                   >
 Login
@@ -68,17 +68,16 @@ Login
 
                   <div className="row my-3 d-flex justify-content-center">
                     <MDBBtn
-                      type="button"
                       color="white"
-
+                      type="button"
                       className="mr-md-3 z-depth-1a rounded"
                     >
                       <MDBIcon icon="facebook" className="blue-text text-center rounded" />
                     </MDBBtn>
                     <MDBBtn
-                      type="button"
                       color="white"
                       className="mr-md-3 z-depth-1a"
+                      type="button"
                     >
                       <MDBIcon icon="twitter" className="blue-text" />
                     </MDBBtn>

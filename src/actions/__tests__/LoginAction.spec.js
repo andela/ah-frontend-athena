@@ -2,7 +2,7 @@ import fetchMock from 'fetch-mock';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import { login } from '../LoginAction';
-import { LOGIN } from '../actionTypes';
+import actionTypes from '../actionTypes';
 
 const middlewares = [thunk]
 const mockStore = configureMockStore(middlewares)
@@ -23,7 +23,7 @@ describe("Mock the endpoint",()=>{
         body: JSON.stringify({user: loginData})
     })
     const expectedActions = [
-        {type: LOGIN,
+        {type: actionTypes.LOGIN,
         payload: {
             user: loginData
         }}

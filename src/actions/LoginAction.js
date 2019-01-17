@@ -1,4 +1,4 @@
-import { LOGIN } from './actionTypes';
+import actionTypes from './actionTypes';
 
 export const login = (loginData) => dispatch => {
     return fetch( 'https://ah-backend-athena-staging.herokuapp.com/api/users/login/', {method: 'POST',
@@ -8,7 +8,7 @@ export const login = (loginData) => dispatch => {
     body: JSON.stringify({user: loginData})})
     .then(res => res.json())
     .then(data => dispatch({
-        type: LOGIN,
+        type: actionTypes.LOGIN,
         payload: data
     }));
 }
