@@ -5,15 +5,17 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import store from "./store";
 import NotFound from "./views/notFound/NotFound";
-import LoginView from "./views/LoginView/Login";
-import NavBarView  from "./views/profiles/profileView/NavBar";
+import NavBarView from "./views/profiles/profileView/NavBar";
 import ProfileEdit from "./views/profiles/profileEdit/profileEdit";
-import PasswordResetView from './views/PasswordReset/PasswordReset';
-import PasswordResetConfirmView from './views/PasswordReset/PasswordResetConfirm';
-import EmailPage from './components/PasswordReset/EmailPage'
-import Signup from './views/auth/signup/Signup'
-import Login from './views/auth/Login/Login'
-import Articles from './views/articles/Articles'
+import PasswordResetView from "./views/PasswordReset/PasswordReset";
+import PasswordResetConfirmView from "./views/PasswordReset/PasswordResetConfirm";
+import EmailPage from "./components/PasswordReset/EmailPage";
+import Login from "./views/LoginView/Login";
+import Signup from "./views/SignupView/SignupView";
+import ArticleList from "./views/Articles/articleList/ArticleList";
+import ArticleView from "./views/Articles/articleView/ArticleView";
+import ArticleEdit from "./views/Articles/articleEdit/ArticleEdit";
+import ArticleCreate from "./views/Articles/articleCreate/ArticleCreate";
 
 const Routes = () => (
   <Router>
@@ -21,15 +23,21 @@ const Routes = () => (
       <NavBarView />
       <ToastContainer />
       <Switch>
-        <Route path="/login" component={LoginView} exact />
+        <Route path="/login" component={Login} exact />
+        <Route path="/signup" component={Signup} exact />
         <Route path="/profile/:username" component={ProfileEdit} exact />
-        <Route path='/passwordreset' component={PasswordResetView} exact />
-        <Route path='/password_reset_confirm/:token' component={PasswordResetConfirmView} exact />
-        <Route path='/email-has-been-sent' component={EmailPage} exact />
-        <Route path='/login' component={Login} exact />
-        <Route path='/signup' component={Signup} exact />
-        <Route path='/articles' component={Articles} exact />
-        <Route path='*' component={NotFound} />
+        <Route path="/passwordreset" component={PasswordResetView} exact />
+        <Route
+          path="/password_reset_confirm/:token"
+          component={PasswordResetConfirmView}
+          exact
+        />
+        <Route path="/email-has-been-sent" component={EmailPage} exact />
+        <Route path="/" component={ArticleList} exact />
+        <Route path="/create" component={ArticleCreate} exact />
+        <Route path="/articles/:slug" component={ArticleView} exact />
+        <Route path="/articles/edit/:slug" component={ArticleEdit} />
+        <Route path="*" component={NotFound} />
       </Switch>
     </Provider>
   </Router>

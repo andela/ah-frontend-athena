@@ -1,23 +1,89 @@
-import { CREATE_ARTICLE } from '../actionTypes';
+import actionTypes from "../actionTypes";
 
-const createtArticles = (article) => dispatch => {
-  
-  console.log(article)
-  fetch("http://127.0.0.1:8000/api/articles/", {
+import { BACKEND_DOMAIN, token } from "./index";
+
+const createArticles = article => dispatch => {
+  return fetch(`${BACKEND_DOMAIN}articles/`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      authorization:"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6ImhlbnJ5MSIsImV4cCI6MTU0NzYzOTE4OH0.cHetln69ph1woizIw-Ip10sO_AAyyw6gIozWAO3pTTo"
+      authorization: `Bearer ${token}`
     },
     body: JSON.stringify({ article: article })
   })
     .then(res => res.json())
     .then(res => {
-      console.log(res);
-
-      dispatch({ type: CREATE_ARTICLE, payload: res.articles.results });
+      dispatch({ type: actionTypes.CREATE_ARTICLE, payload: res.article });
     })
-    .catch(err => console.log(err))
+    .catch(error => error);
 };
 
-export {createtArticles}
+const getArticles = () => dispatch => {
+  return fetch(`${BACKEND_DOMAIN}articles`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json"
+    }
+  })
+    .then(res => res.json())
+    .then(res => {
+      dispatch({
+        type: actionTypes.GET_ARTICLES,
+        payload: res.articles.results
+      });
+    })
+    .catch(err => err);
+};
+
+const getSingleArticle = slug => dispatch => {
+  return fetch(`${BACKEND_DOMAIN}articles/${slug}`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json"
+    }
+  })
+    .then(res => res.json())
+    .then(res => {
+      dispatch({ type: actionTypes.GET_SINGLE_ARTICLE, payload: res });
+    })
+    .catch(err => err);
+};
+
+const editArticle = articleData => dispatch => {
+  return fetch(`${BACKEND_DOMAIN}articles/${articleData.slug}/`, {
+    method: "PUT",
+    headers: {
+      "content-type": "application/json",
+      authorization: `Bearer ${token}`
+    },
+    body: JSON.stringify({ article: articleData })
+  })
+    .then(res => res.json())
+    .then(res => {
+      dispatch({ type: actionTypes.EDIT_ARTICLE, payload: res.article });
+    })
+    .catch(err => err);
+};
+
+const deleteArticle = slug => dispatch => {
+  return fetch(`${BACKEND_DOMAIN}articles/${slug}/`, {
+    method: "DELETE",
+    headers: {
+      "content-type": "application/json",
+      authorization: `Bearer ${token}`
+    }
+  })
+    .then(res => res.json())
+    .then(res => {
+      dispatch({ type: actionTypes.DELETE_ARTICLE, payload: res.article });
+    })
+    .catch(err => err);
+};
+
+export {
+  createArticles,
+  getArticles,
+  getSingleArticle,
+  editArticle,
+  deleteArticle
+};

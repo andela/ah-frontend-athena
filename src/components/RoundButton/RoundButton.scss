@@ -1,0 +1,10 @@
+.my-round {
+  border-radius: 20px;
+}
+
+.hover {
+  &:hover {
+    border: 1px solid red !important;
+    color: red;
+  }
+}

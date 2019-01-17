@@ -19,7 +19,7 @@ export class Login extends Component {
       email: "",
       password: "",
       errors: ""
-    }
+    };
   }
   /**
    * Receives props after action is dispatched.
@@ -32,6 +32,7 @@ export class Login extends Component {
     if (errors) {
       this.setState({ errors: errors });
     } else if (user) {
+      // const {user} = nextProps.returnData;
       const { history } = this.props;
       window.localStorage.setItem("token", user.token);
       window.localStorage.setItem("user", JSON.stringify(user));
@@ -47,7 +48,7 @@ export class Login extends Component {
    */
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-  }
+  };
   /**
    * This function is triggered when submitting login form.
    * @param {} event - event from input fields
@@ -62,7 +63,7 @@ export class Login extends Component {
       password: password
     };
     login(loginData);
-  }
+  };
 
   render() {
     const { errors } = this.state;
