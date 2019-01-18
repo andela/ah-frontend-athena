@@ -1,0 +1,1811 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test edit page should render edit page 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <profileEdit
+    Change={[Function]}
+    Submit={[Function]}
+    data={
+      Object {
+        "bio": "",
+        "email": "",
+        "image": "",
+        "username": "",
+      }
+    }
+    onchange={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="modal-dialog text-center"
+      >
+        <div
+          className="col-sm-9 main-section"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="col-12 user-img"
+            >
+              <img
+                alt=""
+                className="rounded-circle"
+                src="default.png"
+              />
+              <div
+                className="edit"
+              >
+                <label
+                  htmlFor="file"
+                >
+                  <i
+                    className="fa fa-camera cam"
+                  />
+                  <input
+                    className="inputfile"
+                    id="file"
+                    name="file"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-12 form-input"
+            >
+              <form
+                onSubmit={[Function]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="form-control"
+                      label="username"
+                      name="username"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="form-control"
+                      disabled={true}
+                      label="email"
+                      name="email"
+                      onChange={[Function]}
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="md-textarea form-control"
+                      label="bio"
+                      name="bio"
+                      onChange={[Function]}
+                      rows="2"
+                      type="textarea"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <button
+                  className="btn btn-primary btn-md"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="col-sm-9 main-section"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="col-12 user-img"
+            >
+              <img
+                alt=""
+                className="rounded-circle"
+                src="default.png"
+              />
+              <div
+                className="edit"
+              >
+                <label
+                  htmlFor="file"
+                >
+                  <i
+                    className="fa fa-camera cam"
+                  />
+                  <input
+                    className="inputfile"
+                    id="file"
+                    name="file"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-12 form-input"
+            >
+              <form
+                onSubmit={[Function]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="form-control"
+                      label="username"
+                      name="username"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="form-control"
+                      disabled={true}
+                      label="email"
+                      name="email"
+                      onChange={[Function]}
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="md-textarea form-control"
+                      label="bio"
+                      name="bio"
+                      onChange={[Function]}
+                      rows="2"
+                      type="textarea"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <button
+                  className="btn btn-primary btn-md"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>,
+        "className": "modal-dialog text-center",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="modal-content"
+          >
+            <div
+              className="col-12 user-img"
+            >
+              <img
+                alt=""
+                className="rounded-circle"
+                src="default.png"
+              />
+              <div
+                className="edit"
+              >
+                <label
+                  htmlFor="file"
+                >
+                  <i
+                    className="fa fa-camera cam"
+                  />
+                  <input
+                    className="inputfile"
+                    id="file"
+                    name="file"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-12 form-input"
+            >
+              <form
+                onSubmit={[Function]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="form-control"
+                      label="username"
+                      name="username"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="form-control"
+                      disabled={true}
+                      label="email"
+                      name="email"
+                      onChange={[Function]}
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <div
+                    className="md-form"
+                  >
+                    <t
+                      className="md-textarea form-control"
+                      label="bio"
+                      name="bio"
+                      onChange={[Function]}
+                      rows="2"
+                      type="textarea"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <button
+                  className="btn btn-primary btn-md"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>,
+          "className": "col-sm-9 main-section",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-12 user-img"
+              >
+                <img
+                  alt=""
+                  className="rounded-circle"
+                  src="default.png"
+                />
+                <div
+                  className="edit"
+                >
+                  <label
+                    htmlFor="file"
+                  >
+                    <i
+                      className="fa fa-camera cam"
+                    />
+                    <input
+                      className="inputfile"
+                      id="file"
+                      name="file"
+                      onChange={[Function]}
+                      type="file"
+                    />
+                  </label>
+                </div>
+              </div>,
+              <div
+                className="col-12 form-input"
+              >
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        label="username"
+                        name="username"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        disabled={true}
+                        label="email"
+                        name="email"
+                        onChange={[Function]}
+                        type="email"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="md-textarea form-control"
+                        label="bio"
+                        name="bio"
+                        onChange={[Function]}
+                        rows="2"
+                        type="textarea"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    className="btn btn-primary btn-md"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>,
+            ],
+            "className": "modal-content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    alt=""
+                    className="rounded-circle"
+                    src="default.png"
+                  />,
+                  <div
+                    className="edit"
+                  >
+                    <label
+                      htmlFor="file"
+                    >
+                      <i
+                        className="fa fa-camera cam"
+                      />
+                      <input
+                        className="inputfile"
+                        id="file"
+                        name="file"
+                        onChange={[Function]}
+                        type="file"
+                      />
+                    </label>
+                  </div>,
+                ],
+                "className": "col-12 user-img",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "",
+                    "className": "rounded-circle",
+                    "src": "default.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <label
+                      htmlFor="file"
+                    >
+                      <i
+                        className="fa fa-camera cam"
+                      />
+                      <input
+                        className="inputfile"
+                        id="file"
+                        name="file"
+                        onChange={[Function]}
+                        type="file"
+                      />
+                    </label>,
+                    "className": "edit",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="fa fa-camera cam"
+                        />,
+                        <input
+                          className="inputfile"
+                          id="file"
+                          name="file"
+                          onChange={[Function]}
+                          type="file"
+                        />,
+                      ],
+                      "htmlFor": "file",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fa fa-camera cam",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "inputfile",
+                          "id": "file",
+                          "name": "file",
+                          "onChange": [Function],
+                          "type": "file",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "label",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        label="username"
+                        name="username"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        disabled={true}
+                        label="email"
+                        name="email"
+                        onChange={[Function]}
+                        type="email"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="md-textarea form-control"
+                        label="bio"
+                        name="bio"
+                        onChange={[Function]}
+                        rows="2"
+                        type="textarea"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    className="btn btn-primary btn-md"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>,
+                "className": "col-12 form-input",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          label="username"
+                          name="username"
+                          onChange={[Function]}
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                    </div>,
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          disabled={true}
+                          label="email"
+                          name="email"
+                          onChange={[Function]}
+                          type="email"
+                          value=""
+                        />
+                      </div>
+                    </div>,
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="md-textarea form-control"
+                          label="bio"
+                          name="bio"
+                          onChange={[Function]}
+                          rows="2"
+                          type="textarea"
+                          value=""
+                        />
+                      </div>
+                    </div>,
+                    <button
+                      className="btn btn-primary btn-md"
+                      type="submit"
+                    >
+                      Submit
+                    </button>,
+                  ],
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          label="username"
+                          name="username"
+                          onChange={[Function]}
+                          type="text"
+                          value=""
+                        />
+                      </div>,
+                      "className": "form-group",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <t
+                          className="form-control"
+                          label="username"
+                          name="username"
+                          onChange={[Function]}
+                          type="text"
+                          value=""
+                        />,
+                        "className": "md-form",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "form-control",
+                          "label": "username",
+                          "name": "username",
+                          "onChange": [Function],
+                          "type": "text",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": "div",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          disabled={true}
+                          label="email"
+                          name="email"
+                          onChange={[Function]}
+                          type="email"
+                          value=""
+                        />
+                      </div>,
+                      "className": "form-group",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <t
+                          className="form-control"
+                          disabled={true}
+                          label="email"
+                          name="email"
+                          onChange={[Function]}
+                          type="email"
+                          value=""
+                        />,
+                        "className": "md-form",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "form-control",
+                          "disabled": true,
+                          "label": "email",
+                          "name": "email",
+                          "onChange": [Function],
+                          "type": "email",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": "div",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div
+                        className="md-form"
+                      >
+                        <t
+                          className="md-textarea form-control"
+                          label="bio"
+                          name="bio"
+                          onChange={[Function]}
+                          rows="2"
+                          type="textarea"
+                          value=""
+                        />
+                      </div>,
+                      "className": "form-group",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <t
+                          className="md-textarea form-control"
+                          label="bio"
+                          name="bio"
+                          onChange={[Function]}
+                          rows="2"
+                          type="textarea"
+                          value=""
+                        />,
+                        "className": "md-form",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "md-textarea form-control",
+                          "label": "bio",
+                          "name": "bio",
+                          "onChange": [Function],
+                          "rows": "2",
+                          "type": "textarea",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": "div",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Submit",
+                      "className": "btn btn-primary btn-md",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "Submit",
+                    "type": "button",
+                  },
+                ],
+                "type": "form",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="modal-dialog text-center"
+        >
+          <div
+            className="col-sm-9 main-section"
+          >
+            <div
+              className="modal-content"
+            >
+              <div
+                className="col-12 user-img"
+              >
+                <img
+                  alt=""
+                  className="rounded-circle"
+                  src="default.png"
+                />
+                <div
+                  className="edit"
+                >
+                  <label
+                    htmlFor="file"
+                  >
+                    <i
+                      className="fa fa-camera cam"
+                    />
+                    <input
+                      className="inputfile"
+                      id="file"
+                      name="file"
+                      onChange={[Function]}
+                      type="file"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div
+                className="col-12 form-input"
+              >
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        label="username"
+                        name="username"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        disabled={true}
+                        label="email"
+                        name="email"
+                        onChange={[Function]}
+                        type="email"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="md-textarea form-control"
+                        label="bio"
+                        name="bio"
+                        onChange={[Function]}
+                        rows="2"
+                        type="textarea"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    className="btn btn-primary btn-md"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="col-sm-9 main-section"
+          >
+            <div
+              className="modal-content"
+            >
+              <div
+                className="col-12 user-img"
+              >
+                <img
+                  alt=""
+                  className="rounded-circle"
+                  src="default.png"
+                />
+                <div
+                  className="edit"
+                >
+                  <label
+                    htmlFor="file"
+                  >
+                    <i
+                      className="fa fa-camera cam"
+                    />
+                    <input
+                      className="inputfile"
+                      id="file"
+                      name="file"
+                      onChange={[Function]}
+                      type="file"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div
+                className="col-12 form-input"
+              >
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        label="username"
+                        name="username"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        disabled={true}
+                        label="email"
+                        name="email"
+                        onChange={[Function]}
+                        type="email"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="md-textarea form-control"
+                        label="bio"
+                        name="bio"
+                        onChange={[Function]}
+                        rows="2"
+                        type="textarea"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    className="btn btn-primary btn-md"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>,
+          "className": "modal-dialog text-center",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="modal-content"
+            >
+              <div
+                className="col-12 user-img"
+              >
+                <img
+                  alt=""
+                  className="rounded-circle"
+                  src="default.png"
+                />
+                <div
+                  className="edit"
+                >
+                  <label
+                    htmlFor="file"
+                  >
+                    <i
+                      className="fa fa-camera cam"
+                    />
+                    <input
+                      className="inputfile"
+                      id="file"
+                      name="file"
+                      onChange={[Function]}
+                      type="file"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div
+                className="col-12 form-input"
+              >
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        label="username"
+                        name="username"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="form-control"
+                        disabled={true}
+                        label="email"
+                        name="email"
+                        onChange={[Function]}
+                        type="email"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <div
+                      className="md-form"
+                    >
+                      <t
+                        className="md-textarea form-control"
+                        label="bio"
+                        name="bio"
+                        onChange={[Function]}
+                        rows="2"
+                        type="textarea"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    className="btn btn-primary btn-md"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>,
+            "className": "col-sm-9 main-section",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-12 user-img"
+                >
+                  <img
+                    alt=""
+                    className="rounded-circle"
+                    src="default.png"
+                  />
+                  <div
+                    className="edit"
+                  >
+                    <label
+                      htmlFor="file"
+                    >
+                      <i
+                        className="fa fa-camera cam"
+                      />
+                      <input
+                        className="inputfile"
+                        id="file"
+                        name="file"
+                        onChange={[Function]}
+                        type="file"
+                      />
+                    </label>
+                  </div>
+                </div>,
+                <div
+                  className="col-12 form-input"
+                >
+                  <form
+                    onSubmit={[Function]}
+                  >
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          label="username"
+                          name="username"
+                          onChange={[Function]}
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          disabled={true}
+                          label="email"
+                          name="email"
+                          onChange={[Function]}
+                          type="email"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="md-textarea form-control"
+                          label="bio"
+                          name="bio"
+                          onChange={[Function]}
+                          rows="2"
+                          type="textarea"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <button
+                      className="btn btn-primary btn-md"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>,
+              ],
+              "className": "modal-content",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <img
+                      alt=""
+                      className="rounded-circle"
+                      src="default.png"
+                    />,
+                    <div
+                      className="edit"
+                    >
+                      <label
+                        htmlFor="file"
+                      >
+                        <i
+                          className="fa fa-camera cam"
+                        />
+                        <input
+                          className="inputfile"
+                          id="file"
+                          name="file"
+                          onChange={[Function]}
+                          type="file"
+                        />
+                      </label>
+                    </div>,
+                  ],
+                  "className": "col-12 user-img",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "className": "rounded-circle",
+                      "src": "default.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <label
+                        htmlFor="file"
+                      >
+                        <i
+                          className="fa fa-camera cam"
+                        />
+                        <input
+                          className="inputfile"
+                          id="file"
+                          name="file"
+                          onChange={[Function]}
+                          type="file"
+                        />
+                      </label>,
+                      "className": "edit",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <i
+                            className="fa fa-camera cam"
+                          />,
+                          <input
+                            className="inputfile"
+                            id="file"
+                            name="file"
+                            onChange={[Function]}
+                            type="file"
+                          />,
+                        ],
+                        "htmlFor": "file",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fa fa-camera cam",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "inputfile",
+                            "id": "file",
+                            "name": "file",
+                            "onChange": [Function],
+                            "type": "file",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <form
+                    onSubmit={[Function]}
+                  >
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          label="username"
+                          name="username"
+                          onChange={[Function]}
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="form-control"
+                          disabled={true}
+                          label="email"
+                          name="email"
+                          onChange={[Function]}
+                          type="email"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <div
+                        className="md-form"
+                      >
+                        <t
+                          className="md-textarea form-control"
+                          label="bio"
+                          name="bio"
+                          onChange={[Function]}
+                          rows="2"
+                          type="textarea"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <button
+                      className="btn btn-primary btn-md"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </form>,
+                  "className": "col-12 form-input",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="form-group"
+                      >
+                        <div
+                          className="md-form"
+                        >
+                          <t
+                            className="form-control"
+                            label="username"
+                            name="username"
+                            onChange={[Function]}
+                            type="text"
+                            value=""
+                          />
+                        </div>
+                      </div>,
+                      <div
+                        className="form-group"
+                      >
+                        <div
+                          className="md-form"
+                        >
+                          <t
+                            className="form-control"
+                            disabled={true}
+                            label="email"
+                            name="email"
+                            onChange={[Function]}
+                            type="email"
+                            value=""
+                          />
+                        </div>
+                      </div>,
+                      <div
+                        className="form-group"
+                      >
+                        <div
+                          className="md-form"
+                        >
+                          <t
+                            className="md-textarea form-control"
+                            label="bio"
+                            name="bio"
+                            onChange={[Function]}
+                            rows="2"
+                            type="textarea"
+                            value=""
+                          />
+                        </div>
+                      </div>,
+                      <button
+                        className="btn btn-primary btn-md"
+                        type="submit"
+                      >
+                        Submit
+                      </button>,
+                    ],
+                    "onSubmit": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <div
+                          className="md-form"
+                        >
+                          <t
+                            className="form-control"
+                            label="username"
+                            name="username"
+                            onChange={[Function]}
+                            type="text"
+                            value=""
+                          />
+                        </div>,
+                        "className": "form-group",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <t
+                            className="form-control"
+                            label="username"
+                            name="username"
+                            onChange={[Function]}
+                            type="text"
+                            value=""
+                          />,
+                          "className": "md-form",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "form-control",
+                            "label": "username",
+                            "name": "username",
+                            "onChange": [Function],
+                            "type": "text",
+                            "value": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "div",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <div
+                          className="md-form"
+                        >
+                          <t
+                            className="form-control"
+                            disabled={true}
+                            label="email"
+                            name="email"
+                            onChange={[Function]}
+                            type="email"
+                            value=""
+                          />
+                        </div>,
+                        "className": "form-group",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <t
+                            className="form-control"
+                            disabled={true}
+                            label="email"
+                            name="email"
+                            onChange={[Function]}
+                            type="email"
+                            value=""
+                          />,
+                          "className": "md-form",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "form-control",
+                            "disabled": true,
+                            "label": "email",
+                            "name": "email",
+                            "onChange": [Function],
+                            "type": "email",
+                            "value": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "div",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <div
+                          className="md-form"
+                        >
+                          <t
+                            className="md-textarea form-control"
+                            label="bio"
+                            name="bio"
+                            onChange={[Function]}
+                            rows="2"
+                            type="textarea"
+                            value=""
+                          />
+                        </div>,
+                        "className": "form-group",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <t
+                            className="md-textarea form-control"
+                            label="bio"
+                            name="bio"
+                            onChange={[Function]}
+                            rows="2"
+                            type="textarea"
+                            value=""
+                          />,
+                          "className": "md-form",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "md-textarea form-control",
+                            "label": "bio",
+                            "name": "bio",
+                            "onChange": [Function],
+                            "rows": "2",
+                            "type": "textarea",
+                            "value": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "div",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Submit",
+                        "className": "btn btn-primary btn-md",
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "rendered": "Submit",
+                      "type": "button",
+                    },
+                  ],
+                  "type": "form",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

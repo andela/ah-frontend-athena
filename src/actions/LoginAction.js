@@ -10,11 +10,13 @@ export const login = loginData => dispatch => {
     body: JSON.stringify({ user: loginData })
   })
     .then(res => res.json())
-    .then(data =>
-      dispatch({
-        type: actionTypes.LOGIN,
-        payload: data
-      })
+    .then(data =>{
+        dispatch({
+            type: actionTypes.LOGIN,
+            payload: data
+          })
+    }
+     
     );
 };
 

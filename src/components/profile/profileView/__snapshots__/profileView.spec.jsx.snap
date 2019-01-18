@@ -1,0 +1,1814 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test profile view page should show profile dropDown 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <viewProfile
+    Click={[Function]}
+    Clicked={[Function]}
+    Edit={[Function]}
+    attribute=""
+    classValue=""
+    imageShow=""
+    profile={
+      Object {
+        "bio": "",
+        "email": "",
+        "image": "",
+        "username": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <nav
+        className="pl-4 navbar bg-primary navbar-expand-lg navbar-dark "
+      >
+        <span
+          className="navbar-brand "
+        >
+           Author's Heaven
+        </span>
+        <div
+          className="collapse navbar-collapse"
+        >
+          <ul
+            className="navbar-nav ml-auto nav-flex-icons  "
+          >
+            <li
+              className="nav-item avatar dropdown"
+            >
+              <a
+                className="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="blank"
+                id="navbarAvatar"
+                onClick={[Function]}
+              >
+                <img
+                  alt=""
+                  className="rounded-circle z-depth-0 nav-img"
+                  src=""
+                />
+              </a>
+              <div
+                className="dropdown-container"
+              >
+                <div
+                  aria-labelledby="navbarAvatar"
+                  className=""
+                >
+                  <img
+                    alt=""
+                    className="rounded-circle drop-img"
+                    src=""
+                  />
+                  <span
+                    className="username"
+                  >
+                    
+                  </span>
+                  <br />
+                  <span
+                    className="email"
+                  >
+                    
+                  </span>
+                  <br />
+                  <br />
+                  <span
+                    className="bio"
+                  >
+                    
+                  </span>
+                  <div
+                    className="btn-container"
+                  >
+                    <div
+                      className="text-center"
+                    >
+                      <button
+                        className="btn btn-danger btn-sm"
+                        name="draft"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        logout
+                      </button>
+                    </div>
+                    <div
+                      className="text-center"
+                    >
+                      <a
+                        href="/"
+                      >
+                        <button
+                          className="btn btn-success btn-sm"
+                          name="publish"
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          edit
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="navbar-brand "
+          >
+             Author's Heaven
+          </span>,
+          <div
+            className="collapse navbar-collapse"
+          >
+            <ul
+              className="navbar-nav ml-auto nav-flex-icons  "
+            >
+              <li
+                className="nav-item avatar dropdown"
+              >
+                <a
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="blank"
+                  id="navbarAvatar"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt=""
+                    className="rounded-circle z-depth-0 nav-img"
+                    src=""
+                  />
+                </a>
+                <div
+                  className="dropdown-container"
+                >
+                  <div
+                    aria-labelledby="navbarAvatar"
+                    className=""
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle drop-img"
+                      src=""
+                    />
+                    <span
+                      className="username"
+                    >
+                      
+                    </span>
+                    <br />
+                    <span
+                      className="email"
+                    >
+                      
+                    </span>
+                    <br />
+                    <br />
+                    <span
+                      className="bio"
+                    >
+                      
+                    </span>
+                    <div
+                      className="btn-container"
+                    >
+                      <div
+                        className="text-center"
+                      >
+                        <button
+                          className="btn btn-danger btn-sm"
+                          name="draft"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          logout
+                        </button>
+                      </div>
+                      <div
+                        className="text-center"
+                      >
+                        <a
+                          href="/"
+                        >
+                          <button
+                            className="btn btn-success btn-sm"
+                            name="publish"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            edit
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>,
+        ],
+        "className": "pl-4 navbar bg-primary navbar-expand-lg navbar-dark ",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Author's Heaven",
+            "className": "navbar-brand ",
+          },
+          "ref": null,
+          "rendered": " Author's Heaven",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul
+              className="navbar-nav ml-auto nav-flex-icons  "
+            >
+              <li
+                className="nav-item avatar dropdown"
+              >
+                <a
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="blank"
+                  id="navbarAvatar"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt=""
+                    className="rounded-circle z-depth-0 nav-img"
+                    src=""
+                  />
+                </a>
+                <div
+                  className="dropdown-container"
+                >
+                  <div
+                    aria-labelledby="navbarAvatar"
+                    className=""
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle drop-img"
+                      src=""
+                    />
+                    <span
+                      className="username"
+                    >
+                      
+                    </span>
+                    <br />
+                    <span
+                      className="email"
+                    >
+                      
+                    </span>
+                    <br />
+                    <br />
+                    <span
+                      className="bio"
+                    >
+                      
+                    </span>
+                    <div
+                      className="btn-container"
+                    >
+                      <div
+                        className="text-center"
+                      >
+                        <button
+                          className="btn btn-danger btn-sm"
+                          name="draft"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          logout
+                        </button>
+                      </div>
+                      <div
+                        className="text-center"
+                      >
+                        <a
+                          href="/"
+                        >
+                          <button
+                            className="btn btn-success btn-sm"
+                            name="publish"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            edit
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>,
+            "className": "collapse navbar-collapse",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <li
+                className="nav-item avatar dropdown"
+              >
+                <a
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="blank"
+                  id="navbarAvatar"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt=""
+                    className="rounded-circle z-depth-0 nav-img"
+                    src=""
+                  />
+                </a>
+                <div
+                  className="dropdown-container"
+                >
+                  <div
+                    aria-labelledby="navbarAvatar"
+                    className=""
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle drop-img"
+                      src=""
+                    />
+                    <span
+                      className="username"
+                    >
+                      
+                    </span>
+                    <br />
+                    <span
+                      className="email"
+                    >
+                      
+                    </span>
+                    <br />
+                    <br />
+                    <span
+                      className="bio"
+                    >
+                      
+                    </span>
+                    <div
+                      className="btn-container"
+                    >
+                      <div
+                        className="text-center"
+                      >
+                        <button
+                          className="btn btn-danger btn-sm"
+                          name="draft"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          logout
+                        </button>
+                      </div>
+                      <div
+                        className="text-center"
+                      >
+                        <a
+                          href="/"
+                        >
+                          <button
+                            className="btn btn-success btn-sm"
+                            name="publish"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            edit
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>,
+              "className": "navbar-nav ml-auto nav-flex-icons  ",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    className="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="blank"
+                    id="navbarAvatar"
+                    onClick={[Function]}
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle z-depth-0 nav-img"
+                      src=""
+                    />
+                  </a>,
+                  <div
+                    className="dropdown-container"
+                  >
+                    <div
+                      aria-labelledby="navbarAvatar"
+                      className=""
+                    >
+                      <img
+                        alt=""
+                        className="rounded-circle drop-img"
+                        src=""
+                      />
+                      <span
+                        className="username"
+                      >
+                        
+                      </span>
+                      <br />
+                      <span
+                        className="email"
+                      >
+                        
+                      </span>
+                      <br />
+                      <br />
+                      <span
+                        className="bio"
+                      >
+                        
+                      </span>
+                      <div
+                        className="btn-container"
+                      >
+                        <div
+                          className="text-center"
+                        >
+                          <button
+                            className="btn btn-danger btn-sm"
+                            name="draft"
+                            onClick={[Function]}
+                            type="submit"
+                          >
+                            logout
+                          </button>
+                        </div>
+                        <div
+                          className="text-center"
+                        >
+                          <a
+                            href="/"
+                          >
+                            <button
+                              className="btn btn-success btn-sm"
+                              name="publish"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              edit
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>,
+                ],
+                "className": "nav-item avatar dropdown",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt=""
+                      className="rounded-circle z-depth-0 nav-img"
+                      src=""
+                    />,
+                    "className": "nav-link dropdown-toggle",
+                    "data-toggle": "dropdown",
+                    "href": "blank",
+                    "id": "navbarAvatar",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "className": "rounded-circle z-depth-0 nav-img",
+                      "src": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      aria-labelledby="navbarAvatar"
+                      className=""
+                    >
+                      <img
+                        alt=""
+                        className="rounded-circle drop-img"
+                        src=""
+                      />
+                      <span
+                        className="username"
+                      >
+                        
+                      </span>
+                      <br />
+                      <span
+                        className="email"
+                      >
+                        
+                      </span>
+                      <br />
+                      <br />
+                      <span
+                        className="bio"
+                      >
+                        
+                      </span>
+                      <div
+                        className="btn-container"
+                      >
+                        <div
+                          className="text-center"
+                        >
+                          <button
+                            className="btn btn-danger btn-sm"
+                            name="draft"
+                            onClick={[Function]}
+                            type="submit"
+                          >
+                            logout
+                          </button>
+                        </div>
+                        <div
+                          className="text-center"
+                        >
+                          <a
+                            href="/"
+                          >
+                            <button
+                              className="btn btn-success btn-sm"
+                              name="publish"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              edit
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>,
+                    "className": "dropdown-container",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "aria-labelledby": "navbarAvatar",
+                      "children": Array [
+                        <img
+                          alt=""
+                          className="rounded-circle drop-img"
+                          src=""
+                        />,
+                        <span
+                          className="username"
+                        >
+                          
+                        </span>,
+                        <br />,
+                        <span
+                          className="email"
+                        >
+                          
+                        </span>,
+                        <br />,
+                        <br />,
+                        <span
+                          className="bio"
+                        >
+                          
+                        </span>,
+                        <div
+                          className="btn-container"
+                        >
+                          <div
+                            className="text-center"
+                          >
+                            <button
+                              className="btn btn-danger btn-sm"
+                              name="draft"
+                              onClick={[Function]}
+                              type="submit"
+                            >
+                              logout
+                            </button>
+                          </div>
+                          <div
+                            className="text-center"
+                          >
+                            <a
+                              href="/"
+                            >
+                              <button
+                                className="btn btn-success btn-sm"
+                                name="publish"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                edit
+                              </button>
+                            </a>
+                          </div>
+                        </div>,
+                      ],
+                      "className": "",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "",
+                          "className": "rounded-circle drop-img",
+                          "src": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "",
+                          "className": "username",
+                        },
+                        "ref": null,
+                        "rendered": "",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "",
+                          "className": "email",
+                        },
+                        "ref": null,
+                        "rendered": "",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "",
+                          "className": "bio",
+                        },
+                        "ref": null,
+                        "rendered": "",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="text-center"
+                            >
+                              <button
+                                className="btn btn-danger btn-sm"
+                                name="draft"
+                                onClick={[Function]}
+                                type="submit"
+                              >
+                                logout
+                              </button>
+                            </div>,
+                            <div
+                              className="text-center"
+                            >
+                              <a
+                                href="/"
+                              >
+                                <button
+                                  className="btn btn-success btn-sm"
+                                  name="publish"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  edit
+                                </button>
+                              </a>
+                            </div>,
+                          ],
+                          "className": "btn-container",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <button
+                                className="btn btn-danger btn-sm"
+                                name="draft"
+                                onClick={[Function]}
+                                type="submit"
+                              >
+                                logout
+                              </button>,
+                              "className": "text-center",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "logout",
+                                "className": "btn btn-danger btn-sm",
+                                "name": "draft",
+                                "onClick": [Function],
+                                "type": "submit",
+                              },
+                              "ref": null,
+                              "rendered": "logout",
+                              "type": "button",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <a
+                                href="/"
+                              >
+                                <button
+                                  className="btn btn-success btn-sm"
+                                  name="publish"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  edit
+                                </button>
+                              </a>,
+                              "className": "text-center",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <button
+                                  className="btn btn-success btn-sm"
+                                  name="publish"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  edit
+                                </button>,
+                                "href": "/",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "edit",
+                                  "className": "btn btn-success btn-sm",
+                                  "name": "publish",
+                                  "onClick": [Function],
+                                  "type": "button",
+                                },
+                                "ref": null,
+                                "rendered": "edit",
+                                "type": "button",
+                              },
+                              "type": "a",
+                            },
+                            "type": "div",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            "type": "ul",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "nav",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <nav
+          className="pl-4 navbar bg-primary navbar-expand-lg navbar-dark "
+        >
+          <span
+            className="navbar-brand "
+          >
+             Author's Heaven
+          </span>
+          <div
+            className="collapse navbar-collapse"
+          >
+            <ul
+              className="navbar-nav ml-auto nav-flex-icons  "
+            >
+              <li
+                className="nav-item avatar dropdown"
+              >
+                <a
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="blank"
+                  id="navbarAvatar"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt=""
+                    className="rounded-circle z-depth-0 nav-img"
+                    src=""
+                  />
+                </a>
+                <div
+                  className="dropdown-container"
+                >
+                  <div
+                    aria-labelledby="navbarAvatar"
+                    className=""
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle drop-img"
+                      src=""
+                    />
+                    <span
+                      className="username"
+                    >
+                      
+                    </span>
+                    <br />
+                    <span
+                      className="email"
+                    >
+                      
+                    </span>
+                    <br />
+                    <br />
+                    <span
+                      className="bio"
+                    >
+                      
+                    </span>
+                    <div
+                      className="btn-container"
+                    >
+                      <div
+                        className="text-center"
+                      >
+                        <button
+                          className="btn btn-danger btn-sm"
+                          name="draft"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          logout
+                        </button>
+                      </div>
+                      <div
+                        className="text-center"
+                      >
+                        <a
+                          href="/"
+                        >
+                          <button
+                            className="btn btn-success btn-sm"
+                            name="publish"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            edit
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="navbar-brand "
+            >
+               Author's Heaven
+            </span>,
+            <div
+              className="collapse navbar-collapse"
+            >
+              <ul
+                className="navbar-nav ml-auto nav-flex-icons  "
+              >
+                <li
+                  className="nav-item avatar dropdown"
+                >
+                  <a
+                    className="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="blank"
+                    id="navbarAvatar"
+                    onClick={[Function]}
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle z-depth-0 nav-img"
+                      src=""
+                    />
+                  </a>
+                  <div
+                    className="dropdown-container"
+                  >
+                    <div
+                      aria-labelledby="navbarAvatar"
+                      className=""
+                    >
+                      <img
+                        alt=""
+                        className="rounded-circle drop-img"
+                        src=""
+                      />
+                      <span
+                        className="username"
+                      >
+                        
+                      </span>
+                      <br />
+                      <span
+                        className="email"
+                      >
+                        
+                      </span>
+                      <br />
+                      <br />
+                      <span
+                        className="bio"
+                      >
+                        
+                      </span>
+                      <div
+                        className="btn-container"
+                      >
+                        <div
+                          className="text-center"
+                        >
+                          <button
+                            className="btn btn-danger btn-sm"
+                            name="draft"
+                            onClick={[Function]}
+                            type="submit"
+                          >
+                            logout
+                          </button>
+                        </div>
+                        <div
+                          className="text-center"
+                        >
+                          <a
+                            href="/"
+                          >
+                            <button
+                              className="btn btn-success btn-sm"
+                              name="publish"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              edit
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>,
+          ],
+          "className": "pl-4 navbar bg-primary navbar-expand-lg navbar-dark ",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Author's Heaven",
+              "className": "navbar-brand ",
+            },
+            "ref": null,
+            "rendered": " Author's Heaven",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className="navbar-nav ml-auto nav-flex-icons  "
+              >
+                <li
+                  className="nav-item avatar dropdown"
+                >
+                  <a
+                    className="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="blank"
+                    id="navbarAvatar"
+                    onClick={[Function]}
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle z-depth-0 nav-img"
+                      src=""
+                    />
+                  </a>
+                  <div
+                    className="dropdown-container"
+                  >
+                    <div
+                      aria-labelledby="navbarAvatar"
+                      className=""
+                    >
+                      <img
+                        alt=""
+                        className="rounded-circle drop-img"
+                        src=""
+                      />
+                      <span
+                        className="username"
+                      >
+                        
+                      </span>
+                      <br />
+                      <span
+                        className="email"
+                      >
+                        
+                      </span>
+                      <br />
+                      <br />
+                      <span
+                        className="bio"
+                      >
+                        
+                      </span>
+                      <div
+                        className="btn-container"
+                      >
+                        <div
+                          className="text-center"
+                        >
+                          <button
+                            className="btn btn-danger btn-sm"
+                            name="draft"
+                            onClick={[Function]}
+                            type="submit"
+                          >
+                            logout
+                          </button>
+                        </div>
+                        <div
+                          className="text-center"
+                        >
+                          <a
+                            href="/"
+                          >
+                            <button
+                              className="btn btn-success btn-sm"
+                              name="publish"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              edit
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>,
+              "className": "collapse navbar-collapse",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <li
+                  className="nav-item avatar dropdown"
+                >
+                  <a
+                    className="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="blank"
+                    id="navbarAvatar"
+                    onClick={[Function]}
+                  >
+                    <img
+                      alt=""
+                      className="rounded-circle z-depth-0 nav-img"
+                      src=""
+                    />
+                  </a>
+                  <div
+                    className="dropdown-container"
+                  >
+                    <div
+                      aria-labelledby="navbarAvatar"
+                      className=""
+                    >
+                      <img
+                        alt=""
+                        className="rounded-circle drop-img"
+                        src=""
+                      />
+                      <span
+                        className="username"
+                      >
+                        
+                      </span>
+                      <br />
+                      <span
+                        className="email"
+                      >
+                        
+                      </span>
+                      <br />
+                      <br />
+                      <span
+                        className="bio"
+                      >
+                        
+                      </span>
+                      <div
+                        className="btn-container"
+                      >
+                        <div
+                          className="text-center"
+                        >
+                          <button
+                            className="btn btn-danger btn-sm"
+                            name="draft"
+                            onClick={[Function]}
+                            type="submit"
+                          >
+                            logout
+                          </button>
+                        </div>
+                        <div
+                          className="text-center"
+                        >
+                          <a
+                            href="/"
+                          >
+                            <button
+                              className="btn btn-success btn-sm"
+                              name="publish"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              edit
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>,
+                "className": "navbar-nav ml-auto nav-flex-icons  ",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <a
+                      className="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="blank"
+                      id="navbarAvatar"
+                      onClick={[Function]}
+                    >
+                      <img
+                        alt=""
+                        className="rounded-circle z-depth-0 nav-img"
+                        src=""
+                      />
+                    </a>,
+                    <div
+                      className="dropdown-container"
+                    >
+                      <div
+                        aria-labelledby="navbarAvatar"
+                        className=""
+                      >
+                        <img
+                          alt=""
+                          className="rounded-circle drop-img"
+                          src=""
+                        />
+                        <span
+                          className="username"
+                        >
+                          
+                        </span>
+                        <br />
+                        <span
+                          className="email"
+                        >
+                          
+                        </span>
+                        <br />
+                        <br />
+                        <span
+                          className="bio"
+                        >
+                          
+                        </span>
+                        <div
+                          className="btn-container"
+                        >
+                          <div
+                            className="text-center"
+                          >
+                            <button
+                              className="btn btn-danger btn-sm"
+                              name="draft"
+                              onClick={[Function]}
+                              type="submit"
+                            >
+                              logout
+                            </button>
+                          </div>
+                          <div
+                            className="text-center"
+                          >
+                            <a
+                              href="/"
+                            >
+                              <button
+                                className="btn btn-success btn-sm"
+                                name="publish"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                edit
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>,
+                  ],
+                  "className": "nav-item avatar dropdown",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt=""
+                        className="rounded-circle z-depth-0 nav-img"
+                        src=""
+                      />,
+                      "className": "nav-link dropdown-toggle",
+                      "data-toggle": "dropdown",
+                      "href": "blank",
+                      "id": "navbarAvatar",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "",
+                        "className": "rounded-circle z-depth-0 nav-img",
+                        "src": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div
+                        aria-labelledby="navbarAvatar"
+                        className=""
+                      >
+                        <img
+                          alt=""
+                          className="rounded-circle drop-img"
+                          src=""
+                        />
+                        <span
+                          className="username"
+                        >
+                          
+                        </span>
+                        <br />
+                        <span
+                          className="email"
+                        >
+                          
+                        </span>
+                        <br />
+                        <br />
+                        <span
+                          className="bio"
+                        >
+                          
+                        </span>
+                        <div
+                          className="btn-container"
+                        >
+                          <div
+                            className="text-center"
+                          >
+                            <button
+                              className="btn btn-danger btn-sm"
+                              name="draft"
+                              onClick={[Function]}
+                              type="submit"
+                            >
+                              logout
+                            </button>
+                          </div>
+                          <div
+                            className="text-center"
+                          >
+                            <a
+                              href="/"
+                            >
+                              <button
+                                className="btn btn-success btn-sm"
+                                name="publish"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                edit
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>,
+                      "className": "dropdown-container",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "aria-labelledby": "navbarAvatar",
+                        "children": Array [
+                          <img
+                            alt=""
+                            className="rounded-circle drop-img"
+                            src=""
+                          />,
+                          <span
+                            className="username"
+                          >
+                            
+                          </span>,
+                          <br />,
+                          <span
+                            className="email"
+                          >
+                            
+                          </span>,
+                          <br />,
+                          <br />,
+                          <span
+                            className="bio"
+                          >
+                            
+                          </span>,
+                          <div
+                            className="btn-container"
+                          >
+                            <div
+                              className="text-center"
+                            >
+                              <button
+                                className="btn btn-danger btn-sm"
+                                name="draft"
+                                onClick={[Function]}
+                                type="submit"
+                              >
+                                logout
+                              </button>
+                            </div>
+                            <div
+                              className="text-center"
+                            >
+                              <a
+                                href="/"
+                              >
+                                <button
+                                  className="btn btn-success btn-sm"
+                                  name="publish"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  edit
+                                </button>
+                              </a>
+                            </div>
+                          </div>,
+                        ],
+                        "className": "",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "",
+                            "className": "rounded-circle drop-img",
+                            "src": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "",
+                            "className": "username",
+                          },
+                          "ref": null,
+                          "rendered": "",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "",
+                            "className": "email",
+                          },
+                          "ref": null,
+                          "rendered": "",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "",
+                            "className": "bio",
+                          },
+                          "ref": null,
+                          "rendered": "",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="text-center"
+                              >
+                                <button
+                                  className="btn btn-danger btn-sm"
+                                  name="draft"
+                                  onClick={[Function]}
+                                  type="submit"
+                                >
+                                  logout
+                                </button>
+                              </div>,
+                              <div
+                                className="text-center"
+                              >
+                                <a
+                                  href="/"
+                                >
+                                  <button
+                                    className="btn btn-success btn-sm"
+                                    name="publish"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    edit
+                                  </button>
+                                </a>
+                              </div>,
+                            ],
+                            "className": "btn-container",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <button
+                                  className="btn btn-danger btn-sm"
+                                  name="draft"
+                                  onClick={[Function]}
+                                  type="submit"
+                                >
+                                  logout
+                                </button>,
+                                "className": "text-center",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "logout",
+                                  "className": "btn btn-danger btn-sm",
+                                  "name": "draft",
+                                  "onClick": [Function],
+                                  "type": "submit",
+                                },
+                                "ref": null,
+                                "rendered": "logout",
+                                "type": "button",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <a
+                                  href="/"
+                                >
+                                  <button
+                                    className="btn btn-success btn-sm"
+                                    name="publish"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    edit
+                                  </button>
+                                </a>,
+                                "className": "text-center",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": <button
+                                    className="btn btn-success btn-sm"
+                                    name="publish"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    edit
+                                  </button>,
+                                  "href": "/",
+                                },
+                                "ref": null,
+                                "rendered": Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "edit",
+                                    "className": "btn btn-success btn-sm",
+                                    "name": "publish",
+                                    "onClick": [Function],
+                                    "type": "button",
+                                  },
+                                  "ref": null,
+                                  "rendered": "edit",
+                                  "type": "button",
+                                },
+                                "type": "a",
+                              },
+                              "type": "div",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "li",
+              },
+              "type": "ul",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "nav",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
