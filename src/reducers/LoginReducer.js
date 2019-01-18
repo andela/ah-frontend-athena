@@ -1,4 +1,4 @@
-import { LOGIN } from '../actions/actionTypes';
+import actionTypes from '../actions/actionTypes';
 
 const initialState = {
     login: {}
@@ -6,12 +6,12 @@ const initialState = {
 
 export default function (state = initialState, action){
     switch(action.type){
-        case LOGIN:
+        case actionTypes.LOGIN:
             return{
                 ...state,
                 login: action.payload
             }
         default:
-            return state;    
+            return state;
     }
 }

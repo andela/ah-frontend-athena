@@ -1,3 +1,7 @@
-export const LOGIN = 'LOGIN';
-
-export default LOGIN;
+const actionTypes = {
+    SIGNUP: 'SIGNUP',
+    LOGIN: 'LOGIN',
+    SIGNUPFAIL: 'SIGNUPFAIL',
+    SIGNUPSUCCESS: 'SIGNUPSUCCESS'
+}
+export default actionTypes;

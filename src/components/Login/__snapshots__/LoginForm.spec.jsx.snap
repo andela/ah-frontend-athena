@@ -54,7 +54,7 @@ ShallowWrapper {
                 </t>
               </div>
               <t
-                className="mx-4 mt-4"
+                className="mx-4 mt-4 grey-text"
                 tag="div"
               >
                 <p
@@ -156,7 +156,7 @@ ShallowWrapper {
           </form>
         </t>
       </t>,
-      "className": "mt-3 pt-6 w-sm-100 w-md-75",
+      "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
       "fluid": false,
       "tag": "div",
     },
@@ -195,7 +195,7 @@ ShallowWrapper {
                 </t>
               </div>
               <t
-                className="mx-4 mt-4"
+                className="mx-4 mt-4 grey-text"
                 tag="div"
               >
                 <p
@@ -326,7 +326,7 @@ ShallowWrapper {
                 </t>
               </div>
               <t
-                className="mx-4 mt-4"
+                className="mx-4 mt-4 grey-text"
                 tag="div"
               >
                 <p
@@ -457,7 +457,7 @@ ShallowWrapper {
                 </t>
               </div>
               <t
-                className="mx-4 mt-4"
+                className="mx-4 mt-4 grey-text"
                 tag="div"
               >
                 <p
@@ -580,7 +580,7 @@ ShallowWrapper {
                   </t>
                 </div>,
                 <t
-                  className="mx-4 mt-4"
+                  className="mx-4 mt-4 grey-text"
                   tag="div"
                 >
                   <p
@@ -832,7 +832,7 @@ ShallowWrapper {
                       </div>
                     </div>,
                   ],
-                  "className": "mx-4 mt-4",
+                  "className": "mx-4 mt-4 grey-text",
                   "tag": "div",
                 },
                 "ref": null,
@@ -1221,7 +1221,7 @@ ShallowWrapper {
                   </t>
                 </div>
                 <t
-                  className="mx-4 mt-4"
+                  className="mx-4 mt-4 grey-text"
                   tag="div"
                 >
                   <p
@@ -1323,7 +1323,7 @@ ShallowWrapper {
             </form>
           </t>
         </t>,
-        "className": "mt-3 pt-6 w-sm-100 w-md-75",
+        "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
         "fluid": false,
         "tag": "div",
       },
@@ -1362,7 +1362,7 @@ ShallowWrapper {
                   </t>
                 </div>
                 <t
-                  className="mx-4 mt-4"
+                  className="mx-4 mt-4 grey-text"
                   tag="div"
                 >
                   <p
@@ -1493,7 +1493,7 @@ ShallowWrapper {
                   </t>
                 </div>
                 <t
-                  className="mx-4 mt-4"
+                  className="mx-4 mt-4 grey-text"
                   tag="div"
                 >
                   <p
@@ -1624,7 +1624,7 @@ ShallowWrapper {
                   </t>
                 </div>
                 <t
-                  className="mx-4 mt-4"
+                  className="mx-4 mt-4 grey-text"
                   tag="div"
                 >
                   <p
@@ -1747,7 +1747,7 @@ ShallowWrapper {
                     </t>
                   </div>,
                   <t
-                    className="mx-4 mt-4"
+                    className="mx-4 mt-4 grey-text"
                     tag="div"
                   >
                     <p
@@ -1999,7 +1999,7 @@ ShallowWrapper {
                         </div>
                       </div>,
                     ],
-                    "className": "mx-4 mt-4",
+                    "className": "mx-4 mt-4 grey-text",
                     "tag": "div",
                   },
                   "ref": null,
