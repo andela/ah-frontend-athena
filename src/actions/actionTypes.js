@@ -1,1 +1,7 @@
-// Action types will be put here
+const actionTypes = {
+    SIGNUP: 'SIGNUP',
+    LOGIN: 'LOGIN',
+    SIGNUPFAIL: 'SIGNUPFAIL',
+    SIGNUPSUCCESS: 'SIGNUPSUCCESS'
+}
+export default actionTypes;
