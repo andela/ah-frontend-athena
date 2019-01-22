@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import ArticleItem from "../../../components/articles/articleItem/ArticleItem";
 import { getArticles } from "../../../actions/articleActions/ArticleActions";
 
+
 export class ArticleList extends Component {
   constructor(props) {
     super(props);
@@ -31,9 +32,11 @@ export class ArticleList extends Component {
       return articles.map(article => {
         return <ArticleItem key={article.id} article={article} />;
       });
+      
     } else {
       return <div />;
     }
+   
   }
 }
 

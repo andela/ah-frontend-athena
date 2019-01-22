@@ -10,9 +10,9 @@ import ProfileEdit from "./views/profiles/profileEdit/profileEdit";
 import PasswordResetView from "./views/PasswordReset/PasswordReset";
 import PasswordResetConfirmView from "./views/PasswordReset/PasswordResetConfirm";
 import EmailPage from "./components/PasswordReset/EmailPage";
-import Login from "./views/LoginView/Login";
 import Signup from "./views/SignupView/SignupView";
 import ArticleList from "./views/Articles/articleList/ArticleList";
+import Login from "./views/LoginView/Login";
 import ArticleView from "./views/Articles/articleView/ArticleView";
 import ArticleEdit from "./views/Articles/articleEdit/ArticleEdit";
 import ArticleCreate from "./views/Articles/articleCreate/ArticleCreate";
@@ -23,7 +23,11 @@ const Routes = () => (
       <NavBarView />
       <ToastContainer />
       <Switch>
-        <Route path="/login" component={Login} exact />
+        <Route
+          path="/login"
+          render={props => <Login {...props} md="6" />}
+          exact
+        />
         <Route path="/signup" component={Signup} exact />
         <Route path="/profile/:username" component={ProfileEdit} exact />
         <Route path="/passwordreset" component={PasswordResetView} exact />

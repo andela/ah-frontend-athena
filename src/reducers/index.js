@@ -6,6 +6,7 @@ import facebookAuthReducer from "./facebookAuthReducer";
 import profileReducer from "./profileReducer";
 import PasswordResetReducer from "./passwordReducers/PasswordResetReducer";
 import articleReducer from "./articleReducers/ArticleReducer";
+import CommentReducer from './CommentReducer';
 
 const rootReducer = combineReducers({
   user: signupReducers,
@@ -14,6 +15,7 @@ const rootReducer = combineReducers({
   googleLogin: googleAuthReducer,
   facebookLogin: facebookAuthReducer,
   profile: profileReducer,
-  passwordResetConfirm: PasswordResetReducer
+  passwordResetConfirm: PasswordResetReducer,
+  comment: CommentReducer
 });
 export default rootReducer;

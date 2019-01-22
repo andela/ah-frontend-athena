@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import renderHTML from "react-render-html";
 import ArticleHeader from "../../../components/articles/articleHeader/ArticleHeader";
+import CommentsList from "../../../components/Comments/CommentsList/CommentsList";
+
 import {
   getSingleArticle,
   deleteArticle
@@ -71,7 +73,7 @@ export class ArticleView extends Component {
       }
       const articleIfo = view_article;
       return (
-        <div className="article-page  container-fluid">
+        <div className="article-page  container-fluid ">
           <ArticleHeader
             className=" w-100 mb-5"
             article={articleIfo}
@@ -100,8 +102,10 @@ export class ArticleView extends Component {
                 </ul>
               </div>
             </div>
-
             <hr />
+          </div>
+          <div className="mt-5 container">
+            <CommentsList slug={view_article.slug} />
           </div>
         </div>
       );
