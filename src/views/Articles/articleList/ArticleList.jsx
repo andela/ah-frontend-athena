@@ -11,6 +11,7 @@ import Search from "../../Search/Search";
 import Load from "../../../components/Load/Load";
 import "./ArticleList.scss";
 
+
 export class ArticleList extends Component {
   constructor(props) {
     super(props);
@@ -82,6 +83,7 @@ export class ArticleList extends Component {
     } else {
       return <Load />;
     }
+   
   }
 }
 

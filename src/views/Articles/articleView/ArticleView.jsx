@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import renderHTML from 'react-render-html';
 import ArticleHeader from '../../../components/articles/articleHeader/ArticleHeader';
+import CommentsList from "../../../components/Comments/CommentsList/CommentsList";
+
 import {
   getSingleArticle,
   deleteArticle,
@@ -19,7 +21,6 @@ import Likes from '../../LikesView/Likes';
 import ModalPage from '../../../components/Likes/LoginModal';
 import RatingView from '../../../components/articles/articleRating/RatingView';
 import TagList from '../../TagList/TagList';
-import CommentsList from '../../../components/Comments/CommentsList/CommentsList';
 import Load from '../../../components/Load/Load';
 
 export class ArticleView extends Component {
