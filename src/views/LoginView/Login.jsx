@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import LoginView from "../../components/Login/LoginForm";
-import login from "../../actions/LoginAction";
+import { login } from "../../actions/LoginAction";
 
 /**
  * Class component that renders the
@@ -19,9 +19,7 @@ export class Login extends Component {
       email: "",
       password: "",
       errors: ""
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    }
   }
   /**
    * Receives props after action is dispatched.
@@ -30,27 +28,32 @@ export class Login extends Component {
    */
   componentWillReceiveProps(nextProps) {
     const { errors } = nextProps.returnData;
+    const { user } = nextProps.returnData;
     if (errors) {
       this.setState({ errors: errors });
-    } else {
-      const { user } = nextProps.returnData;
+    } else if (user) {
       const { history } = this.props;
       window.localStorage.setItem("token", user.token);
-      history.push("/articles");
+      window.localStorage.setItem("user", JSON.stringify(user));
+      window.localStorage.setItem("username", user.username);
+      history.push("/");
+      window.location.reload();
     }
   }
+
   /**
    * Takes in changes from input field and updates state appropiately.
    * @param {} event - events from input fields
    */
-  handleChange(event) {
+  handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   }
   /**
    * This function is triggered when submitting login form.
    * @param {} event - event from input fields
    */
-  handleSubmit(event) {
+  handleSubmit = event => {
+    event.preventDefault();
     const { email, password } = this.state;
     const { login } = this.props;
     event.preventDefault();
