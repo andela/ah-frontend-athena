@@ -13,3 +13,6 @@ checks:
 
 exclude_patterns:
   - "src/serviceWorker.js"
+  - "src/actions/__tests__/"
+  - "src/reducers/__tests__/"
+  - "**/*.spec.jsx"
