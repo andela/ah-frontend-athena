@@ -5,6 +5,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <LoginView
     errors=""
+    facebookLoginHandler={[MockFunction]}
+    googleLoginHandler={[MockFunction]}
     onChange={[MockFunction]}
     onSubmit={[MockFunction]}
   />,
@@ -116,39 +118,7 @@ ShallowWrapper {
                   <div
                     className="row my-3 d-flex justify-content-center"
                   >
-                    <t
-                      className="mr-md-3 z-depth-1a rounded"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text text-center rounded"
-                        icon="facebook"
-                      />
-                    </t>
-                    <t
-                      className="mr-md-3 z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text"
-                        icon="twitter"
-                      />
-                    </t>
-                    <t
-                      className="z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text rounded"
-                        icon="google-plus"
-                      />
-                    </t>
+                    <withRouter(Connect(SocialLoginView)) />
                   </div>
                 </div>
               </t>
@@ -156,7 +126,7 @@ ShallowWrapper {
           </form>
         </t>
       </t>,
-      "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
+      "className": "mt-3 pt-6 w-sm-100 w-md-75",
       "fluid": false,
       "tag": "div",
     },
@@ -257,39 +227,7 @@ ShallowWrapper {
                   <div
                     className="row my-3 d-flex justify-content-center"
                   >
-                    <t
-                      className="mr-md-3 z-depth-1a rounded"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text text-center rounded"
-                        icon="facebook"
-                      />
-                    </t>
-                    <t
-                      className="mr-md-3 z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text"
-                        icon="twitter"
-                      />
-                    </t>
-                    <t
-                      className="z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text rounded"
-                        icon="google-plus"
-                      />
-                    </t>
+                    <withRouter(Connect(SocialLoginView)) />
                   </div>
                 </div>
               </t>
@@ -388,39 +326,7 @@ ShallowWrapper {
                   <div
                     className="row my-3 d-flex justify-content-center"
                   >
-                    <t
-                      className="mr-md-3 z-depth-1a rounded"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text text-center rounded"
-                        icon="facebook"
-                      />
-                    </t>
-                    <t
-                      className="mr-md-3 z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text"
-                        icon="twitter"
-                      />
-                    </t>
-                    <t
-                      className="z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text rounded"
-                        icon="google-plus"
-                      />
-                    </t>
+                    <withRouter(Connect(SocialLoginView)) />
                   </div>
                 </div>
               </t>
@@ -519,39 +425,7 @@ ShallowWrapper {
                   <div
                     className="row my-3 d-flex justify-content-center"
                   >
-                    <t
-                      className="mr-md-3 z-depth-1a rounded"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text text-center rounded"
-                        icon="facebook"
-                      />
-                    </t>
-                    <t
-                      className="mr-md-3 z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text"
-                        icon="twitter"
-                      />
-                    </t>
-                    <t
-                      className="z-depth-1a"
-                      color="white"
-                      tag="button"
-                      type="button"
-                    >
-                      <t
-                        className="blue-text rounded"
-                        icon="google-plus"
-                      />
-                    </t>
+                    <withRouter(Connect(SocialLoginView)) />
                   </div>
                 </div>
               </t>
@@ -642,39 +516,7 @@ ShallowWrapper {
                     <div
                       className="row my-3 d-flex justify-content-center"
                     >
-                      <t
-                        className="mr-md-3 z-depth-1a rounded"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text text-center rounded"
-                          icon="facebook"
-                        />
-                      </t>
-                      <t
-                        className="mr-md-3 z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text"
-                          icon="twitter"
-                        />
-                      </t>
-                      <t
-                        className="z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text rounded"
-                          icon="google-plus"
-                        />
-                      </t>
+                      <withRouter(Connect(SocialLoginView)) />
                     </div>
                   </div>
                 </t>,
@@ -796,39 +638,7 @@ ShallowWrapper {
                       <div
                         className="row my-3 d-flex justify-content-center"
                       >
-                        <t
-                          className="mr-md-3 z-depth-1a rounded"
-                          color="white"
-                          tag="button"
-                          type="button"
-                        >
-                          <t
-                            className="blue-text text-center rounded"
-                            icon="facebook"
-                          />
-                        </t>
-                        <t
-                          className="mr-md-3 z-depth-1a"
-                          color="white"
-                          tag="button"
-                          type="button"
-                        >
-                          <t
-                            className="blue-text"
-                            icon="twitter"
-                          />
-                        </t>
-                        <t
-                          className="z-depth-1a"
-                          color="white"
-                          tag="button"
-                          type="button"
-                        >
-                          <t
-                            className="blue-text rounded"
-                            icon="google-plus"
-                          />
-                        </t>
+                        <withRouter(Connect(SocialLoginView)) />
                       </div>
                     </div>,
                   ],
@@ -942,39 +752,7 @@ ShallowWrapper {
                         <div
                           className="row my-3 d-flex justify-content-center"
                         >
-                          <t
-                            className="mr-md-3 z-depth-1a rounded"
-                            color="white"
-                            tag="button"
-                            type="button"
-                          >
-                            <t
-                              className="blue-text text-center rounded"
-                              icon="facebook"
-                            />
-                          </t>
-                          <t
-                            className="mr-md-3 z-depth-1a"
-                            color="white"
-                            tag="button"
-                            type="button"
-                          >
-                            <t
-                              className="blue-text"
-                              icon="twitter"
-                            />
-                          </t>
-                          <t
-                            className="z-depth-1a"
-                            color="white"
-                            tag="button"
-                            type="button"
-                          >
-                            <t
-                              className="blue-text rounded"
-                              icon="google-plus"
-                            />
-                          </t>
+                          <withRouter(Connect(SocialLoginView)) />
                         </div>,
                       ],
                       "className": "text-center",
@@ -1036,133 +814,19 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
-                            <t
-                              className="mr-md-3 z-depth-1a rounded"
-                              color="white"
-                              tag="button"
-                              type="button"
-                            >
-                              <t
-                                className="blue-text text-center rounded"
-                                icon="facebook"
-                              />
-                            </t>,
-                            <t
-                              className="mr-md-3 z-depth-1a"
-                              color="white"
-                              tag="button"
-                              type="button"
-                            >
-                              <t
-                                className="blue-text"
-                                icon="twitter"
-                              />
-                            </t>,
-                            <t
-                              className="z-depth-1a"
-                              color="white"
-                              tag="button"
-                              type="button"
-                            >
-                              <t
-                                className="blue-text rounded"
-                                icon="google-plus"
-                              />
-                            </t>,
-                          ],
+                          "children": <withRouter(Connect(SocialLoginView)) />,
                           "className": "row my-3 d-flex justify-content-center",
                         },
                         "ref": null,
-                        "rendered": Array [
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": <t
-                                className="blue-text text-center rounded"
-                                icon="facebook"
-                              />,
-                              "className": "mr-md-3 z-depth-1a rounded",
-                              "color": "white",
-                              "tag": "button",
-                              "type": "button",
-                            },
-                            "ref": null,
-                            "rendered": Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "className": "blue-text text-center rounded",
-                                "icon": "facebook",
-                              },
-                              "ref": null,
-                              "rendered": null,
-                              "type": [Function],
-                            },
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": <t
-                                className="blue-text"
-                                icon="twitter"
-                              />,
-                              "className": "mr-md-3 z-depth-1a",
-                              "color": "white",
-                              "tag": "button",
-                              "type": "button",
-                            },
-                            "ref": null,
-                            "rendered": Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "className": "blue-text",
-                                "icon": "twitter",
-                              },
-                              "ref": null,
-                              "rendered": null,
-                              "type": [Function],
-                            },
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": <t
-                                className="blue-text rounded"
-                                icon="google-plus"
-                              />,
-                              "className": "z-depth-1a",
-                              "color": "white",
-                              "tag": "button",
-                              "type": "button",
-                            },
-                            "ref": null,
-                            "rendered": Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "className": "blue-text rounded",
-                                "icon": "google-plus",
-                              },
-                              "ref": null,
-                              "rendered": null,
-                              "type": [Function],
-                            },
-                            "type": [Function],
-                          },
-                        ],
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
                         "type": "div",
                       },
                     ],
@@ -1283,39 +947,7 @@ ShallowWrapper {
                     <div
                       className="row my-3 d-flex justify-content-center"
                     >
-                      <t
-                        className="mr-md-3 z-depth-1a rounded"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text text-center rounded"
-                          icon="facebook"
-                        />
-                      </t>
-                      <t
-                        className="mr-md-3 z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text"
-                          icon="twitter"
-                        />
-                      </t>
-                      <t
-                        className="z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text rounded"
-                          icon="google-plus"
-                        />
-                      </t>
+                      <withRouter(Connect(SocialLoginView)) />
                     </div>
                   </div>
                 </t>
@@ -1323,7 +955,7 @@ ShallowWrapper {
             </form>
           </t>
         </t>,
-        "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
+        "className": "mt-3 pt-6 w-sm-100 w-md-75",
         "fluid": false,
         "tag": "div",
       },
@@ -1424,39 +1056,7 @@ ShallowWrapper {
                     <div
                       className="row my-3 d-flex justify-content-center"
                     >
-                      <t
-                        className="mr-md-3 z-depth-1a rounded"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text text-center rounded"
-                          icon="facebook"
-                        />
-                      </t>
-                      <t
-                        className="mr-md-3 z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text"
-                          icon="twitter"
-                        />
-                      </t>
-                      <t
-                        className="z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text rounded"
-                          icon="google-plus"
-                        />
-                      </t>
+                      <withRouter(Connect(SocialLoginView)) />
                     </div>
                   </div>
                 </t>
@@ -1555,39 +1155,7 @@ ShallowWrapper {
                     <div
                       className="row my-3 d-flex justify-content-center"
                     >
-                      <t
-                        className="mr-md-3 z-depth-1a rounded"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text text-center rounded"
-                          icon="facebook"
-                        />
-                      </t>
-                      <t
-                        className="mr-md-3 z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text"
-                          icon="twitter"
-                        />
-                      </t>
-                      <t
-                        className="z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text rounded"
-                          icon="google-plus"
-                        />
-                      </t>
+                      <withRouter(Connect(SocialLoginView)) />
                     </div>
                   </div>
                 </t>
@@ -1686,39 +1254,7 @@ ShallowWrapper {
                     <div
                       className="row my-3 d-flex justify-content-center"
                     >
-                      <t
-                        className="mr-md-3 z-depth-1a rounded"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text text-center rounded"
-                          icon="facebook"
-                        />
-                      </t>
-                      <t
-                        className="mr-md-3 z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text"
-                          icon="twitter"
-                        />
-                      </t>
-                      <t
-                        className="z-depth-1a"
-                        color="white"
-                        tag="button"
-                        type="button"
-                      >
-                        <t
-                          className="blue-text rounded"
-                          icon="google-plus"
-                        />
-                      </t>
+                      <withRouter(Connect(SocialLoginView)) />
                     </div>
                   </div>
                 </t>
@@ -1809,39 +1345,7 @@ ShallowWrapper {
                       <div
                         className="row my-3 d-flex justify-content-center"
                       >
-                        <t
-                          className="mr-md-3 z-depth-1a rounded"
-                          color="white"
-                          tag="button"
-                          type="button"
-                        >
-                          <t
-                            className="blue-text text-center rounded"
-                            icon="facebook"
-                          />
-                        </t>
-                        <t
-                          className="mr-md-3 z-depth-1a"
-                          color="white"
-                          tag="button"
-                          type="button"
-                        >
-                          <t
-                            className="blue-text"
-                            icon="twitter"
-                          />
-                        </t>
-                        <t
-                          className="z-depth-1a"
-                          color="white"
-                          tag="button"
-                          type="button"
-                        >
-                          <t
-                            className="blue-text rounded"
-                            icon="google-plus"
-                          />
-                        </t>
+                        <withRouter(Connect(SocialLoginView)) />
                       </div>
                     </div>
                   </t>,
@@ -1963,39 +1467,7 @@ ShallowWrapper {
                         <div
                           className="row my-3 d-flex justify-content-center"
                         >
-                          <t
-                            className="mr-md-3 z-depth-1a rounded"
-                            color="white"
-                            tag="button"
-                            type="button"
-                          >
-                            <t
-                              className="blue-text text-center rounded"
-                              icon="facebook"
-                            />
-                          </t>
-                          <t
-                            className="mr-md-3 z-depth-1a"
-                            color="white"
-                            tag="button"
-                            type="button"
-                          >
-                            <t
-                              className="blue-text"
-                              icon="twitter"
-                            />
-                          </t>
-                          <t
-                            className="z-depth-1a"
-                            color="white"
-                            tag="button"
-                            type="button"
-                          >
-                            <t
-                              className="blue-text rounded"
-                              icon="google-plus"
-                            />
-                          </t>
+                          <withRouter(Connect(SocialLoginView)) />
                         </div>
                       </div>,
                     ],
@@ -2109,39 +1581,7 @@ ShallowWrapper {
                           <div
                             className="row my-3 d-flex justify-content-center"
                           >
-                            <t
-                              className="mr-md-3 z-depth-1a rounded"
-                              color="white"
-                              tag="button"
-                              type="button"
-                            >
-                              <t
-                                className="blue-text text-center rounded"
-                                icon="facebook"
-                              />
-                            </t>
-                            <t
-                              className="mr-md-3 z-depth-1a"
-                              color="white"
-                              tag="button"
-                              type="button"
-                            >
-                              <t
-                                className="blue-text"
-                                icon="twitter"
-                              />
-                            </t>
-                            <t
-                              className="z-depth-1a"
-                              color="white"
-                              tag="button"
-                              type="button"
-                            >
-                              <t
-                                className="blue-text rounded"
-                                icon="google-plus"
-                              />
-                            </t>
+                            <withRouter(Connect(SocialLoginView)) />
                           </div>,
                         ],
                         "className": "text-center",
@@ -2203,133 +1643,19 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": Array [
-                              <t
-                                className="mr-md-3 z-depth-1a rounded"
-                                color="white"
-                                tag="button"
-                                type="button"
-                              >
-                                <t
-                                  className="blue-text text-center rounded"
-                                  icon="facebook"
-                                />
-                              </t>,
-                              <t
-                                className="mr-md-3 z-depth-1a"
-                                color="white"
-                                tag="button"
-                                type="button"
-                              >
-                                <t
-                                  className="blue-text"
-                                  icon="twitter"
-                                />
-                              </t>,
-                              <t
-                                className="z-depth-1a"
-                                color="white"
-                                tag="button"
-                                type="button"
-                              >
-                                <t
-                                  className="blue-text rounded"
-                                  icon="google-plus"
-                                />
-                              </t>,
-                            ],
+                            "children": <withRouter(Connect(SocialLoginView)) />,
                             "className": "row my-3 d-flex justify-content-center",
                           },
                           "ref": null,
-                          "rendered": Array [
-                            Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "children": <t
-                                  className="blue-text text-center rounded"
-                                  icon="facebook"
-                                />,
-                                "className": "mr-md-3 z-depth-1a rounded",
-                                "color": "white",
-                                "tag": "button",
-                                "type": "button",
-                              },
-                              "ref": null,
-                              "rendered": Object {
-                                "instance": null,
-                                "key": undefined,
-                                "nodeType": "class",
-                                "props": Object {
-                                  "className": "blue-text text-center rounded",
-                                  "icon": "facebook",
-                                },
-                                "ref": null,
-                                "rendered": null,
-                                "type": [Function],
-                              },
-                              "type": [Function],
-                            },
-                            Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "children": <t
-                                  className="blue-text"
-                                  icon="twitter"
-                                />,
-                                "className": "mr-md-3 z-depth-1a",
-                                "color": "white",
-                                "tag": "button",
-                                "type": "button",
-                              },
-                              "ref": null,
-                              "rendered": Object {
-                                "instance": null,
-                                "key": undefined,
-                                "nodeType": "class",
-                                "props": Object {
-                                  "className": "blue-text",
-                                  "icon": "twitter",
-                                },
-                                "ref": null,
-                                "rendered": null,
-                                "type": [Function],
-                              },
-                              "type": [Function],
-                            },
-                            Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "children": <t
-                                  className="blue-text rounded"
-                                  icon="google-plus"
-                                />,
-                                "className": "z-depth-1a",
-                                "color": "white",
-                                "tag": "button",
-                                "type": "button",
-                              },
-                              "ref": null,
-                              "rendered": Object {
-                                "instance": null,
-                                "key": undefined,
-                                "nodeType": "class",
-                                "props": Object {
-                                  "className": "blue-text rounded",
-                                  "icon": "google-plus",
-                                },
-                                "ref": null,
-                                "rendered": null,
-                                "type": [Function],
-                              },
-                              "type": [Function],
-                            },
-                          ],
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
                           "type": "div",
                         },
                       ],

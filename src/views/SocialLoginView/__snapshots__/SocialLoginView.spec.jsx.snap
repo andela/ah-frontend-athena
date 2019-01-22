@@ -1,13 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test signup view should SignupComponent match the snapshot 1`] = `
+exports[`Test SocialLoginView stateful component should match the SocialLoginView snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Signup
-    data={Object {}}
-    history={Object {}}
-    mockSignUpFn={[MockFunction]}
-    signUp={[Function]}
+  Symbol(enzyme.__unrendered__): <SocialLoginView
+    facebookLogin={
+      Object {
+        "responseData": Object {
+          "errors": Object {
+            "auth_token": Array [
+              "faked facebook login error",
+            ],
+          },
+          "user": Object {
+            "jwt_token": "mocked token",
+          },
+        },
+      }
+    }
+    facebookLoginActionFunction={[MockFunction]}
+    googleLogin={
+      Object {
+        "responseData": Object {
+          "errors": Object {
+            "auth_token": Array [
+              "faked facebook login error",
+            ],
+          },
+          "user": Object {
+            "jwt_token": "mocked token",
+          },
+        },
+      }
+    }
+    googleLoginActionFunction={[MockFunction]}
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,10 +53,8 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "errors": Object {},
-      "onChange": [Function],
-      "onClick": undefined,
-      "onSubmit": [Function],
+      "facebookLoginHandler": [Function],
+      "googleLoginHandler": [Function],
     },
     "ref": null,
     "rendered": null,
@@ -37,10 +66,8 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "errors": Object {},
-        "onChange": [Function],
-        "onClick": undefined,
-        "onSubmit": [Function],
+        "facebookLoginHandler": [Function],
+        "googleLoginHandler": [Function],
       },
       "ref": null,
       "rendered": null,
