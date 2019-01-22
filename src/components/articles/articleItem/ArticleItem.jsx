@@ -21,6 +21,7 @@ export const getDate = str => {
 };
 const ArticleItem = props => {
   const { article } = props;
+  
   return (
     <MDBContainer className="container">
       <MDBCard className="my-2 px-5 pb-5">
