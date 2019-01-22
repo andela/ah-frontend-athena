@@ -12,10 +12,6 @@ import {
   unFollowUser,
   getFollowing
 } from "../../../actions/userFollowActions";
-<<<<<<< HEAD
-=======
-import RoundButton from "../../../components/RoundButton/RoundButton";
->>>>>>> feat(user following): Users should be able to follow each other
 import "./ArticleView.scss";
 import ShareButtons from "../../../components/ShareArticleButtons/ShareArticleButtons";
 import Likes from "../../LikesView/Likes";
@@ -44,12 +40,8 @@ export class ArticleView extends Component {
       },
       classValue: "btn primary-color btn-sm btn-outline-primary",
       text: "Follow",
-<<<<<<< HEAD
       following: false,
       modal: false
-=======
-      following: false
->>>>>>> feat(user following): Users should be able to follow each other
     };
   }
 
@@ -113,7 +105,6 @@ export class ArticleView extends Component {
     const { following } = this.state;
     const { followUser } = this.props;
     const { unFollowUser } = this.props;
-<<<<<<< HEAD
     const token = window.localStorage.getItem("token");
 
     if (token) {
@@ -134,15 +125,6 @@ export class ArticleView extends Component {
     this.setState({
       modal: !modal
     });
-=======
-
-    const username = view_article.author.username;
-    if (following) {
-      unFollowUser(username);
-    } else {
-      followUser(username);
-    }
->>>>>>> feat(user following): Users should be able to follow each other
   };
   handleDelete = event => {
     event.preventDefault();
@@ -159,15 +141,9 @@ export class ArticleView extends Component {
   };
 
   render() {
-<<<<<<< HEAD
     const { view_article, classValue, text, modal } = this.state;
     const { history } = this.props;
     const url = window.location.pathname;
-=======
-    const { view_article } = this.state;
-    const { classValue } = this.state;
-    const { text } = this.state;
->>>>>>> feat(user following): Users should be able to follow each other
     if (
       Object.keys(view_article).length > 0 &&
       !view_article.errors &&
