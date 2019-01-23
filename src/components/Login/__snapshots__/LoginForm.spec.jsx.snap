@@ -107,12 +107,11 @@ ShallowWrapper {
                   <p
                     className="font-small blue-text d-flex justify-content-end pb-3"
                   >
-                    Forgot
                     <a
                       className="blue-text ml-1"
                       href="/passwordreset"
                     >
-                      Password?
+                      Forgot Password?
                     </a>
                   </p>
                   <div
@@ -126,7 +125,7 @@ ShallowWrapper {
           </form>
         </t>
       </t>,
-      "className": "mt-3 pt-6 w-sm-100 w-md-75",
+      "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
       "fluid": false,
       "tag": "div",
     },
@@ -216,12 +215,11 @@ ShallowWrapper {
                   <p
                     className="font-small blue-text d-flex justify-content-end pb-3"
                   >
-                    Forgot
                     <a
                       className="blue-text ml-1"
                       href="/passwordreset"
                     >
-                      Password?
+                      Forgot Password?
                     </a>
                   </p>
                   <div
@@ -315,12 +313,11 @@ ShallowWrapper {
                   <p
                     className="font-small blue-text d-flex justify-content-end pb-3"
                   >
-                    Forgot
                     <a
                       className="blue-text ml-1"
                       href="/passwordreset"
                     >
-                      Password?
+                      Forgot Password?
                     </a>
                   </p>
                   <div
@@ -414,12 +411,11 @@ ShallowWrapper {
                   <p
                     className="font-small blue-text d-flex justify-content-end pb-3"
                   >
-                    Forgot
                     <a
                       className="blue-text ml-1"
                       href="/passwordreset"
                     >
-                      Password?
+                      Forgot Password?
                     </a>
                   </p>
                   <div
@@ -505,12 +501,11 @@ ShallowWrapper {
                     <p
                       className="font-small blue-text d-flex justify-content-end pb-3"
                     >
-                      Forgot
                       <a
                         className="blue-text ml-1"
                         href="/passwordreset"
                       >
-                        Password?
+                        Forgot Password?
                       </a>
                     </p>
                     <div
@@ -627,12 +622,11 @@ ShallowWrapper {
                       <p
                         className="font-small blue-text d-flex justify-content-end pb-3"
                       >
-                        Forgot
                         <a
                           className="blue-text ml-1"
                           href="/passwordreset"
                         >
-                          Password?
+                          Forgot Password?
                         </a>
                       </p>
                       <div
@@ -741,12 +735,11 @@ ShallowWrapper {
                         <p
                           className="font-small blue-text d-flex justify-content-end pb-3"
                         >
-                          Forgot
                           <a
                             className="blue-text ml-1"
                             href="/passwordreset"
                           >
-                            Password?
+                            Forgot Password?
                           </a>
                         </p>,
                         <div
@@ -779,34 +772,28 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
-                            "Forgot",
-                            <a
-                              className="blue-text ml-1"
-                              href="/passwordreset"
-                            >
-                              Password?
-                            </a>,
-                          ],
+                          "children": <a
+                            className="blue-text ml-1"
+                            href="/passwordreset"
+                          >
+                            Forgot Password?
+                          </a>,
                           "className": "font-small blue-text d-flex justify-content-end pb-3",
                         },
                         "ref": null,
-                        "rendered": Array [
-                          "Forgot",
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": "Password?",
-                              "className": "blue-text ml-1",
-                              "href": "/passwordreset",
-                            },
-                            "ref": null,
-                            "rendered": "Password?",
-                            "type": "a",
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Forgot Password?",
+                            "className": "blue-text ml-1",
+                            "href": "/passwordreset",
                           },
-                        ],
+                          "ref": null,
+                          "rendered": "Forgot Password?",
+                          "type": "a",
+                        },
                         "type": "p",
                       },
                       Object {
@@ -936,12 +923,11 @@ ShallowWrapper {
                     <p
                       className="font-small blue-text d-flex justify-content-end pb-3"
                     >
-                      Forgot
                       <a
                         className="blue-text ml-1"
                         href="/passwordreset"
                       >
-                        Password?
+                        Forgot Password?
                       </a>
                     </p>
                     <div
@@ -955,7 +941,7 @@ ShallowWrapper {
             </form>
           </t>
         </t>,
-        "className": "mt-3 pt-6 w-sm-100 w-md-75",
+        "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
         "fluid": false,
         "tag": "div",
       },
@@ -1045,12 +1031,11 @@ ShallowWrapper {
                     <p
                       className="font-small blue-text d-flex justify-content-end pb-3"
                     >
-                      Forgot
                       <a
                         className="blue-text ml-1"
                         href="/passwordreset"
                       >
-                        Password?
+                        Forgot Password?
                       </a>
                     </p>
                     <div
@@ -1144,12 +1129,11 @@ ShallowWrapper {
                     <p
                       className="font-small blue-text d-flex justify-content-end pb-3"
                     >
-                      Forgot
                       <a
                         className="blue-text ml-1"
                         href="/passwordreset"
                       >
-                        Password?
+                        Forgot Password?
                       </a>
                     </p>
                     <div
@@ -1243,12 +1227,11 @@ ShallowWrapper {
                     <p
                       className="font-small blue-text d-flex justify-content-end pb-3"
                     >
-                      Forgot
                       <a
                         className="blue-text ml-1"
                         href="/passwordreset"
                       >
-                        Password?
+                        Forgot Password?
                       </a>
                     </p>
                     <div
@@ -1334,12 +1317,11 @@ ShallowWrapper {
                       <p
                         className="font-small blue-text d-flex justify-content-end pb-3"
                       >
-                        Forgot
                         <a
                           className="blue-text ml-1"
                           href="/passwordreset"
                         >
-                          Password?
+                          Forgot Password?
                         </a>
                       </p>
                       <div
@@ -1456,12 +1438,11 @@ ShallowWrapper {
                         <p
                           className="font-small blue-text d-flex justify-content-end pb-3"
                         >
-                          Forgot
                           <a
                             className="blue-text ml-1"
                             href="/passwordreset"
                           >
-                            Password?
+                            Forgot Password?
                           </a>
                         </p>
                         <div
@@ -1570,12 +1551,11 @@ ShallowWrapper {
                           <p
                             className="font-small blue-text d-flex justify-content-end pb-3"
                           >
-                            Forgot
                             <a
                               className="blue-text ml-1"
                               href="/passwordreset"
                             >
-                              Password?
+                              Forgot Password?
                             </a>
                           </p>,
                           <div
@@ -1608,34 +1588,28 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": Array [
-                              "Forgot",
-                              <a
-                                className="blue-text ml-1"
-                                href="/passwordreset"
-                              >
-                                Password?
-                              </a>,
-                            ],
+                            "children": <a
+                              className="blue-text ml-1"
+                              href="/passwordreset"
+                            >
+                              Forgot Password?
+                            </a>,
                             "className": "font-small blue-text d-flex justify-content-end pb-3",
                           },
                           "ref": null,
-                          "rendered": Array [
-                            "Forgot",
-                            Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": "Password?",
-                                "className": "blue-text ml-1",
-                                "href": "/passwordreset",
-                              },
-                              "ref": null,
-                              "rendered": "Password?",
-                              "type": "a",
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Forgot Password?",
+                              "className": "blue-text ml-1",
+                              "href": "/passwordreset",
                             },
-                          ],
+                            "ref": null,
+                            "rendered": "Forgot Password?",
+                            "type": "a",
+                          },
                           "type": "p",
                         },
                         Object {
