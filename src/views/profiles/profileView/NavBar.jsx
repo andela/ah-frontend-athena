@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import propTypes from 'prop-types'
+import propTypes from "prop-types";
 import ViewProfile from "../../../components/profile/profileView/profileView";
 import { getProfile } from "../../../actions/profileActions";
 import avatar from "../../../components/profile/img/default.png";
@@ -30,14 +30,14 @@ export class NavBar extends Component {
   componentDidMount() {
     const username = window.localStorage.getItem("username");
     const token = window.localStorage.getItem("token");
-    const {isShow} = this.state
+    const { isShow } = this.state;
 
     if (token) {
-      const {getProfile} = this.props
+      const { getProfile } = this.props;
       getProfile(username);
-      this.setState({ classValue: ""});
+      this.setState({ classValue: "" });
     } else {
-      this.setState({ classValue: "d-none"});
+      this.setState({ classValue: "d-none" });
     }
     const cls = "dropdown-menu dropdown-menu-left dropdown-secondary ";
     if (isShow) {
@@ -48,29 +48,29 @@ export class NavBar extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    let {profile} = nextProps;
+    let { profile } = nextProps;
     let username = profile.username;
     if (username) {
       this.sortImage(nextProps);
       const bio = profile.bio;
       let profileObject = {
-          ...nextProps.profile,
-          bio: limitBio(bio)
-        };
+        ...nextProps.profile,
+        bio: limitBio(bio)
+      };
       this.setState({ profile: profileObject });
       this.setState({ classValue: "" });
       if (!profile.username) {
-        const {getProfile} = this.props
+        const { getProfile } = this.props;
         getProfile(username);
       }
     } else {
-      this.setState({ classValue: "d-none"});
+      this.setState({ classValue: "d-none" });
     }
   }
   toggleNow = e => {
     e.preventDefault();
     const cls = "dropdown-menu dropdown-menu-left dropdown-secondary ";
-    const {isShow} = this.state
+    const { isShow } = this.state;
     if (isShow) {
       this.setState({ show: cls + "show", isShow: false });
     } else {
@@ -93,7 +93,7 @@ export class NavBar extends Component {
   };
   Edit = e => {
     e.preventDefault();
-    const {image, profile} = this.state
+    const { image, profile } = this.state;
     const image_url = image;
     const username = profile.username;
     if (image_url === "") {
@@ -107,10 +107,10 @@ export class NavBar extends Component {
     }
   };
   render() {
-    const {image} = this.state;
-    const {classValue} = this.state;
-    const {show} = this.state;
-    const {profile} = this.state
+    const { image } = this.state;
+    const { classValue } = this.state;
+    const { show } = this.state;
+    const { profile } = this.state;
     return (
       <ViewProfile
         imageShow={image}
@@ -128,11 +128,11 @@ export class NavBar extends Component {
 NavBar.propTypes = {
   profile: propTypes.shape({}),
   getProfile: propTypes.func
-}
+};
 NavBar.defaultProps = {
   profile: {},
-  getProfile: ()=>{},
-}
+  getProfile: () => {}
+};
 export const mapStateToProps = state => {
   return {
     profile: state.profile.data

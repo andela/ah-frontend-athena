@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TagList /> matches snapshort 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TagList
+    getArticles={[Function]}
+    handleClick={[Function]}
+    tags={
+      Array [
+        "magic",
+        "angular",
+        "andela",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay"
+          name="magic"
+          onClick={[Function]}
+          tabIndex={-1}
+          to="/articles/?tag=magic"
+          type="button"
+        >
+          magic
+        </button>,
+        <button
+          className="badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay"
+          name="angular"
+          onClick={[Function]}
+          tabIndex={-1}
+          to="/articles/?tag=angular"
+          type="button"
+        >
+          angular
+        </button>,
+        <button
+          className="badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay"
+          name="andela"
+          onClick={[Function]}
+          tabIndex={-1}
+          to="/articles/?tag=andela"
+          type="button"
+        >
+          andela
+        </button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "magic",
+        "nodeType": "host",
+        "props": Object {
+          "children": "magic",
+          "className": "badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay",
+          "name": "magic",
+          "onClick": [Function],
+          "tabIndex": -1,
+          "to": "/articles/?tag=magic",
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "magic",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": "angular",
+        "nodeType": "host",
+        "props": Object {
+          "children": "angular",
+          "className": "badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay",
+          "name": "angular",
+          "onClick": [Function],
+          "tabIndex": -1,
+          "to": "/articles/?tag=angular",
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "angular",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": "andela",
+        "nodeType": "host",
+        "props": Object {
+          "children": "andela",
+          "className": "badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay",
+          "name": "andela",
+          "onClick": [Function],
+          "tabIndex": -1,
+          "to": "/articles/?tag=andela",
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "andela",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay"
+            name="magic"
+            onClick={[Function]}
+            tabIndex={-1}
+            to="/articles/?tag=magic"
+            type="button"
+          >
+            magic
+          </button>,
+          <button
+            className="badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay"
+            name="angular"
+            onClick={[Function]}
+            tabIndex={-1}
+            to="/articles/?tag=angular"
+            type="button"
+          >
+            angular
+          </button>,
+          <button
+            className="badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay"
+            name="andela"
+            onClick={[Function]}
+            tabIndex={-1}
+            to="/articles/?tag=andela"
+            type="button"
+          >
+            andela
+          </button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "magic",
+          "nodeType": "host",
+          "props": Object {
+            "children": "magic",
+            "className": "badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay",
+            "name": "magic",
+            "onClick": [Function],
+            "tabIndex": -1,
+            "to": "/articles/?tag=magic",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "magic",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "angular",
+          "nodeType": "host",
+          "props": Object {
+            "children": "angular",
+            "className": "badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay",
+            "name": "angular",
+            "onClick": [Function],
+            "tabIndex": -1,
+            "to": "/articles/?tag=angular",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "angular",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "andela",
+          "nodeType": "host",
+          "props": Object {
+            "children": "andela",
+            "className": "badge btn-click badge-pill p-2 z-depth-0 badge-primary h4 ml-1 px-3 view overlay",
+            "name": "andela",
+            "onClick": [Function],
+            "tabIndex": -1,
+            "to": "/articles/?tag=andela",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "andela",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

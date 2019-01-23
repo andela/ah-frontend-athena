@@ -4,12 +4,11 @@ import Routes from "./Router";
 import "./App.scss";
 import "react-toastify/dist/ReactToastify.min.css";
 
-
 /**
-   * create the main component
-   * @returns {<Routes />} route component
-   * @argument {props} props
-   */
+ * create the main component
+ * @returns {<Routes />} route component
+ * @argument {props} props
+ */
 
 const App = () => (
   <div>
@@ -17,7 +16,5 @@ const App = () => (
     <ToastContainer />
   </div>
 );
-
-
 
 export default App;

@@ -13,16 +13,32 @@ code {
     monospace;
 }
 
-$primary-color: #1BA1E2;
-.primary-color {
-    background-color: #1BA1E2!important;
+$primary-color: #1ba1e2;
+.primary-text-color {
+  color: #1ba1e2 !important;
 }
 
 .bg-primary {
-  background-color: #1BA1E2!important;
+  background-color: #1ba1e2 !important;
 }
 
-$primary-color-dark: #1BA1E2;
+$primary-color-dark: #1ba1e2;
 .primary-color-dark {
-    background-color: #1BA1E2!important;
+  background-color: #1ba1e2 !important;
+  $secondary-color: #6c757d;
+  .secondary-color {
+    background-color: #6c757d !important;
+  }
+}
+.bg-secondary {
+  background-color: #eeeeee !important;
+}
+
+$secondary-color-dark: #6c757d;
+.secondary-color-dark {
+  background-color: #6c757d !important;
+}
+
+.badge-primary {
+  background-color: #1ba1e2 !important;
 }

@@ -1,0 +1,1335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleItem /> matches snapshort 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleItem
+    article={
+      Object {
+        "author": Object {
+          "created_at": 2019-01-19T10:42:09.625Z,
+          "username": "",
+        },
+        "body": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <t
+        className="my-3 pb-5 mw-100"
+        tag="div"
+      >
+        <t
+          tag="div"
+        >
+          <t
+            tag="div"
+          >
+            <t
+              lg="5"
+              md={null}
+              sm={null}
+              tag="div"
+              xl="4"
+              xs={null}
+            >
+              <t
+                cascade={false}
+                className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                hover={true}
+                rounded={false}
+                src=""
+                tag="div"
+                waves={false}
+                zoom={false}
+              >
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                />
+                <a
+                  href="#!"
+                >
+                  <t
+                    className=""
+                    overlay="white-slight"
+                    pattern=""
+                    tag="div"
+                  />
+                </a>
+              </t>
+            </t>
+            <t
+              lg="7"
+              md={null}
+              sm={null}
+              tag="div"
+              xl="8"
+              xs={null}
+            >
+              <h3
+                className="font-weight-bold mb-3 p-0"
+              >
+                <strong />
+              </h3>
+              <p
+                className="dark-grey-text"
+              />
+              <p>
+                by
+                <a
+                  className="font-weight-bold"
+                  href="#!"
+                >
+                  
+                </a>
+                NaN/NaN/NaN
+              </p>
+              <div
+                className="my-2"
+              >
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/articles/undefined"
+                >
+                   
+                  Read more....
+                </NavLink>
+              </div>
+            </t>
+          </t>
+        </t>
+      </t>,
+      "className": "w-100 ",
+      "fluid": true,
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          tag="div"
+        >
+          <t
+            tag="div"
+          >
+            <t
+              lg="5"
+              md={null}
+              sm={null}
+              tag="div"
+              xl="4"
+              xs={null}
+            >
+              <t
+                cascade={false}
+                className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                hover={true}
+                rounded={false}
+                src=""
+                tag="div"
+                waves={false}
+                zoom={false}
+              >
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                />
+                <a
+                  href="#!"
+                >
+                  <t
+                    className=""
+                    overlay="white-slight"
+                    pattern=""
+                    tag="div"
+                  />
+                </a>
+              </t>
+            </t>
+            <t
+              lg="7"
+              md={null}
+              sm={null}
+              tag="div"
+              xl="8"
+              xs={null}
+            >
+              <h3
+                className="font-weight-bold mb-3 p-0"
+              >
+                <strong />
+              </h3>
+              <p
+                className="dark-grey-text"
+              />
+              <p>
+                by
+                <a
+                  className="font-weight-bold"
+                  href="#!"
+                >
+                  
+                </a>
+                NaN/NaN/NaN
+              </p>
+              <div
+                className="my-2"
+              >
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/articles/undefined"
+                >
+                   
+                  Read more....
+                </NavLink>
+              </div>
+            </t>
+          </t>
+        </t>,
+        "className": "my-3 pb-5 mw-100",
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <t
+            tag="div"
+          >
+            <t
+              lg="5"
+              md={null}
+              sm={null}
+              tag="div"
+              xl="4"
+              xs={null}
+            >
+              <t
+                cascade={false}
+                className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                hover={true}
+                rounded={false}
+                src=""
+                tag="div"
+                waves={false}
+                zoom={false}
+              >
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                />
+                <a
+                  href="#!"
+                >
+                  <t
+                    className=""
+                    overlay="white-slight"
+                    pattern=""
+                    tag="div"
+                  />
+                </a>
+              </t>
+            </t>
+            <t
+              lg="7"
+              md={null}
+              sm={null}
+              tag="div"
+              xl="8"
+              xs={null}
+            >
+              <h3
+                className="font-weight-bold mb-3 p-0"
+              >
+                <strong />
+              </h3>
+              <p
+                className="dark-grey-text"
+              />
+              <p>
+                by
+                <a
+                  className="font-weight-bold"
+                  href="#!"
+                >
+                  
+                </a>
+                NaN/NaN/NaN
+              </p>
+              <div
+                className="my-2"
+              >
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/articles/undefined"
+                >
+                   
+                  Read more....
+                </NavLink>
+              </div>
+            </t>
+          </t>,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <t
+                lg="5"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="4"
+                xs={null}
+              >
+                <t
+                  cascade={false}
+                  className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                  hover={true}
+                  rounded={false}
+                  src=""
+                  tag="div"
+                  waves={false}
+                  zoom={false}
+                >
+                  <img
+                    alt=""
+                    className="img-fluid h-100 w-100"
+                    src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                  />
+                  <a
+                    href="#!"
+                  >
+                    <t
+                      className=""
+                      overlay="white-slight"
+                      pattern=""
+                      tag="div"
+                    />
+                  </a>
+                </t>
+              </t>,
+              <t
+                lg="7"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="8"
+                xs={null}
+              >
+                <h3
+                  className="font-weight-bold mb-3 p-0"
+                >
+                  <strong />
+                </h3>
+                <p
+                  className="dark-grey-text"
+                />
+                <p>
+                  by
+                  <a
+                    className="font-weight-bold"
+                    href="#!"
+                  >
+                    
+                  </a>
+                  NaN/NaN/NaN
+                </p>
+                <div
+                  className="my-2"
+                >
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/articles/undefined"
+                  >
+                     
+                    Read more....
+                  </NavLink>
+                </div>
+              </t>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <t
+                  cascade={false}
+                  className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                  hover={true}
+                  rounded={false}
+                  src=""
+                  tag="div"
+                  waves={false}
+                  zoom={false}
+                >
+                  <img
+                    alt=""
+                    className="img-fluid h-100 w-100"
+                    src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                  />
+                  <a
+                    href="#!"
+                  >
+                    <t
+                      className=""
+                      overlay="white-slight"
+                      pattern=""
+                      tag="div"
+                    />
+                  </a>
+                </t>,
+                "lg": "5",
+                "md": null,
+                "sm": null,
+                "tag": "div",
+                "xl": "4",
+                "xs": null,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "cascade": false,
+                  "children": Array [
+                    <img
+                      alt=""
+                      className="img-fluid h-100 w-100"
+                      src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                    />,
+                    <a
+                      href="#!"
+                    >
+                      <t
+                        className=""
+                        overlay="white-slight"
+                        pattern=""
+                        tag="div"
+                      />
+                    </a>,
+                  ],
+                  "className": "rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100",
+                  "hover": true,
+                  "rounded": false,
+                  "src": "",
+                  "tag": "div",
+                  "waves": false,
+                  "zoom": false,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "className": "img-fluid h-100 w-100",
+                      "src": "https://mdbootstrap.com/img/Photos/Others/images/52.jpg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <t
+                        className=""
+                        overlay="white-slight"
+                        pattern=""
+                        tag="div"
+                      />,
+                      "href": "#!",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "className": "",
+                        "overlay": "white-slight",
+                        "pattern": "",
+                        "tag": "div",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": "a",
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="font-weight-bold mb-3 p-0"
+                  >
+                    <strong />
+                  </h3>,
+                  <p
+                    className="dark-grey-text"
+                  />,
+                  <p>
+                    by
+                    <a
+                      className="font-weight-bold"
+                      href="#!"
+                    >
+                      
+                    </a>
+                    NaN/NaN/NaN
+                  </p>,
+                  <div
+                    className="my-2"
+                  >
+                    <NavLink
+                      activeClassName="active"
+                      aria-current="page"
+                      to="/articles/undefined"
+                    >
+                       
+                      Read more....
+                    </NavLink>
+                  </div>,
+                ],
+                "lg": "7",
+                "md": null,
+                "sm": null,
+                "tag": "div",
+                "xl": "8",
+                "xs": null,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <strong />,
+                    "className": "font-weight-bold mb-3 p-0",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "strong",
+                  },
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": null,
+                    "className": "dark-grey-text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "by",
+                      <a
+                        className="font-weight-bold"
+                        href="#!"
+                      >
+                        
+                      </a>,
+                      "NaN/NaN/NaN",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "by",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "",
+                        "className": "font-weight-bold",
+                        "href": "#!",
+                      },
+                      "ref": null,
+                      "rendered": "",
+                      "type": "a",
+                    },
+                    "NaN/NaN/NaN",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <NavLink
+                      activeClassName="active"
+                      aria-current="page"
+                      to="/articles/undefined"
+                    >
+                       
+                      Read more....
+                    </NavLink>,
+                    "className": "my-2",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "activeClassName": "active",
+                      "aria-current": "page",
+                      "children": Array [
+                        " ",
+                        "Read more....",
+                      ],
+                      "to": "/articles/undefined",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Read more....",
+                    ],
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          className="my-3 pb-5 mw-100"
+          tag="div"
+        >
+          <t
+            tag="div"
+          >
+            <t
+              tag="div"
+            >
+              <t
+                lg="5"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="4"
+                xs={null}
+              >
+                <t
+                  cascade={false}
+                  className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                  hover={true}
+                  rounded={false}
+                  src=""
+                  tag="div"
+                  waves={false}
+                  zoom={false}
+                >
+                  <img
+                    alt=""
+                    className="img-fluid h-100 w-100"
+                    src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                  />
+                  <a
+                    href="#!"
+                  >
+                    <t
+                      className=""
+                      overlay="white-slight"
+                      pattern=""
+                      tag="div"
+                    />
+                  </a>
+                </t>
+              </t>
+              <t
+                lg="7"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="8"
+                xs={null}
+              >
+                <h3
+                  className="font-weight-bold mb-3 p-0"
+                >
+                  <strong />
+                </h3>
+                <p
+                  className="dark-grey-text"
+                />
+                <p>
+                  by
+                  <a
+                    className="font-weight-bold"
+                    href="#!"
+                  >
+                    
+                  </a>
+                  NaN/NaN/NaN
+                </p>
+                <div
+                  className="my-2"
+                >
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/articles/undefined"
+                  >
+                     
+                    Read more....
+                  </NavLink>
+                </div>
+              </t>
+            </t>
+          </t>
+        </t>,
+        "className": "w-100 ",
+        "fluid": true,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <t
+            tag="div"
+          >
+            <t
+              tag="div"
+            >
+              <t
+                lg="5"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="4"
+                xs={null}
+              >
+                <t
+                  cascade={false}
+                  className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                  hover={true}
+                  rounded={false}
+                  src=""
+                  tag="div"
+                  waves={false}
+                  zoom={false}
+                >
+                  <img
+                    alt=""
+                    className="img-fluid h-100 w-100"
+                    src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                  />
+                  <a
+                    href="#!"
+                  >
+                    <t
+                      className=""
+                      overlay="white-slight"
+                      pattern=""
+                      tag="div"
+                    />
+                  </a>
+                </t>
+              </t>
+              <t
+                lg="7"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="8"
+                xs={null}
+              >
+                <h3
+                  className="font-weight-bold mb-3 p-0"
+                >
+                  <strong />
+                </h3>
+                <p
+                  className="dark-grey-text"
+                />
+                <p>
+                  by
+                  <a
+                    className="font-weight-bold"
+                    href="#!"
+                  >
+                    
+                  </a>
+                  NaN/NaN/NaN
+                </p>
+                <div
+                  className="my-2"
+                >
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/articles/undefined"
+                  >
+                     
+                    Read more....
+                  </NavLink>
+                </div>
+              </t>
+            </t>
+          </t>,
+          "className": "my-3 pb-5 mw-100",
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <t
+              tag="div"
+            >
+              <t
+                lg="5"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="4"
+                xs={null}
+              >
+                <t
+                  cascade={false}
+                  className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                  hover={true}
+                  rounded={false}
+                  src=""
+                  tag="div"
+                  waves={false}
+                  zoom={false}
+                >
+                  <img
+                    alt=""
+                    className="img-fluid h-100 w-100"
+                    src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                  />
+                  <a
+                    href="#!"
+                  >
+                    <t
+                      className=""
+                      overlay="white-slight"
+                      pattern=""
+                      tag="div"
+                    />
+                  </a>
+                </t>
+              </t>
+              <t
+                lg="7"
+                md={null}
+                sm={null}
+                tag="div"
+                xl="8"
+                xs={null}
+              >
+                <h3
+                  className="font-weight-bold mb-3 p-0"
+                >
+                  <strong />
+                </h3>
+                <p
+                  className="dark-grey-text"
+                />
+                <p>
+                  by
+                  <a
+                    className="font-weight-bold"
+                    href="#!"
+                  >
+                    
+                  </a>
+                  NaN/NaN/NaN
+                </p>
+                <div
+                  className="my-2"
+                >
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/articles/undefined"
+                  >
+                     
+                    Read more....
+                  </NavLink>
+                </div>
+              </t>
+            </t>,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <t
+                  lg="5"
+                  md={null}
+                  sm={null}
+                  tag="div"
+                  xl="4"
+                  xs={null}
+                >
+                  <t
+                    cascade={false}
+                    className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                    hover={true}
+                    rounded={false}
+                    src=""
+                    tag="div"
+                    waves={false}
+                    zoom={false}
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid h-100 w-100"
+                      src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                    />
+                    <a
+                      href="#!"
+                    >
+                      <t
+                        className=""
+                        overlay="white-slight"
+                        pattern=""
+                        tag="div"
+                      />
+                    </a>
+                  </t>
+                </t>,
+                <t
+                  lg="7"
+                  md={null}
+                  sm={null}
+                  tag="div"
+                  xl="8"
+                  xs={null}
+                >
+                  <h3
+                    className="font-weight-bold mb-3 p-0"
+                  >
+                    <strong />
+                  </h3>
+                  <p
+                    className="dark-grey-text"
+                  />
+                  <p>
+                    by
+                    <a
+                      className="font-weight-bold"
+                      href="#!"
+                    >
+                      
+                    </a>
+                    NaN/NaN/NaN
+                  </p>
+                  <div
+                    className="my-2"
+                  >
+                    <NavLink
+                      activeClassName="active"
+                      aria-current="page"
+                      to="/articles/undefined"
+                    >
+                       
+                      Read more....
+                    </NavLink>
+                  </div>
+                </t>,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <t
+                    cascade={false}
+                    className="rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100"
+                    hover={true}
+                    rounded={false}
+                    src=""
+                    tag="div"
+                    waves={false}
+                    zoom={false}
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid h-100 w-100"
+                      src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                    />
+                    <a
+                      href="#!"
+                    >
+                      <t
+                        className=""
+                        overlay="white-slight"
+                        pattern=""
+                        tag="div"
+                      />
+                    </a>
+                  </t>,
+                  "lg": "5",
+                  "md": null,
+                  "sm": null,
+                  "tag": "div",
+                  "xl": "4",
+                  "xs": null,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "cascade": false,
+                    "children": Array [
+                      <img
+                        alt=""
+                        className="img-fluid h-100 w-100"
+                        src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg"
+                      />,
+                      <a
+                        href="#!"
+                      >
+                        <t
+                          className=""
+                          overlay="white-slight"
+                          pattern=""
+                          tag="div"
+                        />
+                      </a>,
+                    ],
+                    "className": "rounded z-depth-1-half mb-lg-0 mb-1 bg-primary h-100",
+                    "hover": true,
+                    "rounded": false,
+                    "src": "",
+                    "tag": "div",
+                    "waves": false,
+                    "zoom": false,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "",
+                        "className": "img-fluid h-100 w-100",
+                        "src": "https://mdbootstrap.com/img/Photos/Others/images/52.jpg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <t
+                          className=""
+                          overlay="white-slight"
+                          pattern=""
+                          tag="div"
+                        />,
+                        "href": "#!",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "overlay": "white-slight",
+                          "pattern": "",
+                          "tag": "div",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": "a",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      className="font-weight-bold mb-3 p-0"
+                    >
+                      <strong />
+                    </h3>,
+                    <p
+                      className="dark-grey-text"
+                    />,
+                    <p>
+                      by
+                      <a
+                        className="font-weight-bold"
+                        href="#!"
+                      >
+                        
+                      </a>
+                      NaN/NaN/NaN
+                    </p>,
+                    <div
+                      className="my-2"
+                    >
+                      <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/articles/undefined"
+                      >
+                         
+                        Read more....
+                      </NavLink>
+                    </div>,
+                  ],
+                  "lg": "7",
+                  "md": null,
+                  "sm": null,
+                  "tag": "div",
+                  "xl": "8",
+                  "xs": null,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <strong />,
+                      "className": "font-weight-bold mb-3 p-0",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "strong",
+                    },
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": null,
+                      "className": "dark-grey-text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "by",
+                        <a
+                          className="font-weight-bold"
+                          href="#!"
+                        >
+                          
+                        </a>,
+                        "NaN/NaN/NaN",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "by",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "",
+                          "className": "font-weight-bold",
+                          "href": "#!",
+                        },
+                        "ref": null,
+                        "rendered": "",
+                        "type": "a",
+                      },
+                      "NaN/NaN/NaN",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/articles/undefined"
+                      >
+                         
+                        Read more....
+                      </NavLink>,
+                      "className": "my-2",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "activeClassName": "active",
+                        "aria-current": "page",
+                        "children": Array [
+                          " ",
+                          "Read more....",
+                        ],
+                        "to": "/articles/undefined",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        " ",
+                        "Read more....",
+                      ],
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
