@@ -15,7 +15,7 @@ import SocialLoginButtons from "../../views/SocialLoginView/SocialLoginView";
 
 const LoginView = ({ onChange, onSubmit, errors }) => {
   return (
-    <MDBContainer className="mt-3 pt-6 w-sm-100 w-md-75">
+    <MDBContainer className="mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5">
       <MDBRow className="flex flex-center">
         <MDBCol md="6">
           <form onSubmit={onSubmit}>
@@ -70,9 +70,8 @@ const LoginView = ({ onChange, onSubmit, errors }) => {
                     Login
                   </MDBBtn>
                   <p className="font-small blue-text d-flex justify-content-end pb-3">
-                    Forgot
                     <a href="/passwordreset" className="blue-text ml-1">
-                      Password?
+                      Forgot Password?
                     </a>
                   </p>
 
