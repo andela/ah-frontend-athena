@@ -62,14 +62,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="user"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your Username"
+                  labelClass=""
                   name="username"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="text"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid p-0"
@@ -77,13 +90,26 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="envelope"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your email"
+                  labelClass=""
                   name="email"
                   onChange={[MockFunction]}
+                  size=""
+                  success=""
+                  tag="input"
                   type="email"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -91,13 +117,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg"
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="lock"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your password"
+                  labelClass=""
                   name="password"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="password"
+                  validate={false}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -189,14 +229,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="user"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your Username"
+                  labelClass=""
                   name="username"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="text"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid p-0"
@@ -204,13 +257,26 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="envelope"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your email"
+                  labelClass=""
                   name="email"
                   onChange={[MockFunction]}
+                  size=""
+                  success=""
+                  tag="input"
                   type="email"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -218,13 +284,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg"
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="lock"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your password"
+                  labelClass=""
                   name="password"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="password"
+                  validate={false}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -306,14 +386,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="user"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your Username"
+                  labelClass=""
                   name="username"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="text"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid p-0"
@@ -321,13 +414,26 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="envelope"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your email"
+                  labelClass=""
                   name="email"
                   onChange={[MockFunction]}
+                  size=""
+                  success=""
+                  tag="input"
                   type="email"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -335,13 +441,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg"
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="lock"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your password"
+                  labelClass=""
                   name="password"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="password"
+                  validate={false}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -423,14 +543,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="user"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your Username"
+                  labelClass=""
                   name="username"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="text"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid p-0"
@@ -438,13 +571,26 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg "
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="envelope"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your email"
+                  labelClass=""
                   name="email"
                   onChange={[MockFunction]}
+                  size=""
+                  success=""
+                  tag="input"
                   type="email"
                   validate={true}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -452,13 +598,27 @@ ShallowWrapper {
                 <t
                   className="form-control mb-0 form-control-lg"
                   containerClass="mb-0"
+                  disabled={false}
+                  error=""
+                  filled={false}
+                  gap={false}
                   group={true}
                   icon="lock"
+                  iconBrand={false}
+                  iconClass=""
+                  iconLight={false}
+                  iconRegular={false}
                   label="Your password"
+                  labelClass=""
                   name="password"
                   onChange={[MockFunction]}
                   required={true}
+                  size=""
+                  success=""
+                  tag="input"
                   type="password"
+                  validate={false}
+                  valueDefault=""
                 />
                 <p
                   className=" red-text is-invalid"
@@ -532,14 +692,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="user"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your Username"
+                    labelClass=""
                     name="username"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="text"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid p-0"
@@ -547,13 +720,26 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="envelope"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your email"
+                    labelClass=""
                     name="email"
                     onChange={[MockFunction]}
+                    size=""
+                    success=""
+                    tag="input"
                     type="email"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -561,13 +747,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg"
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="lock"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your password"
+                    labelClass=""
                     name="password"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="password"
+                    validate={false}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -672,14 +872,27 @@ ShallowWrapper {
                     <t
                       className="form-control mb-0 form-control-lg "
                       containerClass="mb-0"
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
                       group={true}
                       icon="user"
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="Your Username"
+                      labelClass=""
                       name="username"
                       onChange={[MockFunction]}
                       required={true}
+                      size=""
+                      success=""
+                      tag="input"
                       type="text"
                       validate={true}
+                      valueDefault=""
                     />,
                     <p
                       className=" red-text is-invalid p-0"
@@ -687,13 +900,26 @@ ShallowWrapper {
                     <t
                       className="form-control mb-0 form-control-lg "
                       containerClass="mb-0"
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
                       group={true}
                       icon="envelope"
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="Your email"
+                      labelClass=""
                       name="email"
                       onChange={[MockFunction]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="email"
                       validate={true}
+                      valueDefault=""
                     />,
                     <p
                       className=" red-text is-invalid"
@@ -701,13 +927,27 @@ ShallowWrapper {
                     <t
                       className="form-control mb-0 form-control-lg"
                       containerClass="mb-0"
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
                       group={true}
                       icon="lock"
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="Your password"
+                      labelClass=""
                       name="password"
                       onChange={[MockFunction]}
                       required={true}
+                      size=""
+                      success=""
+                      tag="input"
                       type="password"
+                      validate={false}
+                      valueDefault=""
                     />,
                     <p
                       className=" red-text is-invalid"
@@ -762,14 +1002,30 @@ ShallowWrapper {
                     "props": Object {
                       "className": "form-control mb-0 form-control-lg ",
                       "containerClass": "mb-0",
+                      "disabled": false,
+                      "error": "",
+                      "filled": false,
+                      "gap": false,
                       "group": true,
+                      "hint": undefined,
                       "icon": "user",
+                      "iconBrand": false,
+                      "iconClass": "",
+                      "iconLight": false,
+                      "iconRegular": false,
+                      "iconSize": undefined,
+                      "id": undefined,
                       "label": "Your Username",
+                      "labelClass": "",
                       "name": "username",
                       "onChange": [MockFunction],
                       "required": true,
+                      "size": "",
+                      "success": "",
+                      "tag": "input",
                       "type": "text",
                       "validate": true,
+                      "valueDefault": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -794,13 +1050,29 @@ ShallowWrapper {
                     "props": Object {
                       "className": "form-control mb-0 form-control-lg ",
                       "containerClass": "mb-0",
+                      "disabled": false,
+                      "error": "",
+                      "filled": false,
+                      "gap": false,
                       "group": true,
+                      "hint": undefined,
                       "icon": "envelope",
+                      "iconBrand": false,
+                      "iconClass": "",
+                      "iconLight": false,
+                      "iconRegular": false,
+                      "iconSize": undefined,
+                      "id": undefined,
                       "label": "Your email",
+                      "labelClass": "",
                       "name": "email",
                       "onChange": [MockFunction],
+                      "size": "",
+                      "success": "",
+                      "tag": "input",
                       "type": "email",
                       "validate": true,
+                      "valueDefault": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -825,13 +1097,30 @@ ShallowWrapper {
                     "props": Object {
                       "className": "form-control mb-0 form-control-lg",
                       "containerClass": "mb-0",
+                      "disabled": false,
+                      "error": "",
+                      "filled": false,
+                      "gap": false,
                       "group": true,
+                      "hint": undefined,
                       "icon": "lock",
+                      "iconBrand": false,
+                      "iconClass": "",
+                      "iconLight": false,
+                      "iconRegular": false,
+                      "iconSize": undefined,
+                      "id": undefined,
                       "label": "Your password",
+                      "labelClass": "",
                       "name": "password",
                       "onChange": [MockFunction],
                       "required": true,
+                      "size": "",
+                      "success": "",
+                      "tag": "input",
                       "type": "password",
+                      "validate": false,
+                      "valueDefault": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -1021,14 +1310,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="user"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your Username"
+                    labelClass=""
                     name="username"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="text"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid p-0"
@@ -1036,13 +1338,26 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="envelope"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your email"
+                    labelClass=""
                     name="email"
                     onChange={[MockFunction]}
+                    size=""
+                    success=""
+                    tag="input"
                     type="email"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1050,13 +1365,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg"
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="lock"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your password"
+                    labelClass=""
                     name="password"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="password"
+                    validate={false}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1148,14 +1477,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="user"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your Username"
+                    labelClass=""
                     name="username"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="text"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid p-0"
@@ -1163,13 +1505,26 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="envelope"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your email"
+                    labelClass=""
                     name="email"
                     onChange={[MockFunction]}
+                    size=""
+                    success=""
+                    tag="input"
                     type="email"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1177,13 +1532,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg"
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="lock"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your password"
+                    labelClass=""
                     name="password"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="password"
+                    validate={false}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1265,14 +1634,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="user"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your Username"
+                    labelClass=""
                     name="username"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="text"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid p-0"
@@ -1280,13 +1662,26 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="envelope"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your email"
+                    labelClass=""
                     name="email"
                     onChange={[MockFunction]}
+                    size=""
+                    success=""
+                    tag="input"
                     type="email"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1294,13 +1689,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg"
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="lock"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your password"
+                    labelClass=""
                     name="password"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="password"
+                    validate={false}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1382,14 +1791,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="user"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your Username"
+                    labelClass=""
                     name="username"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="text"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid p-0"
@@ -1397,13 +1819,26 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg "
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="envelope"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your email"
+                    labelClass=""
                     name="email"
                     onChange={[MockFunction]}
+                    size=""
+                    success=""
+                    tag="input"
                     type="email"
                     validate={true}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1411,13 +1846,27 @@ ShallowWrapper {
                   <t
                     className="form-control mb-0 form-control-lg"
                     containerClass="mb-0"
+                    disabled={false}
+                    error=""
+                    filled={false}
+                    gap={false}
                     group={true}
                     icon="lock"
+                    iconBrand={false}
+                    iconClass=""
+                    iconLight={false}
+                    iconRegular={false}
                     label="Your password"
+                    labelClass=""
                     name="password"
                     onChange={[MockFunction]}
                     required={true}
+                    size=""
+                    success=""
+                    tag="input"
                     type="password"
+                    validate={false}
+                    valueDefault=""
                   />
                   <p
                     className=" red-text is-invalid"
@@ -1491,14 +1940,27 @@ ShallowWrapper {
                     <t
                       className="form-control mb-0 form-control-lg "
                       containerClass="mb-0"
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
                       group={true}
                       icon="user"
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="Your Username"
+                      labelClass=""
                       name="username"
                       onChange={[MockFunction]}
                       required={true}
+                      size=""
+                      success=""
+                      tag="input"
                       type="text"
                       validate={true}
+                      valueDefault=""
                     />
                     <p
                       className=" red-text is-invalid p-0"
@@ -1506,13 +1968,26 @@ ShallowWrapper {
                     <t
                       className="form-control mb-0 form-control-lg "
                       containerClass="mb-0"
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
                       group={true}
                       icon="envelope"
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="Your email"
+                      labelClass=""
                       name="email"
                       onChange={[MockFunction]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="email"
                       validate={true}
+                      valueDefault=""
                     />
                     <p
                       className=" red-text is-invalid"
@@ -1520,13 +1995,27 @@ ShallowWrapper {
                     <t
                       className="form-control mb-0 form-control-lg"
                       containerClass="mb-0"
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
                       group={true}
                       icon="lock"
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="Your password"
+                      labelClass=""
                       name="password"
                       onChange={[MockFunction]}
                       required={true}
+                      size=""
+                      success=""
+                      tag="input"
                       type="password"
+                      validate={false}
+                      valueDefault=""
                     />
                     <p
                       className=" red-text is-invalid"
@@ -1631,14 +2120,27 @@ ShallowWrapper {
                       <t
                         className="form-control mb-0 form-control-lg "
                         containerClass="mb-0"
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
                         group={true}
                         icon="user"
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="Your Username"
+                        labelClass=""
                         name="username"
                         onChange={[MockFunction]}
                         required={true}
+                        size=""
+                        success=""
+                        tag="input"
                         type="text"
                         validate={true}
+                        valueDefault=""
                       />,
                       <p
                         className=" red-text is-invalid p-0"
@@ -1646,13 +2148,26 @@ ShallowWrapper {
                       <t
                         className="form-control mb-0 form-control-lg "
                         containerClass="mb-0"
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
                         group={true}
                         icon="envelope"
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="Your email"
+                        labelClass=""
                         name="email"
                         onChange={[MockFunction]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="email"
                         validate={true}
+                        valueDefault=""
                       />,
                       <p
                         className=" red-text is-invalid"
@@ -1660,13 +2175,27 @@ ShallowWrapper {
                       <t
                         className="form-control mb-0 form-control-lg"
                         containerClass="mb-0"
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
                         group={true}
                         icon="lock"
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="Your password"
+                        labelClass=""
                         name="password"
                         onChange={[MockFunction]}
                         required={true}
+                        size=""
+                        success=""
+                        tag="input"
                         type="password"
+                        validate={false}
+                        valueDefault=""
                       />,
                       <p
                         className=" red-text is-invalid"
@@ -1721,14 +2250,30 @@ ShallowWrapper {
                       "props": Object {
                         "className": "form-control mb-0 form-control-lg ",
                         "containerClass": "mb-0",
+                        "disabled": false,
+                        "error": "",
+                        "filled": false,
+                        "gap": false,
                         "group": true,
+                        "hint": undefined,
                         "icon": "user",
+                        "iconBrand": false,
+                        "iconClass": "",
+                        "iconLight": false,
+                        "iconRegular": false,
+                        "iconSize": undefined,
+                        "id": undefined,
                         "label": "Your Username",
+                        "labelClass": "",
                         "name": "username",
                         "onChange": [MockFunction],
                         "required": true,
+                        "size": "",
+                        "success": "",
+                        "tag": "input",
                         "type": "text",
                         "validate": true,
+                        "valueDefault": "",
                       },
                       "ref": null,
                       "rendered": null,
@@ -1753,13 +2298,29 @@ ShallowWrapper {
                       "props": Object {
                         "className": "form-control mb-0 form-control-lg ",
                         "containerClass": "mb-0",
+                        "disabled": false,
+                        "error": "",
+                        "filled": false,
+                        "gap": false,
                         "group": true,
+                        "hint": undefined,
                         "icon": "envelope",
+                        "iconBrand": false,
+                        "iconClass": "",
+                        "iconLight": false,
+                        "iconRegular": false,
+                        "iconSize": undefined,
+                        "id": undefined,
                         "label": "Your email",
+                        "labelClass": "",
                         "name": "email",
                         "onChange": [MockFunction],
+                        "size": "",
+                        "success": "",
+                        "tag": "input",
                         "type": "email",
                         "validate": true,
+                        "valueDefault": "",
                       },
                       "ref": null,
                       "rendered": null,
@@ -1784,13 +2345,30 @@ ShallowWrapper {
                       "props": Object {
                         "className": "form-control mb-0 form-control-lg",
                         "containerClass": "mb-0",
+                        "disabled": false,
+                        "error": "",
+                        "filled": false,
+                        "gap": false,
                         "group": true,
+                        "hint": undefined,
                         "icon": "lock",
+                        "iconBrand": false,
+                        "iconClass": "",
+                        "iconLight": false,
+                        "iconRegular": false,
+                        "iconSize": undefined,
+                        "id": undefined,
                         "label": "Your password",
+                        "labelClass": "",
                         "name": "password",
                         "onChange": [MockFunction],
                         "required": true,
+                        "size": "",
+                        "success": "",
+                        "tag": "input",
                         "type": "password",
+                        "validate": false,
+                        "valueDefault": "",
                       },
                       "ref": null,
                       "rendered": null,

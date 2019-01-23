@@ -1,0 +1,37 @@
+#publish-btn {
+  float: right;
+}
+
+// .rich-text{
+//   display: none
+// }
+
+.rich-text:focus {
+  display: block;
+}
+
+.square {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+#edit-icon {
+  float: right;
+}
+
+.banner {
+  color: black;
+  background: none;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.navbar-brand {
+  font-size: 1.5rem !important;
+  padding-top: 0 !important;
+  margin-right: 2rem !important;
+  color: white !important;
+}
+
+.article-page .banner .article-meta .author {
+  color: rgba(0, 0, 0, 0.527);
+}

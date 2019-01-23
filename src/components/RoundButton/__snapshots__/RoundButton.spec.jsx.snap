@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test round button matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RoundButton
+    background=""
+    hoverClass=""
+    icon=""
+    label=""
+    onClick={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <t
+          border={false}
+          brand={false}
+          className="mr-2"
+          fab={false}
+          fal={false}
+          far={false}
+          fixed={false}
+          flip=""
+          icon=""
+          inverse=""
+          light={false}
+          list={false}
+          pull=""
+          pulse={false}
+          regular={false}
+          rotate=""
+          size=""
+          spin={false}
+          stack=""
+        />,
+        <p
+          className="m-0"
+        >
+          
+        </p>,
+      ],
+      "className": "my-round bg- border relative d-flex flex-row m-1 p-2 align-items-center ",
+      "onClick": [MockFunction],
+      "role": "presentation",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "border": false,
+          "brand": false,
+          "className": "mr-2",
+          "fab": false,
+          "fal": false,
+          "far": false,
+          "fixed": false,
+          "flip": "",
+          "icon": "",
+          "inverse": "",
+          "light": false,
+          "list": false,
+          "pull": "",
+          "pulse": false,
+          "regular": false,
+          "rotate": "",
+          "size": "",
+          "spin": false,
+          "stack": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "",
+          "className": "m-0",
+        },
+        "ref": null,
+        "rendered": "",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <t
+            border={false}
+            brand={false}
+            className="mr-2"
+            fab={false}
+            fal={false}
+            far={false}
+            fixed={false}
+            flip=""
+            icon=""
+            inverse=""
+            light={false}
+            list={false}
+            pull=""
+            pulse={false}
+            regular={false}
+            rotate=""
+            size=""
+            spin={false}
+            stack=""
+          />,
+          <p
+            className="m-0"
+          >
+            
+          </p>,
+        ],
+        "className": "my-round bg- border relative d-flex flex-row m-1 p-2 align-items-center ",
+        "onClick": [MockFunction],
+        "role": "presentation",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "border": false,
+            "brand": false,
+            "className": "mr-2",
+            "fab": false,
+            "fal": false,
+            "far": false,
+            "fixed": false,
+            "flip": "",
+            "icon": "",
+            "inverse": "",
+            "light": false,
+            "list": false,
+            "pull": "",
+            "pulse": false,
+            "regular": false,
+            "rotate": "",
+            "size": "",
+            "spin": false,
+            "stack": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+            "className": "m-0",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

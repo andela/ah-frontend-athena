@@ -79,11 +79,28 @@ ShallowWrapper {
                   >
                     <t
                       className="form-control"
+                      containerClass=""
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="username"
+                      labelClass=""
                       name="username"
                       onChange={[Function]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="text"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -95,12 +112,28 @@ ShallowWrapper {
                   >
                     <t
                       className="form-control"
+                      containerClass=""
                       disabled={true}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="email"
+                      labelClass=""
                       name="email"
                       onChange={[Function]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="email"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -112,12 +145,29 @@ ShallowWrapper {
                   >
                     <t
                       className="md-textarea form-control"
+                      containerClass=""
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="bio"
+                      labelClass=""
                       name="bio"
                       onChange={[Function]}
                       rows="2"
+                      size=""
+                      success=""
+                      tag="input"
                       type="textarea"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -186,11 +236,28 @@ ShallowWrapper {
                   >
                     <t
                       className="form-control"
+                      containerClass=""
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="username"
+                      labelClass=""
                       name="username"
                       onChange={[Function]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="text"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -202,12 +269,28 @@ ShallowWrapper {
                   >
                     <t
                       className="form-control"
+                      containerClass=""
                       disabled={true}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="email"
+                      labelClass=""
                       name="email"
                       onChange={[Function]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="email"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -219,12 +302,29 @@ ShallowWrapper {
                   >
                     <t
                       className="md-textarea form-control"
+                      containerClass=""
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="bio"
+                      labelClass=""
                       name="bio"
                       onChange={[Function]}
                       rows="2"
+                      size=""
+                      success=""
+                      tag="input"
                       type="textarea"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -290,11 +390,28 @@ ShallowWrapper {
                   >
                     <t
                       className="form-control"
+                      containerClass=""
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="username"
+                      labelClass=""
                       name="username"
                       onChange={[Function]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="text"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -306,12 +423,28 @@ ShallowWrapper {
                   >
                     <t
                       className="form-control"
+                      containerClass=""
                       disabled={true}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="email"
+                      labelClass=""
                       name="email"
                       onChange={[Function]}
+                      size=""
+                      success=""
+                      tag="input"
                       type="email"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -323,12 +456,29 @@ ShallowWrapper {
                   >
                     <t
                       className="md-textarea form-control"
+                      containerClass=""
+                      disabled={false}
+                      error=""
+                      filled={false}
+                      gap={false}
+                      group={false}
+                      icon=""
+                      iconBrand={false}
+                      iconClass=""
+                      iconLight={false}
+                      iconRegular={false}
                       label="bio"
+                      labelClass=""
                       name="bio"
                       onChange={[Function]}
                       rows="2"
+                      size=""
+                      success=""
+                      tag="input"
                       type="textarea"
+                      validate={false}
                       value=""
+                      valueDefault=""
                     />
                   </div>
                 </div>
@@ -391,11 +541,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="username"
+                        labelClass=""
                         name="username"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="text"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -407,12 +574,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
                         disabled={true}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="email"
+                        labelClass=""
                         name="email"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="email"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -424,12 +607,29 @@ ShallowWrapper {
                     >
                       <t
                         className="md-textarea form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="bio"
+                        labelClass=""
                         name="bio"
                         onChange={[Function]}
                         rows="2"
+                        size=""
+                        success=""
+                        tag="input"
                         type="textarea"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -586,11 +786,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="username"
+                        labelClass=""
                         name="username"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="text"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -602,12 +819,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
                         disabled={true}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="email"
+                        labelClass=""
                         name="email"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="email"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -619,12 +852,29 @@ ShallowWrapper {
                     >
                       <t
                         className="md-textarea form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="bio"
+                        labelClass=""
                         name="bio"
                         onChange={[Function]}
                         rows="2"
+                        size=""
+                        success=""
+                        tag="input"
                         type="textarea"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -652,11 +902,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="username"
+                          labelClass=""
                           name="username"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="text"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>,
@@ -668,12 +935,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
                           disabled={true}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="email"
+                          labelClass=""
                           name="email"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="email"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>,
@@ -685,12 +968,29 @@ ShallowWrapper {
                       >
                         <t
                           className="md-textarea form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="bio"
+                          labelClass=""
                           name="bio"
                           onChange={[Function]}
                           rows="2"
+                          size=""
+                          success=""
+                          tag="input"
                           type="textarea"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>,
@@ -715,11 +1015,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="username"
+                          labelClass=""
                           name="username"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="text"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>,
                       "className": "form-group",
@@ -732,11 +1049,28 @@ ShallowWrapper {
                       "props": Object {
                         "children": <t
                           className="form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="username"
+                          labelClass=""
                           name="username"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="text"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />,
                         "className": "md-form",
                       },
@@ -747,11 +1081,31 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "form-control",
+                          "containerClass": "",
+                          "disabled": false,
+                          "error": "",
+                          "filled": false,
+                          "gap": false,
+                          "group": false,
+                          "hint": undefined,
+                          "icon": "",
+                          "iconBrand": false,
+                          "iconClass": "",
+                          "iconLight": false,
+                          "iconRegular": false,
+                          "iconSize": undefined,
+                          "id": undefined,
                           "label": "username",
+                          "labelClass": "",
                           "name": "username",
                           "onChange": [Function],
+                          "size": "",
+                          "success": "",
+                          "tag": "input",
                           "type": "text",
+                          "validate": false,
                           "value": "",
+                          "valueDefault": "",
                         },
                         "ref": null,
                         "rendered": null,
@@ -771,12 +1125,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
                           disabled={true}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="email"
+                          labelClass=""
                           name="email"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="email"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>,
                       "className": "form-group",
@@ -789,12 +1159,28 @@ ShallowWrapper {
                       "props": Object {
                         "children": <t
                           className="form-control"
+                          containerClass=""
                           disabled={true}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="email"
+                          labelClass=""
                           name="email"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="email"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />,
                         "className": "md-form",
                       },
@@ -805,12 +1191,31 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "form-control",
+                          "containerClass": "",
                           "disabled": true,
+                          "error": "",
+                          "filled": false,
+                          "gap": false,
+                          "group": false,
+                          "hint": undefined,
+                          "icon": "",
+                          "iconBrand": false,
+                          "iconClass": "",
+                          "iconLight": false,
+                          "iconRegular": false,
+                          "iconSize": undefined,
+                          "id": undefined,
                           "label": "email",
+                          "labelClass": "",
                           "name": "email",
                           "onChange": [Function],
+                          "size": "",
+                          "success": "",
+                          "tag": "input",
                           "type": "email",
+                          "validate": false,
                           "value": "",
+                          "valueDefault": "",
                         },
                         "ref": null,
                         "rendered": null,
@@ -830,12 +1235,29 @@ ShallowWrapper {
                       >
                         <t
                           className="md-textarea form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="bio"
+                          labelClass=""
                           name="bio"
                           onChange={[Function]}
                           rows="2"
+                          size=""
+                          success=""
+                          tag="input"
                           type="textarea"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>,
                       "className": "form-group",
@@ -848,12 +1270,29 @@ ShallowWrapper {
                       "props": Object {
                         "children": <t
                           className="md-textarea form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="bio"
+                          labelClass=""
                           name="bio"
                           onChange={[Function]}
                           rows="2"
+                          size=""
+                          success=""
+                          tag="input"
                           type="textarea"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />,
                         "className": "md-form",
                       },
@@ -864,12 +1303,32 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "md-textarea form-control",
+                          "containerClass": "",
+                          "disabled": false,
+                          "error": "",
+                          "filled": false,
+                          "gap": false,
+                          "group": false,
+                          "hint": undefined,
+                          "icon": "",
+                          "iconBrand": false,
+                          "iconClass": "",
+                          "iconLight": false,
+                          "iconRegular": false,
+                          "iconSize": undefined,
+                          "id": undefined,
                           "label": "bio",
+                          "labelClass": "",
                           "name": "bio",
                           "onChange": [Function],
                           "rows": "2",
+                          "size": "",
+                          "success": "",
+                          "tag": "input",
                           "type": "textarea",
+                          "validate": false,
                           "value": "",
+                          "valueDefault": "",
                         },
                         "ref": null,
                         "rendered": null,
@@ -962,11 +1421,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="username"
+                        labelClass=""
                         name="username"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="text"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -978,12 +1454,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
                         disabled={true}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="email"
+                        labelClass=""
                         name="email"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="email"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -995,12 +1487,29 @@ ShallowWrapper {
                     >
                       <t
                         className="md-textarea form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="bio"
+                        labelClass=""
                         name="bio"
                         onChange={[Function]}
                         rows="2"
+                        size=""
+                        success=""
+                        tag="input"
                         type="textarea"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -1069,11 +1578,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="username"
+                        labelClass=""
                         name="username"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="text"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -1085,12 +1611,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
                         disabled={true}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="email"
+                        labelClass=""
                         name="email"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="email"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -1102,12 +1644,29 @@ ShallowWrapper {
                     >
                       <t
                         className="md-textarea form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="bio"
+                        labelClass=""
                         name="bio"
                         onChange={[Function]}
                         rows="2"
+                        size=""
+                        success=""
+                        tag="input"
                         type="textarea"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -1173,11 +1732,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="username"
+                        labelClass=""
                         name="username"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="text"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -1189,12 +1765,28 @@ ShallowWrapper {
                     >
                       <t
                         className="form-control"
+                        containerClass=""
                         disabled={true}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="email"
+                        labelClass=""
                         name="email"
                         onChange={[Function]}
+                        size=""
+                        success=""
+                        tag="input"
                         type="email"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -1206,12 +1798,29 @@ ShallowWrapper {
                     >
                       <t
                         className="md-textarea form-control"
+                        containerClass=""
+                        disabled={false}
+                        error=""
+                        filled={false}
+                        gap={false}
+                        group={false}
+                        icon=""
+                        iconBrand={false}
+                        iconClass=""
+                        iconLight={false}
+                        iconRegular={false}
                         label="bio"
+                        labelClass=""
                         name="bio"
                         onChange={[Function]}
                         rows="2"
+                        size=""
+                        success=""
+                        tag="input"
                         type="textarea"
+                        validate={false}
                         value=""
+                        valueDefault=""
                       />
                     </div>
                   </div>
@@ -1274,11 +1883,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="username"
+                          labelClass=""
                           name="username"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="text"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>
@@ -1290,12 +1916,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
                           disabled={true}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="email"
+                          labelClass=""
                           name="email"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="email"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>
@@ -1307,12 +1949,29 @@ ShallowWrapper {
                       >
                         <t
                           className="md-textarea form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="bio"
+                          labelClass=""
                           name="bio"
                           onChange={[Function]}
                           rows="2"
+                          size=""
+                          success=""
+                          tag="input"
                           type="textarea"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>
@@ -1469,11 +2128,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="username"
+                          labelClass=""
                           name="username"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="text"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>
@@ -1485,12 +2161,28 @@ ShallowWrapper {
                       >
                         <t
                           className="form-control"
+                          containerClass=""
                           disabled={true}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="email"
+                          labelClass=""
                           name="email"
                           onChange={[Function]}
+                          size=""
+                          success=""
+                          tag="input"
                           type="email"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>
@@ -1502,12 +2194,29 @@ ShallowWrapper {
                       >
                         <t
                           className="md-textarea form-control"
+                          containerClass=""
+                          disabled={false}
+                          error=""
+                          filled={false}
+                          gap={false}
+                          group={false}
+                          icon=""
+                          iconBrand={false}
+                          iconClass=""
+                          iconLight={false}
+                          iconRegular={false}
                           label="bio"
+                          labelClass=""
                           name="bio"
                           onChange={[Function]}
                           rows="2"
+                          size=""
+                          success=""
+                          tag="input"
                           type="textarea"
+                          validate={false}
                           value=""
+                          valueDefault=""
                         />
                       </div>
                     </div>
@@ -1535,11 +2244,28 @@ ShallowWrapper {
                         >
                           <t
                             className="form-control"
+                            containerClass=""
+                            disabled={false}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="username"
+                            labelClass=""
                             name="username"
                             onChange={[Function]}
+                            size=""
+                            success=""
+                            tag="input"
                             type="text"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />
                         </div>
                       </div>,
@@ -1551,12 +2277,28 @@ ShallowWrapper {
                         >
                           <t
                             className="form-control"
+                            containerClass=""
                             disabled={true}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="email"
+                            labelClass=""
                             name="email"
                             onChange={[Function]}
+                            size=""
+                            success=""
+                            tag="input"
                             type="email"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />
                         </div>
                       </div>,
@@ -1568,12 +2310,29 @@ ShallowWrapper {
                         >
                           <t
                             className="md-textarea form-control"
+                            containerClass=""
+                            disabled={false}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="bio"
+                            labelClass=""
                             name="bio"
                             onChange={[Function]}
                             rows="2"
+                            size=""
+                            success=""
+                            tag="input"
                             type="textarea"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />
                         </div>
                       </div>,
@@ -1598,11 +2357,28 @@ ShallowWrapper {
                         >
                           <t
                             className="form-control"
+                            containerClass=""
+                            disabled={false}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="username"
+                            labelClass=""
                             name="username"
                             onChange={[Function]}
+                            size=""
+                            success=""
+                            tag="input"
                             type="text"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />
                         </div>,
                         "className": "form-group",
@@ -1615,11 +2391,28 @@ ShallowWrapper {
                         "props": Object {
                           "children": <t
                             className="form-control"
+                            containerClass=""
+                            disabled={false}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="username"
+                            labelClass=""
                             name="username"
                             onChange={[Function]}
+                            size=""
+                            success=""
+                            tag="input"
                             type="text"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />,
                           "className": "md-form",
                         },
@@ -1630,11 +2423,31 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "form-control",
+                            "containerClass": "",
+                            "disabled": false,
+                            "error": "",
+                            "filled": false,
+                            "gap": false,
+                            "group": false,
+                            "hint": undefined,
+                            "icon": "",
+                            "iconBrand": false,
+                            "iconClass": "",
+                            "iconLight": false,
+                            "iconRegular": false,
+                            "iconSize": undefined,
+                            "id": undefined,
                             "label": "username",
+                            "labelClass": "",
                             "name": "username",
                             "onChange": [Function],
+                            "size": "",
+                            "success": "",
+                            "tag": "input",
                             "type": "text",
+                            "validate": false,
                             "value": "",
+                            "valueDefault": "",
                           },
                           "ref": null,
                           "rendered": null,
@@ -1654,12 +2467,28 @@ ShallowWrapper {
                         >
                           <t
                             className="form-control"
+                            containerClass=""
                             disabled={true}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="email"
+                            labelClass=""
                             name="email"
                             onChange={[Function]}
+                            size=""
+                            success=""
+                            tag="input"
                             type="email"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />
                         </div>,
                         "className": "form-group",
@@ -1672,12 +2501,28 @@ ShallowWrapper {
                         "props": Object {
                           "children": <t
                             className="form-control"
+                            containerClass=""
                             disabled={true}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="email"
+                            labelClass=""
                             name="email"
                             onChange={[Function]}
+                            size=""
+                            success=""
+                            tag="input"
                             type="email"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />,
                           "className": "md-form",
                         },
@@ -1688,12 +2533,31 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "form-control",
+                            "containerClass": "",
                             "disabled": true,
+                            "error": "",
+                            "filled": false,
+                            "gap": false,
+                            "group": false,
+                            "hint": undefined,
+                            "icon": "",
+                            "iconBrand": false,
+                            "iconClass": "",
+                            "iconLight": false,
+                            "iconRegular": false,
+                            "iconSize": undefined,
+                            "id": undefined,
                             "label": "email",
+                            "labelClass": "",
                             "name": "email",
                             "onChange": [Function],
+                            "size": "",
+                            "success": "",
+                            "tag": "input",
                             "type": "email",
+                            "validate": false,
                             "value": "",
+                            "valueDefault": "",
                           },
                           "ref": null,
                           "rendered": null,
@@ -1713,12 +2577,29 @@ ShallowWrapper {
                         >
                           <t
                             className="md-textarea form-control"
+                            containerClass=""
+                            disabled={false}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="bio"
+                            labelClass=""
                             name="bio"
                             onChange={[Function]}
                             rows="2"
+                            size=""
+                            success=""
+                            tag="input"
                             type="textarea"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />
                         </div>,
                         "className": "form-group",
@@ -1731,12 +2612,29 @@ ShallowWrapper {
                         "props": Object {
                           "children": <t
                             className="md-textarea form-control"
+                            containerClass=""
+                            disabled={false}
+                            error=""
+                            filled={false}
+                            gap={false}
+                            group={false}
+                            icon=""
+                            iconBrand={false}
+                            iconClass=""
+                            iconLight={false}
+                            iconRegular={false}
                             label="bio"
+                            labelClass=""
                             name="bio"
                             onChange={[Function]}
                             rows="2"
+                            size=""
+                            success=""
+                            tag="input"
                             type="textarea"
+                            validate={false}
                             value=""
+                            valueDefault=""
                           />,
                           "className": "md-form",
                         },
@@ -1747,12 +2645,32 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "md-textarea form-control",
+                            "containerClass": "",
+                            "disabled": false,
+                            "error": "",
+                            "filled": false,
+                            "gap": false,
+                            "group": false,
+                            "hint": undefined,
+                            "icon": "",
+                            "iconBrand": false,
+                            "iconClass": "",
+                            "iconLight": false,
+                            "iconRegular": false,
+                            "iconSize": undefined,
+                            "id": undefined,
                             "label": "bio",
+                            "labelClass": "",
                             "name": "bio",
                             "onChange": [Function],
                             "rows": "2",
+                            "size": "",
+                            "success": "",
+                            "tag": "input",
                             "type": "textarea",
+                            "validate": false,
                             "value": "",
+                            "valueDefault": "",
                           },
                           "ref": null,
                           "rendered": null,

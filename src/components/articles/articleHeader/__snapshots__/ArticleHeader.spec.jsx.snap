@@ -1,0 +1,1287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleHeader /> matches snapshort 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleHeader
+    article={
+      Object {
+        "author": Object {
+          "created_at": 2019-01-19T10:42:09.625Z,
+          "username": "",
+        },
+      }
+    }
+    canModify={true}
+    handleDelete={[Function]}
+    handleLink={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <t
+        tag="div"
+      >
+        <t
+          lg={null}
+          md={null}
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <h2
+            className="h1 display-3 text-bold"
+          />
+          <div
+            className="article-meta"
+          >
+            <t
+              tag="div"
+            >
+              <t
+                lg={null}
+                md={null}
+                size="4"
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <t
+                  tag="div"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid z-depth-1 square  rounded-circle"
+                    src="undefined"
+                  />
+                  <div
+                    className="d-flex flex-column ml-4 justify-content-end"
+                  >
+                    <div
+                      className="author"
+                      to=""
+                    >
+                      By:
+                      
+                    </div>
+                    <span
+                      className="date"
+                    >
+                      Invalid Date
+                    </span>
+                  </div>
+                </t>
+              </t>
+              <t
+                lg={null}
+                md={null}
+                size="4"
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <ArticleOptions
+                  article={
+                    Object {
+                      "author": Object {
+                        "created_at": 2019-01-19T10:42:09.625Z,
+                        "username": "",
+                      },
+                    }
+                  }
+                  canModify={true}
+                  handleDelete={[Function]}
+                  handleLink={[Function]}
+                />
+              </t>
+            </t>
+          </div>
+        </t>
+      </t>,
+      "className": "mt-5 ",
+      "fluid": false,
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          lg={null}
+          md={null}
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <h2
+            className="h1 display-3 text-bold"
+          />
+          <div
+            className="article-meta"
+          >
+            <t
+              tag="div"
+            >
+              <t
+                lg={null}
+                md={null}
+                size="4"
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <t
+                  tag="div"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid z-depth-1 square  rounded-circle"
+                    src="undefined"
+                  />
+                  <div
+                    className="d-flex flex-column ml-4 justify-content-end"
+                  >
+                    <div
+                      className="author"
+                      to=""
+                    >
+                      By:
+                      
+                    </div>
+                    <span
+                      className="date"
+                    >
+                      Invalid Date
+                    </span>
+                  </div>
+                </t>
+              </t>
+              <t
+                lg={null}
+                md={null}
+                size="4"
+                sm={null}
+                tag="div"
+                xl={null}
+                xs={null}
+              >
+                <ArticleOptions
+                  article={
+                    Object {
+                      "author": Object {
+                        "created_at": 2019-01-19T10:42:09.625Z,
+                        "username": "",
+                      },
+                    }
+                  }
+                  canModify={true}
+                  handleDelete={[Function]}
+                  handleLink={[Function]}
+                />
+              </t>
+            </t>
+          </div>
+        </t>,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="h1 display-3 text-bold"
+            />,
+            <div
+              className="article-meta"
+            >
+              <t
+                tag="div"
+              >
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <t
+                    tag="div"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid z-depth-1 square  rounded-circle"
+                      src="undefined"
+                    />
+                    <div
+                      className="d-flex flex-column ml-4 justify-content-end"
+                    >
+                      <div
+                        className="author"
+                        to=""
+                      >
+                        By:
+                        
+                      </div>
+                      <span
+                        className="date"
+                      >
+                        Invalid Date
+                      </span>
+                    </div>
+                  </t>
+                </t>
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <ArticleOptions
+                    article={
+                      Object {
+                        "author": Object {
+                          "created_at": 2019-01-19T10:42:09.625Z,
+                          "username": "",
+                        },
+                      }
+                    }
+                    canModify={true}
+                    handleDelete={[Function]}
+                    handleLink={[Function]}
+                  />
+                </t>
+              </t>
+            </div>,
+          ],
+          "lg": null,
+          "md": null,
+          "sm": null,
+          "tag": "div",
+          "xl": null,
+          "xs": null,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "h1 display-3 text-bold",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <t
+                tag="div"
+              >
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <t
+                    tag="div"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid z-depth-1 square  rounded-circle"
+                      src="undefined"
+                    />
+                    <div
+                      className="d-flex flex-column ml-4 justify-content-end"
+                    >
+                      <div
+                        className="author"
+                        to=""
+                      >
+                        By:
+                        
+                      </div>
+                      <span
+                        className="date"
+                      >
+                        Invalid Date
+                      </span>
+                    </div>
+                  </t>
+                </t>
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <ArticleOptions
+                    article={
+                      Object {
+                        "author": Object {
+                          "created_at": 2019-01-19T10:42:09.625Z,
+                          "username": "",
+                        },
+                      }
+                    }
+                    canModify={true}
+                    handleDelete={[Function]}
+                    handleLink={[Function]}
+                  />
+                </t>
+              </t>,
+              "className": "article-meta",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <t
+                    lg={null}
+                    md={null}
+                    size="4"
+                    sm={null}
+                    tag="div"
+                    xl={null}
+                    xs={null}
+                  >
+                    <t
+                      tag="div"
+                    >
+                      <img
+                        alt=""
+                        className="img-fluid z-depth-1 square  rounded-circle"
+                        src="undefined"
+                      />
+                      <div
+                        className="d-flex flex-column ml-4 justify-content-end"
+                      >
+                        <div
+                          className="author"
+                          to=""
+                        >
+                          By:
+                          
+                        </div>
+                        <span
+                          className="date"
+                        >
+                          Invalid Date
+                        </span>
+                      </div>
+                    </t>
+                  </t>,
+                  <t
+                    lg={null}
+                    md={null}
+                    size="4"
+                    sm={null}
+                    tag="div"
+                    xl={null}
+                    xs={null}
+                  >
+                    <ArticleOptions
+                      article={
+                        Object {
+                          "author": Object {
+                            "created_at": 2019-01-19T10:42:09.625Z,
+                            "username": "",
+                          },
+                        }
+                      }
+                      canModify={true}
+                      handleDelete={[Function]}
+                      handleLink={[Function]}
+                    />
+                  </t>,
+                ],
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <t
+                      tag="div"
+                    >
+                      <img
+                        alt=""
+                        className="img-fluid z-depth-1 square  rounded-circle"
+                        src="undefined"
+                      />
+                      <div
+                        className="d-flex flex-column ml-4 justify-content-end"
+                      >
+                        <div
+                          className="author"
+                          to=""
+                        >
+                          By:
+                          
+                        </div>
+                        <span
+                          className="date"
+                        >
+                          Invalid Date
+                        </span>
+                      </div>
+                    </t>,
+                    "lg": null,
+                    "md": null,
+                    "size": "4",
+                    "sm": null,
+                    "tag": "div",
+                    "xl": null,
+                    "xs": null,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <img
+                          alt=""
+                          className="img-fluid z-depth-1 square  rounded-circle"
+                          src="undefined"
+                        />,
+                        <div
+                          className="d-flex flex-column ml-4 justify-content-end"
+                        >
+                          <div
+                            className="author"
+                            to=""
+                          >
+                            By:
+                            
+                          </div>
+                          <span
+                            className="date"
+                          >
+                            Invalid Date
+                          </span>
+                        </div>,
+                      ],
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "",
+                          "className": "img-fluid z-depth-1 square  rounded-circle",
+                          "src": "undefined",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="author"
+                              to=""
+                            >
+                              By:
+                              
+                            </div>,
+                            <span
+                              className="date"
+                            >
+                              Invalid Date
+                            </span>,
+                          ],
+                          "className": "d-flex flex-column ml-4 justify-content-end",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "By:",
+                                "",
+                              ],
+                              "className": "author",
+                              "to": "",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "By:",
+                              "",
+                            ],
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Invalid Date",
+                              "className": "date",
+                            },
+                            "ref": null,
+                            "rendered": "Invalid Date",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <ArticleOptions
+                      article={
+                        Object {
+                          "author": Object {
+                            "created_at": 2019-01-19T10:42:09.625Z,
+                            "username": "",
+                          },
+                        }
+                      }
+                      canModify={true}
+                      handleDelete={[Function]}
+                      handleLink={[Function]}
+                    />,
+                    "lg": null,
+                    "md": null,
+                    "size": "4",
+                    "sm": null,
+                    "tag": "div",
+                    "xl": null,
+                    "xs": null,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "article": Object {
+                        "author": Object {
+                          "created_at": 2019-01-19T10:42:09.625Z,
+                          "username": "",
+                        },
+                      },
+                      "canModify": true,
+                      "handleDelete": [Function],
+                      "handleLink": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          tag="div"
+        >
+          <t
+            lg={null}
+            md={null}
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <h2
+              className="h1 display-3 text-bold"
+            />
+            <div
+              className="article-meta"
+            >
+              <t
+                tag="div"
+              >
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <t
+                    tag="div"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid z-depth-1 square  rounded-circle"
+                      src="undefined"
+                    />
+                    <div
+                      className="d-flex flex-column ml-4 justify-content-end"
+                    >
+                      <div
+                        className="author"
+                        to=""
+                      >
+                        By:
+                        
+                      </div>
+                      <span
+                        className="date"
+                      >
+                        Invalid Date
+                      </span>
+                    </div>
+                  </t>
+                </t>
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <ArticleOptions
+                    article={
+                      Object {
+                        "author": Object {
+                          "created_at": 2019-01-19T10:42:09.625Z,
+                          "username": "",
+                        },
+                      }
+                    }
+                    canModify={true}
+                    handleDelete={[Function]}
+                    handleLink={[Function]}
+                  />
+                </t>
+              </t>
+            </div>
+          </t>
+        </t>,
+        "className": "mt-5 ",
+        "fluid": false,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <t
+            lg={null}
+            md={null}
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <h2
+              className="h1 display-3 text-bold"
+            />
+            <div
+              className="article-meta"
+            >
+              <t
+                tag="div"
+              >
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <t
+                    tag="div"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid z-depth-1 square  rounded-circle"
+                      src="undefined"
+                    />
+                    <div
+                      className="d-flex flex-column ml-4 justify-content-end"
+                    >
+                      <div
+                        className="author"
+                        to=""
+                      >
+                        By:
+                        
+                      </div>
+                      <span
+                        className="date"
+                      >
+                        Invalid Date
+                      </span>
+                    </div>
+                  </t>
+                </t>
+                <t
+                  lg={null}
+                  md={null}
+                  size="4"
+                  sm={null}
+                  tag="div"
+                  xl={null}
+                  xs={null}
+                >
+                  <ArticleOptions
+                    article={
+                      Object {
+                        "author": Object {
+                          "created_at": 2019-01-19T10:42:09.625Z,
+                          "username": "",
+                        },
+                      }
+                    }
+                    canModify={true}
+                    handleDelete={[Function]}
+                    handleLink={[Function]}
+                  />
+                </t>
+              </t>
+            </div>
+          </t>,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="h1 display-3 text-bold"
+              />,
+              <div
+                className="article-meta"
+              >
+                <t
+                  tag="div"
+                >
+                  <t
+                    lg={null}
+                    md={null}
+                    size="4"
+                    sm={null}
+                    tag="div"
+                    xl={null}
+                    xs={null}
+                  >
+                    <t
+                      tag="div"
+                    >
+                      <img
+                        alt=""
+                        className="img-fluid z-depth-1 square  rounded-circle"
+                        src="undefined"
+                      />
+                      <div
+                        className="d-flex flex-column ml-4 justify-content-end"
+                      >
+                        <div
+                          className="author"
+                          to=""
+                        >
+                          By:
+                          
+                        </div>
+                        <span
+                          className="date"
+                        >
+                          Invalid Date
+                        </span>
+                      </div>
+                    </t>
+                  </t>
+                  <t
+                    lg={null}
+                    md={null}
+                    size="4"
+                    sm={null}
+                    tag="div"
+                    xl={null}
+                    xs={null}
+                  >
+                    <ArticleOptions
+                      article={
+                        Object {
+                          "author": Object {
+                            "created_at": 2019-01-19T10:42:09.625Z,
+                            "username": "",
+                          },
+                        }
+                      }
+                      canModify={true}
+                      handleDelete={[Function]}
+                      handleLink={[Function]}
+                    />
+                  </t>
+                </t>
+              </div>,
+            ],
+            "lg": null,
+            "md": null,
+            "sm": null,
+            "tag": "div",
+            "xl": null,
+            "xs": null,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "h1 display-3 text-bold",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <t
+                  tag="div"
+                >
+                  <t
+                    lg={null}
+                    md={null}
+                    size="4"
+                    sm={null}
+                    tag="div"
+                    xl={null}
+                    xs={null}
+                  >
+                    <t
+                      tag="div"
+                    >
+                      <img
+                        alt=""
+                        className="img-fluid z-depth-1 square  rounded-circle"
+                        src="undefined"
+                      />
+                      <div
+                        className="d-flex flex-column ml-4 justify-content-end"
+                      >
+                        <div
+                          className="author"
+                          to=""
+                        >
+                          By:
+                          
+                        </div>
+                        <span
+                          className="date"
+                        >
+                          Invalid Date
+                        </span>
+                      </div>
+                    </t>
+                  </t>
+                  <t
+                    lg={null}
+                    md={null}
+                    size="4"
+                    sm={null}
+                    tag="div"
+                    xl={null}
+                    xs={null}
+                  >
+                    <ArticleOptions
+                      article={
+                        Object {
+                          "author": Object {
+                            "created_at": 2019-01-19T10:42:09.625Z,
+                            "username": "",
+                          },
+                        }
+                      }
+                      canModify={true}
+                      handleDelete={[Function]}
+                      handleLink={[Function]}
+                    />
+                  </t>
+                </t>,
+                "className": "article-meta",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <t
+                      lg={null}
+                      md={null}
+                      size="4"
+                      sm={null}
+                      tag="div"
+                      xl={null}
+                      xs={null}
+                    >
+                      <t
+                        tag="div"
+                      >
+                        <img
+                          alt=""
+                          className="img-fluid z-depth-1 square  rounded-circle"
+                          src="undefined"
+                        />
+                        <div
+                          className="d-flex flex-column ml-4 justify-content-end"
+                        >
+                          <div
+                            className="author"
+                            to=""
+                          >
+                            By:
+                            
+                          </div>
+                          <span
+                            className="date"
+                          >
+                            Invalid Date
+                          </span>
+                        </div>
+                      </t>
+                    </t>,
+                    <t
+                      lg={null}
+                      md={null}
+                      size="4"
+                      sm={null}
+                      tag="div"
+                      xl={null}
+                      xs={null}
+                    >
+                      <ArticleOptions
+                        article={
+                          Object {
+                            "author": Object {
+                              "created_at": 2019-01-19T10:42:09.625Z,
+                              "username": "",
+                            },
+                          }
+                        }
+                        canModify={true}
+                        handleDelete={[Function]}
+                        handleLink={[Function]}
+                      />
+                    </t>,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <t
+                        tag="div"
+                      >
+                        <img
+                          alt=""
+                          className="img-fluid z-depth-1 square  rounded-circle"
+                          src="undefined"
+                        />
+                        <div
+                          className="d-flex flex-column ml-4 justify-content-end"
+                        >
+                          <div
+                            className="author"
+                            to=""
+                          >
+                            By:
+                            
+                          </div>
+                          <span
+                            className="date"
+                          >
+                            Invalid Date
+                          </span>
+                        </div>
+                      </t>,
+                      "lg": null,
+                      "md": null,
+                      "size": "4",
+                      "sm": null,
+                      "tag": "div",
+                      "xl": null,
+                      "xs": null,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": Array [
+                          <img
+                            alt=""
+                            className="img-fluid z-depth-1 square  rounded-circle"
+                            src="undefined"
+                          />,
+                          <div
+                            className="d-flex flex-column ml-4 justify-content-end"
+                          >
+                            <div
+                              className="author"
+                              to=""
+                            >
+                              By:
+                              
+                            </div>
+                            <span
+                              className="date"
+                            >
+                              Invalid Date
+                            </span>
+                          </div>,
+                        ],
+                        "tag": "div",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "",
+                            "className": "img-fluid z-depth-1 square  rounded-circle",
+                            "src": "undefined",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="author"
+                                to=""
+                              >
+                                By:
+                                
+                              </div>,
+                              <span
+                                className="date"
+                              >
+                                Invalid Date
+                              </span>,
+                            ],
+                            "className": "d-flex flex-column ml-4 justify-content-end",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  "By:",
+                                  "",
+                                ],
+                                "className": "author",
+                                "to": "",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "By:",
+                                "",
+                              ],
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Invalid Date",
+                                "className": "date",
+                              },
+                              "ref": null,
+                              "rendered": "Invalid Date",
+                              "type": "span",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <ArticleOptions
+                        article={
+                          Object {
+                            "author": Object {
+                              "created_at": 2019-01-19T10:42:09.625Z,
+                              "username": "",
+                            },
+                          }
+                        }
+                        canModify={true}
+                        handleDelete={[Function]}
+                        handleLink={[Function]}
+                      />,
+                      "lg": null,
+                      "md": null,
+                      "size": "4",
+                      "sm": null,
+                      "tag": "div",
+                      "xl": null,
+                      "xs": null,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "article": Object {
+                          "author": Object {
+                            "created_at": 2019-01-19T10:42:09.625Z,
+                            "username": "",
+                          },
+                        },
+                        "canModify": true,
+                        "handleDelete": [Function],
+                        "handleLink": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
