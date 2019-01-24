@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { MDBCol, MDBRow } from "mdbreact";
 import LoginView from "../../components/Login/LoginForm";
 import { login } from "../../actions/LoginAction";
 
@@ -27,6 +28,7 @@ export class Login extends Component {
    * action is dispatched and mapStateToProps below is invoked.
    */
   componentWillReceiveProps(nextProps) {
+    const { fallback } = this.props;
     const { errors } = nextProps.returnData;
     const { user } = nextProps.returnData;
     if (errors) {
@@ -37,7 +39,7 @@ export class Login extends Component {
       window.localStorage.setItem("token", user.token);
       window.localStorage.setItem("user", JSON.stringify(user));
       window.localStorage.setItem("username", user.username);
-      history.push("/");
+      fallback ? history.push(fallback) : history.push("/");
       window.location.reload();
     }
   }
@@ -67,24 +69,35 @@ export class Login extends Component {
 
   render() {
     const { errors } = this.state;
+    const { md } = this.props;
     return (
-      <LoginView
-        onChange={this.handleChange}
-        onSubmit={this.handleSubmit}
-        errors={errors}
-      />
+      <div className="mt-3 pt-6 w-sm-100 w-md-25 ">
+        <MDBRow className="flex flex-center m-0">
+          <MDBCol md={md} className="m-0 p-0">
+            <LoginView
+              onChange={this.handleChange}
+              onSubmit={this.handleSubmit}
+              errors={errors}
+            />
+          </MDBCol>
+        </MDBRow>
+      </div>
     );
   }
 }
 Login.propTypes = {
   returnData: PropTypes.shape({}),
   history: PropTypes.shape({}),
-  login: PropTypes.func
+  login: PropTypes.func,
+  md: PropTypes.string,
+  fallback: PropTypes.string
 };
 Login.defaultProps = {
   returnData: {},
   login: () => {},
-  history: {}
+  history: {},
+  md: "",
+  fallback: ""
 };
 /**
  * Filters which state is rendered as props.

@@ -6,6 +6,7 @@ import ArticleItem from "../../../components/articles/articleItem/ArticleItem";
 import { getArticles } from "../../../actions/articleActions/ArticleActions";
 import getTags from "../../../actions/tagsAction";
 import TagsForm from "../../../components/Tags/TagsForm/TagsForm";
+import SearchForm from "../../../components/Search/Search";
 
 export class ArticleList extends Component {
   constructor(props) {
@@ -45,6 +46,7 @@ export class ArticleList extends Component {
               {art}
             </MDBCol>
             <MDBCol size="3" className="position-sticky m1">
+              <SearchForm />
               <TagsForm tags={tags} />
             </MDBCol>
           </MDBRow>
