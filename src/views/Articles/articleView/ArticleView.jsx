@@ -9,6 +9,7 @@ import {
 } from "../../../actions/articleActions/ArticleActions";
 import "./ArticleView.scss";
 import TagList from "../../TagList/TagList";
+import ShareButtons from "../../../components/ShareArticleButtons/ShareArticleButtons";
 
 export class ArticleView extends Component {
   constructor(props) {
@@ -80,14 +81,16 @@ export class ArticleView extends Component {
             handleLink={this.handleLink}
           />
 
-          <div className="container page mt-5">
+          <div className="article-body container page mt-5">
             <div className="row article-content">
-              <div className="col-xs-12">
+              <div className="sidebar col-xs-1" style={{ marginRight: "50px" }}>
+                <ShareButtons />
+              </div>
+              <div className="col-md-11">
                 <div>{renderHTML(articleIfo.body)}</div>
                 <TagList tags={view_article.tagList} view_flag />
               </div>
             </div>
-
             <hr />
           </div>
         </div>
