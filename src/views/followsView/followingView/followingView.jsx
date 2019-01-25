@@ -32,7 +32,6 @@ class Following extends Component {
     } else if (Array.isArray(followingData)) {
       return (
         <div>
-          <i className="fa fa-home flex flex-center"></i>
           {followingData.map(followers => {
             return (
               <div>
