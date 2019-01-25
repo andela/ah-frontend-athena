@@ -1,37 +1,54 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { MDBIcon } from "mdbreact";
+import "./CommentEdit.scss";
 
 const CommentEdit = ({ clickReply, clickDelete, clickEdit, id }) => {
+  const handleKeyUp = () => {};
+  
   return (
-    <div>
-      <span
-        onClick={() => {
-          clickReply(id);
-        }}
-        className="text-primary"
-      >
-        <MDBIcon icon="reply" />
-        reply&nbsp;&nbsp;
-      </span>
-      <span
-        onClick={() => {
-          clickEdit(id);
-        }}
-        className="text-primary"
-      >
-        <MDBIcon icon="edit" />
-        Edit&nbsp;&nbsp;
-      </span>
-      <span
-        onClick={() => {
-          clickDelete(id);
-        }}
-        className="text-primary"
-      >
-        <MDBIcon icon="trash" />
-        delete&nbsp;&nbsp;
-      </span>
+    <div className="reply container row">
+      <div className="col-8">
+        <span
+          id="reply"
+          onClick={() => {
+            clickReply();
+          }}
+          onKeyUp={handleKeyUp}
+          role="button"
+          tabIndex="0"
+          className="text-primary"
+        >
+          <MDBIcon icon="reply" />
+          reply&nbsp;&nbsp;
+        </span>
+        <span
+          id="edit"
+          onClick={() => {
+            clickEdit(id);
+          }}
+          onKeyUp={handleKeyUp}
+          role="button"
+          tabIndex="0"
+          className="text-primary"
+        >
+          <MDBIcon icon="edit" />
+          Edit&nbsp;&nbsp;
+        </span>
+        <span
+          id="delete"
+          onClick={() => {
+            clickDelete(id);
+          }}
+          onKeyUp={handleKeyUp}
+          role="button"
+          tabIndex="0"
+          className="text-primary"
+        >
+          <MDBIcon icon="trash" />
+          delete&nbsp;&nbsp;
+        </span>
+      </div>
     </div>
   );
 };

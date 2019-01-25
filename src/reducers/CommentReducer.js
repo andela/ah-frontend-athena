@@ -28,7 +28,6 @@ export default (state = initialState, action) => {
         comList[action.payload.parent]["replies"][action.payload.id] =
           action.payload;
       }
-
       return { ...state, commentList: comList, refresh: ref };
     case actionTypes.GETCOMMENT:
       return { ...state, commentList: action.payload, refresh: false };

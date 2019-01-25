@@ -2,17 +2,12 @@ import actionTypes from "../actionTypes";
 
 const token = window.localStorage.getItem("token");
 
-export const CommentDelete = message => ({
-  type: actionTypes.COMMENTDELETE,
-  payload: message
-});
-
 export const EditComment = update => ({
   type: actionTypes.EDITCOMMENT,
   payload: update
 });
 
-export const CommentEditAction = (id,slug, data ) => dispatch => {
+export const CommentEditAction = (id, slug, data) => dispatch => {
   return fetch(
     `${process.env.REACT_APP_API_URL_BASE}articles/${slug}/comments/${id}/`,
     {
@@ -39,12 +34,14 @@ export const CommentDeleteAction = (id, slug) => dispatch => {
       headers: {
         "content-type": "application/json",
         Authorization: `Bearer ${token}`
-      },
-      CORS: "no-cors"
+      }
     }
   )
     .then(res => res.json())
     .then(response => {
-      dispatch(CommentDelete(response));
+      dispatch({
+        type: actionTypes.COMMENTDELETE,
+        payload: response
+      });
     });
 };

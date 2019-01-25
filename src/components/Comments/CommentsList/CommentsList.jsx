@@ -1,20 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { MDBCard, MDBCardBody, MDBContainer, MDBIcon } from "mdbreact";
+import { MDBCard, MDBCardBody, MDBContainer, MDBBadge } from "mdbreact";
 import { connect } from "react-redux";
 import { CommentAction } from "../../../actions/CommentActions/CommentAction";
-import { CommentDeleteAction } from "../../../actions/CommentActions/CommentEditAction";
+import {
+  CommentDeleteAction,
+  CommentEditAction
+} from "../../../actions/CommentActions/CommentEditAction";
 import {
   ReplyPostAction,
   CommentGetAction
 } from "../../../actions/CommentActions/CommentGetAction";
-import ReplyBox from "../ReplyBox/ReplyBox";
-import ReplyList from "../ReplyList/ReplyList";
+import ReplyBox from "../../../views/CommentView/ReplyBox/ReplyBox";
 import CommentEdit from "../CommentEdit/CommentEdit";
 import "./CommentsList.scss";
+import LoadReply from "./LoadReply";
 
 const username = window.localStorage.getItem("username");
-class CommentsList extends React.Component {
+export class CommentsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,16 +29,11 @@ class CommentsList extends React.Component {
   }
 
   componentDidMount() {
-    const { slug } = this.props;
-    const { CommentGetAction } = this.props;
+    const { CommentGetAction, slug } = this.props;
     CommentGetAction("", slug);
   }
 
   componentWillReceiveProps(nextProps) {
-    const comment = nextProps.data;
-    if (comment) {
-      this.setState({ comment: comment });
-    }
     if (nextProps.commentList) {
       this.setState({ commentList: nextProps.commentList });
     }
@@ -52,91 +50,82 @@ class CommentsList extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  clickReply = id => {
+  HandleClickLogic = (status1, dnone, status2) => {
     const { showComBox } = this.state;
     if (showComBox === "") {
-      this.setState({ showComBox: "d-none", isEdit: false });
+      this.setState({ showComBox: dnone, isEdit: status1 });
     } else {
-      this.setState({ showComBox: "", isEdit: false });
+      this.setState({ showComBox: status2, isEdit: status1 });
     }
+  }
+
+  clickReply = () => {
+    this.HandleClickLogic(false, 'd-none', "")
   };
+  
+  clickEdit = () => {
+    this.HandleClickLogic('true', 'd-none', "")
+  };
+
   clickDelete = id => {
     const myDelete = this.props;
     myDelete.CommentDeleteAction(id, myDelete.slug);
   };
-  clickEdit = id => {
-    const { showComBox } = this.state;
-    if (showComBox === "") {
-      this.setState({ showComBox: "d-none", isEdit: true });
-    } else {
-      this.setState({ showComBox: "", isEdit: true });
-    }
-  };
 
-  repliesShow = e => {
+  repliesShow = () => {
     const { showReplies } = this.state;
     if (showReplies === "") {
-      this.setState({ showReplies: "d-none" });
+      this.setState({ showReplies: "d-none" + CommentsList.state });
     } else {
       this.setState({ showReplies: "" });
     }
   };
 
+  dateToHours = commented_date => {
+    const initial_date = commented_date;
+    const dateNow = new Date(initial_date);
+    return dateNow.getHours();
+  };
+
+  handleKeyUp = () => {};
+
   render() {
-    const { slug } = this.props;
+    const { slug, CommentEditAction, CommentDeleteAction } = this.props;
     const { isEdit } = this.state;
     const { showReplies } = this.state;
     const { commentList, showComBox } = this.state;
     if (commentList) {
       const list = Object.keys(commentList).map(id => {
         const replies = commentList[id].replies;
-
         if (replies) {
           return (
             <div key={commentList[id].id} className=" my-0  p-0  container">
-              <MDBContainer className="mt-3 p-0 m-0">
-                <MDBCard className="mw-80">
-                  <MDBCardBody className="mw-100">
-                    <h6 className="comment-body">
-                      {commentList[id].comment_body}
-                    </h6>
-                    <div className="date">{commentList[id].created_at}</div>
-                    <div className="mdc-chip">
-                      <img
-                        src={commentList[id].author.image}
-                        className="img-fluid z-depth-1 square mr-2  rounded-circle"
-                        alt="Contact Person"
-                      />
-
-                      {username}
-                    </div>
-                    <CommentEdit
-                      id={id}
-                      clickEdit={this.clickEdit}
-                      clickDelete={this.clickDelete}
-                      clickReply={this.clickReply}
-                    />
-                    <div
-                      onClick={this.repliesShow}
-                      className="d-flex flex-center"
-                    >
-                      <MDBIcon icon="angle-double-down" size="2x" />
-                    </div>
-                  </MDBCardBody>
-                </MDBCard>
-                <div className={showReplies}>
-                  <ReplyList
-                    repliesShow={this.repliesShow2}
-                    slug={slug}
-                    onSubmitReply={this.onSubmitReply}
-                    parentId={id}
-                    replyList={replies}
-                  />
-                </div>
-                <div className={showComBox}>
-                  <ReplyBox isEdit={isEdit} parentId={id} childId={id} />
-                </div>
-              </MDBContainer>
+              <LoadReply
+                comment={commentList[id]}
+                id={id}
+                clickEdit={this.clickEdit}
+                clickDelete={this.clickDelete}
+                clickReply={this.clickReply}
+                onClick={this.onClick}
+                CommentEditAction={CommentEditAction}
+                onClick2={this.repliesShow}
+                onKeyUp={this.handleKeyUp}
+                repliesShow={this.repliesShow2}
+                slug={slug}
+                onSubmitReply={this.onSubmitReply}
+                parentId={id}
+                replyList={replies}
+                CommentDeleteAction={CommentDeleteAction}
+                isEdit={isEdit}
+                parentId2={id}
+                childId={id}
+                art_slug={slug}
+                showReplies={showReplies}
+                img={commentList[id].author.image}
+                showComBox={showComBox}
+                username={username}
+                dateHour={this.dateToHours(commentList[id].created_at)}
+              />
             </div>
           );
         } else {
@@ -149,25 +138,33 @@ class CommentsList extends React.Component {
                       <h6 className="comment-body">
                         {commentList[id].comment_body}
                       </h6>
-                      <div className="date">{commentList[id].created_at}</div>
-                      <div className="mdc-chip">
-                        <img
-                          src={commentList[id].author.image}
-                          className="img-fluid z-depth-1 square mr-2  rounded-circle"
-                          alt="Contact Person"
-                        />
+                      <div className="col-3 user-info offset-9 border border-white">
+                        <div className="date">
+                          <MDBBadge color="light" className="mr-2">
+                            {this.dateToHours(commentList[id].created_at)}
+                          </MDBBadge>
+                          Hours ago
+                        </div>
+                        <div className="mdc-chip">
+                          <img
+                            src={commentList[id].author.image}
+                            className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                            alt="Contact Person"
+                          />
 
-                        {username}
+                          {username}
+                        </div>
                       </div>
                       <CommentEdit
                         id={id}
                         clickEdit={this.clickEdit}
                         clickDelete={this.clickDelete}
                         clickReply={this.clickReply}
+                        onClick={this.onClick}
                       />
                     </div>
                     <div className={showComBox}>
-                      <ReplyBox parentId={id} childId={id} />
+                      <ReplyBox parentId={id} childId={id} art_slug={slug} />
                     </div>
                   </MDBCardBody>
                 </MDBCard>
@@ -178,14 +175,24 @@ class CommentsList extends React.Component {
       });
       return (
         <div className="m-1 p-1 container">
-          <ReplyBox isEdit={isEdit} parentId={null} childId={null} />
+          <ReplyBox
+            isEdit={isEdit}
+            parentId={null}
+            childId={null}
+            art_slug={slug}
+          />
           {list}
         </div>
       );
     } else {
       return (
         <div>
-          <ReplyBox isEdit={isEdit} parentId={null} childId={null} />
+          <ReplyBox
+            isEdit={isEdit}
+            parentId={null}
+            childId={null}
+            art_slug={slug}
+          />
         </div>
       );
     }
@@ -194,6 +201,8 @@ class CommentsList extends React.Component {
 
 CommentsList.propTypes = {
   CommentGetAction: PropTypes.func,
+  CommentEditAction: PropTypes.func.isRequired,
+  CommentDeleteAction: PropTypes.func.isRequired,
   slug: PropTypes.shape({}),
   data: PropTypes.shape({}),
   commentList: PropTypes.shape({}),
@@ -219,5 +228,11 @@ export const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { CommentAction, ReplyPostAction, CommentGetAction, CommentDeleteAction }
+  {
+    CommentAction,
+    ReplyPostAction,
+    CommentGetAction,
+    CommentDeleteAction,
+    CommentEditAction
+  }
 )(CommentsList);

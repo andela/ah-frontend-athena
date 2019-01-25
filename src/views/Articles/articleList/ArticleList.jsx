@@ -8,7 +8,6 @@ import getTags from "../../../actions/tagsAction";
 import TagsForm from "../../../components/Tags/TagsForm/TagsForm";
 import Paginations from "../../Pagination/Paginations";
 
-
 export class ArticleList extends Component {
   constructor(props) {
     super(props);
@@ -65,7 +64,6 @@ export class ArticleList extends Component {
     } else {
       return <div />;
     }
-   
   }
 }
 

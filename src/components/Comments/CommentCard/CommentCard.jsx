@@ -1,32 +1,31 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { MDBInput, MDBContainer, MDBCardBody, MDBCard, MDBBtn } from "mdbreact";
 
-const CommentCard = ({ onChange, onSubmit}) => {
+const CommentCard = ({ onChange, onSubmitReply }) => {
   return (
-    <div>
-      <MDBContainer className="mt-5 mb-5">
-        <MDBCard className="w-50 h-50">
+    <div className="">
+      <MDBContainer className="my-3 mx-0 px-0">
+        <MDBCard className="w-75">
           <MDBCardBody>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmitReply}>
               <MDBInput
-                type="textarea"
-                label="comment"
-                rows="2"
-                column="30"
-                icon="pencil-alt"
-                id="comment"
-                name="comment_body"
                 onChange={onChange}
+                label="add comment"
+                name="comment_body"
+                type="textarea"
+                id="reply"
+                cols="30"
+                rows="2"
                 required
               />
               <p />
               <MDBBtn
-                className="left ml-4"
-                type="submit"
-                size="sm"
+                className="m-1 p-1 left ml-4"
                 color="primary"
+                type="submit"
               >
-                submit
+                comment
               </MDBBtn>
             </form>
           </MDBCardBody>
@@ -34,5 +33,14 @@ const CommentCard = ({ onChange, onSubmit}) => {
       </MDBContainer>
     </div>
   );
+};
+
+CommentCard.propTypes = {
+  onChange: PropTypes.func,
+  onSubmitReply: PropTypes.func
+};
+CommentCard.defaultProps = {
+  onChange: () => {},
+  onSubmitReply: () => {}
 };
 export default CommentCard;
