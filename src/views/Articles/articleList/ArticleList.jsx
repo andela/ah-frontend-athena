@@ -5,6 +5,7 @@ import ArticleItem from "../../../components/articles/articleItem/ArticleItem";
 import { getArticles } from "../../../actions/articleActions/ArticleActions";
 import Paginations from "../../../components/Pagination/Pagination";
 
+
 export class ArticleList extends Component {
   constructor(props) {
     super(props);
@@ -97,6 +98,7 @@ export class ArticleList extends Component {
       const list = articles.map(article => {
         return <ArticleItem key={article.id} article={article} />;
       });
+      
       return (
         <div>
           {list}
@@ -113,6 +115,7 @@ export class ArticleList extends Component {
     } else {
       return <div />;
     }
+   
   }
 }
 
