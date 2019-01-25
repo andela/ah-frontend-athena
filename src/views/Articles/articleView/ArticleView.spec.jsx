@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { ArticleView } from "./ArticleView";
+import { ArticleView, mapStateToProps } from "./ArticleView";
 
 let push = jest.fn();
 let returnData = {};
@@ -27,6 +27,28 @@ let props = {
   classValue: "",
   text: "",
   view_article
+};
+
+let state = {
+  login: {
+    login: {}
+  },
+  articles: {
+    view_article: {}
+  },
+  follow: {
+    data:{
+      
+    }
+  }
+};
+
+let ownProps = {
+  match: {
+    params: {
+      slug: "josh"
+    }
+  }
 };
 
 describe("<ArticleView>", () => {
@@ -64,6 +86,13 @@ describe("<ArticleView>", () => {
   it("render no articles", () => {
     wrapper.setProps(view_article);
     expect(wrapper.state.view_article).toEqual(undefined);
+  })
+  it("will receive props", () => {
+    wrapper.setProps({ view_article: { author: { username: "" } } });
+    expect(wrapper.state("view_article")).toEqual({ author: { username: "" } });
+  });
+  it("should map state to props", () => {
+    expect(mapStateToProps(state, ownProps).slug).toEqual("josh");
   });
 });
 
@@ -111,4 +140,4 @@ describe("test following", () => {
     wrap.instance().toggle();
     expect(wrap.state("modal")).toEqual(true);
   });
-});
+})

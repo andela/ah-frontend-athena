@@ -6,7 +6,11 @@ const initialState = {
   view_article: {},
   edit_article: {},
   delete_article: {},
-  new_article_rate: {}
+  new_article_rate: {},
+  fullArticle: {},
+  searchParam: "",
+  currentPage: 1,
+  totalPages: 1
 };
 
 export default (state = initialState, action) => {
@@ -14,7 +18,13 @@ export default (state = initialState, action) => {
     case actionTypes.CREATE_ARTICLE:
       return { ...state, article: action.payload };
     case actionTypes.GET_ARTICLES:
-      return { ...state, articles: action.payload };
+      return {
+        ...state,
+        articles: action.payload,
+        fullArticle: action.pages,
+        totalPages: action.pages.total_pages,
+        currentPage: action.pages.current_page
+      };
     case actionTypes.GET_SINGLE_ARTICLE:
       return { ...state, view_article: action.payload };
     case actionTypes.EDIT_ARTICLE:
@@ -25,6 +35,15 @@ export default (state = initialState, action) => {
       return { ...state, new_article_rate: action.payload };
     case actionTypes.TAGGED_ARTICALS:
       return { ...state, articles: action.payload };
+    case actionTypes.STORE_PARAM:
+      return { ...state, searchParam: action.payload };
+    case actionTypes.GET_MORE_ARTICLES:
+      return {
+        ...state,
+        articles: action.payload.results,
+        currentPage: action.payload.current_page,
+        totalPages: action.payload.total_pages
+      };
     default:
       return state;
   }

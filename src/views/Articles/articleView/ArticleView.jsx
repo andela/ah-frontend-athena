@@ -204,7 +204,7 @@ export class ArticleView extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
+export const mapStateToProps = (state, ownProps) => {
   return {
     currentUser: state.login.login,
     view_article: state.articles.view_article,

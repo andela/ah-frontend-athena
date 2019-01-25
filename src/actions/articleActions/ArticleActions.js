@@ -27,17 +27,25 @@ const getArticles = (tag, keyword, title) => dispatch => {
   } else if (keyword) {
     search_param = keyword;
   }
-  return fetch(`${actionTypes.BASEURL}articles/search?${search_param}`, {
-    method: "GET",
-    headers: {
-      "content-type": "application/json"
+  return fetch(
+    `${actionTypes.BASEURL}articles/search?${search_param}&limit=5`,
+    {
+      method: "GET",
+      headers: {
+        "content-type": "application/json"
+      }
     }
-  })
+  )
     .then(res => res.json())
     .then(res => {
       dispatch({
         type: actionTypes.GET_ARTICLES,
-        payload: res.results
+        payload: res.results,
+        pages: res,
+      });
+      dispatch({
+        type: actionTypes.STORE_PARAM,
+        payload: search_param
       });
     })
     .catch(err => err);
@@ -88,7 +96,29 @@ const deleteArticle = slug => dispatch => {
     .catch(err => err);
 };
 
+const getMoreArticles = (page, searchParam='') => dispatch => {
+  return fetch(
+    `${process.env.REACT_APP_API_URL_BASE}articles/search?${searchParam}&limit=5&page=${page}`,
+    {
+      method: "GET",
+      headers: {
+        "content-type": "application/json"
+      }
+    }
+  )
+    .then(res => res.json())
+    .then(res => {
+      dispatch({
+        type: actionTypes.GET_MORE_ARTICLES,
+        payload: res
+      });
+    })
+    .catch(err=>err)
+};
+
+
 export {
+  getMoreArticles,
   createArticles,
   getArticles,
   getSingleArticle,

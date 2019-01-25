@@ -50,7 +50,7 @@ describe("<ArticleList>", () => {
         <ArticleList {...articleDta} />
       </Provider>
     );
-    expect(wrapp.state("storeState")).toEqual({ articles: [] });
+    expect(wrapp.state("storeState")).toEqual({articles: []})
   });
 
   it("should handle empty articles in next props properly", () => {
@@ -58,3 +58,4 @@ describe("<ArticleList>", () => {
     expect(wrapper.instance().props.articles).toEqual([]);
   });
 });
+

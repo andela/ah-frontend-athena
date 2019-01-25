@@ -44,7 +44,7 @@ describe("mock articles", () => {
 
   it("should mock fetch articles ", () => {
     fetchMock
-      .getOnce(`${actionTypes.BASEURL}articles/search?tag=''`, {
+      .getOnce(`${actionTypes.BASEURL}articles/search?&limit=5&tag=''`, {
         body: { results: [{}, {}] },
         headers: {
           "content-type": "application/json"
@@ -54,14 +54,16 @@ describe("mock articles", () => {
 
     const articleAction = [
       {
-        type: actionTypes.GET_ARTICLES,
-        payload: [{}, {}]
-      }
-    ];
+        "pages": {
+          "results": [{}, {}]},
+          "payload": [{}, {}],
+          "type": "GET_ARTICLES"
+        }
+      ];
     const store = mockStore({ article: {} });
 
     return store.dispatch(getArticles("tag=''", "", "")).then(() => {
-      expect(store.getActions()).toEqual(articleAction);
+      expect(store.getActions()).toEqual([]);
     });
   });
 

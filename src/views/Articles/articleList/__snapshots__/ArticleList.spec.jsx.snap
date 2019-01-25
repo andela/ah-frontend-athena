@@ -12,6 +12,7 @@ ShallowWrapper {
     }
     body="this is body"
     description="description"
+    fullArticle={Object {}}
     getArticles={[Function]}
     getTags={[Function]}
     results={Object {}}
@@ -43,7 +44,12 @@ ShallowWrapper {
           tag="div"
           xl={null}
           xs={null}
-        />
+        >
+          <Connect(Paginations)
+            fullArticle={Object {}}
+            update={[Function]}
+          />
+        </t>
         <t
           className="position-sticky m1"
           lg={null}
@@ -79,7 +85,12 @@ ShallowWrapper {
             tag="div"
             xl={null}
             xs={null}
-          />,
+          >
+            <Connect(Paginations)
+              fullArticle={Object {}}
+              update={[Function]}
+            />
+          </t>,
           <t
             className="position-sticky m1"
             lg={null}
@@ -104,7 +115,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [],
+            "children": Array [
+              Array [],
+              <Connect(Paginations)
+                fullArticle={Object {}}
+                update={[Function]}
+              />,
+            ],
             "className": "w-100 m-0",
             "lg": null,
             "md": null,
@@ -115,7 +132,20 @@ ShallowWrapper {
             "xs": null,
           },
           "ref": null,
-          "rendered": Array [],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "fullArticle": Object {},
+                "update": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -172,7 +202,12 @@ ShallowWrapper {
             tag="div"
             xl={null}
             xs={null}
-          />
+          >
+            <Connect(Paginations)
+              fullArticle={Object {}}
+              update={[Function]}
+            />
+          </t>
           <t
             className="position-sticky m1"
             lg={null}
@@ -208,7 +243,12 @@ ShallowWrapper {
               tag="div"
               xl={null}
               xs={null}
-            />,
+            >
+              <Connect(Paginations)
+                fullArticle={Object {}}
+                update={[Function]}
+              />
+            </t>,
             <t
               className="position-sticky m1"
               lg={null}
@@ -233,7 +273,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [],
+              "children": Array [
+                Array [],
+                <Connect(Paginations)
+                  fullArticle={Object {}}
+                  update={[Function]}
+                />,
+              ],
               "className": "w-100 m-0",
               "lg": null,
               "md": null,
@@ -244,7 +290,20 @@ ShallowWrapper {
               "xs": null,
             },
             "ref": null,
-            "rendered": Array [],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "fullArticle": Object {},
+                  "update": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           Object {
