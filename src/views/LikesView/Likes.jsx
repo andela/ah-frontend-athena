@@ -103,6 +103,7 @@ export class Likes extends Component {
           likes_count={likes_count}
         />
         <ModalPage
+          title='Please login before you can like or dislike the article'
           modal={modal}
           toggle={this.toggle}
           fallback={url}

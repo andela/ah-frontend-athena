@@ -9,6 +9,10 @@ ShallowWrapper {
     Edit={[MockFunction]}
     attribute={[MockFunction]}
     classValue={[MockFunction]}
+    followers={0}
+    following={0}
+    getFollowers={[Function]}
+    getFollowing={[Function]}
     getProfile={[MockFunction]}
     profile={Object {}}
     sortImage={[MockFunction]}
@@ -32,6 +36,8 @@ ShallowWrapper {
       "Edit": [Function],
       "attribute": "dropdown-menu dropdown-menu-left dropdown-secondary ",
       "classValue": "d-none",
+      "followers": 0,
+      "following": 0,
       "imageShow": "default.png",
       "profile": Object {},
     },
@@ -50,6 +56,8 @@ ShallowWrapper {
         "Edit": [Function],
         "attribute": "dropdown-menu dropdown-menu-left dropdown-secondary ",
         "classValue": "d-none",
+        "followers": 0,
+        "following": 0,
         "imageShow": "default.png",
         "profile": Object {},
       },

@@ -1,32 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArticleView> matches snapshort 1`] = `
+exports[`test follow button should render follow button 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArticleView
-    article={Object {}}
-    canFollow={true}
-    canModify={true}
-    className=""
+  Symbol(enzyme.__unrendered__): <followButton
+    canFollow={false}
     classValue=""
-    deleteArticle={[MockFunction]}
-    followData={Object {}}
-    followUser={[Function]}
-    getFollowing={[Function]}
-    getSingleArticle={[Function]}
     handleClick={[MockFunction]}
-    handleLink={[MockFunction]}
-    history={
-      Object {
-        "push": [MockFunction],
-      }
-    }
-    returnData={Object {}}
-    slug=""
     text=""
-    toggle={[MockFunction]}
-    unFollowUser={[Function]}
-    view_article={Object {}}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -41,11 +22,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Loading...",
+      "children": "",
+      "className": "",
+      "onClick": [MockFunction],
+      "type": "button",
     },
     "ref": null,
-    "rendered": "Loading...",
-    "type": "div",
+    "rendered": "",
+    "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -53,11 +37,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Loading...",
+        "children": "",
+        "className": "",
+        "onClick": [MockFunction],
+        "type": "button",
       },
       "ref": null,
-      "rendered": "Loading...",
-      "type": "div",
+      "rendered": "",
+      "type": "button",
     },
   ],
   Symbol(enzyme.__options__): Object {

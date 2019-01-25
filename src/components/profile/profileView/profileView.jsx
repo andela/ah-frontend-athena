@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 import "./profileView.scss";
 
 const viewProfile = props => {
-  const {classValue, Clicked, imageShow, attribute, profile, Click, Edit} = props
+  const {classValue, Clicked, imageShow, attribute, profile, Click, Edit, followers, following} = props
   const Value = `navbar-nav ml-auto nav-flex-icons  ${classValue}`;
   return (
     <div>
@@ -33,6 +33,10 @@ const viewProfile = props => {
                     className="rounded-circle drop-img"
                     alt=""
                   />
+                  <span className='followers'>followers</span>
+                  <span className='following'>following</span>
+                  <a href='/followers'><button type="button" className="round-btn">{followers}</button></a>
+                  <a href='/following'><button type="button" className="round-btn-2">{following}</button></a>
                   <span className="username">{profile.username}</span>
                   <br />
                   <span className="email">{profile.email}</span>
@@ -78,6 +82,8 @@ viewProfile.propTypes = {
   imageShow: propTypes.string,
   attribute: propTypes.string,
   profile: propTypes.shape({}),
+  followers: propTypes.number,
+  following: propTypes.number,
   Click: propTypes.func,
   Edit: propTypes.func
 }
@@ -87,6 +93,8 @@ viewProfile.defaultProps = {
   imageShow: '',
   attribute: '',
   profile: {},
+  followers: 0,
+  following: 0,
   Click: ()=>{},
   Edit: ()=>{}
 }

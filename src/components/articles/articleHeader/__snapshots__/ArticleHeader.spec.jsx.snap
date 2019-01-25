@@ -12,9 +12,13 @@ ShallowWrapper {
         },
       }
     }
+    canFollow={true}
     canModify={true}
+    classValue=""
+    handleClick={[Function]}
     handleDelete={[Function]}
     handleLink={[Function]}
+    text=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -69,6 +73,12 @@ ShallowWrapper {
                   <div
                     className="d-flex flex-column ml-4 justify-content-end"
                   >
+                    <followButton
+                      canFollow={true}
+                      classValue=""
+                      handleClick={[Function]}
+                      text=""
+                    />
                     <div
                       className="author"
                       to=""
@@ -158,6 +168,12 @@ ShallowWrapper {
                   <div
                     className="d-flex flex-column ml-4 justify-content-end"
                   >
+                    <followButton
+                      canFollow={true}
+                      classValue=""
+                      handleClick={[Function]}
+                      text=""
+                    />
                     <div
                       className="author"
                       to=""
@@ -237,6 +253,12 @@ ShallowWrapper {
                     <div
                       className="d-flex flex-column ml-4 justify-content-end"
                     >
+                      <followButton
+                        canFollow={true}
+                        classValue=""
+                        handleClick={[Function]}
+                        text=""
+                      />
                       <div
                         className="author"
                         to=""
@@ -327,6 +349,12 @@ ShallowWrapper {
                     <div
                       className="d-flex flex-column ml-4 justify-content-end"
                     >
+                      <followButton
+                        canFollow={true}
+                        classValue=""
+                        handleClick={[Function]}
+                        text=""
+                      />
                       <div
                         className="author"
                         to=""
@@ -395,6 +423,12 @@ ShallowWrapper {
                       <div
                         className="d-flex flex-column ml-4 justify-content-end"
                       >
+                        <followButton
+                          canFollow={true}
+                          classValue=""
+                          handleClick={[Function]}
+                          text=""
+                        />
                         <div
                           className="author"
                           to=""
@@ -454,6 +488,12 @@ ShallowWrapper {
                       <div
                         className="d-flex flex-column ml-4 justify-content-end"
                       >
+                        <followButton
+                          canFollow={true}
+                          classValue=""
+                          handleClick={[Function]}
+                          text=""
+                        />
                         <div
                           className="author"
                           to=""
@@ -491,6 +531,12 @@ ShallowWrapper {
                         <div
                           className="d-flex flex-column ml-4 justify-content-end"
                         >
+                          <followButton
+                            canFollow={true}
+                            classValue=""
+                            handleClick={[Function]}
+                            text=""
+                          />
                           <div
                             className="author"
                             to=""
@@ -528,6 +574,12 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
+                            <followButton
+                              canFollow={true}
+                              classValue=""
+                              handleClick={[Function]}
+                              text=""
+                            />,
                             <div
                               className="author"
                               to=""
@@ -545,6 +597,20 @@ ShallowWrapper {
                         },
                         "ref": null,
                         "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "canFollow": true,
+                              "classValue": "",
+                              "handleClick": [Function],
+                              "text": "",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
                           Object {
                             "instance": null,
                             "key": undefined,
@@ -690,6 +756,12 @@ ShallowWrapper {
                     <div
                       className="d-flex flex-column ml-4 justify-content-end"
                     >
+                      <followButton
+                        canFollow={true}
+                        classValue=""
+                        handleClick={[Function]}
+                        text=""
+                      />
                       <div
                         className="author"
                         to=""
@@ -779,6 +851,12 @@ ShallowWrapper {
                     <div
                       className="d-flex flex-column ml-4 justify-content-end"
                     >
+                      <followButton
+                        canFollow={true}
+                        classValue=""
+                        handleClick={[Function]}
+                        text=""
+                      />
                       <div
                         className="author"
                         to=""
@@ -858,6 +936,12 @@ ShallowWrapper {
                       <div
                         className="d-flex flex-column ml-4 justify-content-end"
                       >
+                        <followButton
+                          canFollow={true}
+                          classValue=""
+                          handleClick={[Function]}
+                          text=""
+                        />
                         <div
                           className="author"
                           to=""
@@ -948,6 +1032,12 @@ ShallowWrapper {
                       <div
                         className="d-flex flex-column ml-4 justify-content-end"
                       >
+                        <followButton
+                          canFollow={true}
+                          classValue=""
+                          handleClick={[Function]}
+                          text=""
+                        />
                         <div
                           className="author"
                           to=""
@@ -1016,6 +1106,12 @@ ShallowWrapper {
                         <div
                           className="d-flex flex-column ml-4 justify-content-end"
                         >
+                          <followButton
+                            canFollow={true}
+                            classValue=""
+                            handleClick={[Function]}
+                            text=""
+                          />
                           <div
                             className="author"
                             to=""
@@ -1075,6 +1171,12 @@ ShallowWrapper {
                         <div
                           className="d-flex flex-column ml-4 justify-content-end"
                         >
+                          <followButton
+                            canFollow={true}
+                            classValue=""
+                            handleClick={[Function]}
+                            text=""
+                          />
                           <div
                             className="author"
                             to=""
@@ -1112,6 +1214,12 @@ ShallowWrapper {
                           <div
                             className="d-flex flex-column ml-4 justify-content-end"
                           >
+                            <followButton
+                              canFollow={true}
+                              classValue=""
+                              handleClick={[Function]}
+                              text=""
+                            />
                             <div
                               className="author"
                               to=""
@@ -1149,6 +1257,12 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
+                              <followButton
+                                canFollow={true}
+                                classValue=""
+                                handleClick={[Function]}
+                                text=""
+                              />,
                               <div
                                 className="author"
                                 to=""
@@ -1166,6 +1280,20 @@ ShallowWrapper {
                           },
                           "ref": null,
                           "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "canFollow": true,
+                                "classValue": "",
+                                "handleClick": [Function],
+                                "text": "",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
                             Object {
                               "instance": null,
                               "key": undefined,

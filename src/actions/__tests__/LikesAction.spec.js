@@ -5,7 +5,7 @@ import {
   clickLikeIcon,
   clickDisLikeIcon,
   getLikeStatus
-} from "../../actions/LikesAction";
+} from "../LikesAction";
 import actionTypes from "../actionTypes";
 import { BACKEND_DOMAIN } from "../articleActions";
 

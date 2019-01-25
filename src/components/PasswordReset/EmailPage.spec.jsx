@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import EmailPage from './EmailPage';
+import {EmailPage} from './EmailPage';
 
 describe('test email sent page', () => {
   let wrapper;
