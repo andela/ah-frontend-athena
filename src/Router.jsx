@@ -54,5 +54,4 @@ const Routes = () => (
     </Provider>
   </Router>
 );
-
 export default Routes;

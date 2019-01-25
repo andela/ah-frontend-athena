@@ -25,3 +25,4 @@ const rootReducer = combineReducers({
   bookmarks: getMyBookmarkedArticlesReducer
 });
 export default rootReducer;
+
