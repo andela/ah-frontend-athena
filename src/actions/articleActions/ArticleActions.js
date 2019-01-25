@@ -19,7 +19,7 @@ const createArticles = article => dispatch => {
 };
 
 const getArticles = () => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles`, {
+  return fetch(`${BACKEND_DOMAIN}articles?limit=5`, {
     method: "GET",
     headers: {
       "content-type": "application/json"
@@ -29,7 +29,8 @@ const getArticles = () => dispatch => {
     .then(res => {
       dispatch({
         type: actionTypes.GET_ARTICLES,
-        payload: res.articles.results
+        payload: res.articles.results,
+        pages: res.articles
       });
     })
     .catch(err => err);
