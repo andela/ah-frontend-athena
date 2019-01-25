@@ -1,23 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArticleView> matches snapshort 1`] = `
+exports[`ReplyList test matches snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArticleView
-    deleteArticle={[MockFunction]}
-    followData={Object {}}
-    followUser={[Function]}
-    getFollowing={[Function]}
-    getSingleArticle={[Function]}
-    history={
-      Object {
-        "push": [MockFunction],
-      }
-    }
-    returnData={Object {}}
-    slug=""
-    unFollowUser={[Function]}
-    view_article={Object {}}
+  Symbol(enzyme.__unrendered__): <ReplyList
+    commentList={Array []}
+    isEdit={false}
+    parentId={null}
+    replyList={Object {}}
+    show={[Function]}
+    showComBox="d-none"
+    showReplies="d-none"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -32,10 +25,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Loading...",
+      "children": Array [],
+      "className": undefined,
     },
     "ref": null,
-    "rendered": "Loading...",
+    "rendered": Array [],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -44,10 +38,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Loading...",
+        "children": Array [],
+        "className": undefined,
       },
       "ref": null,
-      "rendered": "Loading...",
+      "rendered": Array [],
       "type": "div",
     },
   ],

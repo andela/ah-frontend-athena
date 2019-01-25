@@ -10,7 +10,6 @@ import ProfileEdit from "./views/profiles/profileEdit/profileEdit";
 import PasswordResetView from "./views/PasswordReset/PasswordReset";
 import PasswordResetConfirmView from "./views/PasswordReset/PasswordResetConfirm";
 import EmailPage from "./components/PasswordReset/EmailPage";
-import Login from "./views/LoginView/Login";
 import Signup from "./views/SignupView/SignupView";
 import ArticleList from "./views/Articles/articleList/ArticleList";
 import ArticleView from "./views/Articles/articleView/ArticleView";
@@ -18,6 +17,8 @@ import ArticleEdit from "./views/Articles/articleEdit/ArticleEdit";
 import ArticleCreate from "./views/Articles/articleCreate/ArticleCreate";
 import Followers from './views/followsView/followersView/followersView';
 import Following from './views/followsView/followingView/followingView';
+import LoginView from "./views/LoginView/Login";
+import SignupContainer from "./views/SignupView/SignupView";
 
 const Routes = () => (
   <Router>
@@ -25,8 +26,9 @@ const Routes = () => (
       <NavBarView />
       <ToastContainer />
       <Switch>
-        <Route path="/login" component={Login} exact />
         <Route path="/signup" component={Signup} exact />
+        <Route path="/login" component={LoginView} exact />
+        <Route path="/signup" component={SignupContainer} exact />
         <Route path="/profile/:username" component={ProfileEdit} exact />
         <Route path="/passwordreset" component={PasswordResetView} exact />
         <Route path='/followers' component={Followers} exact />

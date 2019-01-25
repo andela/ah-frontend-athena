@@ -43,3 +43,10 @@ $secondary-color-dark: #6c757d;
   background-color: transparent !important;
   color: #1ba1e2 !important;
 }
+
+.card {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 0px 0px 0 rgba(0, 0, 0, 0.0) !important;
+  border: 1px solid #d4c9c9 !important;
+  max-width: 75%;
+}
+

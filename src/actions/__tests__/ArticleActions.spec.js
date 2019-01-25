@@ -76,7 +76,9 @@ describe("mock articles", () => {
           authorization: "Bearer moked-token"
         }
       })
-      .catch(err => err);
+      .catch(err => {
+        return err.json()
+      });
 
     const articleAction = [
       {
