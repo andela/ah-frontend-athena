@@ -1,37 +1,37 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import LikesButtons from '../../components/Likes/LikesButtons';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import LikesButtons from "../../components/Likes/LikesButtons";
 import {
   clickLikeIcon,
   clickDisLikeIcon,
   getLikeStatus
-} from '../../actions/LikesAction';
-import ModalPage from '../../components/Likes/LoginModal';
+} from "../../actions/LikesAction";
+import ModalPage from "../../components/Likes/LoginModal";
 
 export class Likes extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      like: '',
+      like: "",
       modal: false,
-      likes_count: ''
+      likes_count: ""
     };
   }
   componentDidMount = () => {
     const { article_info, getLikeStatus } = this.props;
     this.setState({ likes_count: article_info.likes_count });
-    if (window.localStorage.getItem('token')) {
+    if (window.localStorage.getItem("token")) {
       getLikeStatus(article_info.slug);
     } else {
-      this.setState({ like: '' });
+      this.setState({ like: "" });
     }
   };
   componentWillReceiveProps = nextProps => {
-    if (JSON.stringify(nextProps.likesData) === '{}') {
+    if (JSON.stringify(nextProps.likesData) === "{}") {
       const { like, detail } = nextProps.returnData;
-      if (like === '' || detail === 'Invalid token. please login again') {
-        this.setState({ like: '' });
+      if (like === "" || detail === "Invalid token. please login again") {
+        this.setState({ like: "" });
       } else {
         const val = JSON.parse(like);
         this.setState({ like: val });
@@ -51,16 +51,16 @@ export class Likes extends Component {
   };
 
   changeColor = like => {
-    let icons = { icon1: '', icon2: '' };
-    if (like === '') {
-      icons.icon1 = 'blue-grey-text ml-2';
-      icons.icon2 = 'blue-grey-text pr-3';
+    let icons = { icon1: "", icon2: "" };
+    if (like === "") {
+      icons.icon1 = "blue-grey-text ml-2";
+      icons.icon2 = "blue-grey-text pr-3";
     } else if (like === true) {
-      icons.icon1 = 'blue-text ml-2';
-      icons.icon2 = 'blue-grey-text pr-3';
+      icons.icon1 = "blue-text ml-2";
+      icons.icon2 = "blue-grey-text pr-3";
     } else if (like === false) {
-      icons.icon1 = 'blue-grey-text ml-2';
-      icons.icon2 = 'blue-text pr-3';
+      icons.icon1 = "blue-grey-text ml-2";
+      icons.icon2 = "blue-text pr-3";
     }
     return icons;
   };
@@ -68,8 +68,8 @@ export class Likes extends Component {
     const { article_info, clickLikeIcon, returnData } = this.props;
     const { detail } = returnData;
     if (
-      window.localStorage.getItem('token') != null &&
-      detail !== 'Invalid token. please login again'
+      window.localStorage.getItem("token") != null &&
+      detail !== "Invalid token. please login again"
     ) {
       clickLikeIcon(article_info.slug);
     } else {
@@ -81,8 +81,8 @@ export class Likes extends Component {
     const { article_info, clickDisLikeIcon, returnData } = this.props;
     const { detail } = returnData;
     if (
-      window.localStorage.getItem('token') != null &&
-      detail !== 'Invalid token. please login again'
+      window.localStorage.getItem("token") != null &&
+      detail !== "Invalid token. please login again"
     ) {
       clickDisLikeIcon(article_info.slug);
     } else {
