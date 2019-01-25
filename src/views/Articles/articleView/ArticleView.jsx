@@ -17,6 +17,7 @@ import {
 import RoundButton from "../../../components/RoundButton/RoundButton";
 import "./ArticleView.scss";
 import ShareButtons from "../../../components/ShareArticleButtons/ShareArticleButtons";
+import Likes from "../../LikesView/Likes";
 
 export class ArticleView extends Component {
   constructor(props) {
@@ -127,8 +128,12 @@ export class ArticleView extends Component {
 
   render() {
     const { view_article } = this.state;
+<<<<<<< HEAD
     const { classValue } = this.state;
     const { text } = this.state;
+=======
+    const { history } = this.props;
+>>>>>>> ft-like-dislike-article-162163235
     if (
       Object.keys(view_article).length > 0 &&
       !view_article.errors &&
@@ -179,6 +184,8 @@ export class ArticleView extends Component {
                 </ul>
               </div>
             </div>
+            <hr />
+            <Likes article_info={view_article} history={history} />
             <hr />
           </div>
           <div className="mt-5 container">

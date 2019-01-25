@@ -15,10 +15,11 @@ import ArticleList from "./views/Articles/articleList/ArticleList";
 import ArticleView from "./views/Articles/articleView/ArticleView";
 import ArticleEdit from "./views/Articles/articleEdit/ArticleEdit";
 import ArticleCreate from "./views/Articles/articleCreate/ArticleCreate";
-import Followers from './views/followsView/followersView/followersView';
-import Following from './views/followsView/followingView/followingView';
+import Followers from "./views/followsView/followersView/followersView";
+import Following from "./views/followsView/followingView/followingView";
 import LoginView from "./views/LoginView/Login";
 import SignupContainer from "./views/SignupView/SignupView";
+import Likes from "./views/LikesView/Likes";
 
 const Routes = () => (
   <Router>
@@ -26,13 +27,19 @@ const Routes = () => (
       <NavBarView />
       <ToastContainer />
       <Switch>
+        <Route
+          path="/login"
+          render={props => <Login {...props} md="6" />}
+          exact
+        />
         <Route path="/signup" component={Signup} exact />
         <Route path="/login" component={LoginView} exact />
         <Route path="/signup" component={SignupContainer} exact />
         <Route path="/profile/:username" component={ProfileEdit} exact />
         <Route path="/passwordreset" component={PasswordResetView} exact />
-        <Route path='/followers' component={Followers} exact />
-        <Route path='/following' component={Following} exact />
+        <Route path="/followers" component={Followers} exact />
+        <Route path="/following" component={Following} exact />
+        <Route path="/like" component={Likes} exact />
         <Route
           path="/password_reset_confirm/:token"
           component={PasswordResetConfirmView}

@@ -15,9 +15,9 @@ import SocialLoginButtons from "../../views/SocialLoginView/SocialLoginView";
 
 const LoginView = ({ onChange, onSubmit, errors }) => {
   return (
-    <MDBContainer className="mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5">
-      <MDBRow className="flex flex-center">
-        <MDBCol md="6">
+    <MDBContainer fluid className="">
+      <MDBRow className="flex flex-center m-0">
+        <MDBCol className="m-0 p-0">
           <form onSubmit={onSubmit}>
             <MDBCard>
               <div className="header pt-3 bg-primary">
