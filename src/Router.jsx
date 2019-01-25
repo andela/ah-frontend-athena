@@ -16,6 +16,7 @@ import ArticleList from "./views/Articles/articleList/ArticleList";
 import ArticleView from "./views/Articles/articleView/ArticleView";
 import ArticleEdit from "./views/Articles/articleEdit/ArticleEdit";
 import ArticleCreate from "./views/Articles/articleCreate/ArticleCreate";
+import Likes from "./views/LikesView/Likes";
 
 const Routes = () => (
   <Router>
@@ -23,10 +24,15 @@ const Routes = () => (
       <NavBarView />
       <ToastContainer />
       <Switch>
-        <Route path="/login" component={Login} exact />
+        <Route
+          path="/login"
+          render={props => <Login {...props} md="6" />}
+          exact
+        />
         <Route path="/signup" component={Signup} exact />
         <Route path="/profile/:username" component={ProfileEdit} exact />
         <Route path="/passwordreset" component={PasswordResetView} exact />
+        <Route path="/like" component={Likes} exact />
         <Route
           path="/password_reset_confirm/:token"
           component={PasswordResetConfirmView}

@@ -24,12 +24,13 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <t
-        className="flex flex-center"
+        className="flex flex-center m-0"
         tag="div"
       >
         <t
+          className="m-0 p-0"
           lg={null}
-          md="6"
+          md={null}
           sm={null}
           tag="div"
           xl={null}
@@ -149,8 +150,8 @@ ShallowWrapper {
           </form>
         </t>
       </t>,
-      "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
-      "fluid": false,
+      "className": "",
+      "fluid": true,
       "tag": "div",
     },
     "ref": null,
@@ -160,8 +161,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <t
+          className="m-0 p-0"
           lg={null}
-          md="6"
+          md={null}
           sm={null}
           tag="div"
           xl={null}
@@ -280,7 +282,7 @@ ShallowWrapper {
             </t>
           </form>
         </t>,
-        "className": "flex flex-center",
+        "className": "flex flex-center m-0",
         "tag": "div",
       },
       "ref": null,
@@ -401,8 +403,9 @@ ShallowWrapper {
               </t>
             </t>
           </form>,
+          "className": "m-0 p-0",
           "lg": null,
-          "md": "6",
+          "md": null,
           "sm": null,
           "tag": "div",
           "xl": null,
@@ -1013,12 +1016,13 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <t
-          className="flex flex-center"
+          className="flex flex-center m-0"
           tag="div"
         >
           <t
+            className="m-0 p-0"
             lg={null}
-            md="6"
+            md={null}
             sm={null}
             tag="div"
             xl={null}
@@ -1138,8 +1142,8 @@ ShallowWrapper {
             </form>
           </t>
         </t>,
-        "className": "mt-3 pt-6 w-sm-100 w-md-75 mt-5 mb-5",
-        "fluid": false,
+        "className": "",
+        "fluid": true,
         "tag": "div",
       },
       "ref": null,
@@ -1149,8 +1153,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <t
+            className="m-0 p-0"
             lg={null}
-            md="6"
+            md={null}
             sm={null}
             tag="div"
             xl={null}
@@ -1269,7 +1274,7 @@ ShallowWrapper {
               </t>
             </form>
           </t>,
-          "className": "flex flex-center",
+          "className": "flex flex-center m-0",
           "tag": "div",
         },
         "ref": null,
@@ -1390,8 +1395,9 @@ ShallowWrapper {
                 </t>
               </t>
             </form>,
+            "className": "m-0 p-0",
             "lg": null,
-            "md": "6",
+            "md": null,
             "sm": null,
             "tag": "div",
             "xl": null,
