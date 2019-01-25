@@ -16,6 +16,8 @@ import ArticleList from "./views/Articles/articleList/ArticleList";
 import ArticleView from "./views/Articles/articleView/ArticleView";
 import ArticleEdit from "./views/Articles/articleEdit/ArticleEdit";
 import ArticleCreate from "./views/Articles/articleCreate/ArticleCreate";
+import Followers from './views/followsView/followersView/followersView';
+import Following from './views/followsView/followingView/followingView';
 
 const Routes = () => (
   <Router>
@@ -27,6 +29,8 @@ const Routes = () => (
         <Route path="/signup" component={Signup} exact />
         <Route path="/profile/:username" component={ProfileEdit} exact />
         <Route path="/passwordreset" component={PasswordResetView} exact />
+        <Route path='/followers' component={Followers} exact />
+        <Route path='/following' component={Following} exact />
         <Route
           path="/password_reset_confirm/:token"
           component={PasswordResetConfirmView}

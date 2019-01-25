@@ -28,33 +28,38 @@ overflow: hidden;
 position: absolute;
 z-index: -1;
 }
-.username{
+.username {
   position: absolute;
   font-weight: bolder;
-  font-size: 23px;
-  margin-left: 62px;
-  margin-top: 2px;
+  font-size: 22px;
+  margin-left: -68px;
+  margin-top: 17px;
   font-family: Merienda One;
 }
 
-.email{
+.email {
   position: absolute;
   font-weight: bold;
   font-size: 9px;
-  margin-left: 48px;
-  margin-top: 13px;
+  margin-left: -28px;
+  margin-top: 25px;
   font-family: monaco;
 }
 
-.bio{
+.bio {
   display: block;
   position: relative;
-  width: 180px;
+  width: 196px;
+  bottom: -14px;
   word-wrap: break-word;
-  margin-left: -12px;
-  font-family: Merienda One
+  margin-left: -22px;
+  font-family: monaco;
+  font-size: 12px;
+  border-left: 0.1px solid #f5f5f5;
+  box-shadow: 0px 0px 0.1px #5f5c5c;
+  font-weight: bold;
+  border-radius: 4px;
 }
-
 .main-section{
   margin: 0 auto;
   margin-top: 130px;

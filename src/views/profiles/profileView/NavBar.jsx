@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import propTypes from 'prop-types'
 import ViewProfile from "../../../components/profile/profileView/profileView";
 import { getProfile } from "../../../actions/profileActions";
+import { getFollowing, getFollowers } from '../../../actions/userFollowActions';
 import avatar from "../../../components/profile/img/default.png";
 
 export const limitBio = bio => {
@@ -31,6 +32,10 @@ export class NavBar extends Component {
     const username = window.localStorage.getItem("username");
     const token = window.localStorage.getItem("token");
     const {isShow} = this.state
+    const { getFollowers } = this.props
+    const { getFollowing } = this.props
+    getFollowers()
+    getFollowing()
 
     if (token) {
       const {getProfile} = this.props
@@ -46,9 +51,18 @@ export class NavBar extends Component {
       this.setState({ show: cls + "", isShow: true });
     }
   }
+ 
 
   componentWillReceiveProps(nextProps) {
-    let {profile} = nextProps;
+    let { following } = nextProps;
+    let { followers } = nextProps;
+    let followersArray = followers;
+    let followingArray = following;
+    let { profile } = nextProps;
+    if(Object.entries(profile).length  !== 0){
+      this.setState({following: followingArray.length, followers: followersArray.length})
+    }
+    
     let username = profile.username;
     if (username) {
       this.sortImage(nextProps);
@@ -110,7 +124,9 @@ export class NavBar extends Component {
     const {image} = this.state;
     const {classValue} = this.state;
     const {show} = this.state;
-    const {profile} = this.state
+    const {profile} = this.state;
+    const { following } = this.state;
+    const { followers } = this.state;
     return (
       <ViewProfile
         imageShow={image}
@@ -120,6 +136,8 @@ export class NavBar extends Component {
         profile={profile}
         Click={this.Click}
         Edit={this.Edit}
+        following={following}
+        followers={followers}
       />
     );
   }
@@ -127,18 +145,28 @@ export class NavBar extends Component {
 
 NavBar.propTypes = {
   profile: propTypes.shape({}),
-  getProfile: propTypes.func
+  following: propTypes.number,
+  followers: propTypes.number,
+  getProfile: propTypes.func,
+  getFollowers: propTypes.func,
+  getFollowing: propTypes.func
 }
 NavBar.defaultProps = {
   profile: {},
+  following: 0,
+  followers: 0,
   getProfile: ()=>{},
+  getFollowers: ()=>{},
+  getFollowing: ()=>{}
 }
 export const mapStateToProps = state => {
   return {
-    profile: state.profile.data
+    profile: state.profile.data,
+    following: state.follow.data,
+    followers: state.follow.followers
   };
 };
 export default connect(
   mapStateToProps,
-  { getProfile }
+  { getProfile, getFollowers, getFollowing }
 )(NavBar);
