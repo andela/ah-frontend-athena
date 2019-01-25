@@ -1,7 +1,7 @@
 import actionTypes from "./actionTypes";
 
 export const facebookLogin = access_token => dispatch => {
-  return fetch(`${process.env.REACT_APP_API_URL_BASE}users/facebook/`, {
+  return fetch(`${actionTypes.BASEURL}users/facebook/`, {
     method: "POST",
     headers: {
       "content-type": "application/json"

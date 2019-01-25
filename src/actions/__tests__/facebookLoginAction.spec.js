@@ -14,7 +14,7 @@ describe("Facebook login function", () => {
   it("Mocks accessing the endpoint", () => {
     let access_token = "mocked jwt token response";
     let data = { token: "mocked jwt token response" };
-    fetchMock.post(`${process.env.REACT_APP_API_URL_BASE}users/facebook/`, {
+    fetchMock.post(`${actionTypes.BASEURL}users/facebook/`, {
       headers: {
         "content-type": "application/json"
       },

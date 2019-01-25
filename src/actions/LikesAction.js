@@ -1,13 +1,12 @@
-import actionType from "./actionTypes";
-import { BACKEND_DOMAIN } from "./articleActions";
+import actionType from './actionTypes';
 
-const token = window.localStorage.getItem("token");
+const token = window.localStorage.getItem('token');
 
 const getLikeStatus = slug => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles/${slug}`, {
-    method: "GET",
+  return fetch(`${actionType.BASEURL}articles/${slug}`, {
+    method: 'GET',
     headers: {
-      "content-type": "application/json",
+      'content-type': 'application/json',
       authorization: `Bearer ${token}`
     }
   })
@@ -21,10 +20,10 @@ const getLikeStatus = slug => dispatch => {
 };
 
 const clickLikeIcon = slug => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles/${slug}/like/`, {
-    method: "POST",
+  return fetch(`${actionType.BASEURL}articles/${slug}/like/`, {
+    method: 'POST',
     headers: {
-      "content-type": "application/json",
+      'content-type': 'application/json',
       authorization: `Bearer ${token}`
     }
   })
@@ -38,10 +37,10 @@ const clickLikeIcon = slug => dispatch => {
 };
 
 const clickDisLikeIcon = slug => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles/${slug}/like/`, {
-    method: "DELETE",
+  return fetch(`${actionType.BASEURL}articles/${slug}/like/`, {
+    method: 'DELETE',
     headers: {
-      "content-type": "application/json",
+      'content-type': 'application/json',
       authorization: `Bearer ${token}`
     }
   })

@@ -1,17 +1,26 @@
-import React from "react";
+import React from 'react';
 import propTypes from 'prop-types';
-import "./profileView.scss";
+import './profileView.scss';
 
 const viewProfile = props => {
-  const {classValue, Clicked, imageShow, attribute, profile, Click, Edit, followers, following} = props
+  const {
+    classValue,
+    Clicked,
+    imageShow,
+    attribute,
+    profile,
+    Click,
+    Edit,
+    followers,
+    following
+  } = props;
   const Value = `navbar-nav ml-auto nav-flex-icons  ${classValue}`;
   return (
     <div>
-      <nav className="pl-4 navbar bg-primary navbar-expand-lg navbar-dark ">
+      <nav className="pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark ">
         <span className="navbar-brand "> Author&#39;s Heaven</span>
         <div className="collapse navbar-collapse">
           <ul className={Value}>
-            
             <li className="nav-item avatar dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -33,10 +42,18 @@ const viewProfile = props => {
                     className="rounded-circle drop-img"
                     alt=""
                   />
-                  <span className='followers'>followers</span>
-                  <span className='following'>following</span>
-                  <a href='/followers'><button type="button" className="round-btn">{followers}</button></a>
-                  <a href='/following'><button type="button" className="round-btn-2">{following}</button></a>
+                  <span className="followers">followers</span>
+                  <span className="following">following</span>
+                  <a href="/followers">
+                    <button type="button" className="round-btn">
+                      {followers}
+                    </button>
+                  </a>
+                  <a href="/following">
+                    <button type="button" className="round-btn-2">
+                      {following}
+                    </button>
+                  </a>
                   <span className="username">{profile.username}</span>
                   <br />
                   <span className="email">{profile.email}</span>
@@ -55,12 +72,12 @@ const viewProfile = props => {
                       </button>
                     </div>
                     <div className="text-center">
-                      <a href='/'>
+                      <a href="/">
                         <button
                           name="publish"
                           onClick={Edit}
                           className="btn btn-success btn-sm"
-                          type='button'
+                          type="button"
                         >
                           edit
                         </button>
@@ -86,16 +103,16 @@ viewProfile.propTypes = {
   following: propTypes.number,
   Click: propTypes.func,
   Edit: propTypes.func
-}
+};
 viewProfile.defaultProps = {
   classValue: '',
-  Clicked: ()=>{},
+  Clicked: () => {},
   imageShow: '',
   attribute: '',
   profile: {},
   followers: 0,
   following: 0,
-  Click: ()=>{},
-  Edit: ()=>{}
-}
+  Click: () => {},
+  Edit: () => {}
+};
 export default viewProfile;

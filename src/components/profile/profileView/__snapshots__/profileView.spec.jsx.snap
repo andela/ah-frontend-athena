@@ -35,7 +35,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <nav
-        className="pl-4 navbar bg-primary navbar-expand-lg navbar-dark "
+        className="pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark "
       >
         <span
           className="navbar-brand "
@@ -295,7 +295,7 @@ ShallowWrapper {
             </ul>
           </div>,
         ],
-        "className": "pl-4 navbar bg-primary navbar-expand-lg navbar-dark ",
+        "className": "pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark ",
       },
       "ref": null,
       "rendered": Array [
@@ -1210,7 +1210,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <nav
-          className="pl-4 navbar bg-primary navbar-expand-lg navbar-dark "
+          className="pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark "
         >
           <span
             className="navbar-brand "
@@ -1470,7 +1470,7 @@ ShallowWrapper {
               </ul>
             </div>,
           ],
-          "className": "pl-4 navbar bg-primary navbar-expand-lg navbar-dark ",
+          "className": "pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark ",
         },
         "ref": null,
         "rendered": Array [

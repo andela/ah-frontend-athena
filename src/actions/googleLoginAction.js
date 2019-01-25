@@ -2,7 +2,7 @@ import actionTypes from "./actionTypes";
 
 //just before dispatching the network call, dispatch the LOADING action and get a loader started to show progress
 export const googleLogin = access_token => dispatch => {
-  return fetch(`${process.env.REACT_APP_API_URL_BASE}users/google/`, {
+  return fetch(`${actionTypes.BASEURL}users/google/`, {
     method: "POST",
     headers: {
       "content-type": "application/json"

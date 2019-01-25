@@ -1,0 +1,9 @@
+@import "../../../variables";
+
+.star-hover {
+  &:hover {
+    color: $primary-color !important;
+    cursor: pointer;
+    background-color: $white;
+  }
+}

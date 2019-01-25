@@ -6,7 +6,8 @@ const initialState = {
   articles: [],
   view_article: {},
   edit_article: {},
-  delete_article: {}
+  delete_article: {},
+  new_article_rate: {}
 };
 
 describe("test signup reducer", () => {
@@ -28,7 +29,8 @@ describe("test signup reducer", () => {
       articles: [],
       delete_article: {},
       edit_article: {},
-      view_article: {}
+      view_article: {},
+      new_article_rate: {}
     });
   });
 
@@ -57,7 +59,8 @@ describe("test signup reducer", () => {
       ],
       delete_article: {},
       edit_article: {},
-      view_article: {}
+      view_article: {},
+      new_article_rate: {}
     });
   });
 
@@ -72,6 +75,7 @@ describe("test signup reducer", () => {
       articles: [],
       delete_article: {},
       edit_article: {},
+      new_article_rate: {},
       view_article: { body: "article body", id: 10, slug: "moked-slag" }
     });
   });
@@ -91,7 +95,8 @@ describe("test signup reducer", () => {
       articles: [],
       delete_article: {},
       edit_article: { body: "article body", id: 10, slug: "moked-slag" },
-      view_article: {}
+      view_article: {},
+      new_article_rate: {}
     });
   });
 
@@ -106,7 +111,8 @@ describe("test signup reducer", () => {
       articles: [],
       delete_article: { message: "Article successfully deleted" },
       edit_article: {},
-      view_article: {}
+      view_article: {},
+      new_article_rate: {}
     });
   });
 });

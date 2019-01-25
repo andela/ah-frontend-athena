@@ -17,7 +17,7 @@ describe("signup actions", () => {
   });
   it("should mock fetch api", () => {
     const store = mockStore({ user: {} });
-    fetchMock.postOnce(`${process.env.REACT_APP_API_URL_BASE}users/`, {
+    fetchMock.postOnce(`${actionTypes.BASEURL}users/`, {
       headers: {
         "content-type": "application/json"
       },
