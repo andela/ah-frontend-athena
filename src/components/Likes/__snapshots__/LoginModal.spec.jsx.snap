@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if the modal form renders Check if the modal renders 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ModalPage
+    fallback=""
+    history={[MockFunction]}
+    md=""
+    modal=""
+    toggle={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <t
+        autoFocus={true}
+        backdrop={true}
+        backdropTransitionTimeout={150}
+        fade={true}
+        isOpen=""
+        modalTransitionTimeout={300}
+        role="dialog"
+        tabIndex="-1"
+        toggle={[MockFunction]}
+        zIndex={1050}
+      >
+        <t
+          closeAriaLabel="Close"
+          tag="h4"
+          toggle={[MockFunction]}
+        >
+          Please login before you can like or dislike the article
+        </t>
+        <t>
+          <Connect(Login)
+            fallback=""
+            history={[MockFunction]}
+            md=""
+          />
+        </t>
+      </t>,
+      "fluid": false,
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "autoFocus": true,
+        "backdrop": true,
+        "backdropTransitionTimeout": 150,
+        "children": Array [
+          <t
+            closeAriaLabel="Close"
+            tag="h4"
+            toggle={[MockFunction]}
+          >
+            Please login before you can like or dislike the article
+          </t>,
+          <t>
+            <Connect(Login)
+              fallback=""
+              history={[MockFunction]}
+              md=""
+            />
+          </t>,
+        ],
+        "fade": true,
+        "isOpen": "",
+        "modalTransitionTimeout": 300,
+        "role": "dialog",
+        "tabIndex": "-1",
+        "toggle": [MockFunction],
+        "zIndex": 1050,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Please login before you can like or dislike the article",
+            "closeAriaLabel": "Close",
+            "tag": "h4",
+            "toggle": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "Please login before you can like or dislike the article",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Connect(Login)
+              fallback=""
+              history={[MockFunction]}
+              md=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "fallback": "",
+              "history": [MockFunction],
+              "md": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          autoFocus={true}
+          backdrop={true}
+          backdropTransitionTimeout={150}
+          fade={true}
+          isOpen=""
+          modalTransitionTimeout={300}
+          role="dialog"
+          tabIndex="-1"
+          toggle={[MockFunction]}
+          zIndex={1050}
+        >
+          <t
+            closeAriaLabel="Close"
+            tag="h4"
+            toggle={[MockFunction]}
+          >
+            Please login before you can like or dislike the article
+          </t>
+          <t>
+            <Connect(Login)
+              fallback=""
+              history={[MockFunction]}
+              md=""
+            />
+          </t>
+        </t>,
+        "fluid": false,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoFocus": true,
+          "backdrop": true,
+          "backdropTransitionTimeout": 150,
+          "children": Array [
+            <t
+              closeAriaLabel="Close"
+              tag="h4"
+              toggle={[MockFunction]}
+            >
+              Please login before you can like or dislike the article
+            </t>,
+            <t>
+              <Connect(Login)
+                fallback=""
+                history={[MockFunction]}
+                md=""
+              />
+            </t>,
+          ],
+          "fade": true,
+          "isOpen": "",
+          "modalTransitionTimeout": 300,
+          "role": "dialog",
+          "tabIndex": "-1",
+          "toggle": [MockFunction],
+          "zIndex": 1050,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Please login before you can like or dislike the article",
+              "closeAriaLabel": "Close",
+              "tag": "h4",
+              "toggle": [MockFunction],
+            },
+            "ref": null,
+            "rendered": "Please login before you can like or dislike the article",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Connect(Login)
+                fallback=""
+                history={[MockFunction]}
+                md=""
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "fallback": "",
+                "history": [MockFunction],
+                "md": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
