@@ -28,7 +28,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <t
-        className="my-2 px-5 pb-5"
+        className="my-3 pb-5 mw-100"
         tag="div"
       >
         <t
@@ -114,8 +114,8 @@ ShallowWrapper {
           </t>
         </t>
       </t>,
-      "className": "container",
-      "fluid": false,
+      "className": "w-100 ",
+      "fluid": true,
       "tag": "div",
     },
     "ref": null,
@@ -206,7 +206,7 @@ ShallowWrapper {
             </t>
           </t>
         </t>,
-        "className": "my-2 px-5 pb-5",
+        "className": "my-3 pb-5 mw-100",
         "tag": "div",
       },
       "ref": null,
@@ -674,7 +674,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <t
-          className="my-2 px-5 pb-5"
+          className="my-3 pb-5 mw-100"
           tag="div"
         >
           <t
@@ -760,8 +760,8 @@ ShallowWrapper {
             </t>
           </t>
         </t>,
-        "className": "container",
-        "fluid": false,
+        "className": "w-100 ",
+        "fluid": true,
         "tag": "div",
       },
       "ref": null,
@@ -852,7 +852,7 @@ ShallowWrapper {
               </t>
             </t>
           </t>,
-          "className": "my-2 px-5 pb-5",
+          "className": "my-3 pb-5 mw-100",
           "tag": "div",
         },
         "ref": null,

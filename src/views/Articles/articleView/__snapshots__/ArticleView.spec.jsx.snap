@@ -26,7 +26,16 @@ ShallowWrapper {
     text=""
     toggle={[MockFunction]}
     unFollowUser={[Function]}
-    view_article={Object {}}
+    view_article={
+      Object {
+        "author": Object {
+          "username": "henry",
+        },
+        "body": "this is body",
+        "description": "description",
+        "title": "title",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

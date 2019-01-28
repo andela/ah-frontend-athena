@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ArticleList> matches snapshort 1`] = `
-ReactWrapper {
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArticleList
     articles={Array []}
     author={
@@ -12,7 +13,9 @@ ReactWrapper {
     body="this is body"
     description="description"
     getArticles={[Function]}
+    getTags={[Function]}
     results={Object {}}
+    tags={Array []}
     title="title"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -23,2406 +26,261 @@ ReactWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
-  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__node__): Object {
-    "instance": ArticleList {
-      "_reactInternalFiber": FiberNode {
-        "_debugID": 50,
-        "_debugIsCurrentlyTiming": false,
-        "_debugOwner": FiberNode {
-          "_debugID": 49,
-          "_debugIsCurrentlyTiming": false,
-          "_debugOwner": null,
-          "_debugSource": null,
-          "actualDuration": 0,
-          "actualStartTime": -1,
-          "alternate": null,
-          "child": [Circular],
-          "childExpirationTime": 0,
-          "effectTag": 1,
-          "elementType": [Function],
-          "expirationTime": 0,
-          "firstContextDependency": null,
-          "firstEffect": null,
-          "index": 0,
-          "key": null,
-          "lastEffect": null,
-          "memoizedProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {
-              "articles": Array [],
-              "author": Object {
-                "username": "henry",
-              },
-              "body": "this is body",
-              "description": "description",
-              "getArticles": [Function],
-              "results": Object {},
-              "title": "title",
-            },
-          },
-          "memoizedState": Object {
-            "context": null,
-            "mount": true,
-            "props": Object {
-              "articles": Array [],
-              "author": Object {
-                "username": "henry",
-              },
-              "body": "this is body",
-              "description": "description",
-              "getArticles": [Function],
-              "results": Object {},
-              "title": "title",
-            },
-          },
-          "mode": 0,
-          "nextEffect": FiberNode {
-            "_debugID": 47,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "actualDuration": 0,
-            "actualStartTime": -1,
-            "alternate": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": [Circular],
-              "child": null,
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": null,
-              "expirationTime": 1073741823,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": null,
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": null,
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-              },
-            },
-            "child": [Circular],
-            "childExpirationTime": 0,
-            "effectTag": 32,
-            "elementType": null,
-            "expirationTime": 0,
-            "firstContextDependency": null,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": null,
-            "memoizedState": Object {
-              "element": <WrapperComponent
-                Component={[Function]}
-                context={null}
-                props={
-                  Object {
-                    "articles": Array [],
-                    "author": Object {
-                      "username": "henry",
-                    },
-                    "body": "this is body",
-                    "description": "description",
-                    "getArticles": [Function],
-                    "results": Object {},
-                    "title": "title",
-                  }
-                }
-              />,
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": null,
-            "ref": null,
-            "return": null,
-            "selfBaseDuration": 0,
-            "sibling": null,
-            "stateNode": Object {
-              "containerInfo": <div />,
-              "context": Object {},
-              "current": [Circular],
-              "didError": false,
-              "earliestPendingTime": 0,
-              "earliestSuspendedTime": 0,
-              "expirationTime": 0,
-              "finishedWork": null,
-              "firstBatch": null,
-              "hydrate": false,
-              "interactionThreadID": 12,
-              "latestPendingTime": 0,
-              "latestPingedTime": 0,
-              "latestSuspendedTime": 0,
-              "memoizedInteractions": Set {},
-              "nextExpirationTimeToWorkOn": 0,
-              "nextScheduledRoot": null,
-              "pendingChildren": null,
-              "pendingCommitExpirationTime": 0,
-              "pendingContext": null,
-              "pendingInteractionMap": Map {},
-              "pingCache": null,
-              "timeoutHandle": -1,
-            },
-            "tag": 3,
-            "treeBaseDuration": 0,
-            "type": null,
-            "updateQueue": Object {
-              "baseState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "firstCapturedEffect": null,
-              "firstCapturedUpdate": null,
-              "firstEffect": null,
-              "firstUpdate": null,
-              "lastCapturedEffect": null,
-              "lastCapturedUpdate": null,
-              "lastEffect": null,
-              "lastUpdate": null,
-            },
-          },
-          "pendingProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {
-              "articles": Array [],
-              "author": Object {
-                "username": "henry",
-              },
-              "body": "this is body",
-              "description": "description",
-              "getArticles": [Function],
-              "results": Object {},
-              "title": "title",
-            },
-          },
-          "ref": null,
-          "return": FiberNode {
-            "_debugID": 47,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "actualDuration": 0,
-            "actualStartTime": -1,
-            "alternate": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": [Circular],
-              "child": null,
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": null,
-              "expirationTime": 1073741823,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": null,
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": null,
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-              },
-            },
-            "child": [Circular],
-            "childExpirationTime": 0,
-            "effectTag": 32,
-            "elementType": null,
-            "expirationTime": 0,
-            "firstContextDependency": null,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": null,
-            "memoizedState": Object {
-              "element": <WrapperComponent
-                Component={[Function]}
-                context={null}
-                props={
-                  Object {
-                    "articles": Array [],
-                    "author": Object {
-                      "username": "henry",
-                    },
-                    "body": "this is body",
-                    "description": "description",
-                    "getArticles": [Function],
-                    "results": Object {},
-                    "title": "title",
-                  }
-                }
-              />,
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": null,
-            "ref": null,
-            "return": null,
-            "selfBaseDuration": 0,
-            "sibling": null,
-            "stateNode": Object {
-              "containerInfo": <div />,
-              "context": Object {},
-              "current": [Circular],
-              "didError": false,
-              "earliestPendingTime": 0,
-              "earliestSuspendedTime": 0,
-              "expirationTime": 0,
-              "finishedWork": null,
-              "firstBatch": null,
-              "hydrate": false,
-              "interactionThreadID": 12,
-              "latestPendingTime": 0,
-              "latestPingedTime": 0,
-              "latestSuspendedTime": 0,
-              "memoizedInteractions": Set {},
-              "nextExpirationTimeToWorkOn": 0,
-              "nextScheduledRoot": null,
-              "pendingChildren": null,
-              "pendingCommitExpirationTime": 0,
-              "pendingContext": null,
-              "pendingInteractionMap": Map {},
-              "pingCache": null,
-              "timeoutHandle": -1,
-            },
-            "tag": 3,
-            "treeBaseDuration": 0,
-            "type": null,
-            "updateQueue": Object {
-              "baseState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "firstCapturedEffect": null,
-              "firstCapturedUpdate": null,
-              "firstEffect": null,
-              "firstUpdate": null,
-              "lastCapturedEffect": null,
-              "lastCapturedUpdate": null,
-              "lastEffect": null,
-              "lastUpdate": null,
-            },
-          },
-          "selfBaseDuration": 0,
-          "sibling": null,
-          "stateNode": WrapperComponent {
-            "_reactInternalFiber": [Circular],
-            "_reactInternalInstance": Object {},
-            "context": Object {},
-            "props": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "refs": Object {},
-            "state": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "updater": Object {
-              "enqueueForceUpdate": [Function],
-              "enqueueReplaceState": [Function],
-              "enqueueSetState": [Function],
-              "isMounted": [Function],
-            },
-          },
-          "tag": 1,
-          "treeBaseDuration": 0,
-          "type": [Function],
-          "updateQueue": null,
-        },
-        "_debugSource": null,
-        "actualDuration": 0,
-        "actualStartTime": -1,
-        "alternate": null,
-        "child": null,
-        "childExpirationTime": 0,
-        "effectTag": 1,
-        "elementType": [Function],
-        "expirationTime": 0,
-        "firstContextDependency": null,
-        "firstEffect": null,
-        "index": 0,
-        "key": null,
-        "lastEffect": null,
-        "memoizedProps": Object {
-          "articles": Array [],
-          "author": Object {
-            "username": "henry",
-          },
-          "body": "this is body",
-          "description": "description",
-          "getArticles": [Function],
-          "results": Object {},
-          "title": "title",
-        },
-        "memoizedState": Object {
-          "articles": Array [],
-        },
-        "mode": 0,
-        "nextEffect": null,
-        "pendingProps": Object {
-          "articles": Array [],
-          "author": Object {
-            "username": "henry",
-          },
-          "body": "this is body",
-          "description": "description",
-          "getArticles": [Function],
-          "results": Object {},
-          "title": "title",
-        },
-        "ref": null,
-        "return": FiberNode {
-          "_debugID": 49,
-          "_debugIsCurrentlyTiming": false,
-          "_debugOwner": null,
-          "_debugSource": null,
-          "actualDuration": 0,
-          "actualStartTime": -1,
-          "alternate": null,
-          "child": [Circular],
-          "childExpirationTime": 0,
-          "effectTag": 1,
-          "elementType": [Function],
-          "expirationTime": 0,
-          "firstContextDependency": null,
-          "firstEffect": null,
-          "index": 0,
-          "key": null,
-          "lastEffect": null,
-          "memoizedProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {
-              "articles": Array [],
-              "author": Object {
-                "username": "henry",
-              },
-              "body": "this is body",
-              "description": "description",
-              "getArticles": [Function],
-              "results": Object {},
-              "title": "title",
-            },
-          },
-          "memoizedState": Object {
-            "context": null,
-            "mount": true,
-            "props": Object {
-              "articles": Array [],
-              "author": Object {
-                "username": "henry",
-              },
-              "body": "this is body",
-              "description": "description",
-              "getArticles": [Function],
-              "results": Object {},
-              "title": "title",
-            },
-          },
-          "mode": 0,
-          "nextEffect": FiberNode {
-            "_debugID": 47,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "actualDuration": 0,
-            "actualStartTime": -1,
-            "alternate": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": [Circular],
-              "child": null,
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": null,
-              "expirationTime": 1073741823,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": null,
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": null,
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-              },
-            },
-            "child": [Circular],
-            "childExpirationTime": 0,
-            "effectTag": 32,
-            "elementType": null,
-            "expirationTime": 0,
-            "firstContextDependency": null,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": null,
-            "memoizedState": Object {
-              "element": <WrapperComponent
-                Component={[Function]}
-                context={null}
-                props={
-                  Object {
-                    "articles": Array [],
-                    "author": Object {
-                      "username": "henry",
-                    },
-                    "body": "this is body",
-                    "description": "description",
-                    "getArticles": [Function],
-                    "results": Object {},
-                    "title": "title",
-                  }
-                }
-              />,
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": null,
-            "ref": null,
-            "return": null,
-            "selfBaseDuration": 0,
-            "sibling": null,
-            "stateNode": Object {
-              "containerInfo": <div />,
-              "context": Object {},
-              "current": [Circular],
-              "didError": false,
-              "earliestPendingTime": 0,
-              "earliestSuspendedTime": 0,
-              "expirationTime": 0,
-              "finishedWork": null,
-              "firstBatch": null,
-              "hydrate": false,
-              "interactionThreadID": 12,
-              "latestPendingTime": 0,
-              "latestPingedTime": 0,
-              "latestSuspendedTime": 0,
-              "memoizedInteractions": Set {},
-              "nextExpirationTimeToWorkOn": 0,
-              "nextScheduledRoot": null,
-              "pendingChildren": null,
-              "pendingCommitExpirationTime": 0,
-              "pendingContext": null,
-              "pendingInteractionMap": Map {},
-              "pingCache": null,
-              "timeoutHandle": -1,
-            },
-            "tag": 3,
-            "treeBaseDuration": 0,
-            "type": null,
-            "updateQueue": Object {
-              "baseState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "firstCapturedEffect": null,
-              "firstCapturedUpdate": null,
-              "firstEffect": null,
-              "firstUpdate": null,
-              "lastCapturedEffect": null,
-              "lastCapturedUpdate": null,
-              "lastEffect": null,
-              "lastUpdate": null,
-            },
-          },
-          "pendingProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {
-              "articles": Array [],
-              "author": Object {
-                "username": "henry",
-              },
-              "body": "this is body",
-              "description": "description",
-              "getArticles": [Function],
-              "results": Object {},
-              "title": "title",
-            },
-          },
-          "ref": null,
-          "return": FiberNode {
-            "_debugID": 47,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "actualDuration": 0,
-            "actualStartTime": -1,
-            "alternate": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": [Circular],
-              "child": null,
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": null,
-              "expirationTime": 1073741823,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": null,
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": null,
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": Object {
-                  "callback": null,
-                  "expirationTime": 1073741823,
-                  "next": null,
-                  "nextEffect": null,
-                  "payload": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={
-                        Object {
-                          "articles": Array [],
-                          "author": Object {
-                            "username": "henry",
-                          },
-                          "body": "this is body",
-                          "description": "description",
-                          "getArticles": [Function],
-                          "results": Object {},
-                          "title": "title",
-                        }
-                      }
-                    />,
-                  },
-                  "tag": 0,
-                },
-              },
-            },
-            "child": [Circular],
-            "childExpirationTime": 0,
-            "effectTag": 32,
-            "elementType": null,
-            "expirationTime": 0,
-            "firstContextDependency": null,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": null,
-            "memoizedState": Object {
-              "element": <WrapperComponent
-                Component={[Function]}
-                context={null}
-                props={
-                  Object {
-                    "articles": Array [],
-                    "author": Object {
-                      "username": "henry",
-                    },
-                    "body": "this is body",
-                    "description": "description",
-                    "getArticles": [Function],
-                    "results": Object {},
-                    "title": "title",
-                  }
-                }
-              />,
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": null,
-            "ref": null,
-            "return": null,
-            "selfBaseDuration": 0,
-            "sibling": null,
-            "stateNode": Object {
-              "containerInfo": <div />,
-              "context": Object {},
-              "current": [Circular],
-              "didError": false,
-              "earliestPendingTime": 0,
-              "earliestSuspendedTime": 0,
-              "expirationTime": 0,
-              "finishedWork": null,
-              "firstBatch": null,
-              "hydrate": false,
-              "interactionThreadID": 12,
-              "latestPendingTime": 0,
-              "latestPingedTime": 0,
-              "latestSuspendedTime": 0,
-              "memoizedInteractions": Set {},
-              "nextExpirationTimeToWorkOn": 0,
-              "nextScheduledRoot": null,
-              "pendingChildren": null,
-              "pendingCommitExpirationTime": 0,
-              "pendingContext": null,
-              "pendingInteractionMap": Map {},
-              "pingCache": null,
-              "timeoutHandle": -1,
-            },
-            "tag": 3,
-            "treeBaseDuration": 0,
-            "type": null,
-            "updateQueue": Object {
-              "baseState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "firstCapturedEffect": null,
-              "firstCapturedUpdate": null,
-              "firstEffect": null,
-              "firstUpdate": null,
-              "lastCapturedEffect": null,
-              "lastCapturedUpdate": null,
-              "lastEffect": null,
-              "lastUpdate": null,
-            },
-          },
-          "selfBaseDuration": 0,
-          "sibling": null,
-          "stateNode": WrapperComponent {
-            "_reactInternalFiber": [Circular],
-            "_reactInternalInstance": Object {},
-            "context": Object {},
-            "props": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "refs": Object {},
-            "state": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "updater": Object {
-              "enqueueForceUpdate": [Function],
-              "enqueueReplaceState": [Function],
-              "enqueueSetState": [Function],
-              "isMounted": [Function],
-            },
-          },
-          "tag": 1,
-          "treeBaseDuration": 0,
-          "type": [Function],
-          "updateQueue": null,
-        },
-        "selfBaseDuration": 0,
-        "sibling": null,
-        "stateNode": [Circular],
-        "tag": 1,
-        "treeBaseDuration": 0,
-        "type": [Function],
-        "updateQueue": null,
-      },
-      "_reactInternalInstance": Object {},
-      "context": Object {},
-      "props": Object {
-        "articles": Array [],
-        "author": Object {
-          "username": "henry",
-        },
-        "body": "this is body",
-        "description": "description",
-        "getArticles": [Function],
-        "results": Object {},
-        "title": "title",
-      },
-      "refs": Object {},
-      "state": Object {
-        "articles": Array [],
-      },
-      "updater": Object {
-        "enqueueForceUpdate": [Function],
-        "enqueueReplaceState": [Function],
-        "enqueueSetState": [Function],
-        "isMounted": [Function],
-      },
-    },
+    "instance": null,
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "articles": Array [],
-      "author": Object {
-        "username": "henry",
-      },
-      "body": "this is body",
-      "description": "description",
-      "getArticles": [Function],
-      "results": Object {},
-      "title": "title",
+      "children": <t
+        tag="div"
+      >
+        <t
+          className="w-100 m-0"
+          lg={null}
+          md={null}
+          size="9"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        />
+        <t
+          className="position-sticky m1"
+          lg={null}
+          md={null}
+          size="3"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <TagsForm
+            tags={Array []}
+          />
+        </t>
+      </t>,
+      "className": "pl-3",
+      "fluid": false,
+      "tag": "div",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <t
+            className="w-100 m-0"
+            lg={null}
+            md={null}
+            size="9"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          />,
+          <t
+            className="position-sticky m1"
+            lg={null}
+            md={null}
+            size="3"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <TagsForm
+              tags={Array []}
+            />
+          </t>,
+        ],
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [],
+            "className": "w-100 m-0",
+            "lg": null,
+            "md": null,
+            "size": "9",
+            "sm": null,
+            "tag": "div",
+            "xl": null,
+            "xs": null,
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <TagsForm
+              tags={Array []}
+            />,
+            "className": "position-sticky m1",
+            "lg": null,
+            "md": null,
+            "size": "3",
+            "sm": null,
+            "tag": "div",
+            "xl": null,
+            "xs": null,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "tags": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
-      "instance": ArticleList {
-        "_reactInternalFiber": FiberNode {
-          "_debugID": 50,
-          "_debugIsCurrentlyTiming": false,
-          "_debugOwner": FiberNode {
-            "_debugID": 49,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "actualDuration": 0,
-            "actualStartTime": -1,
-            "alternate": null,
-            "child": [Circular],
-            "childExpirationTime": 0,
-            "effectTag": 1,
-            "elementType": [Function],
-            "expirationTime": 0,
-            "firstContextDependency": null,
-            "firstEffect": null,
-            "index": 0,
-            "key": null,
-            "lastEffect": null,
-            "memoizedProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "memoizedState": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "mode": 0,
-            "nextEffect": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": FiberNode {
-                "_debugID": 47,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": null,
-                "_debugSource": null,
-                "actualDuration": 0,
-                "actualStartTime": -1,
-                "alternate": [Circular],
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": null,
-                "expirationTime": 1073741823,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": null,
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": null,
-                "ref": null,
-                "return": null,
-                "selfBaseDuration": 0,
-                "sibling": null,
-                "stateNode": Object {
-                  "containerInfo": <div />,
-                  "context": Object {},
-                  "current": [Circular],
-                  "didError": false,
-                  "earliestPendingTime": 0,
-                  "earliestSuspendedTime": 0,
-                  "expirationTime": 0,
-                  "finishedWork": null,
-                  "firstBatch": null,
-                  "hydrate": false,
-                  "interactionThreadID": 12,
-                  "latestPendingTime": 0,
-                  "latestPingedTime": 0,
-                  "latestSuspendedTime": 0,
-                  "memoizedInteractions": Set {},
-                  "nextExpirationTimeToWorkOn": 0,
-                  "nextScheduledRoot": null,
-                  "pendingChildren": null,
-                  "pendingCommitExpirationTime": 0,
-                  "pendingContext": null,
-                  "pendingInteractionMap": Map {},
-                  "pingCache": null,
-                  "timeoutHandle": -1,
-                },
-                "tag": 3,
-                "treeBaseDuration": 0,
-                "type": null,
-                "updateQueue": Object {
-                  "baseState": null,
-                  "firstCapturedEffect": null,
-                  "firstCapturedUpdate": null,
-                  "firstEffect": null,
-                  "firstUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                  "lastCapturedEffect": null,
-                  "lastCapturedUpdate": null,
-                  "lastEffect": null,
-                  "lastUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                },
-              },
-              "child": [Circular],
-              "childExpirationTime": 0,
-              "effectTag": 32,
-              "elementType": null,
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": [Circular],
-              "index": 0,
-              "key": null,
-              "lastEffect": [Circular],
-              "memoizedProps": null,
-              "memoizedState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": Object {
-                  "element": <WrapperComponent
-                    Component={[Function]}
-                    context={null}
-                    props={
-                      Object {
-                        "articles": Array [],
-                        "author": Object {
-                          "username": "henry",
-                        },
-                        "body": "this is body",
-                        "description": "description",
-                        "getArticles": [Function],
-                        "results": Object {},
-                        "title": "title",
-                      }
-                    }
-                  />,
-                },
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": null,
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": null,
-              },
-            },
-            "pendingProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "ref": null,
-            "return": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": FiberNode {
-                "_debugID": 47,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": null,
-                "_debugSource": null,
-                "actualDuration": 0,
-                "actualStartTime": -1,
-                "alternate": [Circular],
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": null,
-                "expirationTime": 1073741823,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": null,
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": null,
-                "ref": null,
-                "return": null,
-                "selfBaseDuration": 0,
-                "sibling": null,
-                "stateNode": Object {
-                  "containerInfo": <div />,
-                  "context": Object {},
-                  "current": [Circular],
-                  "didError": false,
-                  "earliestPendingTime": 0,
-                  "earliestSuspendedTime": 0,
-                  "expirationTime": 0,
-                  "finishedWork": null,
-                  "firstBatch": null,
-                  "hydrate": false,
-                  "interactionThreadID": 12,
-                  "latestPendingTime": 0,
-                  "latestPingedTime": 0,
-                  "latestSuspendedTime": 0,
-                  "memoizedInteractions": Set {},
-                  "nextExpirationTimeToWorkOn": 0,
-                  "nextScheduledRoot": null,
-                  "pendingChildren": null,
-                  "pendingCommitExpirationTime": 0,
-                  "pendingContext": null,
-                  "pendingInteractionMap": Map {},
-                  "pingCache": null,
-                  "timeoutHandle": -1,
-                },
-                "tag": 3,
-                "treeBaseDuration": 0,
-                "type": null,
-                "updateQueue": Object {
-                  "baseState": null,
-                  "firstCapturedEffect": null,
-                  "firstCapturedUpdate": null,
-                  "firstEffect": null,
-                  "firstUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                  "lastCapturedEffect": null,
-                  "lastCapturedUpdate": null,
-                  "lastEffect": null,
-                  "lastUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                },
-              },
-              "child": [Circular],
-              "childExpirationTime": 0,
-              "effectTag": 32,
-              "elementType": null,
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": [Circular],
-              "index": 0,
-              "key": null,
-              "lastEffect": [Circular],
-              "memoizedProps": null,
-              "memoizedState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": Object {
-                  "element": <WrapperComponent
-                    Component={[Function]}
-                    context={null}
-                    props={
-                      Object {
-                        "articles": Array [],
-                        "author": Object {
-                          "username": "henry",
-                        },
-                        "body": "this is body",
-                        "description": "description",
-                        "getArticles": [Function],
-                        "results": Object {},
-                        "title": "title",
-                      }
-                    }
-                  />,
-                },
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": null,
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": null,
-              },
-            },
-            "selfBaseDuration": 0,
-            "sibling": null,
-            "stateNode": WrapperComponent {
-              "_reactInternalFiber": [Circular],
-              "_reactInternalInstance": Object {},
-              "context": Object {},
-              "props": Object {
-                "Component": [Function],
-                "context": null,
-                "props": Object {
-                  "articles": Array [],
-                  "author": Object {
-                    "username": "henry",
-                  },
-                  "body": "this is body",
-                  "description": "description",
-                  "getArticles": [Function],
-                  "results": Object {},
-                  "title": "title",
-                },
-              },
-              "refs": Object {},
-              "state": Object {
-                "context": null,
-                "mount": true,
-                "props": Object {
-                  "articles": Array [],
-                  "author": Object {
-                    "username": "henry",
-                  },
-                  "body": "this is body",
-                  "description": "description",
-                  "getArticles": [Function],
-                  "results": Object {},
-                  "title": "title",
-                },
-              },
-              "updater": Object {
-                "enqueueForceUpdate": [Function],
-                "enqueueReplaceState": [Function],
-                "enqueueSetState": [Function],
-                "isMounted": [Function],
-              },
-            },
-            "tag": 1,
-            "treeBaseDuration": 0,
-            "type": [Function],
-            "updateQueue": null,
-          },
-          "_debugSource": null,
-          "actualDuration": 0,
-          "actualStartTime": -1,
-          "alternate": null,
-          "child": null,
-          "childExpirationTime": 0,
-          "effectTag": 1,
-          "elementType": [Function],
-          "expirationTime": 0,
-          "firstContextDependency": null,
-          "firstEffect": null,
-          "index": 0,
-          "key": null,
-          "lastEffect": null,
-          "memoizedProps": Object {
-            "articles": Array [],
-            "author": Object {
-              "username": "henry",
-            },
-            "body": "this is body",
-            "description": "description",
-            "getArticles": [Function],
-            "results": Object {},
-            "title": "title",
-          },
-          "memoizedState": Object {
-            "articles": Array [],
-          },
-          "mode": 0,
-          "nextEffect": null,
-          "pendingProps": Object {
-            "articles": Array [],
-            "author": Object {
-              "username": "henry",
-            },
-            "body": "this is body",
-            "description": "description",
-            "getArticles": [Function],
-            "results": Object {},
-            "title": "title",
-          },
-          "ref": null,
-          "return": FiberNode {
-            "_debugID": 49,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "actualDuration": 0,
-            "actualStartTime": -1,
-            "alternate": null,
-            "child": [Circular],
-            "childExpirationTime": 0,
-            "effectTag": 1,
-            "elementType": [Function],
-            "expirationTime": 0,
-            "firstContextDependency": null,
-            "firstEffect": null,
-            "index": 0,
-            "key": null,
-            "lastEffect": null,
-            "memoizedProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "memoizedState": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "mode": 0,
-            "nextEffect": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": FiberNode {
-                "_debugID": 47,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": null,
-                "_debugSource": null,
-                "actualDuration": 0,
-                "actualStartTime": -1,
-                "alternate": [Circular],
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": null,
-                "expirationTime": 1073741823,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": null,
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": null,
-                "ref": null,
-                "return": null,
-                "selfBaseDuration": 0,
-                "sibling": null,
-                "stateNode": Object {
-                  "containerInfo": <div />,
-                  "context": Object {},
-                  "current": [Circular],
-                  "didError": false,
-                  "earliestPendingTime": 0,
-                  "earliestSuspendedTime": 0,
-                  "expirationTime": 0,
-                  "finishedWork": null,
-                  "firstBatch": null,
-                  "hydrate": false,
-                  "interactionThreadID": 12,
-                  "latestPendingTime": 0,
-                  "latestPingedTime": 0,
-                  "latestSuspendedTime": 0,
-                  "memoizedInteractions": Set {},
-                  "nextExpirationTimeToWorkOn": 0,
-                  "nextScheduledRoot": null,
-                  "pendingChildren": null,
-                  "pendingCommitExpirationTime": 0,
-                  "pendingContext": null,
-                  "pendingInteractionMap": Map {},
-                  "pingCache": null,
-                  "timeoutHandle": -1,
-                },
-                "tag": 3,
-                "treeBaseDuration": 0,
-                "type": null,
-                "updateQueue": Object {
-                  "baseState": null,
-                  "firstCapturedEffect": null,
-                  "firstCapturedUpdate": null,
-                  "firstEffect": null,
-                  "firstUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                  "lastCapturedEffect": null,
-                  "lastCapturedUpdate": null,
-                  "lastEffect": null,
-                  "lastUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                },
-              },
-              "child": [Circular],
-              "childExpirationTime": 0,
-              "effectTag": 32,
-              "elementType": null,
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": [Circular],
-              "index": 0,
-              "key": null,
-              "lastEffect": [Circular],
-              "memoizedProps": null,
-              "memoizedState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": Object {
-                  "element": <WrapperComponent
-                    Component={[Function]}
-                    context={null}
-                    props={
-                      Object {
-                        "articles": Array [],
-                        "author": Object {
-                          "username": "henry",
-                        },
-                        "body": "this is body",
-                        "description": "description",
-                        "getArticles": [Function],
-                        "results": Object {},
-                        "title": "title",
-                      }
-                    }
-                  />,
-                },
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": null,
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": null,
-              },
-            },
-            "pendingProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {
-                "articles": Array [],
-                "author": Object {
-                  "username": "henry",
-                },
-                "body": "this is body",
-                "description": "description",
-                "getArticles": [Function],
-                "results": Object {},
-                "title": "title",
-              },
-            },
-            "ref": null,
-            "return": FiberNode {
-              "_debugID": 47,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": FiberNode {
-                "_debugID": 47,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": null,
-                "_debugSource": null,
-                "actualDuration": 0,
-                "actualStartTime": -1,
-                "alternate": [Circular],
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": null,
-                "expirationTime": 1073741823,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": null,
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": null,
-                "ref": null,
-                "return": null,
-                "selfBaseDuration": 0,
-                "sibling": null,
-                "stateNode": Object {
-                  "containerInfo": <div />,
-                  "context": Object {},
-                  "current": [Circular],
-                  "didError": false,
-                  "earliestPendingTime": 0,
-                  "earliestSuspendedTime": 0,
-                  "expirationTime": 0,
-                  "finishedWork": null,
-                  "firstBatch": null,
-                  "hydrate": false,
-                  "interactionThreadID": 12,
-                  "latestPendingTime": 0,
-                  "latestPingedTime": 0,
-                  "latestSuspendedTime": 0,
-                  "memoizedInteractions": Set {},
-                  "nextExpirationTimeToWorkOn": 0,
-                  "nextScheduledRoot": null,
-                  "pendingChildren": null,
-                  "pendingCommitExpirationTime": 0,
-                  "pendingContext": null,
-                  "pendingInteractionMap": Map {},
-                  "pingCache": null,
-                  "timeoutHandle": -1,
-                },
-                "tag": 3,
-                "treeBaseDuration": 0,
-                "type": null,
-                "updateQueue": Object {
-                  "baseState": null,
-                  "firstCapturedEffect": null,
-                  "firstCapturedUpdate": null,
-                  "firstEffect": null,
-                  "firstUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                  "lastCapturedEffect": null,
-                  "lastCapturedUpdate": null,
-                  "lastEffect": null,
-                  "lastUpdate": Object {
-                    "callback": null,
-                    "expirationTime": 1073741823,
-                    "next": null,
-                    "nextEffect": null,
-                    "payload": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={
-                          Object {
-                            "articles": Array [],
-                            "author": Object {
-                              "username": "henry",
-                            },
-                            "body": "this is body",
-                            "description": "description",
-                            "getArticles": [Function],
-                            "results": Object {},
-                            "title": "title",
-                          }
-                        }
-                      />,
-                    },
-                    "tag": 0,
-                  },
-                },
-              },
-              "child": [Circular],
-              "childExpirationTime": 0,
-              "effectTag": 32,
-              "elementType": null,
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": [Circular],
-              "index": 0,
-              "key": null,
-              "lastEffect": [Circular],
-              "memoizedProps": null,
-              "memoizedState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={
-                    Object {
-                      "articles": Array [],
-                      "author": Object {
-                        "username": "henry",
-                      },
-                      "body": "this is body",
-                      "description": "description",
-                      "getArticles": [Function],
-                      "results": Object {},
-                      "title": "title",
-                    }
-                  }
-                />,
-              },
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div />,
-                "context": Object {},
-                "current": [Circular],
-                "didError": false,
-                "earliestPendingTime": 0,
-                "earliestSuspendedTime": 0,
-                "expirationTime": 0,
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "interactionThreadID": 12,
-                "latestPendingTime": 0,
-                "latestPingedTime": 0,
-                "latestSuspendedTime": 0,
-                "memoizedInteractions": Set {},
-                "nextExpirationTimeToWorkOn": 0,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "pendingInteractionMap": Map {},
-                "pingCache": null,
-                "timeoutHandle": -1,
-              },
-              "tag": 3,
-              "treeBaseDuration": 0,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": Object {
-                  "element": <WrapperComponent
-                    Component={[Function]}
-                    context={null}
-                    props={
-                      Object {
-                        "articles": Array [],
-                        "author": Object {
-                          "username": "henry",
-                        },
-                        "body": "this is body",
-                        "description": "description",
-                        "getArticles": [Function],
-                        "results": Object {},
-                        "title": "title",
-                      }
-                    }
-                  />,
-                },
-                "firstCapturedEffect": null,
-                "firstCapturedUpdate": null,
-                "firstEffect": null,
-                "firstUpdate": null,
-                "lastCapturedEffect": null,
-                "lastCapturedUpdate": null,
-                "lastEffect": null,
-                "lastUpdate": null,
-              },
-            },
-            "selfBaseDuration": 0,
-            "sibling": null,
-            "stateNode": WrapperComponent {
-              "_reactInternalFiber": [Circular],
-              "_reactInternalInstance": Object {},
-              "context": Object {},
-              "props": Object {
-                "Component": [Function],
-                "context": null,
-                "props": Object {
-                  "articles": Array [],
-                  "author": Object {
-                    "username": "henry",
-                  },
-                  "body": "this is body",
-                  "description": "description",
-                  "getArticles": [Function],
-                  "results": Object {},
-                  "title": "title",
-                },
-              },
-              "refs": Object {},
-              "state": Object {
-                "context": null,
-                "mount": true,
-                "props": Object {
-                  "articles": Array [],
-                  "author": Object {
-                    "username": "henry",
-                  },
-                  "body": "this is body",
-                  "description": "description",
-                  "getArticles": [Function],
-                  "results": Object {},
-                  "title": "title",
-                },
-              },
-              "updater": Object {
-                "enqueueForceUpdate": [Function],
-                "enqueueReplaceState": [Function],
-                "enqueueSetState": [Function],
-                "isMounted": [Function],
-              },
-            },
-            "tag": 1,
-            "treeBaseDuration": 0,
-            "type": [Function],
-            "updateQueue": null,
-          },
-          "selfBaseDuration": 0,
-          "sibling": null,
-          "stateNode": [Circular],
-          "tag": 1,
-          "treeBaseDuration": 0,
-          "type": [Function],
-          "updateQueue": null,
-        },
-        "_reactInternalInstance": Object {},
-        "context": Object {},
-        "props": Object {
-          "articles": Array [],
-          "author": Object {
-            "username": "henry",
-          },
-          "body": "this is body",
-          "description": "description",
-          "getArticles": [Function],
-          "results": Object {},
-          "title": "title",
-        },
-        "refs": Object {},
-        "state": Object {
-          "articles": Array [],
-        },
-        "updater": Object {
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-        },
-      },
+      "instance": null,
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "articles": Array [],
-        "author": Object {
-          "username": "henry",
-        },
-        "body": "this is body",
-        "description": "description",
-        "getArticles": [Function],
-        "results": Object {},
-        "title": "title",
+        "children": <t
+          tag="div"
+        >
+          <t
+            className="w-100 m-0"
+            lg={null}
+            md={null}
+            size="9"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          />
+          <t
+            className="position-sticky m1"
+            lg={null}
+            md={null}
+            size="3"
+            sm={null}
+            tag="div"
+            xl={null}
+            xs={null}
+          >
+            <TagsForm
+              tags={Array []}
+            />
+          </t>
+        </t>,
+        "className": "pl-3",
+        "fluid": false,
+        "tag": "div",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <t
+              className="w-100 m-0"
+              lg={null}
+              md={null}
+              size="9"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            />,
+            <t
+              className="position-sticky m1"
+              lg={null}
+              md={null}
+              size="3"
+              sm={null}
+              tag="div"
+              xl={null}
+              xs={null}
+            >
+              <TagsForm
+                tags={Array []}
+              />
+            </t>,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [],
+              "className": "w-100 m-0",
+              "lg": null,
+              "md": null,
+              "size": "9",
+              "sm": null,
+              "tag": "div",
+              "xl": null,
+              "xs": null,
+            },
+            "ref": null,
+            "rendered": Array [],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <TagsForm
+                tags={Array []}
+              />,
+              "className": "position-sticky m1",
+              "lg": null,
+              "md": null,
+              "size": "3",
+              "sm": null,
+              "tag": "div",
+              "xl": null,
+              "xs": null,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "tags": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
       "type": [Function],
     },
   ],

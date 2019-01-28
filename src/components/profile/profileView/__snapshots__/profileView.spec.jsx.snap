@@ -43,6 +43,26 @@ ShallowWrapper {
            Author's Heaven
         </span>
         <div
+          className="float-right "
+        >
+          <Link
+            className="navbar-brand"
+            replace={false}
+            to="/"
+          >
+             
+            Home
+          </Link>
+          <Link
+            className="navbar-brand "
+            replace={false}
+            to="/create"
+          >
+             
+            Create Article
+          </Link>
+        </div>
+        <div
           className="collapse navbar-collapse"
         >
           <ul
@@ -175,6 +195,26 @@ ShallowWrapper {
           >
              Author's Heaven
           </span>,
+          <div
+            className="float-right "
+          >
+            <Link
+              className="navbar-brand"
+              replace={false}
+              to="/"
+            >
+               
+              Home
+            </Link>
+            <Link
+              className="navbar-brand "
+              replace={false}
+              to="/create"
+            >
+               
+              Create Article
+            </Link>
+          </div>,
           <div
             className="collapse navbar-collapse"
           >
@@ -310,6 +350,76 @@ ShallowWrapper {
           "ref": null,
           "rendered": " Author's Heaven",
           "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="navbar-brand"
+                replace={false}
+                to="/"
+              >
+                 
+                Home
+              </Link>,
+              <Link
+                className="navbar-brand "
+                replace={false}
+                to="/create"
+              >
+                 
+                Create Article
+              </Link>,
+            ],
+            "className": "float-right ",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Home",
+                ],
+                "className": "navbar-brand",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Home",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Create Article",
+                ],
+                "className": "navbar-brand ",
+                "replace": false,
+                "to": "/create",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Create Article",
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -1218,6 +1328,26 @@ ShallowWrapper {
              Author's Heaven
           </span>
           <div
+            className="float-right "
+          >
+            <Link
+              className="navbar-brand"
+              replace={false}
+              to="/"
+            >
+               
+              Home
+            </Link>
+            <Link
+              className="navbar-brand "
+              replace={false}
+              to="/create"
+            >
+               
+              Create Article
+            </Link>
+          </div>
+          <div
             className="collapse navbar-collapse"
           >
             <ul
@@ -1350,6 +1480,26 @@ ShallowWrapper {
             >
                Author's Heaven
             </span>,
+            <div
+              className="float-right "
+            >
+              <Link
+                className="navbar-brand"
+                replace={false}
+                to="/"
+              >
+                 
+                Home
+              </Link>
+              <Link
+                className="navbar-brand "
+                replace={false}
+                to="/create"
+              >
+                 
+                Create Article
+              </Link>
+            </div>,
             <div
               className="collapse navbar-collapse"
             >
@@ -1485,6 +1635,76 @@ ShallowWrapper {
             "ref": null,
             "rendered": " Author's Heaven",
             "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  className="navbar-brand"
+                  replace={false}
+                  to="/"
+                >
+                   
+                  Home
+                </Link>,
+                <Link
+                  className="navbar-brand "
+                  replace={false}
+                  to="/create"
+                >
+                   
+                  Create Article
+                </Link>,
+              ],
+              "className": "float-right ",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Home",
+                  ],
+                  "className": "navbar-brand",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Home",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Create Article",
+                  ],
+                  "className": "navbar-brand ",
+                  "replace": false,
+                  "to": "/create",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Create Article",
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,

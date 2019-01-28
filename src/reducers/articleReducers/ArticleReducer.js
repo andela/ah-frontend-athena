@@ -23,6 +23,8 @@ export default (state = initialState, action) => {
       return { ...state, delete_article: action.payload };
     case actionTypes.RATE_ARTICLE:
       return { ...state, new_article_rate: action.payload };
+    case actionTypes.TAGGED_ARTICALS:
+      return { ...state, articles: action.payload };
     default:
       return state;
   }

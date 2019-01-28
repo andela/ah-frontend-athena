@@ -1,6 +1,7 @@
-import React from 'react';
-import propTypes from 'prop-types';
-import './profileView.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import propTypes from "prop-types";
+import "./profileView.scss";
 
 const viewProfile = props => {
   const {
@@ -15,10 +16,21 @@ const viewProfile = props => {
     following
   } = props;
   const Value = `navbar-nav ml-auto nav-flex-icons  ${classValue}`;
+  const create = `navbar-brand ${classValue}`;
   return (
     <div>
       <nav className="pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark ">
         <span className="navbar-brand "> Author&#39;s Heaven</span>
+        <div className="float-right ">
+          <Link to="/" className="navbar-brand">
+            {" "}
+            Home
+          </Link>
+          <Link to="/create" className={create}>
+            {" "}
+            Create Article
+          </Link>
+        </div>
         <div className="collapse navbar-collapse">
           <ul className={Value}>
             <li className="nav-item avatar dropdown">
@@ -105,10 +117,10 @@ viewProfile.propTypes = {
   Edit: propTypes.func
 };
 viewProfile.defaultProps = {
-  classValue: '',
+  classValue: "",
   Clicked: () => {},
-  imageShow: '',
-  attribute: '',
+  imageShow: "",
+  attribute: "",
   profile: {},
   followers: 0,
   following: 0,
