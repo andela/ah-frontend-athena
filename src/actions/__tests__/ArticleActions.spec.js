@@ -45,11 +45,10 @@ describe("mock articles", () => {
 
   it("should mock fetch articles ", () => {
     fetchMock
-      .getOnce(`${BACKEND_DOMAIN}articles`, {
-        body: { articles: { results: [{}, {}] } },
+      .getOnce(`${BACKEND_DOMAIN}articles/search?tag=''`, {
+        body: { results: [{}, {}] },
         headers: {
-          "content-type": "application/json",
-          authorization: "Bearer moked-token"
+          "content-type": "application/json"
         }
       })
       .catch(err => err);
@@ -62,7 +61,7 @@ describe("mock articles", () => {
     ];
     const store = mockStore({ article: {} });
 
-    return store.dispatch(getArticles()).then(() => {
+    return store.dispatch(getArticles("tag=''", "", "")).then(() => {
       expect(store.getActions()).toEqual(articleAction);
     });
   });
@@ -122,7 +121,7 @@ describe("mock articles", () => {
 
   it("should mock delete an article ", () => {
     fetchMock
-      .deleteOnce(`${BACKEND_DOMAIN}articles/moked-slug/`, {
+      .deleteOnce(`${BACKEND_DOMAIN}articles/moked-slug`, {
         body: { article: {} },
         headers: {
           "content-type": "application/json",

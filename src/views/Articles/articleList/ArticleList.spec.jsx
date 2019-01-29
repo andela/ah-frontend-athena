@@ -1,5 +1,5 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import { Provider } from "react-redux";
 import configureStore from "redux-mock-store";
 import { ArticleList } from "./ArticleList";
@@ -36,7 +36,7 @@ const intitialState = {
 describe("<ArticleList>", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(<ArticleList {...newArticle} />);
+    wrapper = shallow(<ArticleList {...newArticle} />);
   });
   it("matches snapshort", () => {
     expect(wrapper).toMatchSnapshot();
@@ -45,7 +45,7 @@ describe("<ArticleList>", () => {
   it("should mount article Item", () => {
     const mockStore = configureStore();
     let store = mockStore(intitialState);
-    let wrapp = mount(
+    let wrapp = shallow(
       <Provider store={store}>
         <ArticleList {...articleDta} />
       </Provider>

@@ -14,8 +14,8 @@ code {
 }
 
 $primary-color: #1ba1e2;
-.primary-color {
-  background-color: #1ba1e2 !important;
+.primary-text-color {
+  color: #1ba1e2 !important;
 }
 
 .bg-primary {
@@ -37,4 +37,8 @@ $primary-color-dark: #1ba1e2;
 $secondary-color-dark: #6c757d;
 .secondary-color-dark {
   background-color: #6c757d !important;
+}
+
+.badge-primary {
+  background-color: #1ba1e2 !important;
 }

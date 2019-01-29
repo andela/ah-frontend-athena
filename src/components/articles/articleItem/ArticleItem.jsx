@@ -2,6 +2,7 @@ import React from "react";
 import renderHTML from "react-render-html";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+
 import "./ArticleItem.scss";
 import {
   MDBContainer,
@@ -12,6 +13,7 @@ import {
   MDBMask,
   MDBView
 } from "mdbreact";
+import bodyLimit from "../../../utils/helpers";
 
 export const getDate = str => {
   let date = new Date(str);
@@ -22,8 +24,8 @@ export const getDate = str => {
 const ArticleItem = props => {
   const { article } = props;
   return (
-    <MDBContainer className="container">
-      <MDBCard className="my-2 px-5 pb-5">
+    <MDBContainer fluid className="w-100 ">
+      <MDBCard className="my-3 pb-5 mw-100">
         <MDBCardBody>
           <MDBRow>
             <MDBCol lg="5" xl="4">
@@ -45,7 +47,9 @@ const ArticleItem = props => {
               <h3 className="font-weight-bold mb-3 p-0">
                 <strong>{article.title}</strong>
               </h3>
-              <p className="dark-grey-text">{renderHTML(article.body)}</p>
+              <p className="dark-grey-text">
+                {renderHTML(bodyLimit(article.body, 100))}
+              </p>
               <p>
                 by
                 <a href="#!" className="font-weight-bold">

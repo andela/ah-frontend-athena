@@ -9,7 +9,7 @@ const initialState = {
   delete_article: {}
 };
 
-describe("test signup reducer", () => {
+describe("test article reducer", () => {
   it("should return the initial state unknow action type", () => {
     expect(ArticleReducer(undefined, {})).toEqual(initialState);
   });

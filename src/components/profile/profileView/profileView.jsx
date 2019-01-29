@@ -1,17 +1,36 @@
 import React from "react";
-import propTypes from 'prop-types';
+import { Link } from "react-router-dom";
+import propTypes from "prop-types";
 import "./profileView.scss";
 
 const viewProfile = props => {
-  const {classValue, Clicked, imageShow, attribute, profile, Click, Edit} = props
+  const {
+    classValue,
+    Clicked,
+    imageShow,
+    attribute,
+    profile,
+    Click,
+    Edit
+  } = props;
   const Value = `navbar-nav ml-auto nav-flex-icons  ${classValue}`;
+  const create = `navbar-brand ${classValue}`;
   return (
     <div>
       <nav className="pl-4 navbar bg-primary navbar-expand-lg navbar-dark ">
         <span className="navbar-brand "> Author&#39;s Heaven</span>
+        <div className="float-right ">
+          <Link to="/" className="navbar-brand">
+            {" "}
+            Home
+          </Link>
+          <Link to="/create" className={create}>
+            {" "}
+            Create Article
+          </Link>
+        </div>
         <div className="collapse navbar-collapse">
           <ul className={Value}>
-            
             <li className="nav-item avatar dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -51,12 +70,12 @@ const viewProfile = props => {
                       </button>
                     </div>
                     <div className="text-center">
-                      <a href='/'>
+                      <a href="/">
                         <button
                           name="publish"
                           onClick={Edit}
                           className="btn btn-success btn-sm"
-                          type='button'
+                          type="button"
                         >
                           edit
                         </button>
@@ -80,14 +99,14 @@ viewProfile.propTypes = {
   profile: propTypes.shape({}),
   Click: propTypes.func,
   Edit: propTypes.func
-}
+};
 viewProfile.defaultProps = {
-  classValue: '',
-  Clicked: ()=>{},
-  imageShow: '',
-  attribute: '',
+  classValue: "",
+  Clicked: () => {},
+  imageShow: "",
+  attribute: "",
   profile: {},
-  Click: ()=>{},
-  Edit: ()=>{}
-}
+  Click: () => {},
+  Edit: () => {}
+};
 export default viewProfile;

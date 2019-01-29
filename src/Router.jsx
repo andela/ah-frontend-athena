@@ -42,7 +42,7 @@ const Routes = () => (
         <Route path="/" component={ArticleList} exact />
         <Route path="/create" component={ArticleCreate} exact />
         <Route path="/articles/:slug" component={ArticleView} exact />
-        <Route path="/articles/edit/:slug" component={ArticleEdit} />
+        <Route path="/articles/edit/:slug" component={ArticleEdit} exact />
         <Route path="*" component={NotFound} />
       </Switch>
     </Provider>

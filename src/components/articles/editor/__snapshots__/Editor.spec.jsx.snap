@@ -194,50 +194,16 @@ ShallowWrapper {
                 placeholder="Article body"
                 theme="snow"
               />
-              <t
+              <TagInput
                 className="border-0"
-                containerClass=""
-                disabled={false}
                 error="wrong"
-                filled={false}
-                gap={false}
                 group={true}
-                icon=""
-                iconBrand={false}
-                iconClass=""
-                iconLight={false}
-                iconRegular={false}
+                handleTags={[Function]}
                 label="Tags"
-                labelClass=""
-                onChange={[Function]}
-                size=""
                 success="right"
-                tag="input"
+                tagList={Array []}
                 type="text"
                 validate={true}
-                valueDefault=""
-              />
-              <t
-                className="border-0"
-                containerClass=""
-                disabled={false}
-                error=""
-                filled={false}
-                gap={false}
-                group={false}
-                icon=""
-                iconBrand={false}
-                iconClass=""
-                iconLight={false}
-                iconRegular={false}
-                label=""
-                labelClass=""
-                size=""
-                success=""
-                tag="input"
-                type="text"
-                validate={false}
-                valueDefault=""
               />
             </div>
             <div
@@ -447,50 +413,16 @@ ShallowWrapper {
                 placeholder="Article body"
                 theme="snow"
               />
-              <t
+              <TagInput
                 className="border-0"
-                containerClass=""
-                disabled={false}
                 error="wrong"
-                filled={false}
-                gap={false}
                 group={true}
-                icon=""
-                iconBrand={false}
-                iconClass=""
-                iconLight={false}
-                iconRegular={false}
+                handleTags={[Function]}
                 label="Tags"
-                labelClass=""
-                onChange={[Function]}
-                size=""
                 success="right"
-                tag="input"
+                tagList={Array []}
                 type="text"
                 validate={true}
-                valueDefault=""
-              />
-              <t
-                className="border-0"
-                containerClass=""
-                disabled={false}
-                error=""
-                filled={false}
-                gap={false}
-                group={false}
-                icon=""
-                iconBrand={false}
-                iconClass=""
-                iconLight={false}
-                iconRegular={false}
-                label=""
-                labelClass=""
-                size=""
-                success=""
-                tag="input"
-                type="text"
-                validate={false}
-                valueDefault=""
               />
             </div>
             <div
@@ -689,50 +621,16 @@ ShallowWrapper {
                 placeholder="Article body"
                 theme="snow"
               />
-              <t
+              <TagInput
                 className="border-0"
-                containerClass=""
-                disabled={false}
                 error="wrong"
-                filled={false}
-                gap={false}
                 group={true}
-                icon=""
-                iconBrand={false}
-                iconClass=""
-                iconLight={false}
-                iconRegular={false}
+                handleTags={[Function]}
                 label="Tags"
-                labelClass=""
-                onChange={[Function]}
-                size=""
                 success="right"
-                tag="input"
+                tagList={Array []}
                 type="text"
                 validate={true}
-                valueDefault=""
-              />
-              <t
-                className="border-0"
-                containerClass=""
-                disabled={false}
-                error=""
-                filled={false}
-                gap={false}
-                group={false}
-                icon=""
-                iconBrand={false}
-                iconClass=""
-                iconLight={false}
-                iconRegular={false}
-                label=""
-                labelClass=""
-                size=""
-                success=""
-                tag="input"
-                type="text"
-                validate={false}
-                valueDefault=""
               />
             </div>
             <div
@@ -935,50 +833,16 @@ ShallowWrapper {
                   placeholder="Article body"
                   theme="snow"
                 />
-                <t
+                <TagInput
                   className="border-0"
-                  containerClass=""
-                  disabled={false}
                   error="wrong"
-                  filled={false}
-                  gap={false}
                   group={true}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
+                  handleTags={[Function]}
                   label="Tags"
-                  labelClass=""
-                  onChange={[Function]}
-                  size=""
                   success="right"
-                  tag="input"
+                  tagList={Array []}
                   type="text"
                   validate={true}
-                  valueDefault=""
-                />
-                <t
-                  className="border-0"
-                  containerClass=""
-                  disabled={false}
-                  error=""
-                  filled={false}
-                  gap={false}
-                  group={false}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
-                  label=""
-                  labelClass=""
-                  size=""
-                  success=""
-                  tag="input"
-                  type="text"
-                  validate={false}
-                  valueDefault=""
                 />
               </div>,
               <div
@@ -1173,50 +1037,16 @@ ShallowWrapper {
                     placeholder="Article body"
                     theme="snow"
                   />,
-                  <t
+                  <TagInput
                     className="border-0"
-                    containerClass=""
-                    disabled={false}
                     error="wrong"
-                    filled={false}
-                    gap={false}
                     group={true}
-                    icon=""
-                    iconBrand={false}
-                    iconClass=""
-                    iconLight={false}
-                    iconRegular={false}
+                    handleTags={[Function]}
                     label="Tags"
-                    labelClass=""
-                    onChange={[Function]}
-                    size=""
                     success="right"
-                    tag="input"
+                    tagList={Array []}
                     type="text"
                     validate={true}
-                    valueDefault=""
-                  />,
-                  <t
-                    className="border-0"
-                    containerClass=""
-                    disabled={false}
-                    error=""
-                    filled={false}
-                    gap={false}
-                    group={false}
-                    icon=""
-                    iconBrand={false}
-                    iconClass=""
-                    iconLight={false}
-                    iconRegular={false}
-                    label=""
-                    labelClass=""
-                    size=""
-                    success=""
-                    tag="input"
-                    type="text"
-                    validate={false}
-                    valueDefault=""
                   />,
                 ],
                 "className": "grey-text",
@@ -1414,63 +1244,14 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "className": "border-0",
-                    "containerClass": "",
-                    "disabled": false,
                     "error": "wrong",
-                    "filled": false,
-                    "gap": false,
                     "group": true,
-                    "hint": undefined,
-                    "icon": "",
-                    "iconBrand": false,
-                    "iconClass": "",
-                    "iconLight": false,
-                    "iconRegular": false,
-                    "iconSize": undefined,
-                    "id": undefined,
+                    "handleTags": [Function],
                     "label": "Tags",
-                    "labelClass": "",
-                    "onChange": [Function],
-                    "size": "",
                     "success": "right",
-                    "tag": "input",
+                    "tagList": Array [],
                     "type": "text",
                     "validate": true,
-                    "value": undefined,
-                    "valueDefault": "",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "className": "border-0",
-                    "containerClass": "",
-                    "disabled": false,
-                    "error": "",
-                    "filled": false,
-                    "gap": false,
-                    "group": false,
-                    "hint": undefined,
-                    "icon": "",
-                    "iconBrand": false,
-                    "iconClass": "",
-                    "iconLight": false,
-                    "iconRegular": false,
-                    "iconSize": undefined,
-                    "id": undefined,
-                    "label": "",
-                    "labelClass": "",
-                    "size": "",
-                    "success": "",
-                    "tag": "input",
-                    "type": "text",
-                    "validate": false,
-                    "valueDefault": "",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1735,50 +1516,16 @@ ShallowWrapper {
                   placeholder="Article body"
                   theme="snow"
                 />
-                <t
+                <TagInput
                   className="border-0"
-                  containerClass=""
-                  disabled={false}
                   error="wrong"
-                  filled={false}
-                  gap={false}
                   group={true}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
+                  handleTags={[Function]}
                   label="Tags"
-                  labelClass=""
-                  onChange={[Function]}
-                  size=""
                   success="right"
-                  tag="input"
+                  tagList={Array []}
                   type="text"
                   validate={true}
-                  valueDefault=""
-                />
-                <t
-                  className="border-0"
-                  containerClass=""
-                  disabled={false}
-                  error=""
-                  filled={false}
-                  gap={false}
-                  group={false}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
-                  label=""
-                  labelClass=""
-                  size=""
-                  success=""
-                  tag="input"
-                  type="text"
-                  validate={false}
-                  valueDefault=""
                 />
               </div>
               <div
@@ -1988,50 +1735,16 @@ ShallowWrapper {
                   placeholder="Article body"
                   theme="snow"
                 />
-                <t
+                <TagInput
                   className="border-0"
-                  containerClass=""
-                  disabled={false}
                   error="wrong"
-                  filled={false}
-                  gap={false}
                   group={true}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
+                  handleTags={[Function]}
                   label="Tags"
-                  labelClass=""
-                  onChange={[Function]}
-                  size=""
                   success="right"
-                  tag="input"
+                  tagList={Array []}
                   type="text"
                   validate={true}
-                  valueDefault=""
-                />
-                <t
-                  className="border-0"
-                  containerClass=""
-                  disabled={false}
-                  error=""
-                  filled={false}
-                  gap={false}
-                  group={false}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
-                  label=""
-                  labelClass=""
-                  size=""
-                  success=""
-                  tag="input"
-                  type="text"
-                  validate={false}
-                  valueDefault=""
                 />
               </div>
               <div
@@ -2230,50 +1943,16 @@ ShallowWrapper {
                   placeholder="Article body"
                   theme="snow"
                 />
-                <t
+                <TagInput
                   className="border-0"
-                  containerClass=""
-                  disabled={false}
                   error="wrong"
-                  filled={false}
-                  gap={false}
                   group={true}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
+                  handleTags={[Function]}
                   label="Tags"
-                  labelClass=""
-                  onChange={[Function]}
-                  size=""
                   success="right"
-                  tag="input"
+                  tagList={Array []}
                   type="text"
                   validate={true}
-                  valueDefault=""
-                />
-                <t
-                  className="border-0"
-                  containerClass=""
-                  disabled={false}
-                  error=""
-                  filled={false}
-                  gap={false}
-                  group={false}
-                  icon=""
-                  iconBrand={false}
-                  iconClass=""
-                  iconLight={false}
-                  iconRegular={false}
-                  label=""
-                  labelClass=""
-                  size=""
-                  success=""
-                  tag="input"
-                  type="text"
-                  validate={false}
-                  valueDefault=""
                 />
               </div>
               <div
@@ -2476,50 +2155,16 @@ ShallowWrapper {
                     placeholder="Article body"
                     theme="snow"
                   />
-                  <t
+                  <TagInput
                     className="border-0"
-                    containerClass=""
-                    disabled={false}
                     error="wrong"
-                    filled={false}
-                    gap={false}
                     group={true}
-                    icon=""
-                    iconBrand={false}
-                    iconClass=""
-                    iconLight={false}
-                    iconRegular={false}
+                    handleTags={[Function]}
                     label="Tags"
-                    labelClass=""
-                    onChange={[Function]}
-                    size=""
                     success="right"
-                    tag="input"
+                    tagList={Array []}
                     type="text"
                     validate={true}
-                    valueDefault=""
-                  />
-                  <t
-                    className="border-0"
-                    containerClass=""
-                    disabled={false}
-                    error=""
-                    filled={false}
-                    gap={false}
-                    group={false}
-                    icon=""
-                    iconBrand={false}
-                    iconClass=""
-                    iconLight={false}
-                    iconRegular={false}
-                    label=""
-                    labelClass=""
-                    size=""
-                    success=""
-                    tag="input"
-                    type="text"
-                    validate={false}
-                    valueDefault=""
                   />
                 </div>,
                 <div
@@ -2714,50 +2359,16 @@ ShallowWrapper {
                       placeholder="Article body"
                       theme="snow"
                     />,
-                    <t
+                    <TagInput
                       className="border-0"
-                      containerClass=""
-                      disabled={false}
                       error="wrong"
-                      filled={false}
-                      gap={false}
                       group={true}
-                      icon=""
-                      iconBrand={false}
-                      iconClass=""
-                      iconLight={false}
-                      iconRegular={false}
+                      handleTags={[Function]}
                       label="Tags"
-                      labelClass=""
-                      onChange={[Function]}
-                      size=""
                       success="right"
-                      tag="input"
+                      tagList={Array []}
                       type="text"
                       validate={true}
-                      valueDefault=""
-                    />,
-                    <t
-                      className="border-0"
-                      containerClass=""
-                      disabled={false}
-                      error=""
-                      filled={false}
-                      gap={false}
-                      group={false}
-                      icon=""
-                      iconBrand={false}
-                      iconClass=""
-                      iconLight={false}
-                      iconRegular={false}
-                      label=""
-                      labelClass=""
-                      size=""
-                      success=""
-                      tag="input"
-                      type="text"
-                      validate={false}
-                      valueDefault=""
                     />,
                   ],
                   "className": "grey-text",
@@ -2955,63 +2566,14 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "className": "border-0",
-                      "containerClass": "",
-                      "disabled": false,
                       "error": "wrong",
-                      "filled": false,
-                      "gap": false,
                       "group": true,
-                      "hint": undefined,
-                      "icon": "",
-                      "iconBrand": false,
-                      "iconClass": "",
-                      "iconLight": false,
-                      "iconRegular": false,
-                      "iconSize": undefined,
-                      "id": undefined,
+                      "handleTags": [Function],
                       "label": "Tags",
-                      "labelClass": "",
-                      "onChange": [Function],
-                      "size": "",
                       "success": "right",
-                      "tag": "input",
+                      "tagList": Array [],
                       "type": "text",
                       "validate": true,
-                      "value": undefined,
-                      "valueDefault": "",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "className": "border-0",
-                      "containerClass": "",
-                      "disabled": false,
-                      "error": "",
-                      "filled": false,
-                      "gap": false,
-                      "group": false,
-                      "hint": undefined,
-                      "icon": "",
-                      "iconBrand": false,
-                      "iconClass": "",
-                      "iconLight": false,
-                      "iconRegular": false,
-                      "iconSize": undefined,
-                      "id": undefined,
-                      "label": "",
-                      "labelClass": "",
-                      "size": "",
-                      "success": "",
-                      "tag": "input",
-                      "type": "text",
-                      "validate": false,
-                      "valueDefault": "",
                     },
                     "ref": null,
                     "rendered": null,

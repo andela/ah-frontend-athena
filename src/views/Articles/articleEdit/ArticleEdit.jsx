@@ -46,12 +46,8 @@ export class ArticleEdit extends Component {
     });
   };
 
-  handleTags = event => {
-    event.preventDefault();
-    let tags = event.target.value;
-    this.setState({
-      tagList: [tags]
-    });
+  handleTags = tagList => {
+    this.setState({ tagList });
   };
 
   handleSubmit = event => {
@@ -65,12 +61,8 @@ export class ArticleEdit extends Component {
         published: true
       });
     }
-    const { tagList } = this.state;
-    const tags = tagList[0].split(" ");
-    const article = { ...this.state, tagList: tags };
-
     const { editArticle } = this.props;
-    editArticle(article);
+    editArticle(this.state);
   };
 
   render() {

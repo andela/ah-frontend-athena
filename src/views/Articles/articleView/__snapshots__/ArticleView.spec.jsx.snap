@@ -4,6 +4,7 @@ exports[`<ArticleView> matches snapshort 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArticleView
+    canModify={false}
     deleteArticle={[MockFunction]}
     getSingleArticle={[Function]}
     history={
@@ -13,7 +14,16 @@ ShallowWrapper {
     }
     returnData={Object {}}
     slug=""
-    view_article={Object {}}
+    view_article={
+      Object {
+        "author": Object {
+          "username": "henry",
+        },
+        "body": "this is body",
+        "description": "description",
+        "title": "title",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

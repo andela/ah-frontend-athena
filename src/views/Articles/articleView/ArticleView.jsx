@@ -7,8 +7,8 @@ import {
   getSingleArticle,
   deleteArticle
 } from "../../../actions/articleActions/ArticleActions";
-import RoundButton from "../../../components/RoundButton/RoundButton";
 import "./ArticleView.scss";
+import TagList from "../../TagList/TagList";
 import ShareButtons from "../../../components/ShareArticleButtons/ShareArticleButtons";
 import Likes from "../../LikesView/Likes";
 
@@ -90,20 +90,7 @@ export class ArticleView extends Component {
               </div>
               <div className="col-md-11">
                 <div>{renderHTML(articleIfo.body)}</div>
-
-                <ul className="tag-list" color="secondary">
-                  {articleIfo.tagList.map(tag => {
-                    return (
-                      <li className="list-style-none" key={tag}>
-                        <RoundButton
-                          background="secondary"
-                          icon=""
-                          label={tag}
-                        />
-                      </li>
-                    );
-                  })}
-                </ul>
+                <TagList tags={view_article.tagList} view_flag />
               </div>
             </div>
             <hr />

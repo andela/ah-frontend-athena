@@ -20,6 +20,8 @@ export default (state = initialState, action) => {
       return { ...state, edit_article: action.payload };
     case actionTypes.DELETE_ARTICLE:
       return { ...state, delete_article: action.payload };
+    case actionTypes.TAGGED_ARTICALS:
+      return { ...state, articles: action.payload };
     default:
       return state;
   }

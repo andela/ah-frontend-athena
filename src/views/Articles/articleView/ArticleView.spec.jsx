@@ -4,11 +4,22 @@ import { ArticleView } from "./ArticleView";
 
 let push = jest.fn();
 let returnData = {};
+let canModify = false;
 let deleteArticle = jest.fn();
+let view_article = {
+  title: "title",
+  description: "description",
+  body: "this is body",
+  author: {
+    username: "henry"
+  }
+};
 let props = {
   history: { push },
   returnData,
-  deleteArticle
+  deleteArticle,
+  canModify,
+  view_article
 };
 
 describe("<ArticleView>", () => {
@@ -33,7 +44,7 @@ describe("<ArticleView>", () => {
     );
   });
 
-  it("should call handleDelete ", () => {
+  it("should call handLink ", () => {
     const instance = wrapper.instance();
     expect(
       instance.handleLink({
@@ -41,5 +52,10 @@ describe("<ArticleView>", () => {
         push: jest.fn
       })
     );
+  });
+
+  it("render no articles", () => {
+    wrapper.setProps(view_article);
+    expect(wrapper.state.view_article).toEqual(undefined);
   });
 });
