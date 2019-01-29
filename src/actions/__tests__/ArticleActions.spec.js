@@ -9,7 +9,6 @@ import {
   editArticle,
   deleteArticle
 } from "../articleActions/ArticleActions";
-import { BACKEND_DOMAIN } from "../articleActions";
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -20,7 +19,7 @@ describe("mock articles", () => {
   });
 
   it("should mock create articles ", () => {
-    fetchMock.postOnce(`${BACKEND_DOMAIN}articles/`, {
+    fetchMock.postOnce(`${actionTypes.BASEURL}articles/`, {
       body: { article: {} },
       headers: {
         "content-type": "application/json",
@@ -45,7 +44,7 @@ describe("mock articles", () => {
 
   it("should mock fetch articles ", () => {
     fetchMock
-      .getOnce(`${BACKEND_DOMAIN}articles`, {
+      .getOnce(`${actionTypes.BASEURL}articles`, {
         body: { articles: { results: [{}, {}] } },
         headers: {
           "content-type": "application/json",
@@ -69,7 +68,7 @@ describe("mock articles", () => {
 
   it("should mock fetch  a single article ", () => {
     fetchMock
-      .getOnce(`${BACKEND_DOMAIN}articles/moked-slug`, {
+      .getOnce(`${actionTypes.BASEURL}articles/moked-slug`, {
         body: {},
         headers: {
           "content-type": "application/json",
@@ -98,7 +97,7 @@ describe("mock articles", () => {
       body: "moked-body"
     };
     fetchMock
-      .putOnce(`${BACKEND_DOMAIN}articles/${articleData.slug}/`, {
+      .putOnce(`${actionTypes.BASEURL}articles/${articleData.slug}/`, {
         body: { article: {} },
         headers: {
           "content-type": "application/json",
@@ -122,7 +121,7 @@ describe("mock articles", () => {
 
   it("should mock delete an article ", () => {
     fetchMock
-      .deleteOnce(`${BACKEND_DOMAIN}articles/moked-slug/`, {
+      .deleteOnce(`${actionTypes.BASEURL}articles/moked-slug/`, {
         body: { article: {} },
         headers: {
           "content-type": "application/json",

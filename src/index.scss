@@ -1,3 +1,4 @@
+@import "./variables.scss";
 body {
   margin: 0;
   padding: 0;
@@ -13,30 +14,28 @@ code {
     monospace;
 }
 
-$primary-color: #1ba1e2;
 .primary-color {
-  background-color: #1ba1e2 !important;
+  color: $primary-color !important;
+}
+.primary-text-color {
+  color: $primary-color !important;
 }
 
 .bg-primary {
-  background-color: #1ba1e2 !important;
+  background-color: $primary-color !important;
 }
-
-$primary-color-dark: #1ba1e2;
 .primary-color-dark {
-  background-color: #1ba1e2 !important;
-  $secondary-color: #6c757d;
+  background-color: $primary-color-dark !important;
   .secondary-color {
-    background-color: #6c757d !important;
+    background-color: $secondary-color !important;
   }
 }
 .bg-secondary {
-  background-color: #eeeeee !important;
+  background-color: $secondary-color !important;
 }
 
-$secondary-color-dark: #6c757d;
 .secondary-color-dark {
-  background-color: #6c757d !important;
+  background-color: $secondary-color-dark !important;
 }
 .btn-outline-primary {
   border: 1px solid #1ba1e2 !important;

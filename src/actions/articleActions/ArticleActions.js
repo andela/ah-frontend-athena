@@ -1,9 +1,9 @@
 import actionTypes from "../actionTypes";
 
-import { BACKEND_DOMAIN, token } from "./index";
+import { token } from "./index";
 
 const createArticles = article => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles/`, {
+  return fetch(`${actionTypes.BASEURL}articles/`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -19,7 +19,7 @@ const createArticles = article => dispatch => {
 };
 
 const getArticles = () => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles`, {
+  return fetch(`${actionTypes.BASEURL}articles`, {
     method: "GET",
     headers: {
       "content-type": "application/json"
@@ -36,7 +36,7 @@ const getArticles = () => dispatch => {
 };
 
 const getSingleArticle = slug => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles/${slug}`, {
+  return fetch(`${actionTypes.BASEURL}articles/${slug}`, {
     method: "GET",
     headers: {
       "content-type": "application/json"
@@ -50,7 +50,7 @@ const getSingleArticle = slug => dispatch => {
 };
 
 const editArticle = articleData => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles/${articleData.slug}/`, {
+  return fetch(`${actionTypes.BASEURL}articles/${articleData.slug}/`, {
     method: "PUT",
     headers: {
       "content-type": "application/json",
@@ -66,7 +66,7 @@ const editArticle = articleData => dispatch => {
 };
 
 const deleteArticle = slug => dispatch => {
-  return fetch(`${BACKEND_DOMAIN}articles/${slug}/`, {
+  return fetch(`${actionTypes.BASEURL}articles/${slug}/`, {
     method: "DELETE",
     headers: {
       "content-type": "application/json",

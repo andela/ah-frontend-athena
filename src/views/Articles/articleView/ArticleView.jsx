@@ -1,22 +1,23 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import renderHTML from "react-render-html";
-import ArticleHeader from "../../../components/articles/articleHeader/ArticleHeader";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import renderHTML from 'react-render-html';
+import ArticleHeader from '../../../components/articles/articleHeader/ArticleHeader';
 import {
   getSingleArticle,
   deleteArticle
-} from "../../../actions/articleActions/ArticleActions";
+} from '../../../actions/articleActions/ArticleActions';
 import {
   followUser,
   unFollowUser,
   getFollowing
-} from "../../../actions/userFollowActions";
-import RoundButton from "../../../components/RoundButton/RoundButton";
-import "./ArticleView.scss";
-import ShareButtons from "../../../components/ShareArticleButtons/ShareArticleButtons";
-import Likes from "../../LikesView/Likes";
-import ModalPage from "../../../components/Likes/LoginModal";
+} from '../../../actions/userFollowActions';
+import RoundButton from '../../../components/RoundButton/RoundButton';
+import './ArticleView.scss';
+import ShareButtons from '../../../components/ShareArticleButtons/ShareArticleButtons';
+import Likes from '../../LikesView/Likes';
+import ModalPage from '../../../components/Likes/LoginModal';
+import RatingView from '../../../components/articles/articleRating/RatingView';
 
 export class ArticleView extends Component {
   constructor(props) {
@@ -24,21 +25,21 @@ export class ArticleView extends Component {
     this.state = {
       view_article: {
         id: 0,
-        title: "",
-        body: "",
-        description: "",
+        title: '',
+        body: '',
+        description: '',
         tagList: [],
         author: {
-          username: "",
-          bio: "",
-          image: "",
-          email: ""
+          username: '',
+          bio: '',
+          image: '',
+          email: ''
         },
-        created_at: "",
-        updated_at: ""
+        created_at: '',
+        updated_at: ''
       },
-      classValue: "btn primary-color btn-sm btn-outline-primary",
-      text: "Follow",
+      classValue: 'btn primary-color btn-sm btn-outline-primary',
+      text: 'Follow',
       following: false,
       modal: false
     };
@@ -55,19 +56,19 @@ export class ArticleView extends Component {
     this.setState({
       view_article: nextProps.view_article
     });
-    if ("following" in nextProps.followData) {
+    if ('following' in nextProps.followData) {
       const { following } = nextProps.followData;
       if (following) {
         this.setState({
-          classValue: "btn primary-color btn-sm",
-          text: "Following",
+          classValue: 'btn primary-color btn-sm',
+          text: 'Following',
           following: true
         });
       }
       if (!following) {
         this.setState({
-          classValue: "btn primary-color btn-sm btn-outline-primary",
-          text: "Follow",
+          classValue: 'btn primary-color btn-sm btn-outline-primary',
+          text: 'Follow',
           following: false
         });
       }
@@ -79,11 +80,11 @@ export class ArticleView extends Component {
       let following = false;
       if (Array.isArray(followData)) {
         for (let i in followData) {
-          following = Object.is(followData[i]["username"], username);
+          following = Object.is(followData[i]['username'], username);
           if (following) {
             this.setState({
-              classValue: "btn primary-color btn-sm",
-              text: "Following",
+              classValue: 'btn primary-color btn-sm',
+              text: 'Following',
               following: true
             });
             break;
@@ -91,8 +92,8 @@ export class ArticleView extends Component {
         }
         if (!following) {
           this.setState({
-            classValue: "btn primary-color btn-sm btn-outline-primary",
-            text: "Follow",
+            classValue: 'btn primary-color btn-sm btn-outline-primary',
+            text: 'Follow',
             following: false
           });
         }
@@ -104,20 +105,19 @@ export class ArticleView extends Component {
     const { following } = this.state;
     const { followUser } = this.props;
     const { unFollowUser } = this.props;
-    const token = window.localStorage.getItem('token')
+    const token = window.localStorage.getItem('token');
 
-    if(token){
-      this.setState({modal: false});
+    if (token) {
+      this.setState({ modal: false });
       const username = view_article.author.username;
       if (following) {
         unFollowUser(username);
       } else {
         followUser(username);
       }
-    }else{
-      this.setState({modal: true})
+    } else {
+      this.setState({ modal: true });
     }
-   
   };
 
   toggle = () => {
@@ -149,7 +149,7 @@ export class ArticleView extends Component {
       !view_article.errors &&
       view_article.title
     ) {
-      const user = window.localStorage.getItem("username");
+      const user = window.localStorage.getItem('username');
       let canModify = false;
       let canFollow = false;
       if (view_article.author) {
@@ -158,9 +158,9 @@ export class ArticleView extends Component {
       }
       const articleIfo = view_article;
       return (
-        <div className="article-page  container-fluid">
+        <div className="article-page  container">
           <ModalPage
-            title='Please login before you can follow a user'
+            title="Please login before you can follow a user"
             modal={modal}
             toggle={this.toggle}
             fallback={url}
@@ -178,10 +178,13 @@ export class ArticleView extends Component {
             classValue={classValue}
             text={text}
           />
+          <div className="mt-2 ml-5 container">
+            <RatingView history={history} article={articleIfo} />
+          </div>
 
           <div className="article-body container page mt-5">
             <div className="row article-content">
-              <div className="sidebar col-xs-1" style={{ marginRight: "50px" }}>
+              <div className="sidebar col-xs-1" style={{ marginRight: '50px' }}>
                 <ShareButtons />
               </div>
               <div className="col-md-11">
@@ -244,7 +247,7 @@ ArticleView.defaultProps = {
   view_article: {},
   followData: {},
   history: {},
-  slug: ""
+  slug: ''
 };
 
 export default connect(

@@ -14,7 +14,7 @@ export const signupSuccess = response => ({
 
 export const signUp = data => {
   return function(dispatch) {
-    fetch(`${process.env.REACT_APP_API_URL_BASE}users/`, {
+    fetch(`${actionTypes.BASEURL}users/`, {
       method: "POST",
       headers: {
         "content-type": "application/json"

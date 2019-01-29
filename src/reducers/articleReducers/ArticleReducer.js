@@ -5,7 +5,8 @@ const initialState = {
   articles: [],
   view_article: {},
   edit_article: {},
-  delete_article: {}
+  delete_article: {},
+  new_article_rate: {}
 };
 
 export default (state = initialState, action) => {
@@ -20,6 +21,8 @@ export default (state = initialState, action) => {
       return { ...state, edit_article: action.payload };
     case actionTypes.DELETE_ARTICLE:
       return { ...state, delete_article: action.payload };
+    case actionTypes.RATE_ARTICLE:
+      return { ...state, new_article_rate: action.payload };
     default:
       return state;
   }

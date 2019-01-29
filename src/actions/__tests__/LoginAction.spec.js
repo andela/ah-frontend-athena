@@ -16,7 +16,7 @@ describe("Mock the endpoint", () => {
     fetchMock.restore();
   });
   it("Mock the endpoint", () => {
-    fetchMock.post(`${process.env.REACT_APP_API_URL_BASE}users/login/`, {
+    fetchMock.post(`${actionTypes.BASEURL}users/login/`, {
       headers: {
         "content-type": "application/json"
       },
