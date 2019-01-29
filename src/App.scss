@@ -30,3 +30,83 @@
     transform: rotate(360deg);
   }
 }
+
+.badge-primary {
+  background-color: #fff;
+  background-color: #1aa1e2 !important;
+  color: #1aa1e2 !important !important;
+  cursor: pointer;
+}
+.badge-pill {
+  border-radius: 10rem !important;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border: 1px solid #abc2e0 !important;
+  cursor: pointer;
+}
+
+.badge {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.125rem;
+  color: #fff !important;
+}
+
+.badge-vover {
+  &:hover {
+    color: #ffff !important;
+  }
+}
+
+.react-tagsinput-tag {
+  background-color: #1aa1e2 !important;
+  border-radius: 14px !important;
+  border: 0px !important;
+  color: #fff !important;
+  font-size: 15px !important;
+  font-weight: bolder !important;
+}
+
+.react-tagsinput {
+  background-color: #fff !important;
+  border: 0 !important;
+  overflow: hidden;
+  margin-top: 26px;
+}
+
+.grey-text {
+  color: #2e2e2e !important !important;
+  font-size: 2px !important;
+}
+
+.ql-container.ql-snow {
+  border: 0 !important;
+  font-size: 22px !important;
+  color: black;
+}
+
+.ql-toolbar.ql-snow {
+  border: 0 !important;
+  border-left: 1px solid grey !important;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.12) !important;
+  border: 0;
+  font-weight: 400;
+}
+
+.container.full-artcle {
+  width: 65% !important;
+  padding-right: 0;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: 76px !important;
+}
+
+.card {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0) !important;
+  border: 0.9px solid #d4c9c9 !important;
+  max-width: 75%;
+}

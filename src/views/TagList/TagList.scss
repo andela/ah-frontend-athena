@@ -1,0 +1,9 @@
+.badge {
+  font-size: 100%;
+}
+.btn-click {
+  &:active {
+    background: #fff !important;
+    color: #000000;
+  }
+}

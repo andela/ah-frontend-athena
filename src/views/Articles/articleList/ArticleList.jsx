@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
 import ArticleItem from "../../../components/articles/articleItem/ArticleItem";
 import { getArticles } from "../../../actions/articleActions/ArticleActions";
+import getTags from "../../../actions/tagsAction";
+import TagsForm from "../../../components/Tags/TagsForm/TagsForm";
 
 export class ArticleList extends Component {
   constructor(props) {
@@ -12,8 +15,10 @@ export class ArticleList extends Component {
       articles: []
     };
   }
+
   componentWillMount() {
-    const { getArticles } = this.props;
+    const { getArticles, getTags } = this.props;
+    getTags();
     getArticles();
   }
 
@@ -27,10 +32,24 @@ export class ArticleList extends Component {
 
   render() {
     const { articles } = this.state;
+    const { tags } = this.props;
+
     if (articles) {
-      return articles.map(article => {
+      const art = articles.map(article => {
         return <ArticleItem key={article.id} article={article} />;
       });
+      return (
+        <MDBContainer className="pl-3">
+          <MDBRow>
+            <MDBCol size="9" className="w-100 m-0">
+              {art}
+            </MDBCol>
+            <MDBCol size="3" className="position-sticky m1">
+              <TagsForm tags={tags} />
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      );
     } else {
       return <div />;
     }
@@ -39,23 +58,28 @@ export class ArticleList extends Component {
 
 const mapStateToProps = state => {
   return {
-    articles: state.articles.articles
+    articles: state.articles.articles,
+    tags: state.tags.tags
   };
 };
 
 ArticleList.propTypes = {
   getArticles: PropTypes.func,
+  getTags: PropTypes.func,
   articles: PropTypes.shape([]),
-  results: PropTypes.shape({})
+  results: PropTypes.shape({}),
+  tags: PropTypes.shape([])
 };
 
 ArticleList.defaultProps = {
   getArticles: () => {},
+  getTags: () => {},
   articles: [],
-  results: {}
+  results: {},
+  tags: []
 };
 
 export default connect(
   mapStateToProps,
-  { getArticles }
+  { getArticles, getTags }
 )(ArticleList);

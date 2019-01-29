@@ -3,6 +3,7 @@ import ReactQuill from "react-quill";
 import PropTypes from "prop-types";
 import "react-quill/dist/quill.snow.css";
 import { MDBInput, MDBContainer, MDBCol, MDBRow } from "mdbreact";
+import TagInput from "../../Tags/TagsInput/TagInput";
 
 export const Editor = ({
   handleSubmit,
@@ -52,7 +53,7 @@ export const Editor = ({
                 name="body"
                 onChange={handleBodyChange}
               />
-              <MDBInput
+              <TagInput
                 label="Tags"
                 group
                 type="text"
@@ -60,10 +61,9 @@ export const Editor = ({
                 error="wrong"
                 success="right"
                 className="border-0"
-                onChange={handleTags}
-                value={state.tagList}
+                handleTags={handleTags}
+                tagList={state.tagList}
               />
-              <MDBInput className="border-0" />
             </div>
             <div className="text-center">
               <button

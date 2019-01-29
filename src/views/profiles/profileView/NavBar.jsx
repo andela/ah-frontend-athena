@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import propTypes from 'prop-types'
+import propTypes from "prop-types";
 import ViewProfile from "../../../components/profile/profileView/profileView";
 import { getProfile } from "../../../actions/profileActions";
-import { getFollowing, getFollowers } from '../../../actions/userFollowActions';
+import { getFollowing, getFollowers } from "../../../actions/userFollowActions";
 import avatar from "../../../components/profile/img/default.png";
 
 export const limitBio = bio => {
@@ -31,18 +31,17 @@ export class NavBar extends Component {
   componentDidMount() {
     const username = window.localStorage.getItem("username");
     const token = window.localStorage.getItem("token");
-    const {isShow} = this.state
-    const { getFollowers } = this.props
-    const { getFollowing } = this.props
-    getFollowers()
-    getFollowing()
-
+    const { isShow } = this.state;
+    const { getFollowers } = this.props;
+    const { getFollowing } = this.props;
+    getFollowers();
+    getFollowing();
     if (token) {
-      const {getProfile} = this.props
+      const { getProfile } = this.props;
       getProfile(username);
-      this.setState({ classValue: ""});
+      this.setState({ classValue: "" });
     } else {
-      this.setState({ classValue: "d-none"});
+      this.setState({ classValue: "d-none" });
     }
     const cls = "dropdown-menu dropdown-menu-left dropdown-secondary ";
     if (isShow) {
@@ -51,7 +50,6 @@ export class NavBar extends Component {
       this.setState({ show: cls + "", isShow: true });
     }
   }
- 
 
   componentWillReceiveProps(nextProps) {
     let { following } = nextProps;
@@ -59,32 +57,34 @@ export class NavBar extends Component {
     let followersArray = followers;
     let followingArray = following;
     let { profile } = nextProps;
-    if(Object.entries(profile).length  !== 0){
-      this.setState({following: followingArray.length, followers: followersArray.length})
+    if (Object.entries(profile).length !== 0) {
+      this.setState({
+        following: followingArray.length,
+        followers: followersArray.length
+      });
     }
-    
     let username = profile.username;
     if (username) {
       this.sortImage(nextProps);
       const bio = profile.bio;
       let profileObject = {
-          ...nextProps.profile,
-          bio: limitBio(bio)
-        };
+        ...nextProps.profile,
+        bio: limitBio(bio)
+      };
       this.setState({ profile: profileObject });
       this.setState({ classValue: "" });
       if (!profile.username) {
-        const {getProfile} = this.props
+        const { getProfile } = this.props;
         getProfile(username);
       }
     } else {
-      this.setState({ classValue: "d-none"});
+      this.setState({ classValue: "d-none" });
     }
   }
   toggleNow = e => {
     e.preventDefault();
     const cls = "dropdown-menu dropdown-menu-left dropdown-secondary ";
-    const {isShow} = this.state
+    const { isShow } = this.state;
     if (isShow) {
       this.setState({ show: cls + "show", isShow: false });
     } else {
@@ -107,7 +107,7 @@ export class NavBar extends Component {
   };
   Edit = e => {
     e.preventDefault();
-    const {image, profile} = this.state
+    const { image, profile } = this.state;
     const image_url = image;
     const username = profile.username;
     if (image_url === "") {
@@ -121,10 +121,10 @@ export class NavBar extends Component {
     }
   };
   render() {
-    const {image} = this.state;
-    const {classValue} = this.state;
-    const {show} = this.state;
-    const {profile} = this.state;
+    const { image } = this.state;
+    const { classValue } = this.state;
+    const { show } = this.state;
+    const { profile } = this.state;
     const { following } = this.state;
     const { followers } = this.state;
     return (
@@ -150,15 +150,16 @@ NavBar.propTypes = {
   getProfile: propTypes.func,
   getFollowers: propTypes.func,
   getFollowing: propTypes.func
-}
+};
 NavBar.defaultProps = {
   profile: {},
   following: 0,
   followers: 0,
-  getProfile: ()=>{},
-  getFollowers: ()=>{},
-  getFollowing: ()=>{}
-}
+  getProfile: () => {},
+  getFollowers: () => {},
+  getFollowing: () => {}
+};
+
 export const mapStateToProps = state => {
   return {
     profile: state.profile.data,

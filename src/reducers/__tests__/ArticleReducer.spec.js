@@ -10,7 +10,7 @@ const initialState = {
   new_article_rate: {}
 };
 
-describe("test signup reducer", () => {
+describe("test article reducer", () => {
   it("should return the initial state unknow action type", () => {
     expect(ArticleReducer(undefined, {})).toEqual(initialState);
   });

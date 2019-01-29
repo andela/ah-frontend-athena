@@ -20,6 +20,10 @@ code {
 .primary-text-color {
   color: $primary-color !important;
 }
+$primary-color: #1ba1e2;
+.primary-text-color {
+  color: #1ba1e2 !important;
+}
 
 .bg-primary {
   background-color: $primary-color !important;
@@ -41,4 +45,8 @@ code {
   border: 1px solid #1ba1e2 !important;
   background-color: transparent !important;
   color: #1ba1e2 !important;
+}
+
+.badge-primary {
+  background-color: #1ba1e2 !important;
 }

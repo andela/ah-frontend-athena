@@ -18,8 +18,16 @@ const createArticles = article => dispatch => {
     .catch(error => error);
 };
 
-const getArticles = () => dispatch => {
-  return fetch(`${actionTypes.BASEURL}articles`, {
+const getArticles = (tag, keyword, title) => dispatch => {
+  let search_param = "";
+  if (tag) {
+    search_param = tag;
+  } else if (title) {
+    search_param = title;
+  } else if (keyword) {
+    search_param = keyword;
+  }
+  return fetch(`${actionTypes.BASEURL}articles/search?${search_param}`, {
     method: "GET",
     headers: {
       "content-type": "application/json"
@@ -29,7 +37,7 @@ const getArticles = () => dispatch => {
     .then(res => {
       dispatch({
         type: actionTypes.GET_ARTICLES,
-        payload: res.articles.results
+        payload: res.results
       });
     })
     .catch(err => err);
