@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import FollowButton from '../../userFollowing/followButton/userFollowing';
 import "./ArticleHeader.scss";
 import ArticleOptions from "../articleOptions/ArticleOptions";
 
 const ArticleHeader = props => {
-  const { article, canModify, handleDelete, handleLink } = props;
+  const { article, canModify, handleDelete, handleLink, classValue, handleClick, text , canFollow} = props;
   return (
     <MDBContainer className="mt-5 ">
       <MDBRow>
@@ -21,6 +22,12 @@ const ArticleHeader = props => {
                     alt=""
                   />
                   <div className="d-flex flex-column ml-4 justify-content-end">
+                    <FollowButton
+                      classValue={classValue}
+                      handleClick={handleClick}
+                      canFollow={canFollow}
+                      text={text}
+                    />
                     <div to={`${article.author.username}`} className="author">
                       By:
                       {article.author.username}
@@ -49,18 +56,27 @@ const ArticleHeader = props => {
 
 ArticleHeader.propTypes = {
   handleDelete: PropTypes.func,
+  handleClick: PropTypes.func,
+  classValue: PropTypes.string,
+  text: PropTypes.string,
   handleLink: PropTypes.func,
   canModify: PropTypes.bool,
-  article: PropTypes.shape({})
+  canFollow: PropTypes.bool,
+  article: PropTypes.shape({}),
+
 };
 
 ArticleHeader.defaultProps = {
   handleDelete: () => {},
   handleLink: () => {},
+  handleClick: () => {},
+  classValue: '',
+  text: '',
   article: {
     author: { username: "", created_at: new Date("2019-01-19T10:42:09.625Z") }
   },
-  canModify: true
+  canModify: true,
+  canFollow: true
 };
 
 export default ArticleHeader;

@@ -39,9 +39,7 @@ ShallowWrapper {
           closeAriaLabel="Close"
           tag="h4"
           toggle={[MockFunction]}
-        >
-          Please login before you can like or dislike the article
-        </t>
+        />
         <t>
           <Connect(Login)
             fallback=""
@@ -67,9 +65,7 @@ ShallowWrapper {
             closeAriaLabel="Close"
             tag="h4"
             toggle={[MockFunction]}
-          >
-            Please login before you can like or dislike the article
-          </t>,
+          />,
           <t>
             <Connect(Login)
               fallback=""
@@ -93,13 +89,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Please login before you can like or dislike the article",
+            "children": undefined,
             "closeAriaLabel": "Close",
             "tag": "h4",
             "toggle": [MockFunction],
           },
           "ref": null,
-          "rendered": "Please login before you can like or dislike the article",
+          "rendered": null,
           "type": [Function],
         },
         Object {
@@ -156,9 +152,7 @@ ShallowWrapper {
             closeAriaLabel="Close"
             tag="h4"
             toggle={[MockFunction]}
-          >
-            Please login before you can like or dislike the article
-          </t>
+          />
           <t>
             <Connect(Login)
               fallback=""
@@ -184,9 +178,7 @@ ShallowWrapper {
               closeAriaLabel="Close"
               tag="h4"
               toggle={[MockFunction]}
-            >
-              Please login before you can like or dislike the article
-            </t>,
+            />,
             <t>
               <Connect(Login)
                 fallback=""
@@ -210,13 +202,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Please login before you can like or dislike the article",
+              "children": undefined,
               "closeAriaLabel": "Close",
               "tag": "h4",
               "toggle": [MockFunction],
             },
             "ref": null,
-            "rendered": "Please login before you can like or dislike the article",
+            "rendered": null,
             "type": [Function],
           },
           Object {

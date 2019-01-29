@@ -12,16 +12,22 @@ const props = {
   Edit: jest.fn(),
   profile: {},
   getProfile:jest.fn(),
-  user:""
+  user:"",
+  
+  
 }
-const intialState = {
+const initialState = {
     show:"dropdown-menu col-md-12 school-options-dropdown text-center ",
     isShow: false,
     profile:{data: {'username':'ntale'}},
     classValue:"d-none",
     isLoggedIn:false,
     user:'',
-    image:avatar
+    image:avatar,
+    follow: {
+      data : [],
+      followers: []
+    }
 }
 let wrapper;
 let wrap;
@@ -38,11 +44,11 @@ describe('NavBar', ()=>{
     expect(wrapper.state('show')).toEqual('dropdown-menu dropdown-menu-left dropdown-secondary show')
   })
   it('should show image', ()=>{
-    wrapper.instance().sortImage(intialState)
+    wrapper.instance().sortImage(initialState)
     expect(wrapper.state('image')).toEqual("default.png")
   })
   it('should map state to props', () =>{
-    expect(mapStateToProps(intialState).profile['username']).toEqual('ntale')
+    expect(mapStateToProps(initialState).profile['username']).toEqual('ntale')
 })
   it('should receive props', ()=> {
     wrapper.setProps({profile : {username: 'shadik', email: '', bio: ''}});

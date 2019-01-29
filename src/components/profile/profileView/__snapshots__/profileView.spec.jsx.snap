@@ -9,6 +9,8 @@ ShallowWrapper {
     Edit={[Function]}
     attribute=""
     classValue=""
+    followers={0}
+    following={0}
     imageShow=""
     profile={
       Object {
@@ -74,6 +76,36 @@ ShallowWrapper {
                     className="rounded-circle drop-img"
                     src=""
                   />
+                  <span
+                    className="followers"
+                  >
+                    followers
+                  </span>
+                  <span
+                    className="following"
+                  >
+                    following
+                  </span>
+                  <a
+                    href="/followers"
+                  >
+                    <button
+                      className="round-btn"
+                      type="button"
+                    >
+                      0
+                    </button>
+                  </a>
+                  <a
+                    href="/following"
+                  >
+                    <button
+                      className="round-btn-2"
+                      type="button"
+                    >
+                      0
+                    </button>
+                  </a>
                   <span
                     className="username"
                   >
@@ -177,6 +209,36 @@ ShallowWrapper {
                       className="rounded-circle drop-img"
                       src=""
                     />
+                    <span
+                      className="followers"
+                    >
+                      followers
+                    </span>
+                    <span
+                      className="following"
+                    >
+                      following
+                    </span>
+                    <a
+                      href="/followers"
+                    >
+                      <button
+                        className="round-btn"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
+                    <a
+                      href="/following"
+                    >
+                      <button
+                        className="round-btn-2"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
                     <span
                       className="username"
                     >
@@ -286,6 +348,36 @@ ShallowWrapper {
                       src=""
                     />
                     <span
+                      className="followers"
+                    >
+                      followers
+                    </span>
+                    <span
+                      className="following"
+                    >
+                      following
+                    </span>
+                    <a
+                      href="/followers"
+                    >
+                      <button
+                        className="round-btn"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
+                    <a
+                      href="/following"
+                    >
+                      <button
+                        className="round-btn-2"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
+                    <span
                       className="username"
                     >
                       
@@ -376,6 +468,36 @@ ShallowWrapper {
                       src=""
                     />
                     <span
+                      className="followers"
+                    >
+                      followers
+                    </span>
+                    <span
+                      className="following"
+                    >
+                      following
+                    </span>
+                    <a
+                      href="/followers"
+                    >
+                      <button
+                        className="round-btn"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
+                    <a
+                      href="/following"
+                    >
+                      <button
+                        className="round-btn-2"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
+                    <span
                       className="username"
                     >
                       
@@ -462,6 +584,36 @@ ShallowWrapper {
                         className="rounded-circle drop-img"
                         src=""
                       />
+                      <span
+                        className="followers"
+                      >
+                        followers
+                      </span>
+                      <span
+                        className="following"
+                      >
+                        following
+                      </span>
+                      <a
+                        href="/followers"
+                      >
+                        <button
+                          className="round-btn"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <a
+                        href="/following"
+                      >
+                        <button
+                          className="round-btn-2"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
                       <span
                         className="username"
                       >
@@ -566,6 +718,36 @@ ShallowWrapper {
                         src=""
                       />
                       <span
+                        className="followers"
+                      >
+                        followers
+                      </span>
+                      <span
+                        className="following"
+                      >
+                        following
+                      </span>
+                      <a
+                        href="/followers"
+                      >
+                        <button
+                          className="round-btn"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <a
+                        href="/following"
+                      >
+                        <button
+                          className="round-btn-2"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <span
                         className="username"
                       >
                         
@@ -631,6 +813,36 @@ ShallowWrapper {
                           className="rounded-circle drop-img"
                           src=""
                         />,
+                        <span
+                          className="followers"
+                        >
+                          followers
+                        </span>,
+                        <span
+                          className="following"
+                        >
+                          following
+                        </span>,
+                        <a
+                          href="/followers"
+                        >
+                          <button
+                            className="round-btn"
+                            type="button"
+                          >
+                            0
+                          </button>
+                        </a>,
+                        <a
+                          href="/following"
+                        >
+                          <button
+                            className="round-btn-2"
+                            type="button"
+                          >
+                            0
+                          </button>
+                        </a>,
                         <span
                           className="username"
                         >
@@ -698,6 +910,88 @@ ShallowWrapper {
                         "ref": null,
                         "rendered": null,
                         "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "followers",
+                          "className": "followers",
+                        },
+                        "ref": null,
+                        "rendered": "followers",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "following",
+                          "className": "following",
+                        },
+                        "ref": null,
+                        "rendered": "following",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <button
+                            className="round-btn"
+                            type="button"
+                          >
+                            0
+                          </button>,
+                          "href": "/followers",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 0,
+                            "className": "round-btn",
+                            "type": "button",
+                          },
+                          "ref": null,
+                          "rendered": 0,
+                          "type": "button",
+                        },
+                        "type": "a",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <button
+                            className="round-btn-2"
+                            type="button"
+                          >
+                            0
+                          </button>,
+                          "href": "/following",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 0,
+                            "className": "round-btn-2",
+                            "type": "button",
+                          },
+                          "ref": null,
+                          "rendered": 0,
+                          "type": "button",
+                        },
+                        "type": "a",
                       },
                       Object {
                         "instance": null,
@@ -958,6 +1252,36 @@ ShallowWrapper {
                       src=""
                     />
                     <span
+                      className="followers"
+                    >
+                      followers
+                    </span>
+                    <span
+                      className="following"
+                    >
+                      following
+                    </span>
+                    <a
+                      href="/followers"
+                    >
+                      <button
+                        className="round-btn"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
+                    <a
+                      href="/following"
+                    >
+                      <button
+                        className="round-btn-2"
+                        type="button"
+                      >
+                        0
+                      </button>
+                    </a>
+                    <span
                       className="username"
                     >
                       
@@ -1060,6 +1384,36 @@ ShallowWrapper {
                         className="rounded-circle drop-img"
                         src=""
                       />
+                      <span
+                        className="followers"
+                      >
+                        followers
+                      </span>
+                      <span
+                        className="following"
+                      >
+                        following
+                      </span>
+                      <a
+                        href="/followers"
+                      >
+                        <button
+                          className="round-btn"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <a
+                        href="/following"
+                      >
+                        <button
+                          className="round-btn-2"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
                       <span
                         className="username"
                       >
@@ -1169,6 +1523,36 @@ ShallowWrapper {
                         src=""
                       />
                       <span
+                        className="followers"
+                      >
+                        followers
+                      </span>
+                      <span
+                        className="following"
+                      >
+                        following
+                      </span>
+                      <a
+                        href="/followers"
+                      >
+                        <button
+                          className="round-btn"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <a
+                        href="/following"
+                      >
+                        <button
+                          className="round-btn-2"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <span
                         className="username"
                       >
                         
@@ -1259,6 +1643,36 @@ ShallowWrapper {
                         src=""
                       />
                       <span
+                        className="followers"
+                      >
+                        followers
+                      </span>
+                      <span
+                        className="following"
+                      >
+                        following
+                      </span>
+                      <a
+                        href="/followers"
+                      >
+                        <button
+                          className="round-btn"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <a
+                        href="/following"
+                      >
+                        <button
+                          className="round-btn-2"
+                          type="button"
+                        >
+                          0
+                        </button>
+                      </a>
+                      <span
                         className="username"
                       >
                         
@@ -1345,6 +1759,36 @@ ShallowWrapper {
                           className="rounded-circle drop-img"
                           src=""
                         />
+                        <span
+                          className="followers"
+                        >
+                          followers
+                        </span>
+                        <span
+                          className="following"
+                        >
+                          following
+                        </span>
+                        <a
+                          href="/followers"
+                        >
+                          <button
+                            className="round-btn"
+                            type="button"
+                          >
+                            0
+                          </button>
+                        </a>
+                        <a
+                          href="/following"
+                        >
+                          <button
+                            className="round-btn-2"
+                            type="button"
+                          >
+                            0
+                          </button>
+                        </a>
                         <span
                           className="username"
                         >
@@ -1449,6 +1893,36 @@ ShallowWrapper {
                           src=""
                         />
                         <span
+                          className="followers"
+                        >
+                          followers
+                        </span>
+                        <span
+                          className="following"
+                        >
+                          following
+                        </span>
+                        <a
+                          href="/followers"
+                        >
+                          <button
+                            className="round-btn"
+                            type="button"
+                          >
+                            0
+                          </button>
+                        </a>
+                        <a
+                          href="/following"
+                        >
+                          <button
+                            className="round-btn-2"
+                            type="button"
+                          >
+                            0
+                          </button>
+                        </a>
+                        <span
                           className="username"
                         >
                           
@@ -1514,6 +1988,36 @@ ShallowWrapper {
                             className="rounded-circle drop-img"
                             src=""
                           />,
+                          <span
+                            className="followers"
+                          >
+                            followers
+                          </span>,
+                          <span
+                            className="following"
+                          >
+                            following
+                          </span>,
+                          <a
+                            href="/followers"
+                          >
+                            <button
+                              className="round-btn"
+                              type="button"
+                            >
+                              0
+                            </button>
+                          </a>,
+                          <a
+                            href="/following"
+                          >
+                            <button
+                              className="round-btn-2"
+                              type="button"
+                            >
+                              0
+                            </button>
+                          </a>,
                           <span
                             className="username"
                           >
@@ -1581,6 +2085,88 @@ ShallowWrapper {
                           "ref": null,
                           "rendered": null,
                           "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "followers",
+                            "className": "followers",
+                          },
+                          "ref": null,
+                          "rendered": "followers",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "following",
+                            "className": "following",
+                          },
+                          "ref": null,
+                          "rendered": "following",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <button
+                              className="round-btn"
+                              type="button"
+                            >
+                              0
+                            </button>,
+                            "href": "/followers",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": 0,
+                              "className": "round-btn",
+                              "type": "button",
+                            },
+                            "ref": null,
+                            "rendered": 0,
+                            "type": "button",
+                          },
+                          "type": "a",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <button
+                              className="round-btn-2"
+                              type="button"
+                            >
+                              0
+                            </button>,
+                            "href": "/following",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": 0,
+                              "className": "round-btn-2",
+                              "type": "button",
+                            },
+                            "ref": null,
+                            "rendered": 0,
+                            "type": "button",
+                          },
+                          "type": "a",
                         },
                         Object {
                           "instance": null,
