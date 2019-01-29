@@ -5,6 +5,7 @@ import "./profileView.scss";
 
 const viewProfile = props => {
   const {
+    handleClick,
     classValue,
     Clicked,
     imageShow,
@@ -22,8 +23,7 @@ const viewProfile = props => {
       <nav className="pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark ">
         <span className="navbar-brand "> Author&#39;s Heaven</span>
         <div className="float-right ">
-          <Link to="/" className="navbar-brand">
-            {" "}
+          <Link to="/" className="navbar-brand" onClick={handleClick}>
             Home
           </Link>
           <Link to="/create" className={create}>
@@ -108,6 +108,7 @@ const viewProfile = props => {
 viewProfile.propTypes = {
   classValue: propTypes.string,
   Clicked: propTypes.func,
+  handleClick: propTypes.func,
   imageShow: propTypes.string,
   attribute: propTypes.string,
   profile: propTypes.shape({}),
@@ -119,6 +120,7 @@ viewProfile.propTypes = {
 viewProfile.defaultProps = {
   classValue: "",
   Clicked: () => {},
+  handleClick: () => {},
   imageShow: "",
   attribute: "",
   profile: {},

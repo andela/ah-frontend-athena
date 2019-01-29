@@ -4,3 +4,11 @@
   top: 0 !important;
   right: 10px !important;
 }
+
+.center-parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

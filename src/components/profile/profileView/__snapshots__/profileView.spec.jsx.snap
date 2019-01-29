@@ -11,6 +11,7 @@ ShallowWrapper {
     classValue=""
     followers={0}
     following={0}
+    handleClick={[Function]}
     imageShow=""
     profile={
       Object {
@@ -47,10 +48,10 @@ ShallowWrapper {
         >
           <Link
             className="navbar-brand"
+            onClick={[Function]}
             replace={false}
             to="/"
           >
-             
             Home
           </Link>
           <Link
@@ -200,10 +201,10 @@ ShallowWrapper {
           >
             <Link
               className="navbar-brand"
+              onClick={[Function]}
               replace={false}
               to="/"
             >
-               
               Home
             </Link>
             <Link
@@ -359,10 +360,10 @@ ShallowWrapper {
             "children": Array [
               <Link
                 className="navbar-brand"
+                onClick={[Function]}
                 replace={false}
                 to="/"
               >
-                 
                 Home
               </Link>,
               <Link
@@ -383,19 +384,14 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "Home",
-                ],
+                "children": "Home",
                 "className": "navbar-brand",
+                "onClick": [Function],
                 "replace": false,
                 "to": "/",
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "Home",
-              ],
+              "rendered": "Home",
               "type": [Function],
             },
             Object {
@@ -1332,10 +1328,10 @@ ShallowWrapper {
           >
             <Link
               className="navbar-brand"
+              onClick={[Function]}
               replace={false}
               to="/"
             >
-               
               Home
             </Link>
             <Link
@@ -1485,10 +1481,10 @@ ShallowWrapper {
             >
               <Link
                 className="navbar-brand"
+                onClick={[Function]}
                 replace={false}
                 to="/"
               >
-                 
                 Home
               </Link>
               <Link
@@ -1644,10 +1640,10 @@ ShallowWrapper {
               "children": Array [
                 <Link
                   className="navbar-brand"
+                  onClick={[Function]}
                   replace={false}
                   to="/"
                 >
-                   
                   Home
                 </Link>,
                 <Link
@@ -1668,19 +1664,14 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": Array [
-                    " ",
-                    "Home",
-                  ],
+                  "children": "Home",
                   "className": "navbar-brand",
+                  "onClick": [Function],
                   "replace": false,
                   "to": "/",
                 },
                 "ref": null,
-                "rendered": Array [
-                  " ",
-                  "Home",
-                ],
+                "rendered": "Home",
                 "type": [Function],
               },
               Object {
