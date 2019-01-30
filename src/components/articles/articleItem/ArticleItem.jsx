@@ -58,6 +58,7 @@ const ArticleItem = props => {
                 {getDate(article.created_at)}
               </p>
               <div className="my-2">
+                <p className='read-time'>{article.read_time + " min read"}</p>
                 <NavLink to={`/articles/${article.slug}`}>
                   {" "}
                   Read more....
