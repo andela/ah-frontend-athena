@@ -61,6 +61,14 @@ ShallowWrapper {
              
             Create Article
           </Link>
+          <Link
+            className="navbar-brand "
+            replace={false}
+            to="/bookmarks"
+          >
+             
+            Bookmarks
+          </Link>
         </div>
         <div
           className="collapse navbar-collapse"
@@ -213,6 +221,14 @@ ShallowWrapper {
             >
                
               Create Article
+            </Link>
+            <Link
+              className="navbar-brand "
+              replace={false}
+              to="/bookmarks"
+            >
+               
+              Bookmarks
             </Link>
           </div>,
           <div
@@ -373,6 +389,14 @@ ShallowWrapper {
                  
                 Create Article
               </Link>,
+              <Link
+                className="navbar-brand "
+                replace={false}
+                to="/bookmarks"
+              >
+                 
+                Bookmarks
+              </Link>,
             ],
             "className": "float-right ",
           },
@@ -415,6 +439,26 @@ ShallowWrapper {
               "rendered": Array [
                 " ",
                 "Create Article",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Bookmarks",
+                ],
+                "className": "navbar-brand ",
+                "replace": false,
+                "to": "/bookmarks",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Bookmarks",
               ],
               "type": [Function],
             },
@@ -1346,6 +1390,14 @@ ShallowWrapper {
                
               Create Article
             </Link>
+            <Link
+              className="navbar-brand "
+              replace={false}
+              to="/bookmarks"
+            >
+               
+              Bookmarks
+            </Link>
           </div>
           <div
             className="collapse navbar-collapse"
@@ -1498,6 +1550,14 @@ ShallowWrapper {
               >
                  
                 Create Article
+              </Link>
+              <Link
+                className="navbar-brand "
+                replace={false}
+                to="/bookmarks"
+              >
+                 
+                Bookmarks
               </Link>
             </div>,
             <div
@@ -1658,6 +1718,14 @@ ShallowWrapper {
                    
                   Create Article
                 </Link>,
+                <Link
+                  className="navbar-brand "
+                  replace={false}
+                  to="/bookmarks"
+                >
+                   
+                  Bookmarks
+                </Link>,
               ],
               "className": "float-right ",
             },
@@ -1700,6 +1768,26 @@ ShallowWrapper {
                 "rendered": Array [
                   " ",
                   "Create Article",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Bookmarks",
+                  ],
+                  "className": "navbar-brand ",
+                  "replace": false,
+                  "to": "/bookmarks",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Bookmarks",
                 ],
                 "type": [Function],
               },

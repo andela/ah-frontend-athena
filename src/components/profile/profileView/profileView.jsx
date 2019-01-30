@@ -30,6 +30,10 @@ const viewProfile = props => {
             {" "}
             Create Article
           </Link>
+          <Link to="/bookmarks" className={create}>
+            {" "}
+            Bookmarks
+          </Link>
         </div>
         <div className="collapse navbar-collapse">
           <ul className={Value}>

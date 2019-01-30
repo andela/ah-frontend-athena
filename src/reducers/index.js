@@ -9,6 +9,7 @@ import articleReducer from "./articleReducers/ArticleReducer";
 import tagsReducer from "./tagsReducer";
 import likesReducer from "./LikesReducer";
 import userFollowReducer from "./userFollowReducer";
+import getMyBookmarkedArticlesReducer from "./getMyBookmarkedArticlesReducer";
 
 const rootReducer = combineReducers({
   user: signupReducers,
@@ -20,7 +21,7 @@ const rootReducer = combineReducers({
   passwordResetConfirm: PasswordResetReducer,
   likes: likesReducer,
   follow: userFollowReducer,
-  tags: tagsReducer
-
+  tags: tagsReducer,
+  bookmarks: getMyBookmarkedArticlesReducer
 });
 export default rootReducer;
