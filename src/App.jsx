@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.min.css";
  */
 
 const App = () => (
-  <div>
+  <div className="full">
     <Routes />
     <ToastContainer />
   </div>

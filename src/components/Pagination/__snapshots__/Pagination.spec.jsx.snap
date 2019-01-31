@@ -1,0 +1,1738 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test pagination should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Pagination
+    currentPage={2}
+    getMoreArticles={[MockFunction]}
+    nextPage={3}
+    pageNumber={
+      Array [
+        1,
+        2,
+        3,
+      ]
+    }
+    previousPage={1}
+    searchParam="andela"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <t
+        lg={null}
+        md={null}
+        sm={null}
+        tag="div"
+        xl={null}
+        xs={null}
+      >
+        <h4
+          className="title my-5 text-left"
+        />
+        <t
+          circle={true}
+          className="text-center flex-center"
+          color=""
+          tag="ul"
+        >
+          <t
+            active={false}
+            className=""
+            disabled={false}
+            tag="li"
+          >
+            <t
+              className="page-link"
+              onClick={1}
+              tag="a"
+            >
+              <span>
+                Previous
+              </span>
+            </t>
+          </t>
+          <t
+            active={false}
+            className=""
+            disabled={false}
+            tag="li"
+          >
+            <t
+              aria-label="Previous"
+              className="page-link"
+              tag="a"
+            >
+              <span
+                aria-hidden="true"
+              >
+                «
+              </span>
+              <span
+                className="sr-only"
+              >
+                Previous
+              </span>
+            </t>
+          </t>
+          <t
+            active={false}
+            className=""
+            disabled={false}
+            tag="li"
+          >
+            <t
+              className="link"
+              id={1}
+              onClick={[Function]}
+              tag="a"
+            >
+              1
+              <span
+                className="sr-only"
+              >
+                (current)
+              </span>
+            </t>
+          </t>
+          <t
+            active={true}
+            className=""
+            disabled={false}
+            tag="li"
+          >
+            <t
+              className="link"
+              id={2}
+              onClick={[Function]}
+              tag="a"
+            >
+              2
+              <span
+                className="sr-only"
+              >
+                (current)
+              </span>
+            </t>
+          </t>
+          <t
+            active={false}
+            className=""
+            disabled={false}
+            tag="li"
+          >
+            <t
+              className="link"
+              id={3}
+              onClick={[Function]}
+              tag="a"
+            >
+              3
+              <span
+                className="sr-only"
+              >
+                (current)
+              </span>
+            </t>
+          </t>
+          <t
+            active={false}
+            className=""
+            disabled={false}
+            tag="li"
+          >
+            <t
+              className="page-link"
+              tag="a"
+            >
+              »
+            </t>
+          </t>
+          <t
+            active={false}
+            className=""
+            disabled={false}
+            tag="li"
+          >
+            <t
+              className="page-link"
+              onClick={3}
+              tag="a"
+            >
+              Next
+            </t>
+          </t>
+        </t>
+      </t>,
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <h4
+            className="title my-5 text-left"
+          />,
+          <t
+            circle={true}
+            className="text-center flex-center"
+            color=""
+            tag="ul"
+          >
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="page-link"
+                onClick={1}
+                tag="a"
+              >
+                <span>
+                  Previous
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                aria-label="Previous"
+                className="page-link"
+                tag="a"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  «
+                </span>
+                <span
+                  className="sr-only"
+                >
+                  Previous
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="link"
+                id={1}
+                onClick={[Function]}
+                tag="a"
+              >
+                1
+                <span
+                  className="sr-only"
+                >
+                  (current)
+                </span>
+              </t>
+            </t>
+            <t
+              active={true}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="link"
+                id={2}
+                onClick={[Function]}
+                tag="a"
+              >
+                2
+                <span
+                  className="sr-only"
+                >
+                  (current)
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="link"
+                id={3}
+                onClick={[Function]}
+                tag="a"
+              >
+                3
+                <span
+                  className="sr-only"
+                >
+                  (current)
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="page-link"
+                tag="a"
+              >
+                »
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="page-link"
+                onClick={3}
+                tag="a"
+              >
+                Next
+              </t>
+            </t>
+          </t>,
+        ],
+        "lg": null,
+        "md": null,
+        "sm": null,
+        "tag": "div",
+        "xl": null,
+        "xs": null,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "title my-5 text-left",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="page-link"
+                  onClick={1}
+                  tag="a"
+                >
+                  <span>
+                    Previous
+                  </span>
+                </t>
+              </t>,
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  aria-label="Previous"
+                  className="page-link"
+                  tag="a"
+                >
+                  <span
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <span
+                    className="sr-only"
+                  >
+                    Previous
+                  </span>
+                </t>
+              </t>,
+              Array [
+                <t
+                  active={false}
+                  className=""
+                  disabled={false}
+                  tag="li"
+                >
+                  <t
+                    className="link"
+                    id={1}
+                    onClick={[Function]}
+                    tag="a"
+                  >
+                    1
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>
+                  </t>
+                </t>,
+                <t
+                  active={true}
+                  className=""
+                  disabled={false}
+                  tag="li"
+                >
+                  <t
+                    className="link"
+                    id={2}
+                    onClick={[Function]}
+                    tag="a"
+                  >
+                    2
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>
+                  </t>
+                </t>,
+                <t
+                  active={false}
+                  className=""
+                  disabled={false}
+                  tag="li"
+                >
+                  <t
+                    className="link"
+                    id={3}
+                    onClick={[Function]}
+                    tag="a"
+                  >
+                    3
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>
+                  </t>
+                </t>,
+              ],
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="page-link"
+                  tag="a"
+                >
+                  »
+                </t>
+              </t>,
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="page-link"
+                  onClick={3}
+                  tag="a"
+                >
+                  Next
+                </t>
+              </t>,
+            ],
+            "circle": true,
+            "className": "text-center flex-center",
+            "color": "",
+            "tag": "ul",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "children": <t
+                  className="page-link"
+                  onClick={1}
+                  tag="a"
+                >
+                  <span>
+                    Previous
+                  </span>
+                </t>,
+                "className": "",
+                "disabled": false,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <span>
+                    Previous
+                  </span>,
+                  "className": "page-link",
+                  "onClick": 1,
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Previous",
+                  },
+                  "ref": null,
+                  "rendered": "Previous",
+                  "type": "span",
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "children": <t
+                  aria-label="Previous"
+                  className="page-link"
+                  tag="a"
+                >
+                  <span
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <span
+                    className="sr-only"
+                  >
+                    Previous
+                  </span>
+                </t>,
+                "className": "",
+                "disabled": false,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "aria-label": "Previous",
+                  "children": Array [
+                    <span
+                      aria-hidden="true"
+                    >
+                      «
+                    </span>,
+                    <span
+                      className="sr-only"
+                    >
+                      Previous
+                    </span>,
+                  ],
+                  "className": "page-link",
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "aria-hidden": "true",
+                      "children": "«",
+                    },
+                    "ref": null,
+                    "rendered": "«",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Previous",
+                      "className": "sr-only",
+                    },
+                    "ref": null,
+                    "rendered": "Previous",
+                    "type": "span",
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "children": <t
+                  className="link"
+                  id={1}
+                  onClick={[Function]}
+                  tag="a"
+                >
+                  1
+                  <span
+                    className="sr-only"
+                  >
+                    (current)
+                  </span>
+                </t>,
+                "className": "",
+                "disabled": false,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    1,
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>,
+                  ],
+                  "className": "link",
+                  "id": 1,
+                  "onClick": [Function],
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": Array [
+                  1,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "(current)",
+                      "className": "sr-only",
+                    },
+                    "ref": null,
+                    "rendered": "(current)",
+                    "type": "span",
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": true,
+                "children": <t
+                  className="link"
+                  id={2}
+                  onClick={[Function]}
+                  tag="a"
+                >
+                  2
+                  <span
+                    className="sr-only"
+                  >
+                    (current)
+                  </span>
+                </t>,
+                "className": "",
+                "disabled": false,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    2,
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>,
+                  ],
+                  "className": "link",
+                  "id": 2,
+                  "onClick": [Function],
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": Array [
+                  2,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "(current)",
+                      "className": "sr-only",
+                    },
+                    "ref": null,
+                    "rendered": "(current)",
+                    "type": "span",
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "children": <t
+                  className="link"
+                  id={3}
+                  onClick={[Function]}
+                  tag="a"
+                >
+                  3
+                  <span
+                    className="sr-only"
+                  >
+                    (current)
+                  </span>
+                </t>,
+                "className": "",
+                "disabled": false,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    3,
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>,
+                  ],
+                  "className": "link",
+                  "id": 3,
+                  "onClick": [Function],
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": Array [
+                  3,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "(current)",
+                      "className": "sr-only",
+                    },
+                    "ref": null,
+                    "rendered": "(current)",
+                    "type": "span",
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "children": <t
+                  className="page-link"
+                  tag="a"
+                >
+                  »
+                </t>,
+                "className": "",
+                "disabled": false,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "»",
+                  "className": "page-link",
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": "»",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "children": <t
+                  className="page-link"
+                  onClick={3}
+                  tag="a"
+                >
+                  Next
+                </t>,
+                "className": "",
+                "disabled": false,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Next",
+                  "className": "page-link",
+                  "onClick": 3,
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": "Next",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          lg={null}
+          md={null}
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <h4
+            className="title my-5 text-left"
+          />
+          <t
+            circle={true}
+            className="text-center flex-center"
+            color=""
+            tag="ul"
+          >
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="page-link"
+                onClick={1}
+                tag="a"
+              >
+                <span>
+                  Previous
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                aria-label="Previous"
+                className="page-link"
+                tag="a"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  «
+                </span>
+                <span
+                  className="sr-only"
+                >
+                  Previous
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="link"
+                id={1}
+                onClick={[Function]}
+                tag="a"
+              >
+                1
+                <span
+                  className="sr-only"
+                >
+                  (current)
+                </span>
+              </t>
+            </t>
+            <t
+              active={true}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="link"
+                id={2}
+                onClick={[Function]}
+                tag="a"
+              >
+                2
+                <span
+                  className="sr-only"
+                >
+                  (current)
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="link"
+                id={3}
+                onClick={[Function]}
+                tag="a"
+              >
+                3
+                <span
+                  className="sr-only"
+                >
+                  (current)
+                </span>
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="page-link"
+                tag="a"
+              >
+                »
+              </t>
+            </t>
+            <t
+              active={false}
+              className=""
+              disabled={false}
+              tag="li"
+            >
+              <t
+                className="page-link"
+                onClick={3}
+                tag="a"
+              >
+                Next
+              </t>
+            </t>
+          </t>
+        </t>,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="title my-5 text-left"
+            />,
+            <t
+              circle={true}
+              className="text-center flex-center"
+              color=""
+              tag="ul"
+            >
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="page-link"
+                  onClick={1}
+                  tag="a"
+                >
+                  <span>
+                    Previous
+                  </span>
+                </t>
+              </t>
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  aria-label="Previous"
+                  className="page-link"
+                  tag="a"
+                >
+                  <span
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <span
+                    className="sr-only"
+                  >
+                    Previous
+                  </span>
+                </t>
+              </t>
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="link"
+                  id={1}
+                  onClick={[Function]}
+                  tag="a"
+                >
+                  1
+                  <span
+                    className="sr-only"
+                  >
+                    (current)
+                  </span>
+                </t>
+              </t>
+              <t
+                active={true}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="link"
+                  id={2}
+                  onClick={[Function]}
+                  tag="a"
+                >
+                  2
+                  <span
+                    className="sr-only"
+                  >
+                    (current)
+                  </span>
+                </t>
+              </t>
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="link"
+                  id={3}
+                  onClick={[Function]}
+                  tag="a"
+                >
+                  3
+                  <span
+                    className="sr-only"
+                  >
+                    (current)
+                  </span>
+                </t>
+              </t>
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="page-link"
+                  tag="a"
+                >
+                  »
+                </t>
+              </t>
+              <t
+                active={false}
+                className=""
+                disabled={false}
+                tag="li"
+              >
+                <t
+                  className="page-link"
+                  onClick={3}
+                  tag="a"
+                >
+                  Next
+                </t>
+              </t>
+            </t>,
+          ],
+          "lg": null,
+          "md": null,
+          "sm": null,
+          "tag": "div",
+          "xl": null,
+          "xs": null,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "title my-5 text-left",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <t
+                  active={false}
+                  className=""
+                  disabled={false}
+                  tag="li"
+                >
+                  <t
+                    className="page-link"
+                    onClick={1}
+                    tag="a"
+                  >
+                    <span>
+                      Previous
+                    </span>
+                  </t>
+                </t>,
+                <t
+                  active={false}
+                  className=""
+                  disabled={false}
+                  tag="li"
+                >
+                  <t
+                    aria-label="Previous"
+                    className="page-link"
+                    tag="a"
+                  >
+                    <span
+                      aria-hidden="true"
+                    >
+                      «
+                    </span>
+                    <span
+                      className="sr-only"
+                    >
+                      Previous
+                    </span>
+                  </t>
+                </t>,
+                Array [
+                  <t
+                    active={false}
+                    className=""
+                    disabled={false}
+                    tag="li"
+                  >
+                    <t
+                      className="link"
+                      id={1}
+                      onClick={[Function]}
+                      tag="a"
+                    >
+                      1
+                      <span
+                        className="sr-only"
+                      >
+                        (current)
+                      </span>
+                    </t>
+                  </t>,
+                  <t
+                    active={true}
+                    className=""
+                    disabled={false}
+                    tag="li"
+                  >
+                    <t
+                      className="link"
+                      id={2}
+                      onClick={[Function]}
+                      tag="a"
+                    >
+                      2
+                      <span
+                        className="sr-only"
+                      >
+                        (current)
+                      </span>
+                    </t>
+                  </t>,
+                  <t
+                    active={false}
+                    className=""
+                    disabled={false}
+                    tag="li"
+                  >
+                    <t
+                      className="link"
+                      id={3}
+                      onClick={[Function]}
+                      tag="a"
+                    >
+                      3
+                      <span
+                        className="sr-only"
+                      >
+                        (current)
+                      </span>
+                    </t>
+                  </t>,
+                ],
+                <t
+                  active={false}
+                  className=""
+                  disabled={false}
+                  tag="li"
+                >
+                  <t
+                    className="page-link"
+                    tag="a"
+                  >
+                    »
+                  </t>
+                </t>,
+                <t
+                  active={false}
+                  className=""
+                  disabled={false}
+                  tag="li"
+                >
+                  <t
+                    className="page-link"
+                    onClick={3}
+                    tag="a"
+                  >
+                    Next
+                  </t>
+                </t>,
+              ],
+              "circle": true,
+              "className": "text-center flex-center",
+              "color": "",
+              "tag": "ul",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": <t
+                    className="page-link"
+                    onClick={1}
+                    tag="a"
+                  >
+                    <span>
+                      Previous
+                    </span>
+                  </t>,
+                  "className": "",
+                  "disabled": false,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <span>
+                      Previous
+                    </span>,
+                    "className": "page-link",
+                    "onClick": 1,
+                    "tag": "a",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Previous",
+                    },
+                    "ref": null,
+                    "rendered": "Previous",
+                    "type": "span",
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": <t
+                    aria-label="Previous"
+                    className="page-link"
+                    tag="a"
+                  >
+                    <span
+                      aria-hidden="true"
+                    >
+                      «
+                    </span>
+                    <span
+                      className="sr-only"
+                    >
+                      Previous
+                    </span>
+                  </t>,
+                  "className": "",
+                  "disabled": false,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "aria-label": "Previous",
+                    "children": Array [
+                      <span
+                        aria-hidden="true"
+                      >
+                        «
+                      </span>,
+                      <span
+                        className="sr-only"
+                      >
+                        Previous
+                      </span>,
+                    ],
+                    "className": "page-link",
+                    "tag": "a",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "aria-hidden": "true",
+                        "children": "«",
+                      },
+                      "ref": null,
+                      "rendered": "«",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Previous",
+                        "className": "sr-only",
+                      },
+                      "ref": null,
+                      "rendered": "Previous",
+                      "type": "span",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": <t
+                    className="link"
+                    id={1}
+                    onClick={[Function]}
+                    tag="a"
+                  >
+                    1
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>
+                  </t>,
+                  "className": "",
+                  "disabled": false,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      1,
+                      <span
+                        className="sr-only"
+                      >
+                        (current)
+                      </span>,
+                    ],
+                    "className": "link",
+                    "id": 1,
+                    "onClick": [Function],
+                    "tag": "a",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    1,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "(current)",
+                        "className": "sr-only",
+                      },
+                      "ref": null,
+                      "rendered": "(current)",
+                      "type": "span",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": <t
+                    className="link"
+                    id={2}
+                    onClick={[Function]}
+                    tag="a"
+                  >
+                    2
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>
+                  </t>,
+                  "className": "",
+                  "disabled": false,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      2,
+                      <span
+                        className="sr-only"
+                      >
+                        (current)
+                      </span>,
+                    ],
+                    "className": "link",
+                    "id": 2,
+                    "onClick": [Function],
+                    "tag": "a",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    2,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "(current)",
+                        "className": "sr-only",
+                      },
+                      "ref": null,
+                      "rendered": "(current)",
+                      "type": "span",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": <t
+                    className="link"
+                    id={3}
+                    onClick={[Function]}
+                    tag="a"
+                  >
+                    3
+                    <span
+                      className="sr-only"
+                    >
+                      (current)
+                    </span>
+                  </t>,
+                  "className": "",
+                  "disabled": false,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      3,
+                      <span
+                        className="sr-only"
+                      >
+                        (current)
+                      </span>,
+                    ],
+                    "className": "link",
+                    "id": 3,
+                    "onClick": [Function],
+                    "tag": "a",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    3,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "(current)",
+                        "className": "sr-only",
+                      },
+                      "ref": null,
+                      "rendered": "(current)",
+                      "type": "span",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": <t
+                    className="page-link"
+                    tag="a"
+                  >
+                    »
+                  </t>,
+                  "className": "",
+                  "disabled": false,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "»",
+                    "className": "page-link",
+                    "tag": "a",
+                  },
+                  "ref": null,
+                  "rendered": "»",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": <t
+                    className="page-link"
+                    onClick={3}
+                    tag="a"
+                  >
+                    Next
+                  </t>,
+                  "className": "",
+                  "disabled": false,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Next",
+                    "className": "page-link",
+                    "onClick": 3,
+                    "tag": "a",
+                  },
+                  "ref": null,
+                  "rendered": "Next",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

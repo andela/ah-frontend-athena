@@ -6,6 +6,7 @@ import ArticleItem from "../../../components/articles/articleItem/ArticleItem";
 import { getArticles } from "../../../actions/articleActions/ArticleActions";
 import getTags from "../../../actions/tagsAction";
 import TagsForm from "../../../components/Tags/TagsForm/TagsForm";
+import Paginations from "../../Pagination/Paginations";
 
 export class ArticleList extends Component {
   constructor(props) {
@@ -23,26 +24,36 @@ export class ArticleList extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const articles = nextProps.articles;
-    if (nextProps.articles) {
+    const { articles } = nextProps;
+    if (articles) {
       const results = articles;
       this.setState({ articles: results });
     }
   }
 
+  updateArticleList = newArticles => {
+    this.setState({ articles: newArticles });
+  };
+
   render() {
-    const { articles } = this.state;
-    const { tags } = this.props;
+    const { articles, totalPages } = this.state;
+    const { fullArticle, tags } = this.props;
+    let { pageNumber } = this.state;
+    pageNumber = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumber.push(i);
+    }
 
     if (articles) {
-      const art = articles.map(article => {
+      const list = articles.map(article => {
         return <ArticleItem key={article.id} article={article} />;
       });
       return (
         <MDBContainer className="pl-3">
           <MDBRow>
             <MDBCol size="9" className="w-100 m-0">
-              {art}
+              {list}
+              <Paginations fullArticle={fullArticle} update={this.updateArticleList} />
             </MDBCol>
             <MDBCol size="3" className="position-sticky m1">
               <TagsForm tags={tags} />
@@ -59,16 +70,21 @@ export class ArticleList extends Component {
 const mapStateToProps = state => {
   return {
     articles: state.articles.articles,
-    tags: state.tags.tags
+    tags: state.tags.tags,
+    moreArticles: state.articles.articles,
+    currentPage: state.articles.currentPage,
+    totalPages: state.articles.totalPages,
+    fullArticle: state.articles.fullArticle
   };
 };
 
 ArticleList.propTypes = {
   getArticles: PropTypes.func,
   getTags: PropTypes.func,
-  articles: PropTypes.shape([]),
   results: PropTypes.shape({}),
-  tags: PropTypes.shape([])
+  tags: PropTypes.shape([]),
+  articles: PropTypes.shape([]),
+  fullArticle: PropTypes.shape({})
 };
 
 ArticleList.defaultProps = {
@@ -76,7 +92,8 @@ ArticleList.defaultProps = {
   getTags: () => {},
   articles: [],
   results: {},
-  tags: []
+  tags: [],
+  fullArticle: {}
 };
 
 export default connect(

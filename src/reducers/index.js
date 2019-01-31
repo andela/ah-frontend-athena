@@ -21,5 +21,6 @@ const rootReducer = combineReducers({
   likes: likesReducer,
   follow: userFollowReducer,
   tags: tagsReducer
+
 });
 export default rootReducer;

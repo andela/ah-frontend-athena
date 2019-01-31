@@ -7,12 +7,25 @@ const initialState = {
   view_article: {},
   edit_article: {},
   delete_article: {},
-  new_article_rate: {}
+  new_article_rate: {},
+  fullArticle: {},
+  pages: {}
 };
 
 describe("test article reducer", () => {
   it("should return the initial state unknow action type", () => {
-    expect(ArticleReducer(undefined, {})).toEqual(initialState);
+    expect(ArticleReducer(undefined, {})).toEqual({
+      article: {},
+      articles: [],
+      currentPage: 1,
+      delete_article: {},
+      edit_article: {},
+      fullArticle: {},
+      new_article_rate: {},
+      searchParam: "",
+      totalPages: 1,
+      view_article: {}
+    });
   });
   it("should return new state on create article", () => {
     expect(
@@ -27,10 +40,14 @@ describe("test article reducer", () => {
     ).toEqual({
       article: { body: "article body", id: 1, slug: "moked-slag" },
       articles: [],
+      currentPage: 1,
       delete_article: {},
       edit_article: {},
-      view_article: {},
-      new_article_rate: {}
+      fullArticle: {},
+      new_article_rate: {},
+      searchParam: "",
+      totalPages: 1,
+      view_article: {}
     });
   });
 
@@ -38,6 +55,10 @@ describe("test article reducer", () => {
     expect(
       ArticleReducer(undefined, {
         type: actionTypes.GET_ARTICLES,
+        pages: {
+          total_pages: 1,
+          current_page: 1
+        },
         payload: [
           {
             id: 1,
@@ -57,10 +78,14 @@ describe("test article reducer", () => {
         { body: "article body", id: 1, slug: "moked-slag" },
         { body: "article body", id: 1, slug: "moked-slag" }
       ],
+      currentPage: 1,
       delete_article: {},
       edit_article: {},
-      view_article: {},
-      new_article_rate: {}
+      fullArticle: { current_page: 1, total_pages: 1 },
+      new_article_rate: {},
+      searchParam: "",
+      totalPages: 1,
+      view_article: {}
     });
   });
 
@@ -73,9 +98,13 @@ describe("test article reducer", () => {
     ).toEqual({
       article: {},
       articles: [],
+      currentPage: 1,
       delete_article: {},
       edit_article: {},
+      fullArticle: {},
       new_article_rate: {},
+      searchParam: "",
+      totalPages: 1,
       view_article: { body: "article body", id: 10, slug: "moked-slag" }
     });
   });
@@ -93,10 +122,14 @@ describe("test article reducer", () => {
     ).toEqual({
       article: {},
       articles: [],
+      currentPage: 1,
       delete_article: {},
       edit_article: { body: "article body", id: 10, slug: "moked-slag" },
-      view_article: {},
-      new_article_rate: {}
+      fullArticle: {},
+      new_article_rate: {},
+      searchParam: "",
+      totalPages: 1,
+      view_article: {}
     });
   });
 
@@ -109,10 +142,71 @@ describe("test article reducer", () => {
     ).toEqual({
       article: {},
       articles: [],
+      currentPage: 1,
       delete_article: { message: "Article successfully deleted" },
       edit_article: {},
-      view_article: {},
-      new_article_rate: {}
+      fullArticle: {},
+      new_article_rate: {},
+      searchParam: "",
+      totalPages: 1,
+      view_article: {}
+    });
+  });
+  it("should return new state on rating article", () => {
+    expect(
+      ArticleReducer(undefined, {
+        type: actionTypes.RATE_ARTICLE,
+        payload: 1
+      })
+    ).toEqual({
+      article: {},
+      articles: [],
+      currentPage: 1,
+      delete_article: {},
+      edit_article: {},
+      fullArticle: {},
+      new_article_rate: 1,
+      searchParam: "",
+      totalPages: 1,
+      view_article: {}
+    });
+  });
+  it("should return new state on search article", () => {
+    expect(
+      ArticleReducer(undefined, {
+        type: actionTypes.STORE_PARAM,
+        payload: "andela"
+      })
+    ).toEqual({
+      article: {},
+      articles: [],
+      currentPage: 1,
+      delete_article: {},
+      edit_article: {},
+      fullArticle: {},
+      new_article_rate: {},
+      searchParam: "andela",
+      totalPages: 1,
+      view_article: {}
+    });
+  });
+  it("should return new state on search article", () => {
+    expect(
+      ArticleReducer(undefined, {
+        type: actionTypes.TAGGED_ARTICALS,
+        payload: { articles: "hey" }
+      })
+    ).toEqual({
+      article: {},
+      articles: { articles: "hey" },
+      currentPage: 1,
+      delete_article: {},
+      edit_article: {},
+      fullArticle: {},
+      new_article_rate: {},
+      searchParam: "",
+      totalPages: 1,
+      view_article: {}
     });
   });
 });
