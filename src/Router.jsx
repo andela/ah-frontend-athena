@@ -22,6 +22,7 @@ import Bookmarks from "./views/BookmarksView/BookmarksView";
 import LoginView from "./views/LoginView/Login";
 import ReadingStatsView from "./views/ReadingStats/ReadingStatsView";
 import ArticleView  from "./views/Articles/articleView/ArticleView";
+import ReportedArticles from "./components/ReportArticles/ReportedArticles";
 
 const Routes = () => (
   <Router>
@@ -53,6 +54,7 @@ const Routes = () => (
         <Route path="/articles/edit/:slug" component={ArticleEdit} />
         <Route path="/bookmarks" component={Bookmarks} />
         <Route path="/stats" component={ReadingStatsView} />
+        <Route path="/reported-articles" component={ReportedArticles} exact />
         <Route path="*" component={NotFound} />
       </Switch>
     </Provider>

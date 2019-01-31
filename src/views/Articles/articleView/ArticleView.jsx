@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import renderHTML from "react-render-html";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol,MDBIcon, MDBTooltip } from "mdbreact";
 import ArticleHeader from "../../../components/articles/articleHeader/ArticleHeader";
 import CommentsList from "../../../components/Comments/CommentsList/CommentsList";
 import {
   getSingleArticle,
   deleteArticle,
   setArticleReadCount
-} from '../../../actions/articleActions/ArticleActions';
+} from "../../../actions/articleActions/ArticleActions";
 import {
   followUser,
   unFollowUser,
@@ -23,6 +23,7 @@ import RatingView from "../../../components/articles/articleRating/RatingView";
 import TagList from "../../TagList/TagList";
 import Load from "../../../components/Load/Load";
 import Bookmark from "../../BookmarksView/bookmark";
+import ReportArticle from "../../../components/ReportArticles/ReportArticle";
 
 export class ArticleView extends Component {
   constructor(props) {
@@ -30,52 +31,61 @@ export class ArticleView extends Component {
     this.state = {
       view_article: {
         id: 0,
-        title: '',
-        body: '',
-        description: '',
+        title: "",
+        body: "",
+        description: "",
         tagList: [],
         author: {
-          username: '',
-          bio: '',
-          image: '',
-          email: ''
+          username: "",
+          bio: "",
+          image: "",
+          email: ""
         },
-        created_at: '',
-        updated_at: ''
+        created_at: "",
+        updated_at: ""
       },
-      classValue: 'btn primary-color btn-sm btn-outline-primary',
-      text: 'Follow',
+      classValue: "btn primary-color btn-sm btn-outline-primary",
+      text: "Follow",
       following: false,
       modal: false,
-      load_article_time: ''
+      load_article_time: "",
+      reportModel: false,
+      flag: ""
     };
   }
   componentDidMount() {
     const { slug } = this.props;
     const { getSingleArticle } = this.props;
     const { getFollowing } = this.props;
+    const token = window.localStorage.getItem("token");
     getSingleArticle(slug);
     getFollowing();
     this.setState({ load_article_time: Date.now() });
+    if (token) {
+      this.setState({ flag: "blue-text pr-3" });
+    } else {
+      this.setState({ flag: "blue-text pr-3 d-none" });
+    }
   }
+
   componentWillReceiveProps(nextProps) {
     
     this.setState({
       view_article: nextProps.view_article
     });
-    if ('following' in nextProps.followData) {
+    if ("following" in nextProps.followData) {
       const { following } = nextProps.followData;
       if (following) {
         this.setState({
-          classValue: 'btn primary-color btn-sm',
-          text: 'Following',
+          classValue: "btn primary-color btn-sm",
+          text: "Following",
           following: true
         });
       }
       if (!following) {
         this.setState({
-          classValue: 'btn primary-color btn-sm btn-outline-primary',
-          text: 'Follow',
+          classValue: "btn primary-color btn-sm btn-outline-primary",
+          text: "Follow",
           following: false
         });
       }
@@ -87,11 +97,11 @@ export class ArticleView extends Component {
       let following = false;
       if (Array.isArray(followData)) {
         for (let i in followData) {
-          following = Object.is(followData[i]['username'], username);
+          following = Object.is(followData[i]["username"], username);
           if (following) {
             this.setState({
-              classValue: 'btn primary-color btn-sm',
-              text: 'Following',
+              classValue: "btn primary-color btn-sm",
+              text: "Following",
               following: true
             });
             break;
@@ -99,8 +109,8 @@ export class ArticleView extends Component {
         }
         if (!following) {
           this.setState({
-            classValue: 'btn primary-color btn-sm btn-outline-primary',
-            text: 'Follow',
+            classValue: "btn primary-color btn-sm btn-outline-primary",
+            text: "Follow",
             following: false
           });
         }
@@ -121,7 +131,7 @@ export class ArticleView extends Component {
     const { following } = this.state;
     const { followUser } = this.props;
     const { unFollowUser } = this.props;
-    const token = window.localStorage.getItem('token');
+    const token = window.localStorage.getItem("token");
 
     if (token) {
       this.setState({ modal: false });
@@ -142,6 +152,16 @@ export class ArticleView extends Component {
       modal: !modal
     });
   };
+  close = () => {
+    this.setState({
+      reportModel: false
+    });
+  };
+  open = () => {
+    this.setState({
+      reportModel: true
+    });
+  };
   handleDelete = event => {
     event.preventDefault();
     const { view_article, deleteArticle, history } = this.props;
@@ -157,7 +177,14 @@ export class ArticleView extends Component {
   };
 
   render() {
-    const { view_article, classValue, text, modal } = this.state;
+    const {
+      view_article,
+      classValue,
+      text,
+      modal,
+      reportModel,
+      flag
+    } = this.state;
     const { history } = this.props;
     const url = window.location.pathname;
     if (
@@ -165,7 +192,7 @@ export class ArticleView extends Component {
       !view_article.errors &&
       view_article.title
     ) {
-      const user = window.localStorage.getItem('username');
+      const user = window.localStorage.getItem("username");
       let canModify = false;
       let canFollow = false;
       if (view_article.author) {
@@ -197,10 +224,31 @@ export class ArticleView extends Component {
           <div className="mt-2 ml-5 container">
             <RatingView history={history} article={articleIfo} />
           </div>
-
+          <MDBTooltip
+            className="d-inline p-2"
+            placement="top"
+            tag="div"
+            component="span"
+            tooltipContent="Report this article"
+          >
+            <MDBIcon
+              size="2x"
+              className={flag}
+              icon="flag"
+              color="primary"
+              onClick={this.open}
+            />
+          </MDBTooltip>
+          <div>
+            <ReportArticle
+              article={view_article}
+              close={this.close}
+              modal={reportModel}
+            />
+          </div>
           <div className="article-body container page mt-5">
             <div className="row article-content">
-              <div className="sidebar col-xs-1" style={{ marginRight: '50px' }}>
+              <div className="sidebar col-xs-1" style={{ marginRight: "50px" }}>
                 <ShareButtons />
               </div>
               <div className="col-md-11">
@@ -272,7 +320,7 @@ ArticleView.defaultProps = {
   view_article: {},
   followData: {},
   history: {},
-  slug: ''
+  slug: ""
 };
 
 export default connect(
