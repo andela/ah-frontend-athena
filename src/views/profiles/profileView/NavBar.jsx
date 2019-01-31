@@ -98,6 +98,9 @@ export class NavBar extends Component {
       this.setState({ image: state.profile.image });
     }
   };
+  handleClick = () => {
+    window.location.href = "/";
+  };
   Click = e => {
     e.preventDefault();
     window.localStorage.removeItem("image_url");
@@ -129,6 +132,7 @@ export class NavBar extends Component {
     const { followers } = this.state;
     return (
       <ViewProfile
+        handleClick={this.handleClick}
         imageShow={image}
         Clicked={this.toggleNow}
         classValue={classValue}

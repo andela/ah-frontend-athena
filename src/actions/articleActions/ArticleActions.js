@@ -18,15 +18,7 @@ const createArticles = article => dispatch => {
     .catch(error => error);
 };
 
-const getArticles = (tag, keyword, title) => dispatch => {
-  let search_param = "";
-  if (tag) {
-    search_param = tag;
-  } else if (title) {
-    search_param = title;
-  } else if (keyword) {
-    search_param = keyword;
-  }
+const getArticles = search_param => dispatch => {
   return fetch(
     `${actionTypes.BASEURL}articles/search?${search_param}&limit=5`,
     {
@@ -41,7 +33,7 @@ const getArticles = (tag, keyword, title) => dispatch => {
       dispatch({
         type: actionTypes.GET_ARTICLES,
         payload: res.results,
-        pages: res,
+        pages: res
       });
       dispatch({
         type: actionTypes.STORE_PARAM,
@@ -96,9 +88,11 @@ const deleteArticle = slug => dispatch => {
     .catch(err => err);
 };
 
-const getMoreArticles = (page, searchParam='') => dispatch => {
+const getMoreArticles = (page, searchParam = "") => dispatch => {
   return fetch(
-    `${process.env.REACT_APP_API_URL_BASE}articles/search?${searchParam}&limit=5&page=${page}`,
+    `${
+      process.env.REACT_APP_API_URL_BASE
+    }articles/search?${searchParam}&limit=5&page=${page}`,
     {
       method: "GET",
       headers: {
@@ -113,9 +107,8 @@ const getMoreArticles = (page, searchParam='') => dispatch => {
         payload: res
       });
     })
-    .catch(err=>err)
+    .catch(err => err);
 };
-
 
 export {
   getMoreArticles,
