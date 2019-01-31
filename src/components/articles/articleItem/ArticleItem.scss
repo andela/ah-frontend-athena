@@ -2,10 +2,6 @@
   float: right;
 }
 
-// .rich-text{
-//   display: none
-// }
-
 .rich-text:focus {
   display: block;
 }
@@ -35,3 +31,11 @@
 .article-page .banner .article-meta .author {
   color: rgba(0, 0, 0, 0.527);
 }
+
+.read-time {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: -18px;
+  position: absolute;
+  text-align: italic;
+ }

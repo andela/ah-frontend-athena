@@ -91,6 +91,11 @@ ShallowWrapper {
                     >
                       Invalid Date
                     </span>
+                    <span
+                      className="read-time-2"
+                    >
+                      undefined min read
+                    </span>
                   </div>
                 </t>
               </t>
@@ -186,6 +191,11 @@ ShallowWrapper {
                     >
                       Invalid Date
                     </span>
+                    <span
+                      className="read-time-2"
+                    >
+                      undefined min read
+                    </span>
                   </div>
                 </t>
               </t>
@@ -270,6 +280,11 @@ ShallowWrapper {
                         className="date"
                       >
                         Invalid Date
+                      </span>
+                      <span
+                        className="read-time-2"
+                      >
+                        undefined min read
                       </span>
                     </div>
                   </t>
@@ -367,6 +382,11 @@ ShallowWrapper {
                       >
                         Invalid Date
                       </span>
+                      <span
+                        className="read-time-2"
+                      >
+                        undefined min read
+                      </span>
                     </div>
                   </t>
                 </t>
@@ -441,6 +461,11 @@ ShallowWrapper {
                         >
                           Invalid Date
                         </span>
+                        <span
+                          className="read-time-2"
+                        >
+                          undefined min read
+                        </span>
                       </div>
                     </t>
                   </t>,
@@ -506,6 +531,11 @@ ShallowWrapper {
                         >
                           Invalid Date
                         </span>
+                        <span
+                          className="read-time-2"
+                        >
+                          undefined min read
+                        </span>
                       </div>
                     </t>,
                     "lg": null,
@@ -549,6 +579,11 @@ ShallowWrapper {
                           >
                             Invalid Date
                           </span>
+                          <span
+                            className="read-time-2"
+                          >
+                            undefined min read
+                          </span>
                         </div>,
                       ],
                       "tag": "div",
@@ -591,6 +626,11 @@ ShallowWrapper {
                               className="date"
                             >
                               Invalid Date
+                            </span>,
+                            <span
+                              className="read-time-2"
+                            >
+                              undefined min read
                             </span>,
                           ],
                           "className": "d-flex flex-column ml-4 justify-content-end",
@@ -640,6 +680,18 @@ ShallowWrapper {
                             },
                             "ref": null,
                             "rendered": "Invalid Date",
+                            "type": "span",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "undefined min read",
+                              "className": "read-time-2",
+                            },
+                            "ref": null,
+                            "rendered": "undefined min read",
                             "type": "span",
                           },
                         ],
@@ -774,6 +826,11 @@ ShallowWrapper {
                       >
                         Invalid Date
                       </span>
+                      <span
+                        className="read-time-2"
+                      >
+                        undefined min read
+                      </span>
                     </div>
                   </t>
                 </t>
@@ -869,6 +926,11 @@ ShallowWrapper {
                       >
                         Invalid Date
                       </span>
+                      <span
+                        className="read-time-2"
+                      >
+                        undefined min read
+                      </span>
                     </div>
                   </t>
                 </t>
@@ -953,6 +1015,11 @@ ShallowWrapper {
                           className="date"
                         >
                           Invalid Date
+                        </span>
+                        <span
+                          className="read-time-2"
+                        >
+                          undefined min read
                         </span>
                       </div>
                     </t>
@@ -1050,6 +1117,11 @@ ShallowWrapper {
                         >
                           Invalid Date
                         </span>
+                        <span
+                          className="read-time-2"
+                        >
+                          undefined min read
+                        </span>
                       </div>
                     </t>
                   </t>
@@ -1124,6 +1196,11 @@ ShallowWrapper {
                           >
                             Invalid Date
                           </span>
+                          <span
+                            className="read-time-2"
+                          >
+                            undefined min read
+                          </span>
                         </div>
                       </t>
                     </t>,
@@ -1189,6 +1266,11 @@ ShallowWrapper {
                           >
                             Invalid Date
                           </span>
+                          <span
+                            className="read-time-2"
+                          >
+                            undefined min read
+                          </span>
                         </div>
                       </t>,
                       "lg": null,
@@ -1232,6 +1314,11 @@ ShallowWrapper {
                             >
                               Invalid Date
                             </span>
+                            <span
+                              className="read-time-2"
+                            >
+                              undefined min read
+                            </span>
                           </div>,
                         ],
                         "tag": "div",
@@ -1274,6 +1361,11 @@ ShallowWrapper {
                                 className="date"
                               >
                                 Invalid Date
+                              </span>,
+                              <span
+                                className="read-time-2"
+                              >
+                                undefined min read
                               </span>,
                             ],
                             "className": "d-flex flex-column ml-4 justify-content-end",
@@ -1323,6 +1415,18 @@ ShallowWrapper {
                               },
                               "ref": null,
                               "rendered": "Invalid Date",
+                              "type": "span",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "undefined min read",
+                                "className": "read-time-2",
+                              },
+                              "ref": null,
+                              "rendered": "undefined min read",
                               "type": "span",
                             },
                           ],

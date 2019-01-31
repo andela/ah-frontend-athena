@@ -1,12 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import FollowButton from '../../userFollowing/followButton/userFollowing';
+import FollowButton from "../../userFollowing/followButton/userFollowing";
 import "./ArticleHeader.scss";
 import ArticleOptions from "../articleOptions/ArticleOptions";
 
 const ArticleHeader = props => {
-  const { article, canModify, handleDelete, handleLink, classValue, handleClick, text , canFollow} = props;
+  const {
+    article,
+    canModify,
+    handleDelete,
+    handleLink,
+    classValue,
+    handleClick,
+    text,
+    canFollow
+  } = props;
   return (
     <MDBContainer className="mt-5 ">
       <MDBRow>
@@ -35,6 +44,7 @@ const ArticleHeader = props => {
                     <span className="date">
                       {new Date(article.created_at).toDateString()}
                     </span>
+                    <span className='read-time-2'>{article.read_time+ ' min read'}</span>
                   </div>
                 </MDBRow>
               </MDBCol>
@@ -62,16 +72,15 @@ ArticleHeader.propTypes = {
   handleLink: PropTypes.func,
   canModify: PropTypes.bool,
   canFollow: PropTypes.bool,
-  article: PropTypes.shape({}),
-
+  article: PropTypes.shape({})
 };
 
 ArticleHeader.defaultProps = {
   handleDelete: () => {},
   handleLink: () => {},
   handleClick: () => {},
-  classValue: '',
-  text: '',
+  classValue: "",
+  text: "",
   article: {
     author: { username: "", created_at: new Date("2019-01-19T10:42:09.625Z") }
   },
