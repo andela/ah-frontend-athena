@@ -54,6 +54,9 @@ describe("test profile edit component", () => {
     expect(updateProfile).toBeCalled();
   });
   it("test component should receive props", () => {
+    wrapper.setState({
+      profile: { username: "", email: "", bio: "", image: "" }
+    });
     wrapper.setProps({
       profile: { username: "shadik", email: "", bio: "", image: "" }
     });

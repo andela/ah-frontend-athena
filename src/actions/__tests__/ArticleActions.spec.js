@@ -7,7 +7,8 @@ import {
   getArticles,
   getSingleArticle,
   editArticle,
-  deleteArticle
+  deleteArticle,
+  setArticleReadCount
 } from "../articleActions/ArticleActions";
 
 const middlewares = [thunk];
@@ -54,12 +55,13 @@ describe("mock articles", () => {
 
     const articleAction = [
       {
-        "pages": {
-          "results": [{}, {}]},
-          "payload": [{}, {}],
-          "type": "GET_ARTICLES"
-        }
-      ];
+        pages: {
+          results: [{}, {}]
+        },
+        payload: [{}, {}],
+        type: "GET_ARTICLES"
+      }
+    ];
     const store = mockStore({ article: {} });
 
     return store.dispatch(getArticles("tag=''", "", "")).then(() => {
@@ -140,6 +142,29 @@ describe("mock articles", () => {
     const store = mockStore();
 
     return store.dispatch(deleteArticle("moked-slug")).then(() => {
+      expect(store.getActions()).toEqual(articleAction);
+    });
+  });
+  it("should mock article read count ", () => {
+    fetchMock
+      .postOnce(`${actionTypes.BASEURL}articles/moked-slug/10`, {
+        body: {},
+        headers: {
+          "content-type": "application/json",
+          authorization: "Bearer moked-token"
+        }
+      })
+      .catch(err => err);
+
+    const articleAction = [
+      {
+        type: actionTypes.READ_TIME,
+        payload: {}
+      }
+    ];
+    const store = mockStore();
+
+    return store.dispatch(setArticleReadCount("moked-slug", 10)).then(() => {
       expect(store.getActions()).toEqual(articleAction);
     });
   });

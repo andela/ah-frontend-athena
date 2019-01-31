@@ -95,7 +95,7 @@ const viewProfile = props => {
                           className="btn btn-success btn-sm"
                           type="button"
                         >
-                          edit
+                          view
                         </button>
                       </a>
                     </div>

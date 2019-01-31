@@ -110,11 +110,25 @@ const getMoreArticles = (page, searchParam = "") => dispatch => {
     .catch(err => err);
 };
 
+const setArticleReadCount = (slug, time) => dispatch => {
+  return fetch(`${actionTypes.BASEURL}articles/${slug}/${time}`, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    }
+  })
+    .then(res => res.json())
+    .then(res => {
+      dispatch({ type: actionTypes.READ_TIME, payload: res });
+    });
+};
+
 export {
   getMoreArticles,
   createArticles,
   getArticles,
   getSingleArticle,
   editArticle,
-  deleteArticle
+  deleteArticle,
+  setArticleReadCount
 };
