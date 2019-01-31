@@ -1,14 +1,55 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { MDBIcon } from "mdbreact";
-import "./CommentEdit.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { MDBIcon } from 'mdbreact';
+import './CommentEdit.scss';
 
-const CommentEdit = ({ clickReply, clickDelete, clickEdit, id }) => {
+const CommentEdit = ({
+  likes,
+  clickLike,
+  clickDisLike,
+  clickReply,
+  clickDelete,
+  clickEdit,
+  id
+}) => {
   const handleKeyUp = () => {};
-  
+  let dislikeClass = 'text-primary m-1';
+  if (likes <= 0) {
+    dislikeClass = dislikeClass + ' d-none';
+  }
+
   return (
     <div className="reply container row">
       <div className="col-8">
+        <div className="m-1 border rounded">
+          <span className="m-3">{likes}</span>
+          <span
+            id="like"
+            onClick={() => {
+              clickLike(id);
+            }}
+            onKeyUp={handleKeyUp}
+            role="button"
+            tabIndex="0"
+            className="text-primary m-1"
+          >
+            <MDBIcon icon="thumbs-up" />
+            &nbsp;&nbsp;
+          </span>
+          <span
+            id="dislike"
+            onClick={() => {
+              clickDisLike(id);
+            }}
+            onKeyUp={handleKeyUp}
+            role="button"
+            tabIndex="0"
+            className={dislikeClass}
+          >
+            <MDBIcon icon="thumbs-down" />
+            &nbsp;&nbsp;
+          </span>
+        </div>
         <span
           id="reply"
           onClick={() => {
@@ -54,16 +95,13 @@ const CommentEdit = ({ clickReply, clickDelete, clickEdit, id }) => {
 };
 
 CommentEdit.propTypes = {
-  clickReply: PropTypes.func,
-  clickDelete: PropTypes.func,
-  clickEdit: PropTypes.func,
-  id: PropTypes.number
+  clickReply: PropTypes.func.isRequired,
+  clickDelete: PropTypes.func.isRequired,
+  clickEdit: PropTypes.func.isRequired,
+  clickDisLike: PropTypes.func.isRequired,
+  clickLike: PropTypes.func.isRequired,
+  id: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired
 };
 
-CommentEdit.defaultProps = {
-  clickReply: () => {},
-  clickDelete: () => {},
-  clickEdit: () => {},
-  id: 0
-};
 export default CommentEdit;

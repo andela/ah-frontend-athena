@@ -1,26 +1,26 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import renderHTML from "react-render-html";
-import ArticleHeader from "../../../components/articles/articleHeader/ArticleHeader";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import renderHTML from 'react-render-html';
+import ArticleHeader from '../../../components/articles/articleHeader/ArticleHeader';
 import {
   getSingleArticle,
   deleteArticle,
   setArticleReadCount
-} from "../../../actions/articleActions/ArticleActions";
+} from '../../../actions/articleActions/ArticleActions';
 import {
   followUser,
   unFollowUser,
   getFollowing
-} from "../../../actions/userFollowActions";
-import "./ArticleView.scss";
-import ShareButtons from "../../../components/ShareArticleButtons/ShareArticleButtons";
-import Likes from "../../LikesView/Likes";
-import ModalPage from "../../../components/Likes/LoginModal";
-import RatingView from "../../../components/articles/articleRating/RatingView";
-import TagList from "../../TagList/TagList";
-import CommentsList from "../../../components/Comments/CommentsList/CommentsList";
-import Load from "../../../components/Load/Load";
+} from '../../../actions/userFollowActions';
+import './ArticleView.scss';
+import ShareButtons from '../../../components/ShareArticleButtons/ShareArticleButtons';
+import Likes from '../../LikesView/Likes';
+import ModalPage from '../../../components/Likes/LoginModal';
+import RatingView from '../../../components/articles/articleRating/RatingView';
+import TagList from '../../TagList/TagList';
+import CommentsList from '../../../components/Comments/CommentsList/CommentsList';
+import Load from '../../../components/Load/Load';
 
 export class ArticleView extends Component {
   constructor(props) {
@@ -28,24 +28,24 @@ export class ArticleView extends Component {
     this.state = {
       view_article: {
         id: 0,
-        title: "",
-        body: "",
-        description: "",
+        title: '',
+        body: '',
+        description: '',
         tagList: [],
         author: {
-          username: "",
-          bio: "",
-          image: "",
-          email: ""
+          username: '',
+          bio: '',
+          image: '',
+          email: ''
         },
-        created_at: "",
-        updated_at: ""
+        created_at: '',
+        updated_at: ''
       },
-      classValue: "btn primary-color btn-sm btn-outline-primary",
-      text: "Follow",
+      classValue: 'btn primary-color btn-sm btn-outline-primary',
+      text: 'Follow',
       following: false,
       modal: false,
-      load_article_time: ""
+      load_article_time: ''
     };
   }
   componentDidMount() {
@@ -60,19 +60,19 @@ export class ArticleView extends Component {
     this.setState({
       view_article: nextProps.view_article
     });
-    if ("following" in nextProps.followData) {
+    if ('following' in nextProps.followData) {
       const { following } = nextProps.followData;
       if (following) {
         this.setState({
-          classValue: "btn primary-color btn-sm",
-          text: "Following",
+          classValue: 'btn primary-color btn-sm',
+          text: 'Following',
           following: true
         });
       }
       if (!following) {
         this.setState({
-          classValue: "btn primary-color btn-sm btn-outline-primary",
-          text: "Follow",
+          classValue: 'btn primary-color btn-sm btn-outline-primary',
+          text: 'Follow',
           following: false
         });
       }
@@ -84,11 +84,11 @@ export class ArticleView extends Component {
       let following = false;
       if (Array.isArray(followData)) {
         for (let i in followData) {
-          following = Object.is(followData[i]["username"], username);
+          following = Object.is(followData[i]['username'], username);
           if (following) {
             this.setState({
-              classValue: "btn primary-color btn-sm",
-              text: "Following",
+              classValue: 'btn primary-color btn-sm',
+              text: 'Following',
               following: true
             });
             break;
@@ -96,8 +96,8 @@ export class ArticleView extends Component {
         }
         if (!following) {
           this.setState({
-            classValue: "btn primary-color btn-sm btn-outline-primary",
-            text: "Follow",
+            classValue: 'btn primary-color btn-sm btn-outline-primary',
+            text: 'Follow',
             following: false
           });
         }
@@ -118,7 +118,7 @@ export class ArticleView extends Component {
     const { following } = this.state;
     const { followUser } = this.props;
     const { unFollowUser } = this.props;
-    const token = window.localStorage.getItem("token");
+    const token = window.localStorage.getItem('token');
 
     if (token) {
       this.setState({ modal: false });
@@ -162,7 +162,7 @@ export class ArticleView extends Component {
       !view_article.errors &&
       view_article.title
     ) {
-      const user = window.localStorage.getItem("username");
+      const user = window.localStorage.getItem('username');
       let canModify = false;
       let canFollow = false;
       if (view_article.author) {
@@ -197,7 +197,7 @@ export class ArticleView extends Component {
 
           <div className="article-body container page mt-5">
             <div className="row article-content">
-              <div className="sidebar col-xs-1" style={{ marginRight: "50px" }}>
+              <div className="sidebar col-xs-1" style={{ marginRight: '50px' }}>
                 <ShareButtons />
               </div>
               <div className="col-md-11">
@@ -210,7 +210,7 @@ export class ArticleView extends Component {
             <hr />
           </div>
           <div className="mt-5 container">
-            <CommentsList slug={view_article.slug} />
+            <CommentsList history={history} slug={view_article.slug} />
           </div>
         </div>
       );
@@ -256,7 +256,7 @@ ArticleView.defaultProps = {
   view_article: {},
   followData: {},
   history: {},
-  slug: ""
+  slug: ''
 };
 
 export default connect(

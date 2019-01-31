@@ -4,7 +4,11 @@ exports[`ReplyList test matches snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ReplyList
+    CommentDislikeAction={[MockFunction]}
+    CommentLikeAction={[MockFunction]}
     clickDelete={[MockFunction]}
+    clickDisLike={[MockFunction]}
+    clickLike={[MockFunction]}
     commentList={Array []}
     isEdit={false}
     parentId={null}
@@ -27,11 +31,37 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [],
+      "children": Array [
+        Array [],
+        <ModalPage
+          fallback="/"
+          md="12"
+          modal={false}
+          title="Please first login "
+          toggle={[Function]}
+        />,
+      ],
       "className": undefined,
     },
     "ref": null,
-    "rendered": Array [],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "fallback": "/",
+          "history": undefined,
+          "md": "12",
+          "modal": false,
+          "title": "Please first login ",
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -40,11 +70,37 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [],
+        "children": Array [
+          Array [],
+          <ModalPage
+            fallback="/"
+            md="12"
+            modal={false}
+            title="Please first login "
+            toggle={[Function]}
+          />,
+        ],
         "className": undefined,
       },
       "ref": null,
-      "rendered": Array [],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "fallback": "/",
+            "history": undefined,
+            "md": "12",
+            "modal": false,
+            "title": "Please first login ",
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],
@@ -80,9 +136,8 @@ ShallowWrapper {
         },
       }
     }
-    img="url"
     parentId={1}
-    username="kasule"
+    username=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -135,16 +190,11 @@ ShallowWrapper {
                   className="img-fluid z-depth-1 square mr-2  rounded-circle"
                   src="url"
                 />
-                kasule
+                
               </div>
             </div>
           </t>
-          <CommentEdit
-            clickDelete={[Function]}
-            clickEdit={[Function]}
-            clickReply={[Function]}
-            id={0}
-          />
+          <CommentEdit />
           <Connect(ReplyList)
             replyList={Object {}}
           />
@@ -196,16 +246,11 @@ ShallowWrapper {
                   className="img-fluid z-depth-1 square mr-2  rounded-circle"
                   src="url"
                 />
-                kasule
+                
               </div>
             </div>
           </t>
-          <CommentEdit
-            clickDelete={[Function]}
-            clickEdit={[Function]}
-            clickReply={[Function]}
-            id={0}
-          />
+          <CommentEdit />
           <Connect(ReplyList)
             replyList={Object {}}
           />
@@ -256,16 +301,11 @@ ShallowWrapper {
                     className="img-fluid z-depth-1 square mr-2  rounded-circle"
                     src="url"
                   />
-                  kasule
+                  
                 </div>
               </div>
             </t>,
-            <CommentEdit
-              clickDelete={[Function]}
-              clickEdit={[Function]}
-              clickReply={[Function]}
-              id={0}
-            />,
+            <CommentEdit />,
             <Connect(ReplyList)
               replyList={Object {}}
             />,
@@ -312,7 +352,7 @@ ShallowWrapper {
                       className="img-fluid z-depth-1 square mr-2  rounded-circle"
                       src="url"
                     />
-                    kasule
+                    
                   </div>
                 </div>,
               ],
@@ -358,7 +398,7 @@ ShallowWrapper {
                         className="img-fluid z-depth-1 square mr-2  rounded-circle"
                         src="url"
                       />
-                      kasule
+                      
                     </div>,
                   ],
                   "className": "col-3 user-info  offset-9 border border-white",
@@ -413,7 +453,7 @@ ShallowWrapper {
                           className="img-fluid z-depth-1 square mr-2  rounded-circle"
                           src="url"
                         />,
-                        "kasule",
+                        "",
                       ],
                       "className": "mdc-chip",
                     },
@@ -432,7 +472,7 @@ ShallowWrapper {
                         "rendered": null,
                         "type": "img",
                       },
-                      "kasule",
+                      "",
                     ],
                     "type": "div",
                   },
@@ -447,10 +487,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "clickDelete": [Function],
-              "clickEdit": [Function],
-              "clickReply": [Function],
-              "id": 0,
+              "clickDelete": undefined,
+              "clickDisLike": undefined,
+              "clickEdit": undefined,
+              "clickLike": undefined,
+              "clickReply": undefined,
+              "id": undefined,
+              "likes": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -546,16 +589,11 @@ ShallowWrapper {
                     className="img-fluid z-depth-1 square mr-2  rounded-circle"
                     src="url"
                   />
-                  kasule
+                  
                 </div>
               </div>
             </t>
-            <CommentEdit
-              clickDelete={[Function]}
-              clickEdit={[Function]}
-              clickReply={[Function]}
-              id={0}
-            />
+            <CommentEdit />
             <Connect(ReplyList)
               replyList={Object {}}
             />
@@ -607,16 +645,11 @@ ShallowWrapper {
                     className="img-fluid z-depth-1 square mr-2  rounded-circle"
                     src="url"
                   />
-                  kasule
+                  
                 </div>
               </div>
             </t>
-            <CommentEdit
-              clickDelete={[Function]}
-              clickEdit={[Function]}
-              clickReply={[Function]}
-              id={0}
-            />
+            <CommentEdit />
             <Connect(ReplyList)
               replyList={Object {}}
             />
@@ -667,16 +700,11 @@ ShallowWrapper {
                       className="img-fluid z-depth-1 square mr-2  rounded-circle"
                       src="url"
                     />
-                    kasule
+                    
                   </div>
                 </div>
               </t>,
-              <CommentEdit
-                clickDelete={[Function]}
-                clickEdit={[Function]}
-                clickReply={[Function]}
-                id={0}
-              />,
+              <CommentEdit />,
               <Connect(ReplyList)
                 replyList={Object {}}
               />,
@@ -723,7 +751,7 @@ ShallowWrapper {
                         className="img-fluid z-depth-1 square mr-2  rounded-circle"
                         src="url"
                       />
-                      kasule
+                      
                     </div>
                   </div>,
                 ],
@@ -769,7 +797,7 @@ ShallowWrapper {
                           className="img-fluid z-depth-1 square mr-2  rounded-circle"
                           src="url"
                         />
-                        kasule
+                        
                       </div>,
                     ],
                     "className": "col-3 user-info  offset-9 border border-white",
@@ -824,7 +852,7 @@ ShallowWrapper {
                             className="img-fluid z-depth-1 square mr-2  rounded-circle"
                             src="url"
                           />,
-                          "kasule",
+                          "",
                         ],
                         "className": "mdc-chip",
                       },
@@ -843,7 +871,7 @@ ShallowWrapper {
                           "rendered": null,
                           "type": "img",
                         },
-                        "kasule",
+                        "",
                       ],
                       "type": "div",
                     },
@@ -858,10 +886,13 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "clickDelete": [Function],
-                "clickEdit": [Function],
-                "clickReply": [Function],
-                "id": 0,
+                "clickDelete": undefined,
+                "clickDisLike": undefined,
+                "clickEdit": undefined,
+                "clickLike": undefined,
+                "clickReply": undefined,
+                "id": undefined,
+                "likes": undefined,
               },
               "ref": null,
               "rendered": null,
