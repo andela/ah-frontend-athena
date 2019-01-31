@@ -17,8 +17,9 @@ import ArticleView from "./views/Articles/articleView/ArticleView";
 import ArticleEdit from "./views/Articles/articleEdit/ArticleEdit";
 import ArticleCreate from "./views/Articles/articleCreate/ArticleCreate";
 import Likes from "./views/LikesView/Likes";
-import Followers from './views/followsView/followersView/followersView';
-import Following from './views/followsView/followingView/followingView';
+import Followers from "./views/followsView/followersView/followersView";
+import Following from "./views/followsView/followingView/followingView";
+import Bookmarks from "./views/BookmarksView/BookmarksView";
 
 const Routes = () => (
   <Router>
@@ -35,8 +36,8 @@ const Routes = () => (
         <Route path="/profile/:username" component={ProfileEdit} exact />
         <Route path="/passwordreset" component={PasswordResetView} exact />
         <Route path="/like" component={Likes} exact />
-        <Route path='/followers' component={Followers} exact />
-        <Route path='/following' component={Following} exact />
+        <Route path="/followers" component={Followers} exact />
+        <Route path="/following" component={Following} exact />
         <Route
           path="/password_reset_confirm/:token"
           component={PasswordResetConfirmView}
@@ -47,6 +48,7 @@ const Routes = () => (
         <Route path="/create" component={ArticleCreate} exact />
         <Route path="/articles/:slug" component={ArticleView} exact />
         <Route path="/articles/edit/:slug" component={ArticleEdit} />
+        <Route path="/bookmarks" component={Bookmarks} />
         <Route path="*" component={NotFound} />
       </Switch>
     </Provider>

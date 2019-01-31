@@ -1,0 +1,648 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing BookmarksList should render the BookmarksList when there is data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BookmarkedList
+    articles={
+      Array [
+        Object {
+          "article": 33,
+          "article_slug": "demo-following-a12e4852a6fc",
+          "id": 3,
+          "profile": 7,
+        },
+        Object {
+          "article": 36,
+          "article_slug": "how-top-performing-college-grads-fall-into-the-prestige-career-trap-7d76a6e1eebe",
+          "id": 2,
+          "profile": 7,
+        },
+        Object {
+          "article": 53,
+          "article_slug": "how-to-train-your-dragon-f7cb408048ca",
+          "id": 1,
+          "profile": 7,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <t
+        style={
+          Object {
+            "marginTop": "1rem",
+            "width": "80%",
+          }
+        }
+        tag="ul"
+      >
+        <h4
+          className="d-flex justify-content-center"
+          style={
+            Object {
+              "marginTop": "1rem",
+            }
+          }
+        >
+          Bookmarks
+        </h4>
+        <t
+          className="view overlay bookmark-article-link"
+          href="/articles/demo-following-a12e4852a6fc"
+          tag="li"
+        >
+          <h5>
+            <b>
+              1. Demo following
+            </b>
+          </h5>
+        </t>
+        <t
+          className="view overlay bookmark-article-link"
+          href="/articles/how-top-performing-college-grads-fall-into-the-prestige-career-trap-7d76a6e1eebe"
+          tag="li"
+        >
+          <h5>
+            <b>
+              2. How top performing college grads fall into the prestige career trap
+            </b>
+          </h5>
+        </t>
+        <t
+          className="view overlay bookmark-article-link"
+          href="/articles/how-to-train-your-dragon-f7cb408048ca"
+          tag="li"
+        >
+          <h5>
+            <b>
+              3. How to train your dragon
+            </b>
+          </h5>
+        </t>
+      </t>,
+      "className": "d-flex justify-content-center",
+      "fluid": false,
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <h4
+            className="d-flex justify-content-center"
+            style={
+              Object {
+                "marginTop": "1rem",
+              }
+            }
+          >
+            Bookmarks
+          </h4>,
+          Array [
+            <t
+              className="view overlay bookmark-article-link"
+              href="/articles/demo-following-a12e4852a6fc"
+              tag="li"
+            >
+              <h5>
+                <b>
+                  1. Demo following
+                </b>
+              </h5>
+            </t>,
+            <t
+              className="view overlay bookmark-article-link"
+              href="/articles/how-top-performing-college-grads-fall-into-the-prestige-career-trap-7d76a6e1eebe"
+              tag="li"
+            >
+              <h5>
+                <b>
+                  2. How top performing college grads fall into the prestige career trap
+                </b>
+              </h5>
+            </t>,
+            <t
+              className="view overlay bookmark-article-link"
+              href="/articles/how-to-train-your-dragon-f7cb408048ca"
+              tag="li"
+            >
+              <h5>
+                <b>
+                  3. How to train your dragon
+                </b>
+              </h5>
+            </t>,
+          ],
+        ],
+        "style": Object {
+          "marginTop": "1rem",
+          "width": "80%",
+        },
+        "tag": "ul",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Bookmarks",
+            "className": "d-flex justify-content-center",
+            "style": Object {
+              "marginTop": "1rem",
+            },
+          },
+          "ref": null,
+          "rendered": "Bookmarks",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <h5>
+              <b>
+                1. Demo following
+              </b>
+            </h5>,
+            "className": "view overlay bookmark-article-link",
+            "href": "/articles/demo-following-a12e4852a6fc",
+            "tag": "li",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <b>
+                1. Demo following
+              </b>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1. Demo following",
+              },
+              "ref": null,
+              "rendered": "1. Demo following",
+              "type": "b",
+            },
+            "type": "h5",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <h5>
+              <b>
+                2. How top performing college grads fall into the prestige career trap
+              </b>
+            </h5>,
+            "className": "view overlay bookmark-article-link",
+            "href": "/articles/how-top-performing-college-grads-fall-into-the-prestige-career-trap-7d76a6e1eebe",
+            "tag": "li",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <b>
+                2. How top performing college grads fall into the prestige career trap
+              </b>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2. How top performing college grads fall into the prestige career trap",
+              },
+              "ref": null,
+              "rendered": "2. How top performing college grads fall into the prestige career trap",
+              "type": "b",
+            },
+            "type": "h5",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <h5>
+              <b>
+                3. How to train your dragon
+              </b>
+            </h5>,
+            "className": "view overlay bookmark-article-link",
+            "href": "/articles/how-to-train-your-dragon-f7cb408048ca",
+            "tag": "li",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <b>
+                3. How to train your dragon
+              </b>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "3. How to train your dragon",
+              },
+              "ref": null,
+              "rendered": "3. How to train your dragon",
+              "type": "b",
+            },
+            "type": "h5",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          style={
+            Object {
+              "marginTop": "1rem",
+              "width": "80%",
+            }
+          }
+          tag="ul"
+        >
+          <h4
+            className="d-flex justify-content-center"
+            style={
+              Object {
+                "marginTop": "1rem",
+              }
+            }
+          >
+            Bookmarks
+          </h4>
+          <t
+            className="view overlay bookmark-article-link"
+            href="/articles/demo-following-a12e4852a6fc"
+            tag="li"
+          >
+            <h5>
+              <b>
+                1. Demo following
+              </b>
+            </h5>
+          </t>
+          <t
+            className="view overlay bookmark-article-link"
+            href="/articles/how-top-performing-college-grads-fall-into-the-prestige-career-trap-7d76a6e1eebe"
+            tag="li"
+          >
+            <h5>
+              <b>
+                2. How top performing college grads fall into the prestige career trap
+              </b>
+            </h5>
+          </t>
+          <t
+            className="view overlay bookmark-article-link"
+            href="/articles/how-to-train-your-dragon-f7cb408048ca"
+            tag="li"
+          >
+            <h5>
+              <b>
+                3. How to train your dragon
+              </b>
+            </h5>
+          </t>
+        </t>,
+        "className": "d-flex justify-content-center",
+        "fluid": false,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="d-flex justify-content-center"
+              style={
+                Object {
+                  "marginTop": "1rem",
+                }
+              }
+            >
+              Bookmarks
+            </h4>,
+            Array [
+              <t
+                className="view overlay bookmark-article-link"
+                href="/articles/demo-following-a12e4852a6fc"
+                tag="li"
+              >
+                <h5>
+                  <b>
+                    1. Demo following
+                  </b>
+                </h5>
+              </t>,
+              <t
+                className="view overlay bookmark-article-link"
+                href="/articles/how-top-performing-college-grads-fall-into-the-prestige-career-trap-7d76a6e1eebe"
+                tag="li"
+              >
+                <h5>
+                  <b>
+                    2. How top performing college grads fall into the prestige career trap
+                  </b>
+                </h5>
+              </t>,
+              <t
+                className="view overlay bookmark-article-link"
+                href="/articles/how-to-train-your-dragon-f7cb408048ca"
+                tag="li"
+              >
+                <h5>
+                  <b>
+                    3. How to train your dragon
+                  </b>
+                </h5>
+              </t>,
+            ],
+          ],
+          "style": Object {
+            "marginTop": "1rem",
+            "width": "80%",
+          },
+          "tag": "ul",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Bookmarks",
+              "className": "d-flex justify-content-center",
+              "style": Object {
+                "marginTop": "1rem",
+              },
+            },
+            "ref": null,
+            "rendered": "Bookmarks",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <h5>
+                <b>
+                  1. Demo following
+                </b>
+              </h5>,
+              "className": "view overlay bookmark-article-link",
+              "href": "/articles/demo-following-a12e4852a6fc",
+              "tag": "li",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <b>
+                  1. Demo following
+                </b>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1. Demo following",
+                },
+                "ref": null,
+                "rendered": "1. Demo following",
+                "type": "b",
+              },
+              "type": "h5",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <h5>
+                <b>
+                  2. How top performing college grads fall into the prestige career trap
+                </b>
+              </h5>,
+              "className": "view overlay bookmark-article-link",
+              "href": "/articles/how-top-performing-college-grads-fall-into-the-prestige-career-trap-7d76a6e1eebe",
+              "tag": "li",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <b>
+                  2. How top performing college grads fall into the prestige career trap
+                </b>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "2. How top performing college grads fall into the prestige career trap",
+                },
+                "ref": null,
+                "rendered": "2. How top performing college grads fall into the prestige career trap",
+                "type": "b",
+              },
+              "type": "h5",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <h5>
+                <b>
+                  3. How to train your dragon
+                </b>
+              </h5>,
+              "className": "view overlay bookmark-article-link",
+              "href": "/articles/how-to-train-your-dragon-f7cb408048ca",
+              "tag": "li",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <b>
+                  3. How to train your dragon
+                </b>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "3. How to train your dragon",
+                },
+                "ref": null,
+                "rendered": "3. How to train your dragon",
+                "type": "b",
+              },
+              "type": "h5",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing BookmarksList should render the BookmarksList when there is no data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BookmarkedList />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Loading...",
+      "className": "d-flex justify-content-center",
+      "style": Object {
+        "marginTop": "20%",
+      },
+    },
+    "ref": null,
+    "rendered": "Loading...",
+    "type": "h4",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Loading...",
+        "className": "d-flex justify-content-center",
+        "style": Object {
+          "marginTop": "20%",
+        },
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": "h4",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
