@@ -7,6 +7,9 @@ import { getArticles } from "../../../actions/articleActions/ArticleActions";
 import getTags from "../../../actions/tagsAction";
 import TagsForm from "../../../components/Tags/TagsForm/TagsForm";
 import Paginations from "../../Pagination/Paginations";
+import Search from "../../Search/Search";
+import Load from "../../../components/Load/Load";
+import "./ArticleList.scss";
 
 export class ArticleList extends Component {
   constructor(props) {
@@ -44,25 +47,40 @@ export class ArticleList extends Component {
       pageNumber.push(i);
     }
 
-    if (articles) {
-      const list = articles.map(article => {
+    if (articles.length === 0) {
+      return (
+        <div>
+          <h1
+            className="d-flex justify-content-center"
+            style={{ marginTop: "20%" }}
+          >
+            There are no articles for this search
+          </h1>
+        </div>
+      );
+    } else if (articles) {
+      const art = articles.map(article => {
         return <ArticleItem key={article.id} article={article} />;
       });
       return (
         <MDBContainer className="pl-3">
           <MDBRow>
             <MDBCol size="9" className="w-100 m-0">
-              {list}
-              <Paginations fullArticle={fullArticle} update={this.updateArticleList} />
+              {art}
+              <Paginations
+                fullArticle={fullArticle}
+                update={this.updateArticleList}
+              />
             </MDBCol>
             <MDBCol size="3" className="position-sticky m1">
+              <Search />
               <TagsForm tags={tags} />
             </MDBCol>
           </MDBRow>
         </MDBContainer>
       );
     } else {
-      return <div />;
+      return <Load />;
     }
   }
 }

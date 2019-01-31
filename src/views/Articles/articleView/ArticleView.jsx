@@ -19,7 +19,7 @@ import ModalPage from "../../../components/Likes/LoginModal";
 import RatingView from "../../../components/articles/articleRating/RatingView";
 import TagList from "../../TagList/TagList";
 import CommentsList from "../../../components/Comments/CommentsList/CommentsList";
-
+import Load from "../../../components/Load/Load";
 
 export class ArticleView extends Component {
   constructor(props) {
@@ -204,7 +204,11 @@ export class ArticleView extends Component {
         </div>
       );
     } else {
-      return <div>Loading...</div>;
+      return (
+        <div className="center-parent">
+          <Load />
+        </div>
+      );
     }
   }
 }

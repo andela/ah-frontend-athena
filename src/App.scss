@@ -51,11 +51,13 @@
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0.125rem;
   color: #fff !important;
+  cursor: pointer;
 }
 
 .badge-vover {
   &:hover {
     color: #ffff !important;
+    cursor: pointer;
   }
 }
 
@@ -111,4 +113,37 @@ card {
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0) !important;
   border: 0.9px solid #d4c9c9 !important;
   max-width: 75%;
+}
+
+.btn-light.btn-search {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+.btn-search {
+  border-radius: 0;
+  font-size: 7px;
+  padding: 0.5rem 1.6rem;
+  size: 45px;
+}
+
+.btn-search {
+  box-shadow: 0 !important;
+  padding: 0.84rem 2.14rem;
+  font-size: 0.81rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin: 0.375rem;
+  border: 0;
+  border-radius: 0.125rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: normal;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+.btn.btn-sm.btn-search {
+  font-size: 11px;
+  size: 45px;
 }

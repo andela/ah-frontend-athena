@@ -1,23 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArticleList> matches snapshort 1`] = `
+exports[`<Search> matches snapshort 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArticleList
-    articles={Array []}
-    author={
-      Object {
-        "username": "henry",
-      }
-    }
-    body="this is body"
-    description="description"
-    fullArticle={Object {}}
+  Symbol(enzyme.__unrendered__): <Search
     getArticles={[Function]}
-    getTags={[Function]}
-    results={Object {}}
-    tags={Array []}
-    title="title"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -32,32 +19,25 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1
-        className="d-flex justify-content-center"
-        style={
-          Object {
-            "marginTop": "20%",
-          }
-        }
-      >
-        There are no articles for this search
-      </h1>,
+      "children": <SearchForm
+        handleChange={[Function]}
+        handleSubmit={[Function]}
+        search_active={false}
+      />,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": "There are no articles for this search",
-        "className": "d-flex justify-content-center",
-        "style": Object {
-          "marginTop": "20%",
-        },
+        "handleChange": [Function],
+        "handleSubmit": [Function],
+        "search_active": false,
       },
       "ref": null,
-      "rendered": "There are no articles for this search",
-      "type": "h1",
+      "rendered": null,
+      "type": [Function],
     },
     "type": "div",
   },
@@ -67,32 +47,25 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1
-          className="d-flex justify-content-center"
-          style={
-            Object {
-              "marginTop": "20%",
-            }
-          }
-        >
-          There are no articles for this search
-        </h1>,
+        "children": <SearchForm
+          handleChange={[Function]}
+          handleSubmit={[Function]}
+          search_active={false}
+        />,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
-          "children": "There are no articles for this search",
-          "className": "d-flex justify-content-center",
-          "style": Object {
-            "marginTop": "20%",
-          },
+          "handleChange": [Function],
+          "handleSubmit": [Function],
+          "search_active": false,
         },
         "ref": null,
-        "rendered": "There are no articles for this search",
-        "type": "h1",
+        "rendered": null,
+        "type": [Function],
       },
       "type": "div",
     },
