@@ -1,0 +1,1285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentsList test matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CommentsList
+    CommentDeleteAction={[Function]}
+    CommentGetAction={[Function]}
+    commentList={
+      Array [
+        Object {
+          "author": Object {
+            "image": "",
+          },
+          "replies": Object {},
+        },
+        Object {
+          "author": Object {
+            "image": "",
+          },
+          "replies": Object {},
+        },
+      ]
+    }
+    data={Object {}}
+    dateToHours={[Function]}
+    isEdit={false}
+    refresh={false}
+    showComBox="d-none"
+    showReplies="d-none"
+    slug={Object {}}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Connect(ReplyBox)
+          art_slug={Object {}}
+          childId={null}
+          isEdit={false}
+          parentId={null}
+        />,
+        Array [],
+      ],
+      "className": "m-1 p-1 container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "art_slug": Object {},
+          "childId": null,
+          "isEdit": false,
+          "parentId": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(ReplyBox)
+            art_slug={Object {}}
+            childId={null}
+            isEdit={false}
+            parentId={null}
+          />,
+          Array [],
+        ],
+        "className": "m-1 p-1 container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "art_slug": Object {},
+            "childId": null,
+            "isEdit": false,
+            "parentId": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`test load reply should take a snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoadReply
+    CommentDeleteAction={[Function]}
+    art_slug="mock-slug1"
+    childId={1}
+    comment={Object {}}
+    commentList={
+      Array [
+        Object {
+          "author": Object {
+            "image": "",
+          },
+          "replies": Object {},
+        },
+        Object {
+          "author": Object {
+            "image": "",
+          },
+          "replies": Object {},
+        },
+      ]
+    }
+    dateToHours={[Function]}
+    img="url"
+    isEdit={false}
+    onKeyUp={[Function]}
+    parentId={1}
+    parentId2={1}
+    replyList={Array []}
+    showComBox="d-none"
+    showReplies="d-none"
+    slug="mock-slug"
+    username="kasule"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <t
+        className="mt-3 p-0 m-0"
+        fluid={false}
+        tag="div"
+      >
+        <t
+          className="mw-80"
+          tag="div"
+        >
+          <t
+            className="mw-100"
+            tag="div"
+          >
+            <h6
+              className="comment-body"
+            />
+            <div
+              className="col-3 user-info  offset-9 border border-white"
+            >
+              <div
+                className="date"
+              >
+                <t
+                  className="mr-2"
+                  color="light"
+                  pill={false}
+                  tag="span"
+                />
+                Hours ago
+              </div>
+              <div
+                className="mdc-chip"
+              >
+                <img
+                  alt="Contact Person"
+                  className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                  src="url"
+                />
+                kasule
+              </div>
+            </div>
+            <CommentEdit
+              clickDelete={[Function]}
+              clickEdit={[Function]}
+              clickReply={[Function]}
+              id={0}
+            />
+            <div
+              className="col-4 text-primary"
+              onKeyUp={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              view all...
+            </div>
+            <div
+              className="d-none"
+            >
+              <ReplyList
+                CommentDeleteAction={[Function]}
+                parentId={1}
+                replyList={Array []}
+                show={[Function]}
+                slug="mock-slug"
+              />
+            </div>
+            <div
+              className="d-none"
+            >
+              <Connect(ReplyBox)
+                art_slug="mock-slug1"
+                childId={1}
+                isEdit={false}
+                parentId={1}
+              />
+            </div>
+          </t>
+        </t>
+      </t>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <t
+          className="mw-80"
+          tag="div"
+        >
+          <t
+            className="mw-100"
+            tag="div"
+          >
+            <h6
+              className="comment-body"
+            />
+            <div
+              className="col-3 user-info  offset-9 border border-white"
+            >
+              <div
+                className="date"
+              >
+                <t
+                  className="mr-2"
+                  color="light"
+                  pill={false}
+                  tag="span"
+                />
+                Hours ago
+              </div>
+              <div
+                className="mdc-chip"
+              >
+                <img
+                  alt="Contact Person"
+                  className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                  src="url"
+                />
+                kasule
+              </div>
+            </div>
+            <CommentEdit
+              clickDelete={[Function]}
+              clickEdit={[Function]}
+              clickReply={[Function]}
+              id={0}
+            />
+            <div
+              className="col-4 text-primary"
+              onKeyUp={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              view all...
+            </div>
+            <div
+              className="d-none"
+            >
+              <ReplyList
+                CommentDeleteAction={[Function]}
+                parentId={1}
+                replyList={Array []}
+                show={[Function]}
+                slug="mock-slug"
+              />
+            </div>
+            <div
+              className="d-none"
+            >
+              <Connect(ReplyBox)
+                art_slug="mock-slug1"
+                childId={1}
+                isEdit={false}
+                parentId={1}
+              />
+            </div>
+          </t>
+        </t>,
+        "className": "mt-3 p-0 m-0",
+        "fluid": false,
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <t
+            className="mw-100"
+            tag="div"
+          >
+            <h6
+              className="comment-body"
+            />
+            <div
+              className="col-3 user-info  offset-9 border border-white"
+            >
+              <div
+                className="date"
+              >
+                <t
+                  className="mr-2"
+                  color="light"
+                  pill={false}
+                  tag="span"
+                />
+                Hours ago
+              </div>
+              <div
+                className="mdc-chip"
+              >
+                <img
+                  alt="Contact Person"
+                  className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                  src="url"
+                />
+                kasule
+              </div>
+            </div>
+            <CommentEdit
+              clickDelete={[Function]}
+              clickEdit={[Function]}
+              clickReply={[Function]}
+              id={0}
+            />
+            <div
+              className="col-4 text-primary"
+              onKeyUp={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              view all...
+            </div>
+            <div
+              className="d-none"
+            >
+              <ReplyList
+                CommentDeleteAction={[Function]}
+                parentId={1}
+                replyList={Array []}
+                show={[Function]}
+                slug="mock-slug"
+              />
+            </div>
+            <div
+              className="d-none"
+            >
+              <Connect(ReplyBox)
+                art_slug="mock-slug1"
+                childId={1}
+                isEdit={false}
+                parentId={1}
+              />
+            </div>
+          </t>,
+          "className": "mw-80",
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <h6
+                className="comment-body"
+              />,
+              <div
+                className="col-3 user-info  offset-9 border border-white"
+              >
+                <div
+                  className="date"
+                >
+                  <t
+                    className="mr-2"
+                    color="light"
+                    pill={false}
+                    tag="span"
+                  />
+                  Hours ago
+                </div>
+                <div
+                  className="mdc-chip"
+                >
+                  <img
+                    alt="Contact Person"
+                    className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                    src="url"
+                  />
+                  kasule
+                </div>
+              </div>,
+              <CommentEdit
+                clickDelete={[Function]}
+                clickEdit={[Function]}
+                clickReply={[Function]}
+                id={0}
+              />,
+              <div
+                className="col-4 text-primary"
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                view all...
+              </div>,
+              <div
+                className="d-none"
+              >
+                <ReplyList
+                  CommentDeleteAction={[Function]}
+                  parentId={1}
+                  replyList={Array []}
+                  show={[Function]}
+                  slug="mock-slug"
+                />
+              </div>,
+              <div
+                className="d-none"
+              >
+                <Connect(ReplyBox)
+                  art_slug="mock-slug1"
+                  childId={1}
+                  isEdit={false}
+                  parentId={1}
+                />
+              </div>,
+            ],
+            "className": "mw-100",
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "comment-body",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="date"
+                  >
+                    <t
+                      className="mr-2"
+                      color="light"
+                      pill={false}
+                      tag="span"
+                    />
+                    Hours ago
+                  </div>,
+                  <div
+                    className="mdc-chip"
+                  >
+                    <img
+                      alt="Contact Person"
+                      className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                      src="url"
+                    />
+                    kasule
+                  </div>,
+                ],
+                "className": "col-3 user-info  offset-9 border border-white",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <t
+                        className="mr-2"
+                        color="light"
+                        pill={false}
+                        tag="span"
+                      />,
+                      "Hours ago",
+                    ],
+                    "className": "date",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "mr-2",
+                        "color": "light",
+                        "pill": false,
+                        "tag": "span",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "Hours ago",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <img
+                        alt="Contact Person"
+                        className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                        src="url"
+                      />,
+                      "kasule",
+                    ],
+                    "className": "mdc-chip",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Contact Person",
+                        "className": "img-fluid z-depth-1 square mr-2  rounded-circle",
+                        "src": "url",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "kasule",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "CommentEditAction": undefined,
+                "clickDelete": [Function],
+                "clickEdit": [Function],
+                "clickReply": [Function],
+                "id": 0,
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "view all...",
+                "className": "col-4 text-primary",
+                "onClick": undefined,
+                "onKeyUp": [Function],
+                "role": "button",
+                "tabIndex": "0",
+              },
+              "ref": null,
+              "rendered": "view all...",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ReplyList
+                  CommentDeleteAction={[Function]}
+                  parentId={1}
+                  replyList={Array []}
+                  show={[Function]}
+                  slug="mock-slug"
+                />,
+                "className": "d-none",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "CommentDeleteAction": [Function],
+                  "onSubmitReply": undefined,
+                  "parentId": 1,
+                  "repliesShow": undefined,
+                  "replyList": Array [],
+                  "show": [Function],
+                  "slug": "mock-slug",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(ReplyBox)
+                  art_slug="mock-slug1"
+                  childId={1}
+                  isEdit={false}
+                  parentId={1}
+                />,
+                "className": "d-none",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "art_slug": "mock-slug1",
+                  "childId": 1,
+                  "isEdit": false,
+                  "parentId": 1,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <t
+          className="mt-3 p-0 m-0"
+          fluid={false}
+          tag="div"
+        >
+          <t
+            className="mw-80"
+            tag="div"
+          >
+            <t
+              className="mw-100"
+              tag="div"
+            >
+              <h6
+                className="comment-body"
+              />
+              <div
+                className="col-3 user-info  offset-9 border border-white"
+              >
+                <div
+                  className="date"
+                >
+                  <t
+                    className="mr-2"
+                    color="light"
+                    pill={false}
+                    tag="span"
+                  />
+                  Hours ago
+                </div>
+                <div
+                  className="mdc-chip"
+                >
+                  <img
+                    alt="Contact Person"
+                    className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                    src="url"
+                  />
+                  kasule
+                </div>
+              </div>
+              <CommentEdit
+                clickDelete={[Function]}
+                clickEdit={[Function]}
+                clickReply={[Function]}
+                id={0}
+              />
+              <div
+                className="col-4 text-primary"
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                view all...
+              </div>
+              <div
+                className="d-none"
+              >
+                <ReplyList
+                  CommentDeleteAction={[Function]}
+                  parentId={1}
+                  replyList={Array []}
+                  show={[Function]}
+                  slug="mock-slug"
+                />
+              </div>
+              <div
+                className="d-none"
+              >
+                <Connect(ReplyBox)
+                  art_slug="mock-slug1"
+                  childId={1}
+                  isEdit={false}
+                  parentId={1}
+                />
+              </div>
+            </t>
+          </t>
+        </t>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <t
+            className="mw-80"
+            tag="div"
+          >
+            <t
+              className="mw-100"
+              tag="div"
+            >
+              <h6
+                className="comment-body"
+              />
+              <div
+                className="col-3 user-info  offset-9 border border-white"
+              >
+                <div
+                  className="date"
+                >
+                  <t
+                    className="mr-2"
+                    color="light"
+                    pill={false}
+                    tag="span"
+                  />
+                  Hours ago
+                </div>
+                <div
+                  className="mdc-chip"
+                >
+                  <img
+                    alt="Contact Person"
+                    className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                    src="url"
+                  />
+                  kasule
+                </div>
+              </div>
+              <CommentEdit
+                clickDelete={[Function]}
+                clickEdit={[Function]}
+                clickReply={[Function]}
+                id={0}
+              />
+              <div
+                className="col-4 text-primary"
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                view all...
+              </div>
+              <div
+                className="d-none"
+              >
+                <ReplyList
+                  CommentDeleteAction={[Function]}
+                  parentId={1}
+                  replyList={Array []}
+                  show={[Function]}
+                  slug="mock-slug"
+                />
+              </div>
+              <div
+                className="d-none"
+              >
+                <Connect(ReplyBox)
+                  art_slug="mock-slug1"
+                  childId={1}
+                  isEdit={false}
+                  parentId={1}
+                />
+              </div>
+            </t>
+          </t>,
+          "className": "mt-3 p-0 m-0",
+          "fluid": false,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <t
+              className="mw-100"
+              tag="div"
+            >
+              <h6
+                className="comment-body"
+              />
+              <div
+                className="col-3 user-info  offset-9 border border-white"
+              >
+                <div
+                  className="date"
+                >
+                  <t
+                    className="mr-2"
+                    color="light"
+                    pill={false}
+                    tag="span"
+                  />
+                  Hours ago
+                </div>
+                <div
+                  className="mdc-chip"
+                >
+                  <img
+                    alt="Contact Person"
+                    className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                    src="url"
+                  />
+                  kasule
+                </div>
+              </div>
+              <CommentEdit
+                clickDelete={[Function]}
+                clickEdit={[Function]}
+                clickReply={[Function]}
+                id={0}
+              />
+              <div
+                className="col-4 text-primary"
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                view all...
+              </div>
+              <div
+                className="d-none"
+              >
+                <ReplyList
+                  CommentDeleteAction={[Function]}
+                  parentId={1}
+                  replyList={Array []}
+                  show={[Function]}
+                  slug="mock-slug"
+                />
+              </div>
+              <div
+                className="d-none"
+              >
+                <Connect(ReplyBox)
+                  art_slug="mock-slug1"
+                  childId={1}
+                  isEdit={false}
+                  parentId={1}
+                />
+              </div>
+            </t>,
+            "className": "mw-80",
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <h6
+                  className="comment-body"
+                />,
+                <div
+                  className="col-3 user-info  offset-9 border border-white"
+                >
+                  <div
+                    className="date"
+                  >
+                    <t
+                      className="mr-2"
+                      color="light"
+                      pill={false}
+                      tag="span"
+                    />
+                    Hours ago
+                  </div>
+                  <div
+                    className="mdc-chip"
+                  >
+                    <img
+                      alt="Contact Person"
+                      className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                      src="url"
+                    />
+                    kasule
+                  </div>
+                </div>,
+                <CommentEdit
+                  clickDelete={[Function]}
+                  clickEdit={[Function]}
+                  clickReply={[Function]}
+                  id={0}
+                />,
+                <div
+                  className="col-4 text-primary"
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex="0"
+                >
+                  view all...
+                </div>,
+                <div
+                  className="d-none"
+                >
+                  <ReplyList
+                    CommentDeleteAction={[Function]}
+                    parentId={1}
+                    replyList={Array []}
+                    show={[Function]}
+                    slug="mock-slug"
+                  />
+                </div>,
+                <div
+                  className="d-none"
+                >
+                  <Connect(ReplyBox)
+                    art_slug="mock-slug1"
+                    childId={1}
+                    isEdit={false}
+                    parentId={1}
+                  />
+                </div>,
+              ],
+              "className": "mw-100",
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "className": "comment-body",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "h6",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="date"
+                    >
+                      <t
+                        className="mr-2"
+                        color="light"
+                        pill={false}
+                        tag="span"
+                      />
+                      Hours ago
+                    </div>,
+                    <div
+                      className="mdc-chip"
+                    >
+                      <img
+                        alt="Contact Person"
+                        className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                        src="url"
+                      />
+                      kasule
+                    </div>,
+                  ],
+                  "className": "col-3 user-info  offset-9 border border-white",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <t
+                          className="mr-2"
+                          color="light"
+                          pill={false}
+                          tag="span"
+                        />,
+                        "Hours ago",
+                      ],
+                      "className": "date",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": undefined,
+                          "className": "mr-2",
+                          "color": "light",
+                          "pill": false,
+                          "tag": "span",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "Hours ago",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <img
+                          alt="Contact Person"
+                          className="img-fluid z-depth-1 square mr-2  rounded-circle"
+                          src="url"
+                        />,
+                        "kasule",
+                      ],
+                      "className": "mdc-chip",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Contact Person",
+                          "className": "img-fluid z-depth-1 square mr-2  rounded-circle",
+                          "src": "url",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      "kasule",
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "CommentEditAction": undefined,
+                  "clickDelete": [Function],
+                  "clickEdit": [Function],
+                  "clickReply": [Function],
+                  "id": 0,
+                  "onClick": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "view all...",
+                  "className": "col-4 text-primary",
+                  "onClick": undefined,
+                  "onKeyUp": [Function],
+                  "role": "button",
+                  "tabIndex": "0",
+                },
+                "ref": null,
+                "rendered": "view all...",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ReplyList
+                    CommentDeleteAction={[Function]}
+                    parentId={1}
+                    replyList={Array []}
+                    show={[Function]}
+                    slug="mock-slug"
+                  />,
+                  "className": "d-none",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "CommentDeleteAction": [Function],
+                    "onSubmitReply": undefined,
+                    "parentId": 1,
+                    "repliesShow": undefined,
+                    "replyList": Array [],
+                    "show": [Function],
+                    "slug": "mock-slug",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Connect(ReplyBox)
+                    art_slug="mock-slug1"
+                    childId={1}
+                    isEdit={false}
+                    parentId={1}
+                  />,
+                  "className": "d-none",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "art_slug": "mock-slug1",
+                    "childId": 1,
+                    "isEdit": false,
+                    "parentId": 1,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

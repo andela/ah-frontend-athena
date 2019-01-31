@@ -20,6 +20,8 @@ import Likes from "./views/LikesView/Likes";
 import Followers from "./views/followsView/followersView/followersView";
 import Following from "./views/followsView/followingView/followingView";
 import Bookmarks from "./views/BookmarksView/BookmarksView";
+import LoginView from "./views/LoginView/Login";
+
 
 const Routes = () => (
   <Router>
@@ -33,6 +35,7 @@ const Routes = () => (
           exact
         />
         <Route path="/signup" component={Signup} exact />
+        <Route path="/login" component={LoginView} exact />
         <Route path="/profile/:username" component={ProfileEdit} exact />
         <Route path="/passwordreset" component={PasswordResetView} exact />
         <Route path="/like" component={Likes} exact />
@@ -54,5 +57,4 @@ const Routes = () => (
     </Provider>
   </Router>
 );
-
 export default Routes;

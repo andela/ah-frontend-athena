@@ -18,6 +18,7 @@ import Likes from "../../LikesView/Likes";
 import ModalPage from "../../../components/Likes/LoginModal";
 import RatingView from "../../../components/articles/articleRating/RatingView";
 import TagList from "../../TagList/TagList";
+import CommentsList from "../../../components/Comments/CommentsList/CommentsList";
 import Load from "../../../components/Load/Load";
 
 export class ArticleView extends Component {
@@ -196,6 +197,9 @@ export class ArticleView extends Component {
             <hr />
             <Likes article_info={view_article} history={history} />
             <hr />
+          </div>
+          <div className="mt-5 container">
+            <CommentsList slug={view_article.slug} />
           </div>
         </div>
       );
