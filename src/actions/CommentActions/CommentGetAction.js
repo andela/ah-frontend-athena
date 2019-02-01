@@ -1,6 +1,6 @@
-import actionTypes from "../actionTypes";
+import actionTypes from '../actionTypes';
 
-const token = window.localStorage.getItem("token");
+const token = window.localStorage.getItem('token');
 
 export const ReplySuccess = message => ({
   type: actionTypes.REPLYSUCCESS,
@@ -16,12 +16,12 @@ export const ReplyPostAction = (id, data, slug) => dispatch => {
   return fetch(
     `${process.env.REACT_APP_API_URL_BASE}articles/${slug}/comments/${id}/`,
     {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "content-type": "application/json",
+        'content-type': 'application/json',
         Authorization: `Bearer ${token}`
       },
-      CORS: "no-cors",
+      CORS: 'no-cors',
       body: JSON.stringify({ reply: data })
     }
   )
@@ -35,12 +35,12 @@ export const CommentGetAction = (data, slug) => dispatch => {
   return fetch(
     `${process.env.REACT_APP_API_URL_BASE}articles/${slug}/comments/${data}`,
     {
-      method: "GET",
+      method: 'GET',
       headers: {
-        "content-type": "application/json",
+        'content-type': 'application/json',
         Authorization: `Bearer ${token}`
       },
-      CORS: "no-cors"
+      CORS: 'no-cors'
     }
   )
     .then(res => res.json())
@@ -54,11 +54,11 @@ export const CommentGetAction = (data, slug) => dispatch => {
           obj[element.id] = element;
           response.comments.forEach(element => {
             if (element.parent === id) {
-              if (!obj[id]["replies"]) {
-                obj[id]["replies"] = { [element.id]: "" };
-                obj[id]["replies"][element.id] = element;
+              if (!obj[id]['replies']) {
+                obj[id]['replies'] = { [element.id]: '' };
+                obj[id]['replies'][element.id] = element;
               } else {
-                obj[id]["replies"][element.id] = element;
+                obj[id]['replies'][element.id] = element;
               }
             }
           });

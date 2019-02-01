@@ -7,7 +7,6 @@ ShallowWrapper {
     clickDelete={[MockFunction]}
     clickEdit={[MockFunction]}
     clickReply={[MockFunction]}
-    id={0}
     onClick={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -26,6 +25,75 @@ ShallowWrapper {
       "children": <div
         className="col-8"
       >
+        <div
+          className="m-1 border rounded"
+        >
+          <span
+            className="m-3"
+          />
+          <span
+            className="text-primary m-1"
+            id="like"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <t
+              border={false}
+              brand={false}
+              className=""
+              fab={false}
+              fal={false}
+              far={false}
+              fixed={false}
+              flip=""
+              icon="thumbs-up"
+              inverse=""
+              light={false}
+              list={false}
+              pull=""
+              pulse={false}
+              regular={false}
+              rotate=""
+              size=""
+              spin={false}
+              stack=""
+            />
+              
+          </span>
+          <span
+            className="text-primary m-1"
+            id="dislike"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <t
+              border={false}
+              brand={false}
+              className=""
+              fab={false}
+              fal={false}
+              far={false}
+              fixed={false}
+              flip=""
+              icon="thumbs-down"
+              inverse=""
+              light={false}
+              list={false}
+              pull=""
+              pulse={false}
+              regular={false}
+              rotate=""
+              size=""
+              spin={false}
+              stack=""
+            />
+              
+          </span>
+        </div>
         <span
           className="text-primary"
           id="reply"
@@ -129,6 +197,75 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <div
+            className="m-1 border rounded"
+          >
+            <span
+              className="m-3"
+            />
+            <span
+              className="text-primary m-1"
+              id="like"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <t
+                border={false}
+                brand={false}
+                className=""
+                fab={false}
+                fal={false}
+                far={false}
+                fixed={false}
+                flip=""
+                icon="thumbs-up"
+                inverse=""
+                light={false}
+                list={false}
+                pull=""
+                pulse={false}
+                regular={false}
+                rotate=""
+                size=""
+                spin={false}
+                stack=""
+              />
+                
+            </span>
+            <span
+              className="text-primary m-1"
+              id="dislike"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <t
+                border={false}
+                brand={false}
+                className=""
+                fab={false}
+                fal={false}
+                far={false}
+                fixed={false}
+                flip=""
+                icon="thumbs-down"
+                inverse=""
+                light={false}
+                list={false}
+                pull=""
+                pulse={false}
+                regular={false}
+                rotate=""
+                size=""
+                spin={false}
+                stack=""
+              />
+                
+            </span>
+          </div>,
           <span
             className="text-primary"
             id="reply"
@@ -227,6 +364,239 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="m-3"
+              />,
+              <span
+                className="text-primary m-1"
+                id="like"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                <t
+                  border={false}
+                  brand={false}
+                  className=""
+                  fab={false}
+                  fal={false}
+                  far={false}
+                  fixed={false}
+                  flip=""
+                  icon="thumbs-up"
+                  inverse=""
+                  light={false}
+                  list={false}
+                  pull=""
+                  pulse={false}
+                  regular={false}
+                  rotate=""
+                  size=""
+                  spin={false}
+                  stack=""
+                />
+                  
+              </span>,
+              <span
+                className="text-primary m-1"
+                id="dislike"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                <t
+                  border={false}
+                  brand={false}
+                  className=""
+                  fab={false}
+                  fal={false}
+                  far={false}
+                  fixed={false}
+                  flip=""
+                  icon="thumbs-down"
+                  inverse=""
+                  light={false}
+                  list={false}
+                  pull=""
+                  pulse={false}
+                  regular={false}
+                  rotate=""
+                  size=""
+                  spin={false}
+                  stack=""
+                />
+                  
+              </span>,
+            ],
+            "className": "m-1 border rounded",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "m-3",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="thumbs-up"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />,
+                  "  ",
+                ],
+                "className": "text-primary m-1",
+                "id": "like",
+                "onClick": [Function],
+                "onKeyUp": [Function],
+                "role": "button",
+                "tabIndex": "0",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "border": false,
+                    "brand": false,
+                    "className": "",
+                    "fab": false,
+                    "fal": false,
+                    "far": false,
+                    "fixed": false,
+                    "flip": "",
+                    "icon": "thumbs-up",
+                    "inverse": "",
+                    "light": false,
+                    "list": false,
+                    "pull": "",
+                    "pulse": false,
+                    "regular": false,
+                    "rotate": "",
+                    "size": "",
+                    "spin": false,
+                    "stack": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "  ",
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="thumbs-down"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />,
+                  "  ",
+                ],
+                "className": "text-primary m-1",
+                "id": "dislike",
+                "onClick": [Function],
+                "onKeyUp": [Function],
+                "role": "button",
+                "tabIndex": "0",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "border": false,
+                    "brand": false,
+                    "className": "",
+                    "fab": false,
+                    "fal": false,
+                    "far": false,
+                    "fixed": false,
+                    "flip": "",
+                    "icon": "thumbs-down",
+                    "inverse": "",
+                    "light": false,
+                    "list": false,
+                    "pull": "",
+                    "pulse": false,
+                    "regular": false,
+                    "rotate": "",
+                    "size": "",
+                    "spin": false,
+                    "stack": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "  ",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -454,6 +824,75 @@ ShallowWrapper {
         "children": <div
           className="col-8"
         >
+          <div
+            className="m-1 border rounded"
+          >
+            <span
+              className="m-3"
+            />
+            <span
+              className="text-primary m-1"
+              id="like"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <t
+                border={false}
+                brand={false}
+                className=""
+                fab={false}
+                fal={false}
+                far={false}
+                fixed={false}
+                flip=""
+                icon="thumbs-up"
+                inverse=""
+                light={false}
+                list={false}
+                pull=""
+                pulse={false}
+                regular={false}
+                rotate=""
+                size=""
+                spin={false}
+                stack=""
+              />
+                
+            </span>
+            <span
+              className="text-primary m-1"
+              id="dislike"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <t
+                border={false}
+                brand={false}
+                className=""
+                fab={false}
+                fal={false}
+                far={false}
+                fixed={false}
+                flip=""
+                icon="thumbs-down"
+                inverse=""
+                light={false}
+                list={false}
+                pull=""
+                pulse={false}
+                regular={false}
+                rotate=""
+                size=""
+                spin={false}
+                stack=""
+              />
+                
+            </span>
+          </div>
           <span
             className="text-primary"
             id="reply"
@@ -557,6 +996,75 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <div
+              className="m-1 border rounded"
+            >
+              <span
+                className="m-3"
+              />
+              <span
+                className="text-primary m-1"
+                id="like"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                <t
+                  border={false}
+                  brand={false}
+                  className=""
+                  fab={false}
+                  fal={false}
+                  far={false}
+                  fixed={false}
+                  flip=""
+                  icon="thumbs-up"
+                  inverse=""
+                  light={false}
+                  list={false}
+                  pull=""
+                  pulse={false}
+                  regular={false}
+                  rotate=""
+                  size=""
+                  spin={false}
+                  stack=""
+                />
+                  
+              </span>
+              <span
+                className="text-primary m-1"
+                id="dislike"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                role="button"
+                tabIndex="0"
+              >
+                <t
+                  border={false}
+                  brand={false}
+                  className=""
+                  fab={false}
+                  fal={false}
+                  far={false}
+                  fixed={false}
+                  flip=""
+                  icon="thumbs-down"
+                  inverse=""
+                  light={false}
+                  list={false}
+                  pull=""
+                  pulse={false}
+                  regular={false}
+                  rotate=""
+                  size=""
+                  spin={false}
+                  stack=""
+                />
+                  
+              </span>
+            </div>,
             <span
               className="text-primary"
               id="reply"
@@ -655,6 +1163,239 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="m-3"
+                />,
+                <span
+                  className="text-primary m-1"
+                  id="like"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex="0"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="thumbs-up"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                    
+                </span>,
+                <span
+                  className="text-primary m-1"
+                  id="dislike"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex="0"
+                >
+                  <t
+                    border={false}
+                    brand={false}
+                    className=""
+                    fab={false}
+                    fal={false}
+                    far={false}
+                    fixed={false}
+                    flip=""
+                    icon="thumbs-down"
+                    inverse=""
+                    light={false}
+                    list={false}
+                    pull=""
+                    pulse={false}
+                    regular={false}
+                    rotate=""
+                    size=""
+                    spin={false}
+                    stack=""
+                  />
+                    
+                </span>,
+              ],
+              "className": "m-1 border rounded",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "className": "m-3",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="thumbs-up"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />,
+                    "  ",
+                  ],
+                  "className": "text-primary m-1",
+                  "id": "like",
+                  "onClick": [Function],
+                  "onKeyUp": [Function],
+                  "role": "button",
+                  "tabIndex": "0",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "border": false,
+                      "brand": false,
+                      "className": "",
+                      "fab": false,
+                      "fal": false,
+                      "far": false,
+                      "fixed": false,
+                      "flip": "",
+                      "icon": "thumbs-up",
+                      "inverse": "",
+                      "light": false,
+                      "list": false,
+                      "pull": "",
+                      "pulse": false,
+                      "regular": false,
+                      "rotate": "",
+                      "size": "",
+                      "spin": false,
+                      "stack": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "  ",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <t
+                      border={false}
+                      brand={false}
+                      className=""
+                      fab={false}
+                      fal={false}
+                      far={false}
+                      fixed={false}
+                      flip=""
+                      icon="thumbs-down"
+                      inverse=""
+                      light={false}
+                      list={false}
+                      pull=""
+                      pulse={false}
+                      regular={false}
+                      rotate=""
+                      size=""
+                      spin={false}
+                      stack=""
+                    />,
+                    "  ",
+                  ],
+                  "className": "text-primary m-1",
+                  "id": "dislike",
+                  "onClick": [Function],
+                  "onKeyUp": [Function],
+                  "role": "button",
+                  "tabIndex": "0",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "border": false,
+                      "brand": false,
+                      "className": "",
+                      "fab": false,
+                      "fal": false,
+                      "far": false,
+                      "fixed": false,
+                      "flip": "",
+                      "icon": "thumbs-down",
+                      "inverse": "",
+                      "light": false,
+                      "list": false,
+                      "pull": "",
+                      "pulse": false,
+                      "regular": false,
+                      "rotate": "",
+                      "size": "",
+                      "spin": false,
+                      "stack": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "  ",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": undefined,

@@ -1,10 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { MDBCard, MDBCardBody, MDBContainer, MDBBadge } from "mdbreact";
-import CommentEdit from "../CommentEdit/CommentEdit";
-import Reply from "./ReplyList";
-import ReplyBox from "../../../views/CommentView/ReplyBox/ReplyBox";
-
+import React from 'react';
+import PropTypes from 'prop-types';
+import { MDBCard, MDBCardBody, MDBContainer, MDBBadge } from 'mdbreact';
+import CommentEdit from '../CommentEdit/CommentEdit';
+import Reply from './ReplyList';
+import ReplyBox from '../../../views/CommentView/ReplyBox/ReplyBox';
 
 const LoadNoReply = ({
   comment,
@@ -17,9 +16,9 @@ const LoadNoReply = ({
   childId,
   showComBox,
   username,
-  img
+  clickLike,
+  clickDisLike
 }) => {
-  
   return (
     <div>
       <MDBContainer fluid className="mw-75 ml-5 p-0 mx-1 my-3">
@@ -35,7 +34,7 @@ const LoadNoReply = ({
               </div>
               <div className="mdc-chip">
                 <img
-                  src={comment.author.image}
+                  src={`${comment.author.image}`}
                   className="img-fluid z-depth-1 square mr-2  rounded-circle"
                   alt="Contact Person"
                 />
@@ -44,7 +43,10 @@ const LoadNoReply = ({
             </div>
           </MDBCardBody>
           <CommentEdit
+            likes={comment.likes_count}
             clickEdit={clickEdit}
+            clickLike={clickLike}
+            clickDisLike={clickDisLike}
             clickDelete={clickDelete}
             id={id}
             clickReply={clickReply}
@@ -70,15 +72,15 @@ LoadNoReply.propTypes = {
   childId: PropTypes.number,
   showComBox: PropTypes.func.isRequired,
   username: PropTypes.string,
-  img: PropTypes.string
+  clickLike: PropTypes.func.isRequired,
+  clickDisLike: PropTypes.func.isRequired
 };
 
 LoadNoReply.defaultProps = {
   comment: {},
   parentId: 1,
   childId: 1,
-  username: "kasule",
-  img: "url"
+  username: ''
 };
 
 export default LoadNoReply;

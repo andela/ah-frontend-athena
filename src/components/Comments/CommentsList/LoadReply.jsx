@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { MDBCard, MDBCardBody, MDBContainer, MDBBadge } from "mdbreact";
-import CommentEdit from "../CommentEdit/CommentEdit";
-import ReplyBox from "../../../views/CommentView/ReplyBox/ReplyBox";
-import { ReplyList } from "../ReplyList/ReplyList";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { MDBCard, MDBCardBody, MDBContainer, MDBBadge } from 'mdbreact';
+import CommentEdit from '../CommentEdit/CommentEdit';
+import ReplyBox from '../../../views/CommentView/ReplyBox/ReplyBox';
+import ReplyList from '../ReplyList/ReplyList';
 
 export const LoadReply = ({
   comment,
@@ -16,7 +16,6 @@ export const LoadReply = ({
   onClick2,
   onKeyUp,
   repliesShow,
-  slug,
   onSubmitReply,
   parentId,
   replyList,
@@ -28,7 +27,10 @@ export const LoadReply = ({
   showComBox,
   art_slug,
   username,
-  img
+  img,
+  clickLike,
+  clickDisLike,
+  history
 }) => {
   return (
     <div>
@@ -45,7 +47,7 @@ export const LoadReply = ({
               </div>
               <div className="mdc-chip">
                 <img
-                  src={img}
+                  src={'' + img}
                   className="img-fluid z-depth-1 square mr-2  rounded-circle"
                   alt="Contact Person"
                 />
@@ -54,6 +56,9 @@ export const LoadReply = ({
             </div>
             <CommentEdit
               id={id}
+              likes={comment.likes_count}
+              clickLike={clickLike}
+              clickDisLike={clickDisLike}
               clickEdit={clickEdit}
               clickDelete={clickDelete}
               clickReply={clickReply}
@@ -71,8 +76,9 @@ export const LoadReply = ({
             </div>
             <div className={showReplies}>
               <ReplyList
+                history={history}
                 repliesShow={repliesShow}
-                slug={slug}
+                slug={art_slug}
                 onSubmitReply={onSubmitReply}
                 parentId={parentId}
                 replyList={replyList}
@@ -104,30 +110,31 @@ LoadReply.propTypes = {
   onClick2: PropTypes.func.isRequired,
   onKeyUp: PropTypes.func,
   repliesShow: PropTypes.func.isRequired,
-  slug: PropTypes.string,
   onSubmitReply: PropTypes.func.isRequired,
   parentId: PropTypes.number,
-  replyList:PropTypes.shape([]),
+  replyList: PropTypes.shape([]),
   CommentDeleteAction: PropTypes.func.isRequired,
   isEdit: PropTypes.bool.isRequired,
   parentId2: PropTypes.number,
   childId: PropTypes.number,
   showReplies: PropTypes.func.isRequired,
   showComBox: PropTypes.func.isRequired,
+  clickDisLike: PropTypes.func.isRequired,
+  clickLike: PropTypes.func.isRequired,
   art_slug: PropTypes.string,
   username: PropTypes.string,
   img: PropTypes.string,
+  history: PropTypes.func.isRequired
 };
 LoadReply.defaultProps = {
-comment: {},
-onKeyUp: ()=>{},
-slug: 'mock-slug',
-parentId: 1,
-replyList: [],
-parentId2: 1,
-childId: 1,
-art_slug: 'mock-slug1',
-username: 'kasule', 
-img: 'url'
-}
+  comment: {},
+  onKeyUp: () => {},
+  parentId: 1,
+  replyList: [],
+  parentId2: 1,
+  childId: 1,
+  art_slug: 'mock-slug1',
+  username: 'kasule',
+  img: 'url'
+};
 export default LoadReply;

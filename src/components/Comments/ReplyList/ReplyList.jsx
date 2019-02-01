@@ -1,59 +1,92 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import "./ReplyList.scss";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import './ReplyList.scss';
 import {
   CommentDeleteAction,
   CommentEditAction
-} from "../../../actions/CommentActions/CommentEditAction";
-import { CommentAction } from "../../../actions/CommentActions/CommentAction";
+} from '../../../actions/CommentActions/CommentEditAction';
+import {
+  CommentAction,
+  CommentDislikeAction,
+  CommentLikeAction
+} from '../../../actions/CommentActions/CommentAction';
 import {
   ReplyPostAction,
   CommentGetAction
-} from "../../../actions/CommentActions/CommentGetAction";
-import LoadReply from "../CommentsList/LoadReply";
-import LoadNoReply from "./LoadNoReply";
+} from '../../../actions/CommentActions/CommentGetAction';
+import LoadReply from '../CommentsList/LoadReply';
+import LoadNoReply from './LoadNoReply';
+import ModalPage from '../../Likes/LoginModal';
 
-const username = window.localStorage.getItem("username");
+const username = '';
 export class ReplyList extends Component {
   constructor(props) {
     super(props);
-    this.state = { showReplies: "d-none", showComBox: "d-none", isEdit: false };
+    this.state = {
+      showReplies: 'd-none',
+      showComBox: 'd-none',
+      isEdit: false,
+      modal: false
+    };
   }
 
   componentDidMount() {
-    this.setState({ showReplies: "d-none" });
+    this.setState({ showReplies: 'd-none' });
   }
 
   repliesShow = () => {
     const { showReplies } = this.state;
-    if (showReplies === "") {
-      this.setState({ showReplies: "d-none" });
+    if (showReplies === '') {
+      this.setState({ showReplies: 'd-none' });
     } else {
-      this.setState({ showReplies: "" });
+      this.setState({ showReplies: '' });
     }
   };
 
   HandleClickLogic = (status1, dnone, status2) => {
     const { showComBox } = this.state;
-    if (showComBox === "") {
+    if (showComBox === '') {
       this.setState({ showComBox: dnone, isEdit: status1 });
     } else {
       this.setState({ showComBox: status2, isEdit: status1 });
     }
   };
+  checkToken = () => {
+    const token = window.localStorage.getItem('token');
+    if (token) {
+      this.setState({
+        modal: false
+      });
+    } else {
+      this.setState({
+        modal: true
+      });
+      return;
+    }
+  };
+
+  toggle = () => {
+    const { modal } = this.state;
+    this.setState({
+      modal: !modal
+    });
+  };
 
   clickReply = () => {
-    this.HandleClickLogic(false, "d-none", "");
+    this.checkToken();
+    this.HandleClickLogic(false, 'd-none', '');
   };
 
   clickDelete = id => {
     const { CommentDeleteAction, slug } = this.props;
+    this.checkToken();
     CommentDeleteAction(id, slug);
   };
 
   clickEdit = () => {
-    this.HandleClickLogic("true", "d-none", "");
+    this.checkToken();
+    this.HandleClickLogic('true', 'd-none', '');
   };
 
   dateToHours = commented_date => {
@@ -62,12 +95,23 @@ export class ReplyList extends Component {
     return dateNow.getHours();
   };
 
+  clickLike = id => {
+    this.checkToken();
+    const { CommentLikeAction, slug } = this.props;
+    CommentLikeAction(id, slug);
+  };
+  clickDisLike = id => {
+    this.checkToken();
+    const { CommentDislikeAction, slug } = this.props;
+    CommentDislikeAction(id, slug);
+  };
+
   handleKeyUp = () => {};
   render() {
-    const { replyList, show, parentId } = this.props;
-    const { isEdit } = this.state;
-    const { repliesShow, showReplies, showComBox } = this.state;
-    const list = Object.keys(replyList).map(id => {
+    const { replyList, show, parentId, history } = this.props;
+    const { repliesShow, showReplies, showComBox, modal, isEdit } = this.state;
+    const url = window.location.pathname;
+    let list = Object.keys(replyList).map(id => {
       const replies = replyList[id].replies;
       if (replies) {
         return (
@@ -90,6 +134,7 @@ export class ReplyList extends Component {
               isEdit={isEdit}
               parentId2={id}
               childId={id}
+              history={history}
               showReplies={showReplies}
               img={replyList[id].author.image}
               showComBox={showComBox}
@@ -104,6 +149,8 @@ export class ReplyList extends Component {
             <LoadNoReply
               comment={replyList[id]}
               id={id}
+              clickLike={this.clickLike}
+              clickDisLike={this.clickDisLike}
               clickEdit={this.clickEdit}
               clickDelete={this.clickDelete}
               clickReply={this.clickReply}
@@ -123,19 +170,36 @@ export class ReplyList extends Component {
               img={replyList[id].author.image}
               showComBox={showComBox}
               username={username}
+              history={history}
               dateHour={this.dateToHours(replyList[id].created_at)}
             />
           </div>
         );
       }
     });
-    return <div className={repliesShow}>{list}</div>;
+    list = list.reverse();
+    return (
+      <div className={repliesShow}>
+        {list}
+        <ModalPage
+          title="Please first login "
+          modal={modal}
+          toggle={this.toggle}
+          fallback={url}
+          history={history}
+          md="12"
+        />
+      </div>
+    );
   }
 }
 ReplyList.propTypes = {
   replyList: PropTypes.shape({}),
   parentId: PropTypes.string,
+  history: PropTypes.func.isRequired,
   CommentDeleteAction: PropTypes.func.isRequired,
+  CommentLikeAction: PropTypes.func.isRequired,
+  CommentDislikeAction: PropTypes.func.isRequired,
   show: PropTypes.func,
   slug: PropTypes.string
 };
@@ -143,7 +207,7 @@ ReplyList.defaultProps = {
   replyList: {},
   parentId: null,
   show: () => {},
-  slug: ""
+  slug: ''
 };
 export const mapStateToProps = state => ({
   slug: state.articles.view_article.slug
@@ -156,7 +220,9 @@ export const Reply = connect(
     ReplyPostAction,
     CommentGetAction,
     CommentDeleteAction,
-    CommentEditAction
+    CommentEditAction,
+    CommentLikeAction,
+    CommentDislikeAction
   }
 )(ReplyList);
 

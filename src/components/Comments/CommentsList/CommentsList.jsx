@@ -1,36 +1,42 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { MDBCard, MDBCardBody, MDBContainer, MDBBadge } from "mdbreact";
-import { connect } from "react-redux";
-import { CommentAction } from "../../../actions/CommentActions/CommentAction";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { MDBCard, MDBCardBody, MDBContainer, MDBBadge } from 'mdbreact';
+import { connect } from 'react-redux';
+import {
+  CommentAction,
+  CommentDislikeAction,
+  CommentLikeAction
+} from '../../../actions/CommentActions/CommentAction';
 import {
   CommentDeleteAction,
   CommentEditAction
-} from "../../../actions/CommentActions/CommentEditAction";
+} from '../../../actions/CommentActions/CommentEditAction';
 import {
   ReplyPostAction,
   CommentGetAction
-} from "../../../actions/CommentActions/CommentGetAction";
-import ReplyBox from "../../../views/CommentView/ReplyBox/ReplyBox";
-import CommentEdit from "../CommentEdit/CommentEdit";
-import "./CommentsList.scss";
-import LoadReply from "./LoadReply";
+} from '../../../actions/CommentActions/CommentGetAction';
+import ReplyBox from '../../../views/CommentView/ReplyBox/ReplyBox';
+import CommentEdit from '../CommentEdit/CommentEdit';
+import './CommentsList.scss';
+import LoadReply from './LoadReply';
+import ModalPage from '../../Likes/LoginModal';
 
-const username = window.localStorage.getItem("username");
+const username = '';
 export class CommentsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       commentList: [],
-      showReplies: "d-none",
-      showComBox: "d-none",
-      isEdit: false
+      showReplies: 'd-none',
+      showComBox: 'd-none',
+      isEdit: false,
+      modal: false
     };
   }
 
   componentDidMount() {
     const { CommentGetAction, slug } = this.props;
-    CommentGetAction("", slug);
+    CommentGetAction('', slug);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -41,10 +47,24 @@ export class CommentsList extends React.Component {
       if (nextProps.refresh === true) {
         const { slug } = this.props;
         const { CommentGetAction } = this.props;
-        CommentGetAction("", slug);
+        CommentGetAction('', slug);
       }
     }
   }
+
+  checkToken = () => {
+    const token = window.localStorage.getItem('token');
+    if (token) {
+      this.setState({
+        modal: false
+      });
+    } else {
+      this.setState({
+        modal: true
+      });
+      return;
+    }
+  };
 
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -52,32 +72,46 @@ export class CommentsList extends React.Component {
 
   HandleClickLogic = (status1, dnone, status2) => {
     const { showComBox } = this.state;
-    if (showComBox === "") {
+    if (showComBox === '') {
       this.setState({ showComBox: dnone, isEdit: status1 });
     } else {
       this.setState({ showComBox: status2, isEdit: status1 });
     }
-  }
+  };
+
+  clickLike = id => {
+    const { CommentLikeAction, slug } = this.props;
+    this.checkToken();
+    CommentLikeAction(id, slug);
+  };
+  clickDisLike = id => {
+    this.checkToken();
+    const { CommentDislikeAction, slug } = this.props;
+    CommentDislikeAction(id, slug);
+  };
 
   clickReply = () => {
-    this.HandleClickLogic(false, 'd-none', "")
+    this.checkToken();
+    this.HandleClickLogic(false, 'd-none', '');
   };
-  
+
   clickEdit = () => {
-    this.HandleClickLogic('true', 'd-none', "")
+    this.checkToken();
+    this.HandleClickLogic('true', 'd-none', '');
   };
 
   clickDelete = id => {
+    this.checkToken();
     const myDelete = this.props;
     myDelete.CommentDeleteAction(id, myDelete.slug);
   };
 
   repliesShow = () => {
     const { showReplies } = this.state;
-    if (showReplies === "") {
-      this.setState({ showReplies: "d-none" + CommentsList.state });
+    if (showReplies === '') {
+      this.setState({ showReplies: 'd-none' + CommentsList.state });
     } else {
-      this.setState({ showReplies: "" });
+      this.setState({ showReplies: '' });
     }
   };
 
@@ -86,23 +120,42 @@ export class CommentsList extends React.Component {
     const dateNow = new Date(initial_date);
     return dateNow.getHours();
   };
+  toggle = () => {
+    const { modal } = this.state;
+    this.setState({
+      modal: !modal
+    });
+  };
 
   handleKeyUp = () => {};
 
   render() {
-    const { slug, CommentEditAction, CommentDeleteAction } = this.props;
-    const { isEdit } = this.state;
-    const { showReplies } = this.state;
-    const { commentList, showComBox } = this.state;
+    const {
+      slug,
+      CommentEditAction,
+      CommentDeleteAction,
+      history
+    } = this.props;
+    const { commentList, showComBox, modal, showReplies, isEdit } = this.state;
+    const url = window.location.pathname;
     if (commentList) {
-      const list = Object.keys(commentList).map(id => {
+      let list = Object.keys(commentList).map(id => {
         const replies = commentList[id].replies;
+        let img = ``;
+        const { author } = commentList[id];
+        if (author) {
+          if (author.image) {
+            img = '' + author.image;
+          }
+        }
         if (replies) {
           return (
             <div key={commentList[id].id} className=" my-0  p-0  container">
               <LoadReply
                 comment={commentList[id]}
                 id={id}
+                clickLike={this.clickLike}
+                clickDisLike={this.clickDisLike}
                 clickEdit={this.clickEdit}
                 clickDelete={this.clickDelete}
                 clickReply={this.clickReply}
@@ -121,7 +174,8 @@ export class CommentsList extends React.Component {
                 childId={id}
                 art_slug={slug}
                 showReplies={showReplies}
-                img={commentList[id].author.image}
+                img={img}
+                history={history}
                 showComBox={showComBox}
                 username={username}
                 dateHour={this.dateToHours(commentList[id].created_at)}
@@ -147,7 +201,7 @@ export class CommentsList extends React.Component {
                         </div>
                         <div className="mdc-chip">
                           <img
-                            src={commentList[id].author.image}
+                            src={img}
                             className="img-fluid z-depth-1 square mr-2  rounded-circle"
                             alt="Contact Person"
                           />
@@ -157,6 +211,9 @@ export class CommentsList extends React.Component {
                       </div>
                       <CommentEdit
                         id={id}
+                        likes={commentList[id].likes_count}
+                        clickLike={this.clickLike}
+                        clickDisLike={this.clickDisLike}
                         clickEdit={this.clickEdit}
                         clickDelete={this.clickDelete}
                         clickReply={this.clickReply}
@@ -173,6 +230,7 @@ export class CommentsList extends React.Component {
           );
         }
       });
+      list = list.reverse();
       return (
         <div className="m-1 p-1 container">
           <ReplyBox
@@ -180,6 +238,14 @@ export class CommentsList extends React.Component {
             parentId={null}
             childId={null}
             art_slug={slug}
+          />
+          <ModalPage
+            title="Please login before you can rate the article"
+            modal={modal}
+            toggle={this.toggle}
+            fallback={url}
+            history={history}
+            md="12"
           />
           {list}
         </div>
@@ -193,6 +259,14 @@ export class CommentsList extends React.Component {
             childId={null}
             art_slug={slug}
           />
+          <ModalPage
+            title="Please first login "
+            modal={modal}
+            toggle={this.toggle}
+            fallback={url}
+            history={history}
+            md="12"
+          />
         </div>
       );
     }
@@ -200,6 +274,9 @@ export class CommentsList extends React.Component {
 }
 
 CommentsList.propTypes = {
+  CommentLikeAction: PropTypes.func.isRequired,
+  history: PropTypes.func.isRequired,
+  CommentDislikeAction: PropTypes.func.isRequired,
   CommentGetAction: PropTypes.func,
   CommentEditAction: PropTypes.func.isRequired,
   CommentDeleteAction: PropTypes.func.isRequired,
@@ -233,6 +310,8 @@ export default connect(
     ReplyPostAction,
     CommentGetAction,
     CommentDeleteAction,
-    CommentEditAction
+    CommentEditAction,
+    CommentDislikeAction,
+    CommentLikeAction
   }
 )(CommentsList);

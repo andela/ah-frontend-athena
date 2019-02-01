@@ -26,31 +26,115 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "childId": null,
-      "onChange": [Function],
-      "onSubmit": [Function],
-      "onSubmitReply": [Function],
+      "children": Array [
+        <CommentCard
+          childId={null}
+          onChange={[Function]}
+          onSubmit={[Function]}
+          onSubmitReply={[Function]}
+        />,
+        <ModalPage
+          fallback="/"
+          md="12"
+          modal={false}
+          title="Please login before you can rate the article"
+          toggle={[Function]}
+        />,
+      ],
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "childId": null,
+          "onChange": [Function],
+          "onSubmit": [Function],
+          "onSubmitReply": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "fallback": "/",
+          "history": undefined,
+          "md": "12",
+          "modal": false,
+          "title": "Please login before you can rate the article",
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "childId": null,
-        "onChange": [Function],
-        "onSubmit": [Function],
-        "onSubmitReply": [Function],
+        "children": Array [
+          <CommentCard
+            childId={null}
+            onChange={[Function]}
+            onSubmit={[Function]}
+            onSubmitReply={[Function]}
+          />,
+          <ModalPage
+            fallback="/"
+            md="12"
+            modal={false}
+            title="Please login before you can rate the article"
+            toggle={[Function]}
+          />,
+        ],
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "childId": null,
+            "onChange": [Function],
+            "onSubmit": [Function],
+            "onSubmitReply": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "fallback": "/",
+            "history": undefined,
+            "md": "12",
+            "modal": false,
+            "title": "Please login before you can rate the article",
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
