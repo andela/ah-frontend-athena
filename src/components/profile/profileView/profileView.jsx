@@ -18,6 +18,14 @@ const viewProfile = props => {
   } = props;
   const Value = `navbar-nav ml-auto nav-flex-icons  ${classValue}`;
   const create = `navbar-brand ${classValue}`;
+  let username = window.localStorage.getItem("username");
+  let valid = ""
+  if(username==="lugada"){
+    valid = ""
+  }else{
+    valid="d-none"
+  }
+  const display = `navbar-brand ${valid}`
   return (
     <div>
       <nav className="pl-4 position-sticky navbar bg-primary navbar-expand-lg navbar-dark ">
@@ -33,6 +41,10 @@ const viewProfile = props => {
           <Link to="/bookmarks" className={create}>
             {" "}
             Bookmarks
+          </Link>
+          <Link to="/reported-articles" className={display}>
+            {" "}
+            Reported Articles
           </Link>
         </div>
         <div className="collapse navbar-collapse">

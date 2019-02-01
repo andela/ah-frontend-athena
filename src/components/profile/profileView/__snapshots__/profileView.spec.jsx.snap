@@ -70,6 +70,14 @@ ShallowWrapper {
              
             Bookmarks
           </Link>
+          <Link
+            className="navbar-brand d-none"
+            replace={false}
+            to="/reported-articles"
+          >
+             
+            Reported Articles
+          </Link>
         </div>
         <div
           className="collapse navbar-collapse"
@@ -230,6 +238,14 @@ ShallowWrapper {
             >
                
               Bookmarks
+            </Link>
+            <Link
+              className="navbar-brand d-none"
+              replace={false}
+              to="/reported-articles"
+            >
+               
+              Reported Articles
             </Link>
           </div>,
           <div
@@ -398,6 +414,14 @@ ShallowWrapper {
                  
                 Bookmarks
               </Link>,
+              <Link
+                className="navbar-brand d-none"
+                replace={false}
+                to="/reported-articles"
+              >
+                 
+                Reported Articles
+              </Link>,
             ],
             "className": "float-right ",
           },
@@ -455,6 +479,26 @@ ShallowWrapper {
               "rendered": Array [
                 " ",
                 "Bookmarks",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Reported Articles",
+                ],
+                "className": "navbar-brand d-none",
+                "replace": false,
+                "to": "/reported-articles",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Reported Articles",
               ],
               "type": [Function],
             },
@@ -1394,6 +1438,14 @@ ShallowWrapper {
                
               Bookmarks
             </Link>
+            <Link
+              className="navbar-brand d-none"
+              replace={false}
+              to="/reported-articles"
+            >
+               
+              Reported Articles
+            </Link>
           </div>
           <div
             className="collapse navbar-collapse"
@@ -1554,6 +1606,14 @@ ShallowWrapper {
               >
                  
                 Bookmarks
+              </Link>
+              <Link
+                className="navbar-brand d-none"
+                replace={false}
+                to="/reported-articles"
+              >
+                 
+                Reported Articles
               </Link>
             </div>,
             <div
@@ -1722,6 +1782,14 @@ ShallowWrapper {
                    
                   Bookmarks
                 </Link>,
+                <Link
+                  className="navbar-brand d-none"
+                  replace={false}
+                  to="/reported-articles"
+                >
+                   
+                  Reported Articles
+                </Link>,
               ],
               "className": "float-right ",
             },
@@ -1779,6 +1847,26 @@ ShallowWrapper {
                 "rendered": Array [
                   " ",
                   "Bookmarks",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Reported Articles",
+                  ],
+                  "className": "navbar-brand d-none",
+                  "replace": false,
+                  "to": "/reported-articles",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Reported Articles",
                 ],
                 "type": [Function],
               },
