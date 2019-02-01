@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import renderHTML from 'react-render-html';
-import ArticleHeader from '../../../components/articles/articleHeader/ArticleHeader';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import renderHTML from "react-render-html";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import ArticleHeader from "../../../components/articles/articleHeader/ArticleHeader";
+import CommentsList from "../../../components/Comments/CommentsList/CommentsList";
 import {
   getSingleArticle,
   deleteArticle,
@@ -12,15 +14,15 @@ import {
   followUser,
   unFollowUser,
   getFollowing
-} from '../../../actions/userFollowActions';
-import './ArticleView.scss';
-import ShareButtons from '../../../components/ShareArticleButtons/ShareArticleButtons';
-import Likes from '../../LikesView/Likes';
-import ModalPage from '../../../components/Likes/LoginModal';
-import RatingView from '../../../components/articles/articleRating/RatingView';
-import TagList from '../../TagList/TagList';
-import CommentsList from '../../../components/Comments/CommentsList/CommentsList';
-import Load from '../../../components/Load/Load';
+} from "../../../actions/userFollowActions";
+import "./ArticleView.scss";
+import ShareButtons from "../../../components/ShareArticleButtons/ShareArticleButtons";
+import Likes from "../../LikesView/Likes";
+import ModalPage from "../../../components/Likes/LoginModal";
+import RatingView from "../../../components/articles/articleRating/RatingView";
+import TagList from "../../TagList/TagList";
+import Load from "../../../components/Load/Load";
+import Bookmark from "../../BookmarksView/bookmark";
 
 export class ArticleView extends Component {
   constructor(props) {
@@ -57,6 +59,7 @@ export class ArticleView extends Component {
     this.setState({ load_article_time: Date.now() });
   }
   componentWillReceiveProps(nextProps) {
+    
     this.setState({
       view_article: nextProps.view_article
     });
@@ -206,7 +209,20 @@ export class ArticleView extends Component {
               </div>
             </div>
             <hr />
-            <Likes article_info={view_article} history={history} />
+            <MDBContainer>
+              <MDBRow>
+                <MDBCol size="2">
+                  <Bookmark
+                    history={history}
+                    articleId={view_article.id}
+                    slug={view_article.slug}
+                  />
+                </MDBCol>
+                <MDBCol size="8">
+                  <Likes article_info={view_article} history={history} />
+                </MDBCol>
+              </MDBRow>
+            </MDBContainer>
             <hr />
           </div>
           <div className="mt-5 container">

@@ -44,6 +44,8 @@ const getArticles = search_param => dispatch => {
 };
 
 const getSingleArticle = slug => dispatch => {
+  
+  
   return fetch(`${actionTypes.BASEURL}articles/${slug}`, {
     method: "GET",
     headers: {
