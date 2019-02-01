@@ -21,7 +21,7 @@ import Followers from "./views/followsView/followersView/followersView";
 import Following from "./views/followsView/followingView/followingView";
 import Bookmarks from "./views/BookmarksView/BookmarksView";
 import LoginView from "./views/LoginView/Login";
-
+import ReadingStatsView from "./views/ReadingStats/ReadingStatsView";
 
 const Routes = () => (
   <Router>
@@ -52,6 +52,7 @@ const Routes = () => (
         <Route path="/articles/:slug" component={ArticleView} exact />
         <Route path="/articles/edit/:slug" component={ArticleEdit} />
         <Route path="/bookmarks" component={Bookmarks} />
+        <Route path="/stats" component={ReadingStatsView} />
         <Route path="*" component={NotFound} />
       </Switch>
     </Provider>

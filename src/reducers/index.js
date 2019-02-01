@@ -10,7 +10,8 @@ import tagsReducer from "./tagsReducer";
 import likesReducer from "./LikesReducer";
 import userFollowReducer from "./userFollowReducer";
 import getMyBookmarkedArticlesReducer from "./getMyBookmarkedArticlesReducer";
-import CommentReducer from './CommentReducer';
+import CommentReducer from "./CommentReducer";
+import readingStatsReducer from "./ReadingStatsReducer";
 
 const rootReducer = combineReducers({
   user: signupReducers,
@@ -26,6 +27,6 @@ const rootReducer = combineReducers({
   bookmarks: getMyBookmarkedArticlesReducer,
   comment: CommentReducer,
 
+  my_articles: readingStatsReducer
 });
 export default rootReducer;
-

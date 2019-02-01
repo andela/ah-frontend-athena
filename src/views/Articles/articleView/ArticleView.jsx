@@ -5,7 +5,8 @@ import renderHTML from "react-render-html";
 import ArticleHeader from "../../../components/articles/articleHeader/ArticleHeader";
 import {
   getSingleArticle,
-  deleteArticle
+  deleteArticle,
+  setArticleReadCount
 } from "../../../actions/articleActions/ArticleActions";
 import {
   followUser,
@@ -43,16 +44,17 @@ export class ArticleView extends Component {
       classValue: "btn primary-color btn-sm btn-outline-primary",
       text: "Follow",
       following: false,
-      modal: false
+      modal: false,
+      load_article_time: ""
     };
   }
-
   componentDidMount() {
     const { slug } = this.props;
     const { getSingleArticle } = this.props;
     const { getFollowing } = this.props;
     getSingleArticle(slug);
     getFollowing();
+    this.setState({ load_article_time: Date.now() });
   }
   componentWillReceiveProps(nextProps) {
     this.setState({
@@ -102,6 +104,15 @@ export class ArticleView extends Component {
       }
     }
   }
+
+  componentWillUnmount() {
+    const { load_article_time } = this.state;
+    const { setArticleReadCount, slug } = this.props;
+    let close_article_time = Date.now();
+    let time = Math.round((close_article_time - load_article_time) / 1000 / 60);
+    setArticleReadCount(slug, time);
+  }
+
   handleClick = () => {
     const { view_article } = this.state;
     const { following } = this.state;
@@ -231,12 +242,14 @@ ArticleView.propTypes = {
   view_article: PropTypes.shape({}),
   history: PropTypes.shape({}),
   followData: PropTypes.shape({}),
-  slug: PropTypes.string
+  slug: PropTypes.string,
+  setArticleReadCount: PropTypes.func
 };
 
 ArticleView.defaultProps = {
   deleteArticle: () => {},
   getSingleArticle: () => {},
+  setArticleReadCount: () => {},
   followUser: () => {},
   unFollowUser: () => {},
   getFollowing: () => {},
@@ -248,5 +261,12 @@ ArticleView.defaultProps = {
 
 export default connect(
   mapStateToProps,
-  { getSingleArticle, deleteArticle, followUser, unFollowUser, getFollowing }
+  {
+    getSingleArticle,
+    deleteArticle,
+    followUser,
+    unFollowUser,
+    getFollowing,
+    setArticleReadCount
+  }
 )(ArticleView);

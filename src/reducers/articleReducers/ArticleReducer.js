@@ -10,7 +10,8 @@ const initialState = {
   fullArticle: {},
   searchParam: "",
   currentPage: 1,
-  totalPages: 1
+  totalPages: 1,
+  readtime: {}
 };
 
 export default (state = initialState, action) => {
@@ -44,6 +45,8 @@ export default (state = initialState, action) => {
         currentPage: action.payload.current_page,
         totalPages: action.payload.total_pages
       };
+    case actionTypes.READ_TIME:
+      return { ...state, readtime: action.payload };
     default:
       return state;
   }

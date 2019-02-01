@@ -9,7 +9,8 @@ const initialState = {
   delete_article: {},
   new_article_rate: {},
   fullArticle: {},
-  pages: {}
+  pages: {},
+  readtime: {}
 };
 
 describe("test article reducer", () => {
@@ -24,7 +25,8 @@ describe("test article reducer", () => {
       new_article_rate: {},
       searchParam: "",
       totalPages: 1,
-      view_article: {}
+      view_article: {},
+      readtime: {}
     });
   });
   it("should return new state on create article", () => {
@@ -44,9 +46,10 @@ describe("test article reducer", () => {
       delete_article: {},
       edit_article: {},
       fullArticle: {},
-      new_article_rate: {},
       searchParam: "",
       totalPages: 1,
+      new_article_rate: {},
+      readtime: {},
       view_article: {}
     });
   });
@@ -82,9 +85,10 @@ describe("test article reducer", () => {
       delete_article: {},
       edit_article: {},
       fullArticle: { current_page: 1, total_pages: 1 },
-      new_article_rate: {},
       searchParam: "",
       totalPages: 1,
+      new_article_rate: {},
+      readtime: {},
       view_article: {}
     });
   });
@@ -105,7 +109,8 @@ describe("test article reducer", () => {
       new_article_rate: {},
       searchParam: "",
       totalPages: 1,
-      view_article: { body: "article body", id: 10, slug: "moked-slag" }
+      view_article: { body: "article body", id: 10, slug: "moked-slag" },
+      readtime: {}
     });
   });
 
@@ -129,7 +134,8 @@ describe("test article reducer", () => {
       new_article_rate: {},
       searchParam: "",
       totalPages: 1,
-      view_article: {}
+      view_article: {},
+      readtime: {}
     });
   });
 
@@ -149,14 +155,26 @@ describe("test article reducer", () => {
       new_article_rate: {},
       searchParam: "",
       totalPages: 1,
-      view_article: {}
+      view_article: {},
+      readtime: {}
     });
   });
   it("should return new state on rating article", () => {
     expect(
       ArticleReducer(undefined, {
         type: actionTypes.RATE_ARTICLE,
-        payload: 1
+        payload: 1,
+        view_article: {},
+        new_article_rate: {},
+        readtime: {}
+      })
+    );
+  });
+  it("should show that read time of an article has been recorded", () => {
+    expect(
+      ArticleReducer(undefined, {
+        type: actionTypes.READ_TIME,
+        payload: { message: "Done" }
       })
     ).toEqual({
       article: {},
@@ -165,10 +183,11 @@ describe("test article reducer", () => {
       delete_article: {},
       edit_article: {},
       fullArticle: {},
-      new_article_rate: 1,
+      new_article_rate: {},
       searchParam: "",
       totalPages: 1,
-      view_article: {}
+      view_article: {},
+      readtime: { message: "Done" }
     });
   });
   it("should return new state on search article", () => {
@@ -187,7 +206,8 @@ describe("test article reducer", () => {
       new_article_rate: {},
       searchParam: "andela",
       totalPages: 1,
-      view_article: {}
+      view_article: {},
+      readtime: {}
     });
   });
   it("should return new state on search article", () => {
@@ -206,7 +226,8 @@ describe("test article reducer", () => {
       new_article_rate: {},
       searchParam: "",
       totalPages: 1,
-      view_article: {}
+      view_article: {},
+      readtime: {}
     });
   });
 });

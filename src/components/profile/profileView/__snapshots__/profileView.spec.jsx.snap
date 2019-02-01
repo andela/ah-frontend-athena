@@ -180,7 +180,7 @@ ShallowWrapper {
                           onClick={[Function]}
                           type="button"
                         >
-                          edit
+                          view
                         </button>
                       </a>
                     </div>
@@ -341,7 +341,7 @@ ShallowWrapper {
                             onClick={[Function]}
                             type="button"
                           >
-                            edit
+                            view
                           </button>
                         </a>
                       </div>
@@ -572,7 +572,7 @@ ShallowWrapper {
                             onClick={[Function]}
                             type="button"
                           >
-                            edit
+                            view
                           </button>
                         </a>
                       </div>
@@ -692,7 +692,7 @@ ShallowWrapper {
                             onClick={[Function]}
                             type="button"
                           >
-                            edit
+                            view
                           </button>
                         </a>
                       </div>
@@ -809,7 +809,7 @@ ShallowWrapper {
                               onClick={[Function]}
                               type="button"
                             >
-                              edit
+                              view
                             </button>
                           </a>
                         </div>
@@ -942,7 +942,7 @@ ShallowWrapper {
                               onClick={[Function]}
                               type="button"
                             >
-                              edit
+                              view
                             </button>
                           </a>
                         </div>
@@ -1038,7 +1038,7 @@ ShallowWrapper {
                                 onClick={[Function]}
                                 type="button"
                               >
-                                edit
+                                view
                               </button>
                             </a>
                           </div>
@@ -1236,7 +1236,7 @@ ShallowWrapper {
                                   onClick={[Function]}
                                   type="button"
                                 >
-                                  edit
+                                  view
                                 </button>
                               </a>
                             </div>,
@@ -1292,7 +1292,7 @@ ShallowWrapper {
                                   onClick={[Function]}
                                   type="button"
                                 >
-                                  edit
+                                  view
                                 </button>
                               </a>,
                               "className": "text-center",
@@ -1309,7 +1309,7 @@ ShallowWrapper {
                                   onClick={[Function]}
                                   type="button"
                                 >
-                                  edit
+                                  view
                                 </button>,
                                 "href": "/",
                               },
@@ -1319,14 +1319,14 @@ ShallowWrapper {
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "children": "edit",
+                                  "children": "view",
                                   "className": "btn btn-success btn-sm",
                                   "name": "publish",
                                   "onClick": [Function],
                                   "type": "button",
                                 },
                                 "ref": null,
-                                "rendered": "edit",
+                                "rendered": "view",
                                 "type": "button",
                               },
                               "type": "a",
@@ -1504,7 +1504,7 @@ ShallowWrapper {
                             onClick={[Function]}
                             type="button"
                           >
-                            edit
+                            view
                           </button>
                         </a>
                       </div>
@@ -1665,7 +1665,7 @@ ShallowWrapper {
                               onClick={[Function]}
                               type="button"
                             >
-                              edit
+                              view
                             </button>
                           </a>
                         </div>
@@ -1896,7 +1896,7 @@ ShallowWrapper {
                               onClick={[Function]}
                               type="button"
                             >
-                              edit
+                              view
                             </button>
                           </a>
                         </div>
@@ -2016,7 +2016,7 @@ ShallowWrapper {
                               onClick={[Function]}
                               type="button"
                             >
-                              edit
+                              view
                             </button>
                           </a>
                         </div>
@@ -2133,7 +2133,7 @@ ShallowWrapper {
                                 onClick={[Function]}
                                 type="button"
                               >
-                                edit
+                                view
                               </button>
                             </a>
                           </div>
@@ -2266,7 +2266,7 @@ ShallowWrapper {
                                 onClick={[Function]}
                                 type="button"
                               >
-                                edit
+                                view
                               </button>
                             </a>
                           </div>
@@ -2362,7 +2362,7 @@ ShallowWrapper {
                                   onClick={[Function]}
                                   type="button"
                                 >
-                                  edit
+                                  view
                                 </button>
                               </a>
                             </div>
@@ -2560,7 +2560,7 @@ ShallowWrapper {
                                     onClick={[Function]}
                                     type="button"
                                   >
-                                    edit
+                                    view
                                   </button>
                                 </a>
                               </div>,
@@ -2616,7 +2616,7 @@ ShallowWrapper {
                                     onClick={[Function]}
                                     type="button"
                                   >
-                                    edit
+                                    view
                                   </button>
                                 </a>,
                                 "className": "text-center",
@@ -2633,7 +2633,7 @@ ShallowWrapper {
                                     onClick={[Function]}
                                     type="button"
                                   >
-                                    edit
+                                    view
                                   </button>,
                                   "href": "/",
                                 },
@@ -2643,14 +2643,14 @@ ShallowWrapper {
                                   "key": undefined,
                                   "nodeType": "host",
                                   "props": Object {
-                                    "children": "edit",
+                                    "children": "view",
                                     "className": "btn btn-success btn-sm",
                                     "name": "publish",
                                     "onClick": [Function],
                                     "type": "button",
                                   },
                                   "ref": null,
-                                  "rendered": "edit",
+                                  "rendered": "view",
                                   "type": "button",
                                 },
                                 "type": "a",

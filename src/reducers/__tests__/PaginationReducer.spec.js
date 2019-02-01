@@ -19,7 +19,8 @@ describe("password reset reducer", () => {
       new_article_rate: {},
       searchParam: "",
       totalPages: 1,
-      view_article: {}
+      view_article: {},
+      readtime: {}
     });
   });
   it("should test updated state", () => {
